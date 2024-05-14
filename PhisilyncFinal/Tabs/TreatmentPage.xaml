@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TechnoTitansFinal.Tabs.TreatmentPage">
+    
+    <Shell.TitleView Margin="0">
+        <Image 
+            Source="phisilync_nobg.png"
+            Aspect="Center"/>
+    </Shell.TitleView>
+    <ScrollView>
+    <VerticalStackLayout>
+            <Image
+            Source="treatment.jpg"
+            Aspect="AspectFill"/>
+            <Label 
+            Text="Current Treatment Plan"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontAttributes="Bold"
+            Margin="40"     
+            FontSize="Large"/>
+            <Button
+                x:Name="LynoBtn"
+                Text="   Lyno Therapy   "
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                FontSize="Medium"
+                BackgroundColor="Red"
+                Margin="40"
+                Clicked="LynoBtn_Clicked"/>
+            <Button
+            x:Name="MassageBtn"
+            Text="Massage Therapy"
+            HorizontalOptions="CenterAndExpand"
+            FontSize="Medium"
+            BackgroundColor="Red"
+            Clicked="MassageBtn_Clicked"/>
+
+            <Label
+                Text="Post-Treatment Plan"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                Margin="50"     
+                FontSize="Large"/>
+            <Button
+                x:Name="TapingBtn"
+                Text="                  Taping                  "
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Medium"
+                Margin="20"
+                BackgroundColor="Red"
+                Clicked="TapingBtn_Clicked"/>
+            <Button
+                x:Name="StretchBtn"
+                Text="    Stretching And Exercise    "
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Medium"
+                Margin="20"
+                BackgroundColor="Red"
+                Clicked="StretchBtn_Clicked"/>
+            <Button
+                x:Name="RomBtn"
+                Text="Range Of Movement Therapy"
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Medium"
+                Margin="20"
+                BackgroundColor="Red"
+                Clicked="RomBtn_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

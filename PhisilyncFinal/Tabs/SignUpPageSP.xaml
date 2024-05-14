@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TechnoTitansFinal.Tabs.SignUpPageSP"
+             BackgroundColor="Black"
+             Title="SignUpPageSP">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="phisilync.png"
+                HeightRequest="210"
+                WidthRequest="400"
+                Aspect="AspectFit"
+                SemanticProperties.Description="Phisilync Logo" />
+
+            <Label
+                Text="Sign Up"
+                FontSize="Large"
+                FontAttributes="Bold"
+                FontFamily="bubble"
+                TextColor="White" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Entry
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="White"
+                Placeholder="Company Name"
+                WidthRequest="500"
+                FontSize="20" 
+                Text="{Binding Details.Name}"/>
+
+            <Entry
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="White"
+                Placeholder="Company Email Address"
+                WidthRequest="500"
+                FontSize="20" 
+                Text="{Binding Details.EmailAddress}"/>
+
+            <Entry
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="White"
+                Placeholder="Password "
+                WidthRequest="500"
+                MaxLength="14"
+                FontSize="20" 
+                Text="{Binding Details.Password}"/>
+
+            <Button
+                Text="Create Account"
+                TextColor="White"
+                BackgroundColor="Red"
+                Clicked="Button_Clicked_4"
+                StyleId="TellUsPage"
+                WidthRequest="500"/>
+
+            <Label
+                Text="Sign Up Using :"
+                TextColor="White" 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Body"/>
+
+            <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                <Image
+                    Source="googleb"
+                    Aspect="AspectFit"
+                    HeightRequest="70"
+                    HorizontalOptions="Center" 
+                    Margin="0,10,15,0"/>
+
+                <Image
+                    Source="facebook1"
+                    Aspect="AspectFit"
+                    HeightRequest="50"
+                    HorizontalOptions="Center" />
+            </HorizontalStackLayout>
+
+            <Button
+                Text="Already Have An Account?"
+                TextColor="White"
+                WidthRequest="300"
+                BackgroundColor="Black"
+                CornerRadius="100"
+                Clicked="Button_Clicked_2"
+                FontSize="Body" 
+                HorizontalOptions="Center"
+                Margin="0,0,0,0" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

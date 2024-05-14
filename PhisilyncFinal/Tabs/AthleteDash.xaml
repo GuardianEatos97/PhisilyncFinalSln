@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cal="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar"
+             x:Class="TechnoTitansFinal.AthleteDash"
+             BackgroundColor="Black"
+             Title="AthleteDashboard">
+    <ScrollView Orientation="Vertical">
+        <VerticalStackLayout>
+            <Image 
+                Source="phisilync.png"
+                Aspect="AspectFill"
+                HeightRequest="110"
+                WidthRequest="500"/>
+
+            <Label
+                Text="Welcome (Your Name)"
+                TextColor="White"
+                FontAttributes="Bold"
+                FontFamily="serif "
+                FontSize="Medium"
+                Margin="20,70,0,10"/>
+
+            <Label
+                Text="Dashboard"
+                TextColor="White"
+                FontAttributes="Bold"
+                FontSize="Large"
+                FontFamily="serif"
+                Margin="20,0,0,0"/>
+
+            <ScrollView Orientation="Horizontal">
+                <HorizontalStackLayout>
+                    <Grid 
+                        ColumnDefinitions="*,*,*,*,*,*"
+                        RowDefinitions="*" >
+
+                        <Frame 
+                            Grid.Row="0" 
+                            Grid.ColumnSpan="0"
+                            HeightRequest="300"
+                            WidthRequest="200"
+                            CornerRadius="10"
+                            HorizontalOptions="Start"
+                            IsClippedToBounds="True"
+                            Padding="0"
+                            BackgroundColor="White"
+                            BorderColor="White" 
+                            Margin="16,10,0,20">
+
+                            <ImageButton
+                                x:Name="ConBtn"
+                                Source="confident.jpg" 
+                                Aspect="Fill"
+                                Clicked="ConBtn_Clicked"/>
+
+                        </Frame>
+
+                        <Frame 
+                            Grid.Row="0" 
+                            Grid.Column="1"
+                            HeightRequest="300"
+                            WidthRequest="200"
+                            CornerRadius="10"
+                            HorizontalOptions="Start"
+                            IsClippedToBounds="True"
+                            Padding="0"
+                            BackgroundColor="White"
+                            BorderColor="White"
+                            Margin="16,10,0,20">
+
+                            <ImageButton 
+                                Source="proud" 
+                                Aspect="AspectFill"
+                                Clicked="ImageButton_Clicked"/>
+                        </Frame>
+
+                        <Frame 
+                            Grid.Row="0" 
+                            Grid.Column="2"
+                            HeightRequest="300"
+                            WidthRequest="200"
+                            CornerRadius="10"
+                            HorizontalOptions="Start"
+                            IsClippedToBounds="True"
+                            Padding="0"
+                            BackgroundColor="White"
+                            BorderColor="White" 
+                            Margin="16,10,0,20">
+
+                            <ImageButton 
+                                Source="strength" 
+                                Aspect="AspectFill"
+                                Clicked="ImageButton_Clicked"/>
+                        </Frame>
+
+                        <Frame 
+                            Grid.Row="0" 
+                            Grid.Column="3"
+                            HeightRequest="300"
+                            WidthRequest="200"
+                            CornerRadius="10"
+                            HorizontalOptions="Start"
+                            IsClippedToBounds="True"
+                            Padding="0"
+                            BackgroundColor="White"
+                            BorderColor="White"
+                            Margin="16,10,0,20">
+
+                            <ImageButton 
+                                Source="flexi" 
+                                Aspect="AspectFill"
+                                Clicked="ImageButton_Clicked"/>
+                        </Frame>
+
+                        <Frame 
+                            Grid.Row="0" 
+                            Grid.Column="4"
+                            HeightRequest="300"
+                            WidthRequest="200"
+                            CornerRadius="10"
+                            HorizontalOptions="Start"
+                            IsClippedToBounds="True"
+                            Padding="0"
+                            BackgroundColor="White"
+                            BorderColor="White"
+                            Margin="16,10,0,20">
+
+                            <ImageButton 
+                                Source="Freedom" 
+                                Aspect="AspectFill"
+                                Clicked="ImageButton_Clicked"/>
+                        </Frame>
+
+                        <Frame 
+                            Grid.Row="0" 
+                            Grid.Column="5"
+                            HeightRequest="300"
+                            WidthRequest="200"
+                            CornerRadius="10"
+                            HorizontalOptions="Start"
+                            IsClippedToBounds="True"
+                            Padding="0"
+                            BackgroundColor="White"
+                            BorderColor="White"
+                            Margin="16,10,0,20">
+
+                            <ImageButton 
+                                Source="Determination" 
+                                Aspect="AspectFill"
+                                Clicked="ImageButton_Clicked"/>
+                        </Frame>
+                    </Grid>
+                </HorizontalStackLayout>
+            </ScrollView>
+
+            <Button
+                Text="Test Your Boundries"
+                FontAttributes="Bold"
+                FontFamily="serif"
+                TextColor="White"
+                BorderColor="IndianRed"
+                BorderWidth="2"
+                BackgroundColor="Black"
+                CornerRadius="100"
+                WidthRequest="500"
+                HeightRequest="70"
+                Margin="50"/>
+
+            <cal:Calendar Events="{Binding Events}" 
+                      EventsScrollViewVisible="True" 
+                      SelectedDayBackgroundColor="Red"
+                      CalendarLayout="Month"
+                      BackgroundColor="Black"
+                      DayViewCornerRadius="5"
+                      DeselectedDayTextColor="White"
+                      SelectedDateColor="White"
+                      ArrowsBackgroundColor="Red"
+                      ArrowsBorderColor="Black"
+                      ArrowsColor="White"
+                      DaysTitleColor="WhiteSmoke"
+                      DaysTitleWeekendColor="WhiteSmoke" 
+                      DisabledDayColor="White"
+                      EventIndicatorColor="White"
+                      EventIndicatorSelectedColor="White"
+                      EventIndicatorSelectedTextColor="White"
+                      MonthLabelColor="White"
+                      OtherMonthDayColor="White"
+                      SelectedDayTextColor="White"
+                      SelectedTodayTextColor="White"
+                      TodayFillColor="IndianRed"
+                      TodayOutlineColor="IndianRed"
+                      TodayTextColor="White" 
+                      WeekendDayColor="White"
+                      YearLabelColor="White"
+                      EventIndicatorTextColor="White"
+                      Margin="70"
+                      HeightRequest="500">
+                <cal:Calendar.EventTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout>
+                            <Label 
+                            Text="{Binding Name}" 
+                            FontSize="25" 
+                            TextColor="White"
+                            FontAttributes="Bold"/>
+                            <Label 
+                            Text="{Binding Description}"
+                            TextColor="White"/>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </cal:Calendar.EventTemplate>
+            </cal:Calendar>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TechnoTitansFinal.Tabs.Injuries"
+             Title="">
+    <VerticalStackLayout>
+        <Label
+            Text="Injury Library"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+        <SearchBar
+            Placeholder="Tap To Search Library"/>
+    </VerticalStackLayout>
+</ContentPage>

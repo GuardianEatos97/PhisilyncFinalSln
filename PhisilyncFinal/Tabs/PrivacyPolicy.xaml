@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TechnoTitansFinal.Tabs.PrivacyPolicy"
+             BackgroundColor="#2D2E2D">
+
+    <Shell.TitleView Margin="0">
+        <Image 
+        Source="phisilync_nobg.png"
+        Aspect="Center"/>
+    </Shell.TitleView>
+
+    <ScrollView>
+    <VerticalStackLayout Margin="20,20,20,20">
+            <Label
+            Text="Privacy Policy"
+            FontSize="Medium"
+            TextColor="White"
+            FontAttributes="Bold"
+            TextDecorations="Underline"
+            Margin="0,10"
+            HorizontalOptions="Center"/>
+
+            <Label
+            Text="Last Revised, May 2024"
+            FontSize="Small"
+                TextColor="White"
+            Margin="0,10"
+            VerticalOptions="StartAndExpand"
+            HorizontalOptions="StartAndExpand"/>
+
+            <Label
+            Text="1. Introduction"
+            FontSize="Small"
+                TextColor="White"
+            FontAttributes="Bold"
+            TextDecorations="Underline"
+            Margin="0,10"
+            HorizontalOptions="Start"/>
+                
+            <Label 
+Text="This Privacy Policy explains how Phisilync obtains and utilizes Personal Data about you via our mobile applications, website, email correspondence, text messaging, and other electronic exchanges between you and Phisilync.
+Phisilync, LLC ('Phisilync,' 'we,' 'our,' or 'us') values your privacy and is dedicated to keeping it safe by abiding by this policy.
+
+This privacy statement (also known as our 'Privacy Policy') explains the kinds of data we might gather from you or that you might submit when you visit our Phisilync mobile application (also known as our 'App'), the online movement therapy services (also known as the 'Services') that users can access via the Website and App, and our procedures for gathering, utilizing, preserving, safeguarding, and sharing that data.
+
+This policy is applicable to the following types of information we may collect: information from you via email and other electronic messages sent between you and app; information from phone conversations; information from text marketing interactions; information from interactions with our applications and advertising on websites and services operated by third parties, if those applications or advertising have links to this policy.
+
+It is not applicable to data gathered by:"
+            VerticalOptions="StartAndExpand" 
+                TextColor="White"
+            HorizontalOptions="StartAndExpand" 
+            FontSize="Micro"
+            />
+                <Label
+                   Text="• Any third party, including through any application or content (including advertising) that may link to or be available from or on the App; us offline or by any other means, including on any other website run by Phisilync or any other third party."
+                   VerticalOptions="StartAndExpand"
+                    TextColor="White"
+                   HorizontalOptions="StartAndExpand"
+                   FontSize="Micro"
+                   Margin="0,5,0,0"/>
+                <Label
+                    Text="• To understand our rules and procedures surrounding your information and how we will treat it, please carefully read this policy. You can choose not to use our website and apps if you disagree with our policies and practices. You accept this privacy statement by using our mobile application. There may be periodic changes to our privacy statement. Your continued use of our App after we make changes is deemed to be acceptance of those changes, so please check this Privacy Policy periodically for updates."
+                    TextColor="White"
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="StartAndExpand"
+                    FontSize="Micro"/>
+                <Label
+                    Text="• Physical therapists can use Phisilync in conjunction with providing services to patients. Phisilync does not offer any services or advice related to medicine or health. As an associate of physical therapists, we obtain health information for or on their behalf in connection with offering or potentially offering treatment to patients. The information we obtain may contain protected health information ('PHI') as defined by the Health Professions Act ('HPA') Act No.56 of 1974. In order to control the usage, privacy, and security of PHI, we enter into business associate agreements with physical therapists. Only in compliance with business associate agreements and HPA will we use and share PHI."
+                    TextColor="White"
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="StartAndExpand"
+                    FontSize="Micro"
+                    />
+                <Label
+                    Text="Your Personal Information may be de-identified by us so that it can no longer be used to reasonably identify you. In this instance, we are free to use the de-identified data for anything we choose, including enhancing our application, website, and goods and services."
+                    TextColor="White"
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="StartAndExpand"
+                    FontSize="Micro"
+                    Margin="0,5,0,0"/>
+
+            <Label
+            Text="2. Information We Collect"
+            FontSize="Small"
+            TextColor="White"
+                FontAttributes="Bold"
+            TextDecorations="Underline"
+            Margin="0,20"
+            HorizontalOptions="Start"/>
+            <Label
+            FontSize="Micro"
+                TextColor="White"
+            VerticalOptions="StartAndExpand"
+            HorizontalOptions="StartAndExpand"
+            Text="We gather a variety of information about you, such as information that we combine with that of our other users, information that may be directly used to identify you, and information about you that does not individually allow us to identify you. This covers data that we get from you directly or via automated systems for data collection."
+            />
+            <Label
+            FontSize="Micro"
+            TextColor="White"
+            VerticalOptions="StartAndExpand"
+            HorizontalOptions="StartAndExpand"
+                Margin="0,5"
+            Text="We gather several kinds of data from and about people who use our app, including the following data:"
+            />
+                <Label
+            FontSize="Micro"
+                TextColor="White"
+            VerticalOptions="StartAndExpand"
+            HorizontalOptions="StartAndExpand"
+            Text="• Information that is about you but individually does not identify you, such as traffic data, logs, referring/exit pages, date and time of your use of our app, error information, clickstream data, and other communication data and the resources that you access and use on the through our app; or information about your Internet connection, the devices you use to access our app."
+            />
+                <Label 
+            FontSize="Micro"
+                TextColor="White"
+            VerticalOptions="StartAndExpand"
+            HorizontalOptions="StartAndExpand"
+            Text="We gather the following data:"
+            />
+            <Label
+            FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="• Directly from you when you give information to us; automatically while using our app or navigating the website. IP addresses, use statistics, estimated locations, and data gathered via cookies and other monitoring technologies are only a few examples of the automatically obtained data; and"
+            />
+            <Label
+              FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+            Text="• From outside sources, such our business associates."
+            />
+            <Label
+             FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+            Text="• Information You Provide to Us"
+            />
+            <Label
+            FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+            Text="The data that we get via our app is as follows:"
+            />
+            <Label
+                        FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+            Text="1.Personal information, such as the information mentioned above;"
+            />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="2.Details you enter into our website or app's forms. This covers data submitted while registering to use our app or website, using our services or other services made accessible via the app's website, buying goods, or making requests for additional services. When you report an issue with our website or app, we could additionally need further information from you;"
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="3.Documents and duplicates of your messages (including email addresses), in the event that you get in touch with us; "
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="4.Information about the transactions you complete on our website or app, as well as the order fulfillment process. Before completing an order on our website or app, you could be asked for financial details."
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Margin="0,5"
+                Text="Additionally, you may submit data to be sent to other users of the website or app, third parties, or published or displayed (henceforth, 'posted') in public sections of the website or app (collectively, 'User Contributions'). For instance, you can share your accomplishments in the open sections of our website or app or ask a question about a certain kind of activity in our online forum."
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Margin="0,5"
+                Text="You User Contributions are posted on and conveyed to others at your own risk. Please be advised that while we restrict access to specific pages, no security mechanism is flawless or unbreakable. Furthermore, we have no control over what other users of the Website and App do with the User Contributions you choose to share. Consequently, we are unable to guarantee that unauthorized parties won't read your User Contributions."
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="We may employ automated data collecting methods to gather specifics about your device, browsing habits, and browsing history while you use the app, including:"
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="1.Information about your computer, mobile device, and Internet connection, specifically your IP address, operating system, browser type, and App version information; details of your visits to our website or app, including traffic data, location, logs, referring/exit pages, date and time of your visit to our website or use of our app; error information, clickstream data, and other communication data;"
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="2.The resources that you access and use on the website or in the app."
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="We may keep the information we automatically gather, link it to other Personal Data we obtain from third parties or acquire from other sources, or both. It may contain Personal Data. It makes it possible for us to enhance our App and provide better, more individualized service by allowing us to:"
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="1.Determine the size and usage trends of our audience;retain preference data, which enables us to personalize our App based on your unique interests;"
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="2.Acknowledge your return visits to our application."
+                />
+            <Label
+                Text="3. How We Use Your Information"
+                TextColor="White"
+                FontSize="Small"
+                FontAttributes="Bold"
+                TextDecorations="Underline"
+                Margin="0,10"
+                HorizontalOptions="Start"/>
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Margin="0,5"
+                Text="We use your personal information for the reasons listed below, among other things:"
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                
+                Text="1.Give you access to our website or app;"
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="2.Supply you goods and services;"
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="3.Give you the information you've requested from us;"
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="4.Uphold our contractual rights;"
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Margin="0,5"
+                Text="We make use of any Personal Data that you submit to us or that we gather about you:"
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="1.To make our Website, its features, contents, and services available to you;"
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="2.To make our App, its features, contents, and services available;"
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="3.To deliver our goods and services to you; "
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="4.To give you information, goods, or services that you ask for or that we think could be of interest to you;"
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="5.To handle, complete, support, and handle orders for goods and services that you have placed;"
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="6.To notify you about your Phisilync account;"
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="7.To get in touch with you in response to a request;"
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="8. To accomplish any other reason for which you supply it;"
+                />
+            <Label
+               FontSize="Micro"
+               TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="9.To notify you of changes to our Website, App, or any products or services we offer or provide through them; "
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Text="10.In any other way we may describe when you provide the information; 
+and for any other purpose with your consent."
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Margin="0,5"
+                Text="To fulfill our obligations and enforce our rights arising from any contracts entered into between you and us, including for billing and collection."
+                />
+            <Label
+               FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+                Margin="0,5"
+                Text="Additionally, we may use your information to get in touch with you via text, phone, email, and newsletters about products and services that could be of interest to you. You can always use the unsubscribe (or STOP for SMS marketing) option found in each of these communications if you would like to stop receiving them. See Choices About How We Use and Disclose Your Information for further details."
+                />
+            <Label
+    Text="4. Disclosure Of Your Information"
+                TextColor="White"
+    FontSize="Small"
+    FontAttributes="Bold"
+    TextDecorations="Underline"
+    Margin="0,10"
+    HorizontalOptions="Start"/>
+            <Label
+                FontSize="Micro"
+                TextColor="White"
+                VerticalOptions="StartAndExpand"
+                HorizontalOptions="StartAndExpand"
+                Margin="0,5"
+                Text="Your Personal Data is not shared, sold, or otherwise disclosed by us for uses not specified in this Privacy Policy. We share your Personal Data with a select group of outside parties, such as:"
+                />
+            <Label
+    FontSize="Micro"
+                TextColor="White"
+    VerticalOptions="StartAndExpand"
+    HorizontalOptions="StartAndExpand"
+    Text="1.Our affiliates and outside service providers that help us run our business;"
+    />
+            <Label
+    FontSize="Micro"
+                TextColor="White"
+    VerticalOptions="StartAndExpand"
+    HorizontalOptions="StartAndExpand"
+    Text="2.To a business that we buy out, merge with, or otherwise acquire;"
+    />
+            <Label
+    FontSize="Micro"
+                TextColor="White"
+    VerticalOptions="StartAndExpand"
+    HorizontalOptions="StartAndExpand"
+    Text="3.In the event that our business structure changes in any way;"
+    />
+            <Label
+    FontSize="Micro"
+                TextColor="White"
+    VerticalOptions="StartAndExpand"
+    HorizontalOptions="StartAndExpand"
+    Text="4.To fulfill our legal responsibilities;"
+    />
+            <Label
+    FontSize="Micro"
+                TextColor="White"
+    VerticalOptions="StartAndExpand"
+    HorizontalOptions="StartAndExpand"
+    Text="5.To affiliates and other parties for their own business intents;"
+    />
+            <Label
+    FontSize="Micro"
+                TextColor="White"
+    VerticalOptions="StartAndExpand"
+    HorizontalOptions="StartAndExpand"
+                Margin="0,5"
+    Text="We do not share, sell, or otherwise disclose your Personal Data for purposes other than those outlined in this Privacy Policy. However, we may disclose aggregated information about our users, and information that does not identify any individual, without restriction."
+    />
+            <Label
+    FontSize="Micro"
+                TextColor="White"
+    VerticalOptions="StartAndExpand"
+    HorizontalOptions="StartAndExpand"
+                Margin="0,5"
+    Text="As stated in this privacy statement, we may disclose Personal Data that we obtain or that you submit to us:"
+    />
+            <Label
+    FontSize="Micro"
+                TextColor="White"
+    VerticalOptions="StartAndExpand"
+    HorizontalOptions="StartAndExpand"
+    Text="1.To service suppliers, contractors, affiliates, and other outside parties who help our business run. "
+    />
+            <Label
+    FontSize="Micro"
+                TextColor="White"
+    VerticalOptions="StartAndExpand"
+    HorizontalOptions="StartAndExpand"
+    Text="2.To a buyer or other successor in the event of a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Phisilync's collection of personal data about users of our website and app is among the transferred assets; these organizations also provide ordering, advertising, marketing, and payment processing services."
+    />
+            <Label
+    FontSize="Micro"
+    VerticalOptions="StartAndExpand"
+                TextColor="White"
+    HorizontalOptions="StartAndExpand"
+    Text="3.To carry out the reason you give it;"
+    />
+            <Label
+    FontSize="Micro"
+                TextColor="White"
+    VerticalOptions="StartAndExpand"
+    HorizontalOptions="StartAndExpand"
+    Text="4.Or for any other reason we reveal to you at the time you give the information, with your consent;"
+    />
+            <Label
+    FontSize="Micro"
+                TextColor="White"
+    VerticalOptions="StartAndExpand"
+    HorizontalOptions="StartAndExpand"
+                Margin="0,5"
+    Text="Additionally, we might reveal your Personal Data:"
+    />
+            <Label
+    FontSize="Micro"
+                TextColor="White"
+    VerticalOptions="StartAndExpand"
+    HorizontalOptions="StartAndExpand"
+    Text="1.For billing and collection purposes;"
+    />
+            <Label
+    FontSize="Micro"
+                TextColor="White"
+    VerticalOptions="StartAndExpand"
+    HorizontalOptions="StartAndExpand"
+    Text="2.In compliance with any court order, law, or legal process, including replying to any government or regulatory request;"
+    />
+            <Label
+    FontSize="Micro"
+                TextColor="White"
+    VerticalOptions="StartAndExpand"
+    HorizontalOptions="StartAndExpand"
+    Text="3.If we think that disclosing information is required or appropriate to safeguard Phisilync, our clients', or others' safety, rights, or property. This involves sharing data with other businesses and institutions in order to prevent fraud and lower credit risk."
+    />
+            <Label
+    Text="5. Your Rights Regarding Your Information and Accessing or Correcting Your Information"
+    TextColor="White"
+                FontSize="Small"
+    FontAttributes="Bold"
+    TextDecorations="Underline"
+    Margin="0,10"
+    HorizontalOptions="Start"/>
+            <Label
+    FontSize="Micro"
+                TextColor="White"
+    VerticalOptions="StartAndExpand"
+    HorizontalOptions="StartAndExpand"
+    Text="Please contact us to examine and update your personal data."
+    />
+            <Label
+    FontSize="Micro"
+                TextColor="White"
+    VerticalOptions="StartAndExpand"
+    HorizontalOptions="StartAndExpand"
+    Text="By logging in using our website or app, you can examine and modify your personal data. You can also request that your account be deleted or that any modifications or inaccuracies be made to the Personal Data we hold about you, using the Contact Information provided below. We want to make sure that the information is accurate, current, and full. We are unable to remove your personal information unless we also terminate your account. If we think that fulfilling your request will break any laws or legal requirements or result in inaccurate information, we might not be able to comply with it."
+    />
+            
+            <Label
+    Text="6.Data Security"
+                TextColor="White"
+    FontSize="Small"
+    FontAttributes="Bold"
+    TextDecorations="Underline"
+    Margin="0,10"
+    HorizontalOptions="Start"/>
+            <Label
+    FontSize="Micro"
+                TextColor="White"
+    VerticalOptions="StartAndExpand"
+    HorizontalOptions="StartAndExpand"
+    Text="While we try our best to protect your Personal Data, information communicated over the Internet cannot be guaranteed to be 100% secure. By keeping your website password private, you can contribute to the protection of your Personal Data and other information.We have put in place safeguards to protect your personal information against unintentional loss and from unwanted access, use, alteration, and disclosure."
+    />
+            <Label
+    FontSize="Micro"
+                TextColor="White"
+    VerticalOptions="StartAndExpand"
+    HorizontalOptions="StartAndExpand"
+    Text="You are also responsible for the protection and security of your data. If you have selected a password to access our website or app, you are in charge of maintaining its confidentiality. We kindly request that you keep your password confidential."
+    />
+            <Label
+    FontSize="Micro"
+                TextColor="White"
+    VerticalOptions="StartAndExpand"
+    HorizontalOptions="StartAndExpand"
+    Text="Unfortunately, the transmission of information via the Internet is not completely secure. Although we do our best to protect your Personal Data, we cannot guarantee the security of your Personal Data transmitted to our Website or on or through our App. Any transmission of Personal Data is at your own risk. We are not responsible for circumvention of any privacy settings or security measures contained on the Website, in your operating system, or in the App."
+    />
+            <Label
+FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+Text="Data collected through the website or App are governed and regulated by the Protection of Personal Information Act 4 of 2013 ('POPI'). All information is stored, protected and used in accordance with this Act."
+/>
+            <Label
+FontSize="Micro"
+                TextColor="White"
+VerticalOptions="StartAndExpand"
+HorizontalOptions="StartAndExpand"
+Text="All confidential information i.e location, password etc. is stored in a secure cloud-based server located in Johannesburg, South Africa, utilizing the Azure cloud service."
+/>
+            <Label
+    Text="7.Changes To Our Privacy Policy"
+                TextColor="White"
+    FontSize="Small"
+    FontAttributes="Bold"
+    TextDecorations="Underline"
+    Margin="0,10"
+    HorizontalOptions="Start"/>
+            <Label
+    FontSize="Micro"
+                TextColor="White"
+    VerticalOptions="StartAndExpand"
+    HorizontalOptions="StartAndExpand"
+    Text="Any modifications to our privacy statement will be announced on our website. We may use your contact information to notify you of any significant changes we make to our privacy statement. We will then allow you to evaluate and, if needed, accept the changes.This Privacy Policy is subject to change at any time. Any modifications we make to our privacy statement will, as a matter of policy, be announced on this page as well as on the home screen of the app and the website. We will send you an email at the address you provided when creating your account, as well as a notification on the home screen of the App or the Website, if we make any significant changes to the way we handle the Personal Data of our users. The most recent revision date of this privacy policy is noted at the top of the document. It is your responsibility to make sure we have an active, up-to-date email address that can be delivered to you, as well as to periodically browse the App or our website and check our Privacy Policy for any updates."
+    />
+
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+                <Frame BackgroundColor="#2D2E2D" Grid.Row="0" BorderColor="Transparent">
+                    <StackLayout Orientation="Vertical">
+                        <Label
+                    Text="Contact Us"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                            Margin="0,10"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    TextColor="White"/>
+                        <Label
+Text="11 Adderley Street, Foreshore"
+TextColor="White"
+Margin="0"
+HorizontalOptions="Center"
+VerticalOptions="Center"
+FontSize="Small"/>
+                        <Label
+                            Text="Cape Town, 8000"
+                            TextColor="White"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            FontSize="Small"/>
+                        <Label
+                        Text="info@phisilync.co.za"
+                        TextColor="White"
+                        Margin="0,10"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontSize="Small"/>
+                        <Label
+                        Text="+27 (0) 215891201"
+                        TextColor="White"
+                        Margin="0,10"
+                        FontSize="Small"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+                        <Label
+Text="Or link with us via social media"
+TextColor="White"
+                            FontAttributes="Italic"
+Margin="0,20,0,0"
+FontSize="Small"
+HorizontalOptions="Center"
+VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#E21C21" BorderColor="Transparent" Grid.Row="1" HasShadow="True">
+
+                    <Grid
+                        Margin="40,0,0,0"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="CenterAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackLayout Orientation="Horizontal" Grid.Column="1">
+                            <StackLayout Orientation="Horizontal">
+                                <ImageButton
+                                    Source="facebook.png"
+                                    HeightRequest="50"
+                                    WidthRequest="50"
+                                    Margin="10,0"
+                                    x:Name="FbBtn"
+                                    Clicked="FbBtn_Clicked"/>
+                                <ImageButton
+                                    Source="insta.png"
+                                    HeightRequest="50"
+                                    WidthRequest="50"
+                                    Margin="10,0"
+                                    x:Name="InstaBtn"
+                                    Clicked="InstaBtn_Clicked"/>
+                                <ImageButton
+                                    Source="twitter_bird.png"
+                                    HeightRequest="50"
+                                    WidthRequest="50"
+                                    Margin="10,0"
+                                    x:Name="XBtn"
+                                    Clicked="XBtn_Clicked"/>
+                                <ImageButton
+                                    Source="tiktok.png"
+                                    HeightRequest="50"
+                                    WidthRequest="50"
+                                    Margin="10,0"
+                                    x:Name="TikTokBtn"
+                                    Clicked="TikTokBtn_Clicked"/>
+                                <ImageButton
+                                    Source="linkedin.png"
+                                    HeightRequest="50"
+                                    WidthRequest="50"
+                                    Margin="10,0"
+                                    x:Name="LinkedinBtn"
+                                    Clicked="LinkedinBtn_Clicked"/>
+
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+                <StackLayout Grid.Row="2">
+                    <Label
+VerticalOptions="Center"
+HorizontalOptions="Center"
+Text="© Copyright Phisilync (Pty) Ltd 2024 │ All Rights Reserved"
+                Margin="0,20"
+TextColor="White"/>
+                </StackLayout>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

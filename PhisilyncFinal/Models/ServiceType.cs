@@ -1,0 +1,19 @@
+﻿using SQLite;
+using SQLiteNetExtensions.Attributes;
+
+namespace TechnoTitansFinal.Models
+{
+    public class ServiceType
+    {
+
+        [PrimaryKey,AutoIncrement]
+        public int serviceTypeID { get; set; }
+        public string serviceTypeName { get; set; }
+        public string serviceTypeDescription { get; set; }
+
+
+        [ForeignKey(typeof(Provider))]
+        public int serviceTypeProvider { get; set; }
+
+    }
+}
