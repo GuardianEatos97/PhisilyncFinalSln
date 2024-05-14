@@ -7,9 +7,10 @@ public partial class AthleteDash : ContentPage
 {
     public EventCollection Events { get; set; }
     public AthleteDash()
-    {
+    {   
         InitializeComponent();
         Routing.RegisterRoute("TreatmentPage", typeof(TreatmentPage));
+        BindingContext = this;
 
         Events = new EventCollection
         {
@@ -35,7 +36,7 @@ public partial class AthleteDash : ContentPage
                     new EventModel { Name = "Cool event6", Description = "This is Cool event6's description!" }
                 }
         };
-        BindingContext = this;
+       
     }
 
     internal class EventModel
