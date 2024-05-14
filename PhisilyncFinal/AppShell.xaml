@@ -3,13 +3,97 @@
     x:Class="PhisilyncFinal.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:PhisilyncFinal"
-    Shell.FlyoutBehavior="Disabled"
-    Title="PhisilyncFinal">
+    xmlns:local="clr-namespace:PhisilyncFinal.Tabs"
+    xmlns:flyout="clr-namespace:PhisilyncFinal.FlyoutControls"
+    Shell.FlyoutBehavior="Flyout"
+    FlyoutHeaderBehavior="CollapseOnScroll"
+    Title="PhisilyncFinal" BackgroundColor="Black">
 
+    <Shell.FlyoutHeader>
+        <flyout:FlyoutHeader />
+    </Shell.FlyoutHeader>
+
+    <Shell.FlyoutFooter>
+        <flyout:FlyoutFooter />
+    </Shell.FlyoutFooter>
+
+    <Shell.Resources>
+        <Style x:Key="BaseStyle"
+   TargetType="Element">
+            <Setter Property="Shell.BackgroundColor"
+        Value="Black" />
+            <Setter Property="Shell.ForegroundColor"
+        Value="White" />
+            <Setter Property="Shell.TitleColor"
+        Value="White" />
+            <Setter Property="Shell.DisabledColor"
+        Value="#B4FFFFFF" />
+            <Setter Property="Shell.UnselectedColor"
+        Value="#95FFFFFF" />
+        </Style>
+        <Style TargetType="ShellItem"
+   BasedOn="{StaticResource BaseStyle}" />
+    </Shell.Resources>
+
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid HorizontalOptions="FillAndExpand" ColumnDefinitions="0.2*,0.8*" HeightRequest="50">
+
+                <Image Source="{Binding FlyoutIcon}"
+               Margin="5"
+               HeightRequest="24" />
+                <Label Grid.Column="1"
+               Text="{Binding Title}"
+               FontSize="16"
+               FontAttributes="None"
+               VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Dashboard" Icon="dashboard.png"
+        Style="{StaticResource BaseStyle}"
+ContentTemplate="{DataTemplate local:AthleteDash}"
+Route="Injuries" />
+
+        <ShellContent
+Title="Privacy Policy"
+            Icon="compliant.png"
+        Style="{StaticResource BaseStyle}"
+ContentTemplate="{DataTemplate local:PrivacyPolicy}"
+      
+Route="PrivacyPolicy" />
+
+        <ShellContent
+Title="Terms And Conditions"
+            Icon="tac.png"
+        Style="{StaticResource BaseStyle}"
+ContentTemplate="{DataTemplate local:TACPage}"
+  
+Route="TACPage" />
+
+    </FlyoutItem>
+
+    <!--<TabBar>
+    <Tab Title="EXPLORE"
+         Icon="baseball_cap.png">
+
+        <ShellContent
+            Title="Dashboard"
+            ContentTemplate="{DataTemplate local:Dashboard}" />
+
+    </Tab>
+    
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Title="LIBRARY"
+        Icon="search.png"
+        ContentTemplate="{DataTemplate local:Injuries}"/>
+    
+    <ShellContent
+        Title="TREATMENT PLAN"
+        Icon="shopping_bag.png"
+        ContentTemplate="{DataTemplate local:Treatment}"/>
+</TabBar>-->
 
 </Shell>

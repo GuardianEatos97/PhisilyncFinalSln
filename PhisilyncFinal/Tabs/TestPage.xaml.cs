@@ -1,4 +1,4 @@
-﻿namespace TechnoTitansFinal
+﻿namespace PhisilyncFinal
 {
     public partial class TestPage : ContentPage
     {

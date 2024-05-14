@@ -1,4 +1,4 @@
-namespace TechnoTitansFinal.Tabs;
+namespace PhisilyncFinal.Tabs;
 
 public partial class ServiceProviderDashboard : ContentPage
 {

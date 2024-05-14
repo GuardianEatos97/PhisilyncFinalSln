@@ -6,10 +6,10 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
-using TechnoTitansFinal.Models;
+using PhisilyncFinal.Models;
 //using ThreadNetwork;
 
-namespace TechnoTitansFinal.Services
+namespace PhisilyncFinal.Services
 {
     public class LocalDb
     {
