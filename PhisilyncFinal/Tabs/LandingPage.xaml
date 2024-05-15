@@ -5,6 +5,6 @@
              x:Class="PhisilyncFinal.Tabs.LandingPage"
              >
     <local:AthleteDash />
-    <local:Injuries/>
+    <local:InjuryPage/>
     
 </TabbedPage>

@@ -161,6 +161,7 @@
                 BorderColor="IndianRed"
                 BorderWidth="2"
                 BackgroundColor="Black"
+                Clicked="Button_Clicked"
                 CornerRadius="100"
                 WidthRequest="500"
                 HeightRequest="70"
