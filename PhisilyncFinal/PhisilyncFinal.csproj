@@ -70,6 +70,7 @@
 	  <None Remove="Resources\Images\linkedin.png" />
 	  <None Remove="Resources\Images\phisilync_nobg.png" />
 	  <None Remove="Resources\Images\proud.jpg" />
+	  <None Remove="Resources\Images\qa.png" />
 	  <None Remove="Resources\Images\strength.jpg" />
 	  <None Remove="Resources\Images\tac.png" />
 	  <None Remove="Resources\Images\tiktok.png" />

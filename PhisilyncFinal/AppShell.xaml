@@ -73,6 +73,22 @@ ContentTemplate="{DataTemplate local:TACPage}"
   
 Route="TACPage" />
 
+        <ShellContent
+Title="FAQs"
+            Icon="qa.png"
+        Style="{StaticResource BaseStyle}"
+ContentTemplate="{DataTemplate local:FAQs}"
+            
+Route="FAQs" />
+
+        <ShellContent
+Title="Tell Us"
+            Icon="qa.png"
+        Style="{StaticResource BaseStyle}"
+ContentTemplate="{DataTemplate local:TellUsPage}"
+  
+Route="TellUsPage" />
+
     </FlyoutItem>
 
     <!--<TabBar>
