@@ -5,7 +5,6 @@ using SQLiteNetExtensions.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,8 +21,10 @@ namespace PhisilyncFinal.Services
         {
             string filename = "AppDataDB.db";
             string pathToDb = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            return pathToDb + filename;
+            return Path.Combine(pathToDb,filename);//pathToDb + filename;
         }
+
+        
 
         private void ExtractDBEmbeddedResource()
         {
@@ -50,14 +51,26 @@ namespace PhisilyncFinal.Services
 
         public LocalDb()
         {
+            if(!File.Exists(GetDataBasePath()))
+            {
+                ExtractDBEmbeddedResource();
+            }
+
             _dbConnection = new SQLiteConnection(GetDataBasePath());
 
-            
+            _dbConnection.CreateTable<User>();
         }
 
-        
-       
-
-
+        public void SaveUser(User user)
+        {
+            try
+            {
+                _dbConnection.Insert(user);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

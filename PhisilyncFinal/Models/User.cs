@@ -18,12 +18,12 @@ namespace PhisilyncFinal.Models
         public string userName { get; set; }
         public string userSurname { get; set; }
         public string userEmail { get; set; }
-        public string userGender { get; set; }
+        public string? userGender { get; set; }
         public string userPassword { get; set; }
-        public string userPhoneNumber { get; set; }
+        public string? userPhoneNumber { get; set; }
 
         [ForeignKey(typeof(Treatment))]
-        public int userTreatment { get; set; } //foreign key
+        public int? userTreatment { get; set; } //foreign key
 
         /*[OneToMany(CascadeOperations = CascadeOperation.All)]
         public List<Sport>? userSports { get; set; }
