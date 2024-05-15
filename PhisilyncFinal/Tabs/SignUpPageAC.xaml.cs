@@ -1,6 +1,8 @@
 using PhisilyncFinal.Models;
 using PhisilyncFinal.Services;
 using SQLite;
+using System.Security.Cryptography.X509Certificates;
+
 namespace PhisilyncFinal.Tabs;
 
 public partial class SignUpPageAC : ContentPage
