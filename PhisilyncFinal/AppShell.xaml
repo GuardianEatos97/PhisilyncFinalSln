@@ -55,8 +55,8 @@
         <ShellContent  Icon="dashboard.png"
         Style="{StaticResource BaseStyle}"
 
-ContentTemplate="{DataTemplate local:CoachDashboard}"
-Route="Injuries" />
+ContentTemplate="{DataTemplate local:TellUsPage}"
+Route="TellUsPage" />
 
 
         <ShellContent
