@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              BackgroundColor="#2D2E2D" 
              x:Class="PhisilyncFinal.Tabs.TellUsPage">
-
-    <VerticalStackLayout>
-        <Image
+    <ScrollView Orientation="Vertical">
+        <VerticalStackLayout>
+            <Image
             Source="phisilync_nobg.png"
             HeightRequest="210"
             WidthRequest="400"
@@ -13,7 +13,7 @@
             Margin="0"
             SemanticProperties.Description="Phisilync Logo" />
 
-        <Label
+            <Label
             Text="Let's Get Started"
             TextColor="white"
             FontAttributes="Bold"
@@ -21,7 +21,7 @@
             HorizontalOptions="Center" 
             Margin="10"/>
 
-        <Label
+            <Label
             Text="Fully Personalize Your Phisilync Experience"
             TextColor="White"
             FontAttributes="Bold"
@@ -29,7 +29,7 @@
             HorizontalOptions="Center"
             Margin="10"/>
 
-        <Label
+            <Label
             Text="Tell Us About You :"
             TextColor="White"
             FontSize="Medium" 
@@ -37,7 +37,7 @@
             HorizontalTextAlignment="Center"
             Margin="10"/>
 
-        <Button
+            <Button
             Text="I Am An Athlete"
             FontAttributes="Bold"
             TextColor="White"
@@ -50,7 +50,7 @@
             HeightRequest="70"
             Margin="10"/>
 
-        <Button
+            <Button
             Text="I Am A Coach"
             FontAttributes="Bold"
             CornerRadius="100"
@@ -63,7 +63,7 @@
             HeightRequest="70"
             Margin="10"/>
 
-        <Button
+            <Button
             Text="I Am A Service Provider"
             FontAttributes="Bold"
             TextColor="White"
@@ -76,7 +76,7 @@
             HeightRequest="70"
             Margin="10"/>
 
-        <Frame 
+            <Frame 
             Grid.Row="0" 
             Grid.ColumnSpan="0"
             HeightRequest="350"
@@ -89,20 +89,20 @@
             BorderColor="White" 
             Margin="10">
 
-            <ImageButton Source="workout" Aspect="Fill"/>
-        </Frame>
+                <ImageButton Source="workout" Aspect="Fill"/>
+            </Frame>
 
-        <Button
-            Text="Already Have An Account?"
-            TextColor="White"
-            WidthRequest="300"
-            BackgroundColor="#2D2E2D"
-            Clicked="Button_Clicked_2"
-            FontSize="Body" 
-            CornerRadius="100"
-            VerticalOptions="EndAndExpand"
-            HorizontalOptions="Center"
-            Margin="10" />
-
-    </VerticalStackLayout>
+            <Button
+                Text="Already Have An Account?"
+                TextColor="White"
+                WidthRequest="300"
+                BackgroundColor="#2D2E2D"
+                Clicked="Button_Clicked_2"
+                FontSize="Body" 
+                CornerRadius="100"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="Center"
+                Margin="10" />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
