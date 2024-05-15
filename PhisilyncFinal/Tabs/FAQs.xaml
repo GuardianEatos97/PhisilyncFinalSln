@@ -14,13 +14,31 @@
     <VerticalStackLayout Margin="20,20,20,20">
         <Label
             Text="FAQs"
-            FontSize="Medium"
+            FontSize="Large"
             TextColor="White"
             FontAttributes="Bold"
+            FontFamily="Serif"
             TextDecorations="Underline"
             Margin="0,10"
             HorizontalOptions="Center"/>
 
+            <Label
+Text="What is Physiotherapy?"
+FontSize="Medium"
+    TextColor="#E21C21"
+FontAttributes="Bold"
+TextDecorations="Underline"
+    FontFamily="Serif"
+Margin="0,3"
+HorizontalOptions="Center"/>
+            <Label
+            Text="Physiotherapy is the treatment of disease, injury, or deformity by physical methods such as massage, heat treatment, and exercise rather than by drugs or surgery."
+                TextColor="White"
+                FontSize="Small"
+                FontFamily="Serif"
+                HorizontalTextAlignment="Center"
+                HorizontalOptions="Center"
+            />
             <Grid VerticalOptions="FillAndExpand">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -39,111 +57,130 @@
                         <Label
                     Text="Contact Us"
                     FontSize="Large"
+                            FontFamily="Serif"
                     FontAttributes="Bold"
                             Margin="0,10"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     TextColor="White"/>
                         <Label
-                            Text="11 Adderley Street, Foreshore"
-                            TextColor="White"
-                            Margin="0"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center"
-                            FontSize="Small"/>
+Text="11 Adderley Street, Foreshore"
+TextColor="White"
+Margin="0"
+                            FontFamily="Serif"
+HorizontalOptions="Center"
+VerticalOptions="Center"
+FontSize="Small"/>
                         <Label
                             Text="Cape Town, 8000"
                             TextColor="White"
+                            FontFamily="Serif"
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
                             FontSize="Small"/>
                         <Label
                         Text="info@phisilync.co.za"
                         TextColor="White"
-                        Margin="0,10"
+                            FontFamily="Serif"
+                        Margin="0,20"
                         HorizontalOptions="Center"
                         VerticalOptions="Center"
                         FontSize="Small"/>
                         <Label
                         Text="+27 (0) 215891201"
                         TextColor="White"
-                        Margin="0,10"
+                            FontFamily="Serif"
+                        Margin="0,0"
                         FontSize="Small"
                         HorizontalOptions="Center"
                         VerticalOptions="Center"/>
                         <Label
-                            Text="Or link with us via social media"
-                            TextColor="White"
+Text="Or link with us via social media"
+TextColor="White"
+                            FontFamily="Serif"
                             FontAttributes="Italic"
-                            Margin="0,20,0,0"
-                            FontSize="Small"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center"/>
+Margin="0,20,0,0"
+FontSize="Small"
+HorizontalOptions="Center"
+VerticalOptions="Center"/>
                     </StackLayout>
                 </Frame>
 
-                <Frame BackgroundColor="#E21C21" BorderColor="Transparent" Grid.Row="1" HasShadow="True">
-
-                    <Grid
-                        Margin="40,0,0,0"
+                <Frame BackgroundColor="#E21C21" BorderColor="Transparent" Grid.Row="1" HasShadow="True" VerticalOptions="Center" MaximumWidthRequest="350">
+                    <ScrollView Orientation="Horizontal">
+                        <Grid
+                        Margin="15,0,0,0"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="CenterAndExpand">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
 
-                        <StackLayout Orientation="Horizontal" Grid.Column="1">
-                            <StackLayout Orientation="Horizontal">
-                                <ImageButton
+                            <StackLayout Orientation="Horizontal" Grid.Column="1">
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
+                                    <ImageButton
                                     Source="facebook.png"
                                     HeightRequest="50"
                                     WidthRequest="50"
-                                    Margin="10,0"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    Margin="3,0"
                                     x:Name="FbBtn"
                                     Clicked="FbBtn_Clicked"/>
-                                <ImageButton
+                                    <ImageButton
                                     Source="insta.png"
                                     HeightRequest="50"
                                     WidthRequest="50"
-                                    Margin="10,0"
+                                    HorizontalOptions="Center"
+VerticalOptions="Center"
+                                    Margin="3,0"
                                     x:Name="InstaBtn"
                                     Clicked="InstaBtn_Clicked"/>
-                                <ImageButton
+                                    <ImageButton
                                     Source="twitter_bird.png"
                                     HeightRequest="50"
                                     WidthRequest="50"
-                                    Margin="10,0"
+                                    Margin="3,0"
+                                    HorizontalOptions="Center"
+VerticalOptions="Center"
                                     x:Name="XBtn"
                                     Clicked="XBtn_Clicked"/>
-                                <ImageButton
+                                    <ImageButton
                                     Source="tiktok.png"
                                     HeightRequest="50"
                                     WidthRequest="50"
-                                    Margin="10,0"
+                                    HorizontalOptions="Center"
+VerticalOptions="Center"
+                                    Margin="3,0"
                                     x:Name="TikTokBtn"
                                     Clicked="TikTokBtn_Clicked"/>
-                                <ImageButton
+                                    <ImageButton
                                     Source="linkedin.png"
                                     HeightRequest="50"
                                     WidthRequest="50"
-                                    Margin="10,0"
+                                    HorizontalOptions="Center"
+VerticalOptions="Center"
+                                    Margin="3,0"
                                     x:Name="LinkedinBtn"
                                     Clicked="LinkedinBtn_Clicked"/>
-                            </StackLayout>
-                        </StackLayout>
 
-                    </Grid>
+                                </StackLayout>
+                            </StackLayout>
+                        </Grid>
+                    </ScrollView>
                 </Frame>
+
                 <StackLayout Grid.Row="2">
                     <Label
-        VerticalOptions="Center"
-        HorizontalOptions="Center"
-        Text="© Copyright Phisilync (Pty) Ltd 2024 │ All Rights Reserved"
-                        Margin="0,20"
-        TextColor="White"/>
+VerticalOptions="Center"
+HorizontalOptions="Center"
+                        FontFamily="Serif"
+Text="© Copyright Phisilync (Pty) Ltd 2024 │ All Rights Reserved"
+                Margin="0,20"
+TextColor="White"/>
                 </StackLayout>
             </Grid>
         </VerticalStackLayout>

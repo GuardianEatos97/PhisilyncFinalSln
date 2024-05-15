@@ -52,11 +52,13 @@
     </Shell.ItemTemplate>
 
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
-        <ShellContent  Icon="dashboard.png"
+        <ShellContent  
+            Title="Dashboard"
+            Icon="dashboard.png"
         Style="{StaticResource BaseStyle}"
 
-ContentTemplate="{DataTemplate local:TellUsPage}"
-Route="TellUsPage" />
+ContentTemplate="{DataTemplate local:AthleteDash}"
+Route="AthleteDash" />
 
 
         <ShellContent
