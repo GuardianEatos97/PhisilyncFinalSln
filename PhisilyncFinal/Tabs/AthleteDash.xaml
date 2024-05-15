@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:cal="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar"
              x:Class="PhisilyncFinal.Tabs.AthleteDash"
-             BackgroundColor="Black"
-             Title="AthleteDashboard">
+             BackgroundColor="Black">
     <ScrollView Orientation="Vertical">
         <VerticalStackLayout>
             <Image 
@@ -17,7 +16,7 @@
                 Text="Welcome (Your Name)"
                 TextColor="White"
                 FontAttributes="Bold"
-                FontFamily="serif "
+                FontFamily="serif"
                 FontSize="Medium"
                 Margin="20,70,0,10"/>
 

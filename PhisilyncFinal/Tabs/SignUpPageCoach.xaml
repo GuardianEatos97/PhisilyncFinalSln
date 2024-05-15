@@ -12,7 +12,7 @@
                 Source="phisilync_nobg.png"
                 HeightRequest="210"
                 WidthRequest="400"
-                Aspect="AspectFit"
+                Aspect="AspectFill"
                 SemanticProperties.Description="Phisilync Logo" />
 
             <Label

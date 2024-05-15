@@ -1,12 +1,212 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cal="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar"
              x:Class="PhisilyncFinal.Tabs.CoachDashboard"
+             BackgroundColor="Black"
              Title="CoachDashboard">
-    <VerticalStackLayout>
-        <Label 
-            Text="i am a coach"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView Orientation="Vertical">
+        <VerticalStackLayout>
+
+        <Label Text="Welcome Coach (User Name)"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   FontFamily="serif"
+                   FontSize="Medium"
+                   Margin="20,0,0,0"/>
+
+            <Label Text="Athletes "
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   FontFamily="serif"
+                   Margin="20,0,0,0"/>
+
+            <ScrollView Orientation="Horizontal">
+                <HorizontalStackLayout>
+                    <Grid ColumnDefinitions="*,*,*,*,*,*"
+                          RowDefinitions="*">
+
+                        <Frame Grid.Row="0"
+                               Grid.ColumnSpan="0"
+                               HeightRequest="300"
+                               WidthRequest="200"
+                               CornerRadius="10"
+                               HorizontalOptions="Start"
+                               IsClippedToBounds="True"
+                               Padding="0"
+                               BackgroundColor="White"
+                               Margin="16,10,0,20">
+
+                            <ImageButton x:Name="DonBtn"
+                                         Source="willemse.png"
+                                         Aspect="Fill"
+                                         Clicked="ImageButton_Clicked"/>
+
+                        </Frame>
+
+                        <Frame Grid.Row="0"
+                               Grid.Column="1"
+                               HeightRequest="300"
+                               WidthRequest="200"
+                               CornerRadius="10"
+                               HorizontalOptions="Start"
+                               IsClippedToBounds="True"
+                               Padding="0"
+                               BackgroundColor="White"
+                               Margin="16,10,0,20">
+
+                            <ImageButton Source="moerat"
+                                         Aspect="AspectFill"
+                                         Clicked="ImageButton_Clicked"/>
+
+                        </Frame>
+
+                        <Frame Grid.Row="0"
+                               Grid.Column="2"
+                               HeightRequest="300"
+                               WidthRequest="200"
+                               CornerRadius="10"
+                               HorizontalOptions="Start"
+                               IsClippedToBounds="True"
+                               Padding="0"
+                               BackgroundColor="White"
+                               Margin="16,10,0,20">
+
+                            <ImageButton Source="sacha"
+                                         Aspect="AspectFill"
+                                         Clicked="ImageButton_Clicked"/>
+                        </Frame>
+
+                        <Frame Grid.Row="0"
+                               Grid.Column="3"
+                               HeightRequest="300"
+                               WidthRequest="200"
+                               CornerRadius="10"
+                               HorizontalOptions="Start"
+                               IsClippedToBounds="True"
+                               Padding="0"
+                               BackgroundColor="White"
+                               Margin="16,10,0,20">
+
+                            <ImageButton Source="libok"
+                                         Aspect="AspectFill"
+                                         Clicked="ImageButton_Clicked"/>
+                        </Frame>
+                        
+                        <Frame Grid.Row="0"
+                               Grid.Column="4"
+                               HeightRequest="300"
+                               WidthRequest="200"
+                               CornerRadius="10"
+                               HorizontalOptions="Start"
+                               IsClippedToBounds="True"
+                               Padding="0"
+                               BackgroundColor="White"
+                               Margin="16,10,0,20">
+
+                            <ImageButton Source="moos"
+                                         Aspect="AspectFill"
+                                         Clicked="ImageButton_Clicked"/>
+
+                        </Frame>
+                        
+                        <Frame Grid.Row="0"
+                               Grid.Column="5"
+                               HeightRequest="300"
+                               WidthRequest="200"
+                               CornerRadius="10"
+                               HorizontalOptions="Start"
+                               IsClippedToBounds="True"
+                               Padding="0"
+                               BackgroundColor="White"
+                               Margin="16,10,0,20">
+
+                            <ImageButton Source="gelant"
+                                         Aspect="AspectFill"
+                                         Clicked="ImageButton_Clicked"/>
+
+                        </Frame>
+                        
+                        <Frame Grid.Row="0"
+                               Grid.Column="6"
+                               HeightRequest="300"
+                               WidthRequest="200"
+                               CornerRadius="10"
+                               HorizontalOptions="Start"
+                               IsClippedToBounds="True"
+                               Padding="0"
+                               BackgroundColor="White"
+                               Margin="16,10,0,20">
+
+                            <ImageButton Source="davids"
+                                         Aspect="AspectFill"
+                                         Clicked="ImageButton_Clicked"/>
+
+                        </Frame>
+                        
+                    </Grid>
+                </HorizontalStackLayout>
+            </ScrollView>
+
+            <Button Text="Team Stats"
+                    FontAttributes="Bold"
+                    FontFamily="serif"
+                    TextColor="White"
+                    BorderColor="IndianRed"
+                    BorderWidth="2"
+                    BackgroundColor="Black"
+                    CornerRadius="100"
+                    WidthRequest="500"
+                    HeightRequest="70"
+                    Margin="50"
+                    Clicked="PopUpClicked"/>
+
+            <cal:Calendar Events="{Binding CoachEvents}"
+                          EventsScrollViewVisible="True"
+                          SelectedDayBackgroundColor="Red"
+                          CalendarLayout="Month"
+                          BackgroundColor="Black"
+                          DayViewCornerRadius="5"
+                          DeselectedDayTextColor="White"
+                          SelectedDateColor="White"
+                          ArrowsBackgroundColor="Red"
+                          ArrowsBorderColor="Black"
+                          ArrowsColor="White"
+                          DaysTitleColor="WhiteSmoke"
+                          DaysTitleWeekendColor="WhiteSmoke"
+                          DisabledDayColor="White"
+                          EventIndicatorColor="White"
+                          EventIndicatorSelectedColor="White"
+                          EventIndicatorSelectedTextColor="White"
+                          MonthLabelColor="White"
+                          OtherMonthDayColor="White"
+                          SelectedDayTextColor="White"
+                          SelectedTodayTextColor="White"
+                          TodayFillColor="IndianRed"
+                          TodayOutlineColor="IndianRed"
+                          TodayTextColor="White"
+                          WeekendDayColor="White"
+                          YearLabelColor="White"
+                          EventIndicatorTextColor="White"
+                          Margin="70"
+                          HeightRequest="500">
+
+                <cal:Calendar.EventTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Name}"
+                                   FontSize="25"
+                                   TextColor="White"
+                                   FontAttributes="Bold"/>
+
+                            <Label Text="{Binding Description}"
+                                   TextColor="White"/>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </cal:Calendar.EventTemplate>
+            </cal:Calendar>
+            
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

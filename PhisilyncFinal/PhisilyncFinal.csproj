@@ -59,28 +59,37 @@
 	  <None Remove="Resources\Images\compliant.png" />
 	  <None Remove="Resources\Images\confident.jpg" />
 	  <None Remove="Resources\Images\dashboard.png" />
+	  <None Remove="Resources\Images\davids.jpg" />
 	  <None Remove="Resources\Images\determination.avif" />
 	  <None Remove="Resources\Images\dotnet_bot.png" />
 	  <None Remove="Resources\Images\facebook.png" />
 	  <None Remove="Resources\Images\flexi.avif" />
 	  <None Remove="Resources\Images\freedom.jpg" />
+	  <None Remove="Resources\Images\gelant.jpg" />
 	  <None Remove="Resources\Images\googleb.jpg" />
+	  <None Remove="Resources\Images\greyg.jpg" />
 	  <None Remove="Resources\Images\info.png" />
 	  <None Remove="Resources\Images\insta.png" />
+	  <None Remove="Resources\Images\libok.jpg" />
 	  <None Remove="Resources\Images\linkedin.png" />
+	  <None Remove="Resources\Images\moerat.jpg" />
+	  <None Remove="Resources\Images\moos.jpg" />
 	  <None Remove="Resources\Images\phisilync_nobg.png" />
 	  <None Remove="Resources\Images\proud.jpg" />
 	  <None Remove="Resources\Images\qa.png" />
+	  <None Remove="Resources\Images\sacha.jpg" />
 	  <None Remove="Resources\Images\strength.jpg" />
 	  <None Remove="Resources\Images\tac.png" />
 	  <None Remove="Resources\Images\tiktok.png" />
 	  <None Remove="Resources\Images\treatment.jpg" />
 	  <None Remove="Resources\Images\twitter.png" />
 	  <None Remove="Resources\Images\twitter_bird.png" />
+	  <None Remove="Resources\Images\willemse.png" />
 	  <None Remove="Resources\Images\workout.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui" Version="9.0.0" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.20" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.20" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
@@ -132,6 +141,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Tabs\TACPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Tabs\TeamStatsPopUp.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Tabs\TellUsPage.xaml">

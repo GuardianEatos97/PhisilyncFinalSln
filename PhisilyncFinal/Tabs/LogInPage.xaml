@@ -2,14 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhisilyncFinal.Tabs.LogInPage"
-             BackgroundColor="Black"
-             Title="LogInPage">
+             BackgroundColor="Black">
     <VerticalStackLayout>
         <Image
             Source="phisilync_nobg.png"
             HeightRequest="210"
             WidthRequest="400"
-            Aspect="AspectFit"
+            Aspect="AspectFill"
             SemanticProperties.Description="Phisilync Logo" />
         
         <Entry

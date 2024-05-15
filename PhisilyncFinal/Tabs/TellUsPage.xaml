@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             BackgroundColor="Black" 
+             BackgroundColor="#2D2E2D" 
              x:Class="PhisilyncFinal.Tabs.TellUsPage">
 
     <VerticalStackLayout>
@@ -9,7 +9,7 @@
             Source="phisilync_nobg.png"
             HeightRequest="210"
             WidthRequest="400"
-            Aspect="AspectFit"
+            Aspect="AspectFill"
             Margin="0"
             SemanticProperties.Description="Phisilync Logo" />
 
@@ -41,8 +41,8 @@
             Text="I Am An Athlete"
             FontAttributes="Bold"
             TextColor="White"
-            BorderColor="White"
-            BackgroundColor="Red"
+            BorderColor="Black"
+            BackgroundColor="#E21C21"
             Clicked="Button_Clicked"
             BorderWidth="1"
             CornerRadius="100"
@@ -55,9 +55,9 @@
             FontAttributes="Bold"
             CornerRadius="100"
             TextColor="White"
-            BorderColor="White"
+            BorderColor="Black"
             BorderWidth="1"
-            BackgroundColor="Red"
+            BackgroundColor="#E21C21"
             Clicked="Button_Clicked_3"
             WidthRequest="500"
             HeightRequest="70"
@@ -68,8 +68,8 @@
             FontAttributes="Bold"
             TextColor="White"
             CornerRadius="100"
-            BackgroundColor="Red"
-            BorderColor="White"
+            BackgroundColor="#E21C21"
+            BorderColor="Black" 
             BorderWidth="1"
             Clicked="Button_Clicked_1"
             WidthRequest="500"
@@ -96,7 +96,7 @@
             Text="Already Have An Account?"
             TextColor="White"
             WidthRequest="300"
-            BackgroundColor="Black"
+            BackgroundColor="#2D2E2D"
             Clicked="Button_Clicked_2"
             FontSize="Body" 
             CornerRadius="100"
