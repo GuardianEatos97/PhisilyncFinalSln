@@ -77,6 +77,11 @@
 	  <None Remove="Resources\Images\twitter.png" />
 	  <None Remove="Resources\Images\twitter_bird.png" />
 	  <None Remove="Resources\Images\workout.jpg" />
+	  <None Remove="Services\AppDataDB.db" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Services\AppDataDB.db" />
 	</ItemGroup>
 
 	<ItemGroup>

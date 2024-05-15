@@ -19,7 +19,7 @@ namespace PhisilyncFinal.Services
 
         public string GetDataBasePath()
         {
-            string filename = "LocalDb.db";
+            string filename = "AppDataDB.db";
             string pathToDb = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
             return pathToDb + filename;
         }
