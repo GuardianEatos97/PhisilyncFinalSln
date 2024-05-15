@@ -17,22 +17,24 @@ namespace PhisilyncFinal.Models
 
         public string userName { get; set; }
         public string userSurname { get; set; }
-        public string userGender { get; set; }
         public string userEmail { get; set; }
-        public string userPhoneNumber { get; set; }
-        public DateTime userDateOfBirth { get; set; }
+        public string userGender { get; set; }
         public string userPassword { get; set; }
+        public string userPhoneNumber { get; set; }
+        public int userTreatment { get; set; }
 
-        [OneToMany(CascadeOperations = CascadeOperation.All)]
+        /*[OneToMany(CascadeOperations = CascadeOperation.All)]
         public List<Sport>? userSports { get; set; }
 
         public User() { userSports = new(); }
+        
+        public DateTime userDateOfBirth { get; set; }
 
         [ForeignKey(typeof(UserType))]
         public int userType { get; set; }
 
         [ForeignKey(typeof(Club))]
-        public int userClub { get; set; }
+        public int userClub { get; set; }*/
 
     }
 }
