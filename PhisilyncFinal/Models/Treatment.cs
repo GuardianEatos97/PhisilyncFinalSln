@@ -16,7 +16,7 @@ namespace PhisilyncFinal.Models
         public string treatmentName { get; set; }
         public string treatmentDescription { get; set; }
 
-        [ForeignKey(typeof(TreatmentType))]
+        /*[ForeignKey(typeof(TreatmentType))]
         public int treatmentType { get; set; }
 
         [OneToMany(CascadeOperations = CascadeOperation.All)]
@@ -25,7 +25,7 @@ namespace PhisilyncFinal.Models
         public Treatment() { treatmentInjury = new(); }
 
         [ForeignKey(typeof(Provider))]
-        public int treatmentServiceProvider { get; set; }
+        public int treatmentServiceProvider { get; set; }*/
 
 
     }

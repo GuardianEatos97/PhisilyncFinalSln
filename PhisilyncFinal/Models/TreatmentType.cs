@@ -1,4 +1,4 @@
-﻿using SQLite;
+﻿/*using SQLite;
 using SQLiteNetExtensions.Attributes;
 
 namespace PhisilyncFinal.Models
@@ -12,4 +12,4 @@ namespace PhisilyncFinal.Models
         public string treatmentTypeDescription { get; set; }
 
     }
-}
+}*/

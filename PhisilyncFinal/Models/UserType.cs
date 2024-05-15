@@ -1,4 +1,4 @@
-﻿using SQLite;
+﻿/*using SQLite;
 using SQLiteNetExtensions.Attributes;
 
 namespace PhisilyncFinal.Models
@@ -31,4 +31,4 @@ namespace PhisilyncFinal.Models
         public int userTreatmentDashboard { get; set; }
 
     }
-}
+}*/
