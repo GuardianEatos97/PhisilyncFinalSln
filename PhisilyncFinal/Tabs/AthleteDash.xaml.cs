@@ -1,7 +1,7 @@
 using Plugin.Maui.Calendar.Models;
-using TechnoTitansFinal.Models;
+using PhisilyncFinal.Models;
 
-namespace TechnoTitansFinal.Tabs;
+namespace PhisilyncFinal.Tabs;
 
 public partial class AthleteDash : ContentPage
 {

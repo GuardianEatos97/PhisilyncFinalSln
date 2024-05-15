@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:cal="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar"
-             x:Class="TechnoTitansFinal.AthleteDash"
+             x:Class="PhisilyncFinal.Tabs.AthleteDash"
              BackgroundColor="Black"
              Title="AthleteDashboard">
     <ScrollView Orientation="Vertical">
@@ -72,7 +72,7 @@
                             <ImageButton 
                                 Source="proud" 
                                 Aspect="AspectFill"
-                                Clicked="ImageButton_Clicked"/>
+                                  />
                         </Frame>
 
                         <Frame 
@@ -91,7 +91,7 @@
                             <ImageButton 
                                 Source="strength" 
                                 Aspect="AspectFill"
-                                Clicked="ImageButton_Clicked"/>
+                               />
                         </Frame>
 
                         <Frame 
@@ -110,7 +110,7 @@
                             <ImageButton 
                                 Source="flexi" 
                                 Aspect="AspectFill"
-                                Clicked="ImageButton_Clicked"/>
+                               />
                         </Frame>
 
                         <Frame 
@@ -129,7 +129,7 @@
                             <ImageButton 
                                 Source="Freedom" 
                                 Aspect="AspectFill"
-                                Clicked="ImageButton_Clicked"/>
+                                />
                         </Frame>
 
                         <Frame 
@@ -148,7 +148,7 @@
                             <ImageButton 
                                 Source="Determination" 
                                 Aspect="AspectFill"
-                                Clicked="ImageButton_Clicked"/>
+                                />
                         </Frame>
                     </Grid>
                 </HorizontalStackLayout>

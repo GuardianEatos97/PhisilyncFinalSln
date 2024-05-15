@@ -1,6 +1,6 @@
 ﻿using SQLite;
 
-namespace TechnoTitansFinal.Models
+namespace PhisilyncFinal.Models
 {
     public class Sport
     {

@@ -1,7 +1,7 @@
 ﻿using SQLite;
 using SQLiteNetExtensions.Attributes;
 
-namespace TechnoTitansFinal.Models
+namespace PhisilyncFinal.Models
 {
     public class TreatmentType
     {
