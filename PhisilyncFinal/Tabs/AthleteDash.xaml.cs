@@ -1,7 +1,7 @@
 using Plugin.Maui.Calendar.Models;
-using TechnoTitansFinal.Models;
 
-namespace TechnoTitansFinal.Tabs;
+
+namespace PhisilyncFinal.Tabs;
 
 public partial class AthleteDash : ContentPage
 {
@@ -44,10 +44,9 @@ public partial class AthleteDash : ContentPage
         public string Description { get; set; }
     }
 
-    private void ConBtn_Clicked(object sender, EventArgs e)
+    private async void ImageButton_Clicked(object sender, EventArgs e)
     {
-        //await Shell.Current.GoToAsync("TreatmentPage");
-        Navigation.PushAsync(new TreatmentPage());
+        await Shell.Current.GoToAsync("TreatmentPage");
     }
 
 

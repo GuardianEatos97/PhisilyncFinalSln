@@ -6,7 +6,7 @@ using System.Text;
 using SQLiteNetExtensions.Attributes;
 using System.Threading.Tasks;
 
-namespace TechnoTitansFinal.Models
+namespace PhisilyncFinal.Models
 {
     public class Provider
     {

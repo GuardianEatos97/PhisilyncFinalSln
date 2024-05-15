@@ -2,14 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              BackgroundColor="Black"
-             x:Class="TechnoTitansFinal.Tabs.SignUpPageCoach">
+             x:Class="PhisilyncFinal.Tabs.SignUpPageCoach">
 
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
             <Image
-                Source="phisilync.png"
+                Source="phisilync_nobg.png"
                 HeightRequest="210"
                 WidthRequest="400"
                 Aspect="AspectFit"
@@ -83,7 +83,7 @@
                     Margin="0,10,15,0"/>
 
                 <Image
-                    Source="facebook1"
+                    Source="facebook"
                     Aspect="AspectFit"
                     HeightRequest="50"
                     HorizontalOptions="Center" />

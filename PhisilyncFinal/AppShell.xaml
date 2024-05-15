@@ -3,13 +3,20 @@
     x:Class="PhisilyncFinal.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:PhisilyncFinal"
+    xmlns:local="clr-namespace:PhisilyncFinal.Tabs"
     Shell.FlyoutBehavior="Disabled"
+    BackgroundColor="Black"
     Title="PhisilyncFinal">
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        ContentTemplate="{DataTemplate local:TellUsPage}"
+        Route="TellUsPage" />
 
 </Shell>
+
+
+
+
+
+

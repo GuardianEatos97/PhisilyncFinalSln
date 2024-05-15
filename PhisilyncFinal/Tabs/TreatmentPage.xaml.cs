@@ -1,4 +1,4 @@
-namespace TechnoTitansFinal.Tabs;
+namespace PhisilyncFinal;
 
 public partial class TreatmentPage : ContentPage
 {

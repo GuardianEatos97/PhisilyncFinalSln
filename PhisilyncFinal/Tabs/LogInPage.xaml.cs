@@ -2,7 +2,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
 
-namespace TechnoTitansFinal.Tabs;
+namespace PhisilyncFinal.Tabs;
 
 public partial class LogInPage : ContentPage
 {

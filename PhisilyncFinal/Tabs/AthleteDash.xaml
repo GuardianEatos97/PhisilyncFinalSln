@@ -2,13 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:cal="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar"
-             x:Class="TechnoTitansFinal.AthleteDash"
+             x:Class="PhisilyncFinal.Tabs.AthleteDash"
              BackgroundColor="Black"
              Title="AthleteDashboard">
     <ScrollView Orientation="Vertical">
         <VerticalStackLayout>
             <Image 
-                Source="phisilync.png"
+                Source="phisilync_nobg.png"
                 Aspect="AspectFill"
                 HeightRequest="110"
                 WidthRequest="500"/>
@@ -52,7 +52,7 @@
                                 x:Name="ConBtn"
                                 Source="confident.jpg" 
                                 Aspect="Fill"
-                                Clicked="ConBtn_Clicked"/>
+                                Clicked="ImageButton_Clicked"/>
 
                         </Frame>
 
@@ -127,7 +127,7 @@
                             Margin="16,10,0,20">
 
                             <ImageButton 
-                                Source="Freedom" 
+                                Source="freedom" 
                                 Aspect="AspectFill"
                                 Clicked="ImageButton_Clicked"/>
                         </Frame>
@@ -146,7 +146,7 @@
                             Margin="16,10,0,20">
 
                             <ImageButton 
-                                Source="Determination" 
+                                Source="determination" 
                                 Aspect="AspectFill"
                                 Clicked="ImageButton_Clicked"/>
                         </Frame>

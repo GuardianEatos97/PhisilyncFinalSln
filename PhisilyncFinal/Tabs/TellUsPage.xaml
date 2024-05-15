@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              BackgroundColor="Black" 
-             x:Class="TechnoTitansFinal.Tabs.TellUsPage">
+             x:Class="PhisilyncFinal.Tabs.TellUsPage">
 
     <VerticalStackLayout>
         <Image
-            Source="phisilync.png"
+            Source="phisilync_nobg.png"
             HeightRequest="210"
             WidthRequest="400"
             Aspect="AspectFit"
