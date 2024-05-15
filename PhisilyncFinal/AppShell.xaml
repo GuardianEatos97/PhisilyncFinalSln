@@ -54,13 +54,10 @@
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent  Icon="dashboard.png"
         Style="{StaticResource BaseStyle}"
-<<<<<<< Updated upstream
-ContentTemplate="{DataTemplate local:TellUsPage}"
-Route="TellUsPage" />
-=======
+
 ContentTemplate="{DataTemplate local:CoachDashboard}"
 Route="Injuries" />
->>>>>>> Stashed changes
+
 
         <ShellContent
 Title="Privacy Policy"
