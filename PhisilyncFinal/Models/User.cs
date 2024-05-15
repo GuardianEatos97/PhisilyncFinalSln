@@ -21,6 +21,8 @@ namespace PhisilyncFinal.Models
         public string userGender { get; set; }
         public string userPassword { get; set; }
         public string userPhoneNumber { get; set; }
+
+        [ForeignKey(typeof(Treatment))]
         public int userTreatment { get; set; } //foreign key
 
         /*[OneToMany(CascadeOperations = CascadeOperation.All)]
