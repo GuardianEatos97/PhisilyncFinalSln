@@ -16,11 +16,12 @@ namespace PhisilyncFinal.Models
         public string providerInjuryName { get; set; }
         public string providerInjuryDescription { get; set; }
 
-        [ForeignKey(typeof(BodyPart))]
-        public int providerInjuryBodyPart { get; set; }
+        //[ForeignKey(typeof(BodyPart))]
+        public string providerInjuryBodyPart { get; set; }
 
         [ForeignKey(typeof(Provider))]
         public int providerInjuryServiceProvider { get; set; }
+        public string injurySport { get; set; }
 
     }
 }

@@ -12,7 +12,8 @@ namespace PhisilyncFinal.Models
         public int treatmentInjury { get; set; }
         public string treatmentActionStepAction { get; set; }
         public int treatmentActionStepOrder { get; set; }
-        public int treatmentActionTreatment { get; set; }
+        public int treatmentActionTreatment { get; set; } //foreign key
+
         /*[ForeignKey(typeof(ProviderInjury))]
         public string treatmentActionProviderInjury { get; set; }
 

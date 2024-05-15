@@ -15,6 +15,7 @@ namespace PhisilyncFinal.Models
         public int treatmentID { get; set; }
         public string treatmentName { get; set; }
         public string treatmentDescription { get; set; }
+        public int treatmentInjury { get; set; } //foreign key
 
         /*[ForeignKey(typeof(TreatmentType))]
         public int treatmentType { get; set; }
