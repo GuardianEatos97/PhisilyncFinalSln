@@ -65,6 +65,7 @@
 	  <None Remove="Resources\Images\flexi.avif" />
 	  <None Remove="Resources\Images\freedom.jpg" />
 	  <None Remove="Resources\Images\googleb.jpg" />
+	  <None Remove="Resources\Images\greyg.jpg" />
 	  <None Remove="Resources\Images\info.png" />
 	  <None Remove="Resources\Images\insta.png" />
 	  <None Remove="Resources\Images\linkedin.png" />
