@@ -10,6 +10,7 @@ public partial class AthleteDash : ContentPage
     {
         InitializeComponent();
         Routing.RegisterRoute("TreatmentPage", typeof(TreatmentPage));
+        Routing.RegisterRoute("InjuryPage", typeof(InjuryPage));
 
         Events = new EventCollection
         {
@@ -49,5 +50,8 @@ public partial class AthleteDash : ContentPage
         await Shell.Current.GoToAsync("TreatmentPage");
     }
 
-
+    private async void Button_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("InjuryPage");
+    }
 }

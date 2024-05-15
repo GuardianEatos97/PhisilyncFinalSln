@@ -47,6 +47,7 @@
             BorderWidth="1"
             CornerRadius="100"
             WidthRequest="500"
+            VerticalOptions="CenterAndExpand"
             HeightRequest="70"
             Margin="10"/>
 
@@ -57,6 +58,7 @@
             TextColor="White"
             BorderColor="Black"
             BorderWidth="1"
+            VerticalOptions="CenterAndExpand"
             BackgroundColor="#E21C21"
             Clicked="Button_Clicked_3"
             WidthRequest="500"
@@ -70,6 +72,7 @@
             CornerRadius="100"
             BackgroundColor="#E21C21"
             BorderColor="Black" 
+            VerticalOptions="CenterAndExpand"
             BorderWidth="1"
             Clicked="Button_Clicked_1"
             WidthRequest="500"
