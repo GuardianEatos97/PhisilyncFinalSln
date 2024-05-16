@@ -7,14 +7,14 @@
     
     <Shell.TitleView Margin="0">
         <Image 
-        Source="phisilync_nobg.png"
+        Source="phisilyncgreen"
         Aspect="Center"/>
     </Shell.TitleView>
 
     <VerticalStackLayout>
         <toolkit:AvatarView
             Text="Noah"
-            BorderColor="#E21C21"
+            BorderColor="SeaGreen"
             TextColor="Black"
             ImageSource="gelant.jpg"
             HorizontalOptions="End"

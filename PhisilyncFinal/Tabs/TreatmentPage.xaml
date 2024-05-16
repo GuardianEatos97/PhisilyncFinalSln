@@ -8,7 +8,7 @@
     <ScrollView>
     <VerticalStackLayout>
             <Image 
-                Source="phisilync_nobg.png"
+                Source="phisilyncgreen"
                 Aspect="AspectFill"
                 HeightRequest="110"
                 WidthRequest="500"/>
@@ -52,7 +52,7 @@
                  
             HorizontalOptions="CenterAndExpand"
             FontSize="Medium"
-            BackgroundColor="Red"
+            BackgroundColor="SeaGreen"
             Clicked="MassageBtn_Clicked"/>
 
             <Label
@@ -71,7 +71,7 @@
                 FontSize="Medium"
                  
                 Margin="20"
-                BackgroundColor="Red"
+                BackgroundColor="SeaGreen"
                 Clicked="TapingBtn_Clicked"/>
             <Button
                 x:Name="StretchBtn"
@@ -80,7 +80,7 @@
                 FontSize="Medium"
                  
                 Margin="20"
-                BackgroundColor="Red"
+                BackgroundColor="SeaGreen"
                 Clicked="StretchBtn_Clicked"/>
             <Button
                 x:Name="RomBtn"
@@ -89,7 +89,7 @@
                 FontSize="Medium"
                  
                 Margin="20"
-                BackgroundColor="Red"
+                BackgroundColor="SeaGreen"
                 Clicked="RomBtn_Clicked"/>
         </VerticalStackLayout>
     </ScrollView>

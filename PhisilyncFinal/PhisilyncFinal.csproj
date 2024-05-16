@@ -69,6 +69,7 @@
 	  <None Remove="Resources\Images\freedom.jpg" />
 	  <None Remove="Resources\Images\gelant.jpg" />
 	  <None Remove="Resources\Images\googleb.jpg" />
+	  <None Remove="Resources\Images\greenback.jpg" />
 	  <None Remove="Resources\Images\greyg.jpg" />
 	  <None Remove="Resources\Images\info.png" />
 	  <None Remove="Resources\Images\insta.png" />
@@ -78,7 +79,12 @@
 	  <None Remove="Resources\Images\linkedin.png" />
 	  <None Remove="Resources\Images\moerat.jpg" />
 	  <None Remove="Resources\Images\moos.jpg" />
+	  <None Remove="Resources\Images\phisilyncappshell.png" />
+	  <None Remove="Resources\Images\phisilyncfinal.png" />
+	  <None Remove="Resources\Images\phisilyncgreen.png" />
+	  <None Remove="Resources\Images\phisilyncgreenback.png" />
 	  <None Remove="Resources\Images\phisilync_nobg.png" />
+	  <None Remove="Resources\Images\profileimage.webp" />
 	  <None Remove="Resources\Images\proud.jpg" />
 	  <None Remove="Resources\Images\qa.png" />
 	  <None Remove="Resources\Images\sacha.jpg" />
@@ -127,6 +133,9 @@
 	  <MauiXaml Update="Tabs\CoachDashboard.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Tabs\EditProfile.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Tabs\FAQs.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -140,6 +149,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Tabs\PrivacyPolicy.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Tabs\ProfileDetails.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Tabs\ServiceProviderDashboard.xaml">

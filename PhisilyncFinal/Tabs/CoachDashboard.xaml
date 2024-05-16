@@ -7,6 +7,12 @@
              Title="CoachDashboard">
     <ScrollView Orientation="Vertical">
         <VerticalStackLayout>
+            <Image
+                Source="phisilyncgreen.png"
+                HeightRequest="210"
+                WidthRequest="400"
+                Aspect="AspectFill"
+                SemanticProperties.Description="Phisilync Logo" />
 
         <Label Text="Welcome Coach (User Name)"
                    TextColor="White"
@@ -153,7 +159,7 @@
                     FontAttributes="Bold"
                      
                     TextColor="White"
-                    BorderColor="IndianRed"
+                    BorderColor="SeaGreen"
                     BorderWidth="2"
                     BackgroundColor="Black"
                     CornerRadius="100"
@@ -164,13 +170,13 @@
 
             <cal:Calendar Events="{Binding CoachEvents}"
                           EventsScrollViewVisible="True"
-                          SelectedDayBackgroundColor="Red"
+                          SelectedDayBackgroundColor="SeaGreen"
                           CalendarLayout="Month"
                           BackgroundColor="Black"
                           DayViewCornerRadius="5"
                           DeselectedDayTextColor="White"
                           SelectedDateColor="White"
-                          ArrowsBackgroundColor="Red"
+                          ArrowsBackgroundColor="SeaGreen"
                           ArrowsBorderColor="Black"
                           ArrowsColor="White"
                           DaysTitleColor="WhiteSmoke"
@@ -183,8 +189,8 @@
                           OtherMonthDayColor="White"
                           SelectedDayTextColor="White"
                           SelectedTodayTextColor="White"
-                          TodayFillColor="IndianRed"
-                          TodayOutlineColor="IndianRed"
+                          TodayFillColor="MediumSeaGreen"
+                          TodayOutlineColor="SeaGreen"
                           TodayTextColor="White"
                           WeekendDayColor="White"
                           YearLabelColor="White"

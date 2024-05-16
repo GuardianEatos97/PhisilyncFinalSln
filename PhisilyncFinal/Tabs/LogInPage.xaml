@@ -6,7 +6,7 @@
     <ScrollView Orientation="Vertical">
         <VerticalStackLayout>
             <Image
-            Source="phisilync_nobg.png"
+            Source="phisilyncgreen.png"
             HeightRequest="210"
             WidthRequest="400"
             Aspect="AspectFill"
@@ -34,7 +34,7 @@
             <Button
              Text="Log In"
              TextColor="White"
-             BackgroundColor="Red"
+             BackgroundColor="SeaGreen"
              WidthRequest="500"
              Margin="15"/>
 
