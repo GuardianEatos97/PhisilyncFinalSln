@@ -17,7 +17,7 @@
             <Label Text="Welcome (Service Provider Name)"
                    TextColor="White"
                    FontAttributes="Bold"
-                   FontFamily="serif"
+                    
                    FontSize="Medium"
                    Margin="20,70,0,10"/>
 
@@ -25,7 +25,7 @@
                    TextColor="White"
                    FontAttributes="Bold"
                    FontSize="20"
-                   FontFamily="serif"
+                    
                    Margin="0,40,0,0"
                    HorizontalTextAlignment="Center"/>
 

@@ -13,7 +13,7 @@
                 FontAttributes="Bold"
                 FontSize="30"
                 TextColor="White"
-                FontFamily="serif"
+                 
                 HorizontalTextAlignment="Center"/>
 
 
@@ -26,22 +26,22 @@
                 <Label Text="Total number of Players:"
                        FontSize="15"
                        FontAttributes="Bold"
-                       FontFamily="serif"/>
+                        />
                 
                 <Label Text="No. of Players with Injuries:"
                        FontSize="15"
                        FontAttributes="Bold"
-                       FontFamily="serif"/>
+                        />
                 
                 <Label Text="No. of Players Rehabiltating:"
                        FontSize="15"
                        FontAttributes="Bold"
-                       FontFamily="serif"/>
+                        />
                 
                 <Label Text="No. of Players Returning to Play:"
                        FontSize="15"
                        FontAttributes="Bold"
-                       FontFamily="serif"/>
+                        />
 
             </VerticalStackLayout>
             

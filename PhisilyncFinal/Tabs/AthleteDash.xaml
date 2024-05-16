@@ -37,7 +37,7 @@
                 Text="Welcome (Your Name)"
                 TextColor="White"
                 FontAttributes="Bold"
-                FontFamily="serif"
+                 
                 FontSize="Medium"
                 Margin="20,70,0,10"/>
 
@@ -46,7 +46,7 @@
                 TextColor="White"
                 FontAttributes="Bold"
                 FontSize="Large"
-                FontFamily="serif"
+                 
                 Margin="20,0,0,0"/>
 
             <ScrollView Orientation="Horizontal">
@@ -177,7 +177,7 @@
             <Button
                 Text="Test Your Boundries"
                 FontAttributes="Bold"
-                FontFamily="serif"
+                 
                 TextColor="White"
                 BorderColor="IndianRed"
                 BorderWidth="2"

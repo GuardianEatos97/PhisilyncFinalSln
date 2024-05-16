@@ -11,7 +11,7 @@
         <Label Text="Welcome Coach (User Name)"
                    TextColor="White"
                    FontAttributes="Bold"
-                   FontFamily="serif"
+                    
                    FontSize="Medium"
                    Margin="20,0,0,0"/>
 
@@ -19,7 +19,7 @@
                    TextColor="White"
                    FontAttributes="Bold"
                    FontSize="Large"
-                   FontFamily="serif"
+                    
                    Margin="20,0,0,0"/>
 
             <ScrollView Orientation="Horizontal">
@@ -151,7 +151,7 @@
 
             <Button Text="Team Stats"
                     FontAttributes="Bold"
-                    FontFamily="serif"
+                     
                     TextColor="White"
                     BorderColor="IndianRed"
                     BorderWidth="2"

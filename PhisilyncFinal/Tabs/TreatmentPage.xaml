@@ -32,7 +32,7 @@
                 VerticalOptions="Center" 
                 TextColor="White"
                 HorizontalOptions="Center"
-                FontFamily="serif"
+                 
                 FontAttributes="Bold"
                 Margin="40"     
                 FontSize="Large"/>
@@ -42,14 +42,14 @@
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand"
                 FontSize="Medium"
-                FontFamily="serif"
+                 
                 BackgroundColor="Red"
                 Margin="40"
                 Clicked="LynoBtn_Clicked"/>
             <Button
             x:Name="MassageBtn"
             Text="Massage Therapy"
-                FontFamily="serif"
+                 
             HorizontalOptions="CenterAndExpand"
             FontSize="Medium"
             BackgroundColor="Red"
@@ -60,7 +60,7 @@
                 VerticalOptions="Center" 
                 HorizontalOptions="Center"
                 TextColor="White"
-                FontFamily="serif"
+                 
                 FontAttributes="Bold"
                 Margin="50"     
                 FontSize="Large"/>
@@ -69,7 +69,7 @@
                 Text="                  Taping                  "
                 HorizontalOptions="CenterAndExpand"
                 FontSize="Medium"
-                FontFamily="serif"
+                 
                 Margin="20"
                 BackgroundColor="Red"
                 Clicked="TapingBtn_Clicked"/>
@@ -78,7 +78,7 @@
                 Text="    Stretching And Exercise    "
                 HorizontalOptions="CenterAndExpand"
                 FontSize="Medium"
-                FontFamily="serif"
+                 
                 Margin="20"
                 BackgroundColor="Red"
                 Clicked="StretchBtn_Clicked"/>
@@ -87,7 +87,7 @@
                 Text="Range Of Movement Therapy"
                 HorizontalOptions="CenterAndExpand"
                 FontSize="Medium"
-                FontFamily="serif"
+                 
                 Margin="20"
                 BackgroundColor="Red"
                 Clicked="RomBtn_Clicked"/>

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhisilyncFinal.Tabs.TACPage"
-             BackgroundColor="#2D2E2D">
+             BackgroundImageSource="greenback.jpg">
 
     <Shell.TitleView Margin="0">
         <Image 
@@ -15,7 +15,6 @@
             <Label 
             Text="Terms And Conditions"
             FontSize="Medium"
-                FontFamily="Serif"
             FontAttributes="Bold"
             TextDecorations="Underline"
             Margin="0,10"
@@ -23,41 +22,40 @@
                 TextColor="White"/>
             <Label
                 Text="Last Revised, May 2024"
-                FontSize="Small"
-                FontFamily="Serif"
+                 FontSize="Medium"
                 Margin="0,10"
                 VerticalOptions="StartAndExpand"
                 HorizontalOptions="StartAndExpand"
                 TextColor="White"/>
             <Label
             Text="These terms and conditions ('Terms of Use') apply to your use of Phisilyncs ('Phisilync, we, us, and our') online interfaces and properties. The term 'Site' refers to both our website and mobile application. The terms 'you' and 'your' refer to you, any dependents you may have, and anyone else who has access to your Phisilync Account."
-            FontSize="Micro"
+            FontSize="Small"
             FontAttributes="Bold"
-                FontFamily="Serif"
+                 
                 TextColor="White"
             Margin="0,5"
             HorizontalOptions="Start"/>
             <Label
             Text="Your use of the Site and Services is conditional on your acceptance and compliance with these Terms of Use. By clicking 'I Agree,' you confirm that you have read, understood, and agreed to all of the terms and conditions outlined in these Terms of Use and our Privacy Policy. If you do not agree to be governed by these terms, you are not authorized to access or use this Site or Services; please exit immediately."
-            FontSize="Micro"
-                FontFamily="Serif"
+            FontSize="Small"
+                 
                 TextColor="White"
             FontAttributes="Bold"
             Margin="0,5"
             HorizontalOptions="Start"/>
             <Label
             Text="1. Privacy Practices"
-            FontSize="Small"
+             FontSize="Medium"
             FontAttributes="Bold"
             TextDecorations="Underline"
             Margin="0,10"
-                FontFamily="Serif"
+                 
             HorizontalOptions="Start"
             TextColor="White" />
 
             <Label
-                FontSize="Micro"
-                FontFamily="Serif"
+                FontSize="Small"
+                 
                 VerticalOptions="StartAndExpand"
                 HorizontalOptions="StartAndExpand"
                 TextColor="White"
@@ -65,317 +63,317 @@
                 />
             <Label
     Text="2. Services Provided"
-    FontSize="Small"
+     FontSize="Medium"
                 TextColor="White"
-                FontFamily="Serif"
+                 
     FontAttributes="Bold"
     TextDecorations="Underline"
     Margin="0,10"
     HorizontalOptions="Start"/>
             <Label
-    FontSize="Micro"
+    FontSize="Small"
     VerticalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
     HorizontalOptions="StartAndExpand"
                 TextColor="White"
     Text="The Site and Services' content, including but not limited to text, copy, audio, video, photographs, illustrations, graphics, electronic communications (as defined in Section 5) and other visuals, is for informational purposes only and does not constitute Phisilync's professional medical advice, diagnosis, treatment, or recommendations. Phisilync offers movement therapy material and instructional videos for general educational purposes exclusively. You should always seek the opinion of a skilled healthcare expert if you have any questions or concerns about your specific needs or medical conditions. All information provided by Phisilync or in connection with Phisilync-supported communications is meant solely for general information purposes."
     />
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
                 TextColor="White"
 Text="Your interactions with the Site are not meant to replace your relationship with your regular health care providers or primary care physician. Neither Phisilync, nor any of its subsidiaries or affiliates, nor any third party who may promote the Site or Service or offer a link to the Service, shall be liable for any information or advice acquired from the Site or Service, or any information obtained through the Site. Phisilync makes no recommendations or endorsements for specific testing, physicians, drugs, goods, or treatments. You agree that your reliance on any information obtained from the Site or Service is entirely at your own risk, and you accept full responsibility for all risks associated with it."
 />
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
                 TextColor="White"
 HorizontalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
 Text="You should seek emergency assistance or follow-up care if a physician or qualified healthcare provider recommends it, or if otherwise indicated. You should continue to communicate with your primary care physician and other healthcare providers as suggested. Always seek the counsel of a physician or other qualified healthcare provider if you have any questions about a medical condition, and before discontinuing, beginning, or changing any treatment or change."
 />
             <Label
 Text="3. Availability Of Services"
-                FontFamily="Serif"
-FontSize="Small"
+                 
+ FontSize="Medium"
 FontAttributes="Bold"
                 TextColor="White"
 TextDecorations="Underline"
 Margin="0,10"
 HorizontalOptions="Start"/>
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
                 TextColor="White"
 Text="You represent that you are not forbidden from registering in or receiving the Services under the jurisdiction of the Constitutional Court or any other legislative authority within the Republic of South Africa, or any other applicable jurisdictions in which you may reside. Accessing the Site or Services from areas where the material is illegal or where we do not provide services is prohibited."
 />
             <Label
 Text="4. Eligibility; SIte Access, Securtiy And Restrictions; Passwords"
-FontSize="Small"
-                FontFamily="Serif"
+ FontSize="Medium"
+                 
 FontAttributes="Bold"
                 TextColor="White"
 TextDecorations="Underline"
 Margin="0,10"
 HorizontalOptions="Start"/>
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
                 TextColor="White"
 Text="It is forbidden for you to breach or attempt to breach the security of the Site. This includes, but is not limited to: (a) gaining access to data that is not meant for you or logging on to a server or account that you are not authorized to access; (b) trying to probe, scan, or test the vulnerability of a system or network or to circumvent security or authentication measures without the necessary authorization; or (c) accessing or using the Site or any part of it without permission, in violation of these Terms of Use or the applicable law."
 />
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
                 TextColor="White"
 HorizontalOptions="StartAndExpand"
 Text="You are not permitted to deeplink to any feature or material on the Site, use any form of scraper, crawler, spider, robot, or other automated methods to access or copy data on the Site, get around our robot exclusion headers, or take advantage of any other security measures we may employ to limit or stop access to the Site. System or network security violations may subject one to legal or criminal consequences. Phisilync may look into incidents that might involve these kinds of infractions. It may also involve law enforcement in the prosecution of users who may have engaged in these kinds of offenses. By using this site, you consent to not interfering or attempting to interfere with its normal operation or any activity taking place on it through the use of any equipment, software, or routine."
 />
             <Label
 Text="5. Electronic Communications"
-FontSize="Small"
-                FontFamily="Serif"
+ FontSize="Medium"
+                 
 FontAttributes="Bold"
                 TextColor="White"
 TextDecorations="Underline"
 Margin="0,10"
 HorizontalOptions="Start"/>
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
                 TextColor="White"
 Text="You are corresponding with us electronically when you use the Site or Services, or when you send us emails, messages, text messages, and other correspondence from your desktop or mobile device. You agree to receive electronic communications from us. You acknowledge that: (a) consents and agreements may be signed electronically; and (b) you are responsible for any applicable data rates. (c) Any legal requirement that these notices and other communications be in writing is satisfied by all disclosures, notices, and other communications that we send to you electronically. To confirm the details on your account, we could get in touch with you. To make sure you haven't created your Account fraudulently, we may ask for more information from you, and you agree to provide it. We retain the right to suspend, terminate, or prevent your access to and use of the Site and the Services until you give us the information we have requested if you do not submit this information in the manner required within 14 days of the request."
 />
             <Label
 Text="6. Ownership Of The Site And Related Materials; Additional Restrictions"
-FontSize="Small"
+ FontSize="Medium"
                 TextColor="White"
 FontAttributes="Bold"
 TextDecorations="Underline"
-                FontFamily="Serif"
+                 
 Margin="0,10"
 HorizontalOptions="Start"/>
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
 HorizontalOptions="StartAndExpand"
                 TextColor="White"
 Text="This app's pages and any materials made available for download belong to Phisilync, or its suppliers or licensors, as appropriate. The POPI Act, as well as international copyright and trademark regulations, safeguard this app."
 />
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
                 TextColor="White"
 HorizontalOptions="StartAndExpand"
 Text="Without the express written approval of Phisilync, neither the Site nor any portion of the Site or Services may be reproduced, duplicated, copied, sold, resold, visited, or used in any other way for any commercial purpose. Without Phisilync's express written authorization, you are not permitted to frame or use framing methods to enclose any trademark, logo, or other proprietary material (including images, text, page layout, or form). Without Phisilync's prior written approval, you are not permitted to use any meta tags or other 'hidden text' that makes use of Phisilync's name or trademarks.The Site and Services may not be abused by you. You can only use the Site and Services in accordance with the law. It is prohibited to copy, distribute, modify, reproduce, publish, or use any part of the Site's content, including without limitation any files, documents, text, pictures, audio, video, and other materials accessed or made available for download through this Site, unless specifically approved in writing by Phisilync. Without obtaining our prior written authorization, you are not permitted to frame or use framing methods to enclose, or deep link to, any name, trademarks, service marks, logo, content, or other proprietary information (including, without limitation, images, text, page layout, or form) of Phisilync."
 />
             <Label
 Text="7. Accuracy Of Information; Functionality"
-FontSize="Small"
-                FontFamily="Serif"
+ FontSize="Medium"
+                 
 FontAttributes="Bold"
 TextDecorations="Underline"
                 TextColor="White"
 Margin="0,10"
 HorizontalOptions="Start"/>
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
                 TextColor="White"
-                FontFamily="Serif"
+                 
 HorizontalOptions="StartAndExpand"
 Text="Phisilync makes no representations, warranties, or guarantees of any kind regarding the correctness or accuracy of the Site, Service descriptions, and other content on the Site, despite its best efforts to maintain the integrity and accuracy of the Site and Service descriptions. The website may contain typographical errors, inaccuracies, or other errors. Additionally, third parties may add, remove, or edit content without authorization. If something is inaccurate, kindly let Phisilync know so that it can be fixed. The Site's content could be amended or modified at any time without prior notice. Furthermore, Phisilync disclaims all liability and responsibility for any information or content uploaded to the Site by unaffiliated third parties."
 />
             <Label
-FontSize="Micro"
+ FontSize="Small"
                 TextColor="White"
-                FontFamily="Serif"
+                 
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
 Text="Regarding how the Site and the Services are run, Phisilync retains absolute and exclusive discretion. Among other things, we reserve the right to remove, pause, or stop any feature or service from the Site or the Services. Information transmitted by local or international telecommunications carriers may be corrupted, compromising, or subject to transmission mistakes for which we bear no liability. Information resulting from using the Site or the Services is not our responsibility to maintain. In compliance with our internal record retention or destruction rules, we reserve the right to keep, remove, or destroy any communications or information uploaded, posted, or maintained on the Site or through the Services."
 />
             <Label 
                 Text="8. Subscription; Use And Policy"
-                FontSize="Small"
+                 FontSize="Medium"
                 FontAttributes="Bold"
                 TextDecorations="Underline"
-                FontFamily="Serif"
+                 
                 TextColor="White"
                 Margin="0,10"
                 HorizontalOptions="Start"/>
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
 HorizontalOptions="StartAndExpand"
                 TextColor="White"
 Text="Section 8 is not applicable at this time. Check in regularly to see Terms of Use updates."
 />
             <Label
 Text="9. Links To Other Sites"
-                FontFamily="Serif"
-FontSize="Small"
+                 
+ FontSize="Medium"
 FontAttributes="Bold"
                 TextColor="White"
 TextDecorations="Underline"
 Margin="0,10"
 HorizontalOptions="Start"/>
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
                 TextColor="White"
 HorizontalOptions="StartAndExpand"
 Text="Phisilync disclaims all liability with regard to any other website that you may link to from this site. Please be aware that any website you visit that is not affiliated with Phisilync is not under our control and that we have no influence over its content. Furthermore, a link to a website that is not owned by Phisilync does not imply that Phisilync approves of or takes responsibility for the use of the linked website or its content. It is your responsibility to exercise caution and make sure that nothing harmful, such Trojan horses, worms, or viruses, is included in anything you choose to use or download. You do so completely at your own risk if you choose to visit any of the external websites that are linked to this website."
 />
             <Label
 Text="10. User Information"
-FontSize="Small"
+ FontSize="Medium"
 FontAttributes="Bold"
-                FontFamily="Serif"
+                 
 TextDecorations="Underline"
                 TextColor="White"
 Margin="0,10"
 HorizontalOptions="Start"/>
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
                 TextColor="White"
 HorizontalOptions="StartAndExpand"
 Text="You agree not to provide any User Information that, in our opinion, is (a) false, inaccurate, defamatory, abusive, libelous, unlawful, obscene, threatening, harassing, fraudulent, pornographic, or harmful, or that could incite criminal or unethical behavior; (b) violates or infringes the privacy, copyright, trademark, trade dress, trade secrets, or intellectual property rights of any person or entity; or (c) contains or transmits a virus or other harmful element. By using this site, you consent to refrain from contacting other users via unsolicited emails, calls, texts, mailings, or any other form of correspondence."
 />
             <Label
-FontSize="Micro"
-                FontFamily="Serif"
+ FontSize="Small"
+                 
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
                 TextColor="White"
 Text="You undertake not to: (i) use the Site or its services in any way that is illegal or for any illegal purpose; (ii) post or transmit (1) a message under a false name; or (2) any data, materials, content, or information (including, without limitation, advice and recommendations) (collectively, 'Information') that is (A) defamatory, obscene, fraudulent, false, or in violation of the rights of others to the ownership or intellectual property; or (B) contains or encourages the use of any virus, worm, Trojan horse, malware, or other computer programming or code that is intended to harm, destroy, intercept, download, interfere, manipulate, or otherwise interrupt or expropriate the Site or the Services, personal data, software, equipment, servers, or Information or facilitation; (iii) pretend to be someone else or falsify your identity, or make up an affiliation with someone or something; (iv) interfere with, hack, spoof, copy, alter, or affect in any other way the correct operation, security, or management of the Site or the Services; (vi) attempt to reverse engineer, reverse assemble, reverse compile, decompile, disassemble, translate, or otherwise modify, deceive, or produce false results from any executable code, information on, or received by this Site; (v) utilize robots or scripts with the Site; (vii) to be using any anti-virus or anti-spyware program that is configured to override the cookie settings of the web browser; (viii) falsify the sender information in any message sent to Prehab; (ix) change the posting's or email's attribution or source; (xi) violate or assist in violating any copyright, patent, trademark, trade secret, or other proprietary, publicity, or privacy rights of any party, including but not limited to such rights of third parties; (xii) gather or gather personal information about any other person who uses the Site or the Services."
 />
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
                 TextColor="White"
 Text="In the event that you upload or transmit any unlawful User Information through the Site, or if you violate this Section 10, you agree to defend, indemnify, and hold Phisilync free from and against all third-party claims, damages, and expenses (including, but not limited to, reasonable attorneys’ fees) against or incurred by us."
 />
             <Label
 Text="11. Supplemental Terms Applicable To Providers"
-FontSize="Small"
+ FontSize="Medium"
 FontAttributes="Bold"
-                FontFamily="Serif"
+                 
 TextDecorations="Underline"
                 TextColor="White"
 Margin="0,10"
 HorizontalOptions="Start"/>
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
                 TextColor="White"
-                FontFamily="Serif"
+                 
 HorizontalOptions="StartAndExpand"
 Text="Regarding any legal or medical matters pertaining to Provider, the products, or services that Provider offers, Phisilync makes no representations or offers no medical advice. This includes, but is not limited to, any compliance duties or actions required to abide by any laws, bylaws, regulations, or other legislation. When it comes to legal and compliance matters, Provider should consult an attorney. Provider's legal duties should not be ascertained by looking at any documents or content connected to the Product, Site, or Services. The purpose of the Phisilync product, website, and services is not to replace or alter your professional judgment in any manner."
 />
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
                 TextColor="White"
 Text="When using the Product, Site, and Services, as well as when giving medical care to Provider's patients, Provider will be solely liable. Regarding this, Provider hereby releases and waives any and all claims that may arise from Provider's use of the Product, Site, and Services, as well as Provider's rendering of services to Provider's patients."
 />
             <Label
 Text="12. Intellectual Property"
-FontSize="Small"
-                FontFamily="Serif"
+ FontSize="Medium"
+                 
                 TextColor="White"
 FontAttributes="Bold"
 TextDecorations="Underline"
 Margin="0,10"
 HorizontalOptions="Start"/>
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
                 TextColor="White"
 HorizontalOptions="StartAndExpand"
 Text="Except for information on the Site that Phisilync has licensed, Phisilync retains all right, title, and interest in and to the Site, the Services, and any information, goods, paperwork, software, or other materials on the Site, as well as any patent, copyright, trade secret, trademark, service mark, or other intellectual property or proprietary right in any of the aforementioned. Phisilync is the owner of the data accessible via the Site and the Services. You consent to not keeping, reproducing, editing, retransmitting, renting, leasing, lending, selling, publishing, broadcasting, displaying, or sharing such information with third parties. Without the previous written consent of Phisilync, it is completely forbidden to use, reproduce, copy, or redistribute any of its trademarks, service marks, or logos. Any trademarks, service marks, and logos of third parties that are placed on the Site are likewise subject to the immediately above clause. Nothing on this website should be interpreted as granting any license or right to use any trademarks, service marks, or logos displayed on it without express written permission from Phisilync or the third party owner of those trademarks, service marks, or logos. This includes permissions granted by implication, estoppel, waiver, and other means. You agree to abide by any proprietary notices and copyright information that may be present on the site."
 />
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
                 TextColor="White"
-                FontFamily="Serif"
+                 
 Text="Any information you submit that we, in our sole discretion, believe to be fraudulent, abusive, defamatory, obscene, or in violation of any other person or entity's intellectual property rights, copyright, trademark, or other ownership rights may be deleted."
 />
             <Label
 Text="13. Limitation Of Liability Regarding Use Of Site"
-FontSize="Small"
+ FontSize="Medium"
                 TextColor="White"
-                FontFamily="Serif"
+                 
 FontAttributes="Bold"
 TextDecorations="Underline"
 Margin="0,10"
 HorizontalOptions="Start"/>
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
                 TextColor="White"
 Text="Unless otherwise specified by law, and without restriction:"
 />
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
                 TextColor="White"
 Text="Phisilync and any third parties mentioned on this site are not responsible or liable for any damages whatsoever rising out of or relating in any way to the site, site-related services, content or information contained within the site, or any linked website, whether based on warranty, contract, tort, or any other legal theory and whether or not advised of the possibility of such damages. If you're not happy with the website, services related to the website, or linked websites, your only option is to quit using the website or those services. You hereby agree to waive all laws that limit the efficacy of such indemnifications or releases, to the fullest extent permitted by law."
 />
             <Label
 Text="14. No Third Party Rights"
-FontSize="Small"
-                FontFamily="Serif"
+ FontSize="Medium"
+                 
                 TextColor="White"
 FontAttributes="Bold"
 TextDecorations="Underline"
 Margin="0,10"
 HorizontalOptions="Start"/>
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
 HorizontalOptions="StartAndExpand"
                 TextColor="White"
 Text="Nothing in this document is meant to grant any rights or remedies to anybody other than you, Phisilync, and its affiliates, unless otherwise indicated in the Terms of Use. Nothing in the Terms of Use is meant to release you, Phisilync, and its affiliates from any responsibility or liability that third parties may have toward you. Moreover, nothing in the Terms of Use grants any third party the right to subrogate against you, Phisilync, and its affiliates."
 />
             <Label
 Text="15. Assignment"
-FontSize="Small"
-                FontFamily="Serif"
+ FontSize="Medium"
+                 
 FontAttributes="Bold"
 TextDecorations="Underline"
                 TextColor="White"
 Margin="0,10"
 HorizontalOptions="Start"/>
             <Label
-FontSize="Micro"
-                FontFamily="Serif"
+ FontSize="Small"
+                 
 VerticalOptions="StartAndExpand"
                 TextColor="White"
 HorizontalOptions="StartAndExpand"
@@ -383,67 +381,67 @@ Text="Without Phisilync's prior written agreement, you are not permitted to assi
 />
             <Label
 Text="16. Force Majeure"
-FontSize="Small"
-                FontFamily="Serif"
+ FontSize="Medium"
+                 
 FontAttributes="Bold"
 TextDecorations="Underline"
                 TextColor="White"
 Margin="0,10"
 HorizontalOptions="Start"/>
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
 HorizontalOptions="StartAndExpand"
                 TextColor="White"
 Text="Any event or occurrence beyond our reasonable control, including but not limited to acts of God, terrorism, war, invasion, malfunctions of any public networks, electrical shortages, earthquakes or floods, civil disorder, strikes, fire, or other disaster, will not render us liable for any breach of these terms or our privacy policy."
 />
             <Label
 Text="17. Indemnification"
-FontSize="Small"
-                FontFamily="Serif"
+ FontSize="Medium"
+                 
 FontAttributes="Bold"
                 TextColor="White"
 TextDecorations="Underline"
 Margin="0,10"
 HorizontalOptions="Start"/>
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
                 TextColor="White"
 HorizontalOptions="StartAndExpand"
 Text="You undertake to defend, indemnify, and hold harmless Phisilync and its affiliates from and against any and all claims, causes of action, lawsuits, demands, losses, liabilities, damages, and fees of any kind arising directly or indirectly from or related to: (i) your use or misuse of the Site, Services, or any information posted on the Site; (ii) your violation of the Terms of Use or Privacy Policy; (iii) the content or subject matter of any information you provide to Phisilync or customer service agent; or (iv) any careless or improper act or omission on your part when using the site, its services, or any information on it; this includes, but is not limited to, violating someone else's intellectual property rights, violating their right to privacy, or engaging in other careless or improper behavior."
 />
             <Label
 Text="18. Modified Devices And Operating Systems"
-FontSize="Small"
+ FontSize="Medium"
 FontAttributes="Bold"
-                FontFamily="Serif"
+                 
                 TextColor="White"
 TextDecorations="Underline"
 Margin="0,10"
 HorizontalOptions="Start"/>
             <Label
-FontSize="Micro"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
-                FontFamily="Serif"
+                 
                 TextColor="White"
 Text="When using the Site on or in conjunction with rooted or jailbroken devices, or on any mobile device that does not adhere to the manufacturer's original specifications—including, but not limited to, using modified operating systems—Phisilync shall not be liable for any errors, unreliable operation, or other problems (collectively, 'Modified Devices'). You assume all risk and liability associated with using the Site on Devices that have been modified."
 />
             <Label
 Text="19. General Revisions"
                 TextColor="White"
-FontSize="Small"
-                FontFamily="Serif"
+ FontSize="Medium"
+                 
 FontAttributes="Bold"
 TextDecorations="Underline"
 Margin="0,10"
 HorizontalOptions="Start"/>
             <Label
-FontSize="Micro"
-                FontFamily="Serif"
+ FontSize="Small"
+                 
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
                 TextColor="White"
@@ -451,16 +449,13 @@ Text="Phisilync retains the right, with or without prior notice, to end your acc
 />
             <Label
 Text="20. Products, Contents, And Specifictions"
-FontSize="Small"
+FontSize="Medium"
 FontAttributes="Bold"
-                FontFamily="Serif"
-TextDecorations="Underline"
                 TextColor="White"
 Margin="0,10"
 HorizontalOptions="Start"/>
             <Label
-FontSize="Micro"
-                FontFamily="Serif"
+ FontSize="Small"
 VerticalOptions="StartAndExpand"
                 TextColor="White"
 HorizontalOptions="StartAndExpand"
@@ -471,8 +466,8 @@ Text="Any features, content, product specifications, prices, and other informati
            Text="I Agree To The Terms of Use Policy"
                 Margin="0,30"
            TextColor="White"
-                FontFamily="Serif"
-           BackgroundColor="#E21C21"
+                 
+           BackgroundColor="#6BB834"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
            CornerRadius="10"
@@ -493,12 +488,12 @@ Text="Any features, content, product specifications, prices, and other informati
                     <RowDefinition Height="*"/>
 
                 </Grid.RowDefinitions>
-                <Frame BackgroundColor="#2D2E2D" Grid.Row="0" BorderColor="Transparent">
+                <Frame BackgroundColor="#23583A" Grid.Row="0" BorderColor="Transparent">
                     <StackLayout Orientation="Vertical">
                         <Label
                     Text="Contact Us"
-                    FontSize="Large"
-                            FontFamily="Serif"
+                    FontSize="Medium"
+                             
                     FontAttributes="Bold"
                             Margin="0,10"
                     HorizontalOptions="Center"
@@ -507,47 +502,47 @@ Text="Any features, content, product specifications, prices, and other informati
                         <Label
 Text="11 Adderley Street, Foreshore"
 TextColor="White"
-                            FontFamily="Serif"
+                             
 Margin="0"
 HorizontalOptions="Center"
 VerticalOptions="Center"
-FontSize="Small"/>
+ FontSize="Small"/>
                         <Label
                             Text="Cape Town, 8000"
-                            FontFamily="Serif"
+                             
                             TextColor="White"
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
-                            FontSize="Small"/>
+                             FontSize="Small"/>
                         <Label
                         Text="info@phisilync.co.za"
                         TextColor="White"
                         Margin="0,10"
-                            FontFamily="Serif"
+                             
                         HorizontalOptions="Center"
                         VerticalOptions="Center"
-                        FontSize="Small"/>
+                         FontSize="Small"/>
                         <Label
                         Text="+27 (0) 215891201"
                         TextColor="White"
-                            FontFamily="Serif"
+                             
                         Margin="0,10"
-                        FontSize="Small"
+                         FontSize="Small"
                         HorizontalOptions="Center"
                         VerticalOptions="Center"/>
                         <Label
 Text="Or link with us via social media"
-                            FontFamily="Serif"
+                             
 TextColor="White"
                             FontAttributes="Italic"
 Margin="0,20,0,0"
-FontSize="Small"
+ FontSize="Small"
 HorizontalOptions="Center"
 VerticalOptions="Center"/>
                     </StackLayout>
                 </Frame>
 
-                <Frame BackgroundColor="#E21C21" BorderColor="Transparent" Grid.Row="1" HasShadow="True" VerticalOptions="Center" MaximumWidthRequest="350">
+                <Frame BackgroundColor="#23583A" BorderColor="Transparent" Grid.Row="1" HasShadow="True" VerticalOptions="Center" MaximumWidthRequest="350">
                     <ScrollView Orientation="Horizontal">
                         <Grid
                         Margin="15,0,0,0"
@@ -563,35 +558,35 @@ VerticalOptions="Center"/>
                             <StackLayout Orientation="Horizontal" Grid.Column="1">
                                 <StackLayout Orientation="Horizontal">
                                     <ImageButton
-                                    Source="facebook.png"
+                                    Source="fbook.png"
                                     HeightRequest="50"
                                     WidthRequest="50"
                                     Margin="3,0"
                                     x:Name="FbBtn"
                                     Clicked="FbBtn_Clicked"/>
                                     <ImageButton
-                                    Source="insta.png"
+                                    Source="instagram.png"
                                     HeightRequest="50"
                                     WidthRequest="50"
                                     Margin="3,0"
                                     x:Name="InstaBtn"
                                     Clicked="InstaBtn_Clicked"/>
                                     <ImageButton
-                                    Source="twitter_bird.png"
+                                    Source="twitter.png"
                                     HeightRequest="50"
                                     WidthRequest="50"
                                     Margin="3,0"
                                     x:Name="XBtn"
                                     Clicked="XBtn_Clicked"/>
                                     <ImageButton
-                                    Source="tiktok.png"
+                                    Source="tiktoky.png"
                                     HeightRequest="50"
                                     WidthRequest="50"
                                     Margin="3,0"
                                     x:Name="TikTokBtn"
                                     Clicked="TikTokBtn_Clicked"/>
                                     <ImageButton
-                                    Source="linkedin.png"
+                                    Source="lin.png"
                                     HeightRequest="50"
                                     WidthRequest="50"
                                     Margin="3,0"
@@ -607,7 +602,7 @@ VerticalOptions="Center"/>
                     <Label
         VerticalOptions="Center"
         HorizontalOptions="Center"
-                        FontFamily="Serif"
+                      FontSize="Small"   
         Text="© Copyright Phisilync (Pty) Ltd 2024 │ All Rights Reserved"
                         Margin="0,20"
         TextColor="White"/>
