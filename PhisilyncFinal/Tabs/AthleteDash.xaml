@@ -4,11 +4,11 @@
              xmlns:cal="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="PhisilyncFinal.Tabs.AthleteDash"
-             BackgroundColor="Black">
+             BackgroundImageSource="greenback">   
 
     <Shell.TitleView Margin="0,0,0,0">
         <Image 
-            Source="phisilync_nobg.png"
+            Source="phisilyncfinal"
             Aspect="Center"/>
     </Shell.TitleView>
     
@@ -16,9 +16,9 @@
         <VerticalStackLayout>
             <toolkit:AvatarView
                 Text="Noah"
-                BorderColor="#E21C21"
+                BorderColor="#6bb834"
                 TextColor="White"
-                ImageSource="gelant.jpg"
+                ImageSource="profileimage"
                 HorizontalOptions="End"
                 CornerRadius="360"
                 Margin="10"
@@ -30,12 +30,12 @@
                 Text="Noah Khan"
                 HorizontalOptions="End"
                 Margin="10,0"
-                TextColor="White"
+                TextColor="Beige"
                 />
 
             <Label
                 Text="Welcome (Your Name)"
-                TextColor="White"
+                TextColor="Beige"
                 FontAttributes="Bold"
                 FontFamily="serif"
                 FontSize="Medium"
@@ -43,7 +43,7 @@
 
             <Label
                 Text="Dashboard"
-                TextColor="White"
+                TextColor="Beige"
                 FontAttributes="Bold"
                 FontSize="Large"
                 FontFamily="serif"
@@ -178,10 +178,10 @@
                 Text="Test Your Boundries"
                 FontAttributes="Bold"
                 FontFamily="serif"
-                TextColor="White"
-                BorderColor="IndianRed"
+                TextColor="Beige"
+                BorderColor="Beige"
                 BorderWidth="2"
-                BackgroundColor="Black"
+                BackgroundColor="#6bb834"
                 Clicked="Button_Clicked"
                 CornerRadius="100"
                 WidthRequest="500"
@@ -190,31 +190,31 @@
 
             <cal:Calendar Events="{Binding Events}" 
                       EventsScrollViewVisible="True" 
-                      SelectedDayBackgroundColor="Red"
+                      SelectedDayBackgroundColor="#6bb834"
                       CalendarLayout="Month"
-                      BackgroundColor="Black"
+                      BackgroundColor="Transparent"
                       DayViewCornerRadius="5"
-                      DeselectedDayTextColor="White"
-                      SelectedDateColor="White"
-                      ArrowsBackgroundColor="Red"
-                      ArrowsBorderColor="Black"
-                      ArrowsColor="White"
-                      DaysTitleColor="WhiteSmoke"
-                      DaysTitleWeekendColor="WhiteSmoke" 
-                      DisabledDayColor="White"
-                      EventIndicatorColor="White"
-                      EventIndicatorSelectedColor="White"
-                      EventIndicatorSelectedTextColor="White"
-                      MonthLabelColor="White"
-                      OtherMonthDayColor="White"
-                      SelectedDayTextColor="White"
-                      SelectedTodayTextColor="White"
-                      TodayFillColor="IndianRed"
-                      TodayOutlineColor="IndianRed"
-                      TodayTextColor="White" 
-                      WeekendDayColor="White"
-                      YearLabelColor="White"
-                      EventIndicatorTextColor="White"
+                      DeselectedDayTextColor="Beige"
+                      SelectedDateColor="Beige"
+                      ArrowsBackgroundColor="#6bb834"
+                      ArrowsBorderColor="Beige"
+                      ArrowsColor="Beige"
+                      DaysTitleColor="Beige"
+                      DaysTitleWeekendColor="White" 
+                      DisabledDayColor="Beige"
+                      EventIndicatorColor="#6bb834"
+                      EventIndicatorSelectedColor="Beige"
+                      EventIndicatorSelectedTextColor="Beige"
+                      MonthLabelColor="Beige"
+                      OtherMonthDayColor="Beige"
+                      SelectedDayTextColor="Beige"
+                      SelectedTodayTextColor="Beige"
+                      TodayFillColor="#89a18b"
+                      TodayOutlineColor="Beige"
+                      TodayTextColor="Beige" 
+                      WeekendDayColor="Beige"
+                      YearLabelColor="Beige"
+                      EventIndicatorTextColor="Beige"
                       Margin="70"
                       HeightRequest="500">
                 <cal:Calendar.EventTemplate>
@@ -223,11 +223,11 @@
                             <Label 
                             Text="{Binding Name}" 
                             FontSize="25" 
-                            TextColor="White"
+                            TextColor="Beige"
                             FontAttributes="Bold"/>
                             <Label 
                             Text="{Binding Description}"
-                            TextColor="White"/>
+                            TextColor="Beige"/>
                         </VerticalStackLayout>
                     </DataTemplate>
                 </cal:Calendar.EventTemplate>

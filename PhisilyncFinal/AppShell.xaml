@@ -7,7 +7,7 @@
     xmlns:flyout="clr-namespace:PhisilyncFinal.FlyoutControls"
     Shell.FlyoutBehavior="Flyout"
     FlyoutHeaderBehavior="CollapseOnScroll"
-    Title="PhisilyncFinal" BackgroundColor="Black">
+    Title="PhisilyncFinal" BackgroundColor="#465d57">
 
  
     <Shell.FlyoutHeader>
@@ -22,7 +22,7 @@
         <Style x:Key="BaseStyle"
    TargetType="Element">
             <Setter Property="Shell.BackgroundColor"
-        Value="Black" />
+        Value="#23583a" />
             <Setter Property="Shell.ForegroundColor"
         Value="White" />
             <Setter Property="Shell.TitleColor"

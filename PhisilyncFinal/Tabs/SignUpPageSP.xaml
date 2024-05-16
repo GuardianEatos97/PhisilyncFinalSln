@@ -9,7 +9,7 @@
             Padding="30,0"
             Spacing="25">
             <Image
-                Source="phisilync_nobg.png"
+                Source="phisilyncgreen.png"
                 HeightRequest="210"
                 WidthRequest="400"
                 Aspect="AspectFill"
@@ -54,7 +54,7 @@
             <Button
                 Text="Create Account"
                 TextColor="White"
-                BackgroundColor="Red"
+                BackgroundColor="SeaGreen"
                 Clicked="Button_Clicked_4"
                 StyleId="TellUsPage"
                 WidthRequest="500"/>

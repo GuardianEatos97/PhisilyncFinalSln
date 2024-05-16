@@ -9,7 +9,7 @@
     
     <ScrollView Orientation="Vertical">
         <VerticalStackLayout>
-            <Image Source="phisilync_nobg.png"
+            <Image Source="phisilyncgreen"
                    Aspect="AspectFill"
                    HeightRequest="110"
                    WidthRequest="500"/>
@@ -42,13 +42,13 @@
 
             <cal:Calendar 
               EventsScrollViewVisible="True"
-              SelectedDayBackgroundColor="Red"
+              SelectedDayBackgroundColor="SeaGreen"
               CalendarLayout="Month"
               BackgroundColor="Black"
               DayViewCornerRadius="5"
               DeselectedDayTextColor="White"
               SelectedDateColor="White"
-              ArrowsBackgroundColor="Red"
+              ArrowsBackgroundColor="SeaGreen"
               ArrowsBorderColor="Black"
               ArrowsColor="White"
               DaysTitleColor="WhiteSmoke"
@@ -61,8 +61,8 @@
               OtherMonthDayColor="White"
               SelectedDayTextColor="White"
               SelectedTodayTextColor="White"
-              TodayFillColor="IndianRed"
-              TodayOutlineColor="IndianRed"
+              TodayFillColor="MediumSeaGreen"
+              TodayOutlineColor="SeaGreen"
               TodayTextColor="White"
               WeekendDayColor="White"
               YearLabelColor="White"

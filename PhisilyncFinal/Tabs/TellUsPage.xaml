@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             BackgroundColor="#2D2E2D" 
+             BackgroundColor="#23583a" 
              x:Class="PhisilyncFinal.Tabs.TellUsPage">
+
+
+    <Shell.TitleView Margin="0,0,0,0">
+        <Image 
+        Source="phisilyncgreenback"
+        Aspect="Center"/>
+    </Shell.TitleView>
+    
     <ScrollView Orientation="Vertical">
         <VerticalStackLayout>
-            <Image
-            Source="phisilync_nobg.png"
-            HeightRequest="210"
-            WidthRequest="400"
-            Aspect="AspectFill"
-            Margin="0"
-            SemanticProperties.Description="Phisilync Logo" />
-
             <Label
             Text="Let's Get Started"
-            TextColor="white"
+            TextColor="White"
             FontAttributes="Bold"
             FontSize="Large"
             HorizontalOptions="Center" 
@@ -41,8 +41,8 @@
             Text="I Am An Athlete"
             FontAttributes="Bold"
             TextColor="White"
-            BorderColor="Black"
-            BackgroundColor="#E21C21"
+            BorderColor="White"
+            BackgroundColor="#6bb834"
             Clicked="Button_Clicked"
             BorderWidth="1"
             CornerRadius="100"
@@ -56,10 +56,10 @@
             FontAttributes="Bold"
             CornerRadius="100"
             TextColor="White"
-            BorderColor="Black"
+            BorderColor="White"
             BorderWidth="1"
             VerticalOptions="CenterAndExpand"
-            BackgroundColor="#E21C21"
+            BackgroundColor="#6bb834"
             Clicked="Button_Clicked_3"
             WidthRequest="500"
             HeightRequest="70"
@@ -70,8 +70,8 @@
             FontAttributes="Bold"
             TextColor="White"
             CornerRadius="100"
-            BackgroundColor="#E21C21"
-            BorderColor="Black" 
+            BackgroundColor="#6bb834"
+            BorderColor="White" 
             VerticalOptions="CenterAndExpand"
             BorderWidth="1"
             Clicked="Button_Clicked_1"
@@ -99,9 +99,11 @@
                 Text="Already Have An Account?"
                 TextColor="White"
                 WidthRequest="300"
-                BackgroundColor="#2D2E2D"
+                BackgroundColor="#6bb834"
+                BorderColor="#6bb834"
                 Clicked="Button_Clicked_2"
                 FontSize="Body" 
+                BorderWidth="1"
                 CornerRadius="100"
                 VerticalOptions="EndAndExpand"
                 HorizontalOptions="Center"
