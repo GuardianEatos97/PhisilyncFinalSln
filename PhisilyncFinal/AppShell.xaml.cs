@@ -1,4 +1,5 @@
 ﻿using PhisilyncFinal.Models;
+using PhisilyncFinal.Services;
 using PhisilyncFinal.Tabs;
 
 namespace PhisilyncFinal
@@ -6,15 +7,10 @@ namespace PhisilyncFinal
     
     public partial class AppShell : Shell
     {
-        public User user;
-        public User User
-        {
-            get { return user; }
-            set { user = value; }
-        }
+        public LocalDb _database;
         public AppShell()
         {
-            User = new User();
+            _database = new();
             InitializeComponent();
             LoadAthleteDash();
         }
@@ -22,15 +18,10 @@ namespace PhisilyncFinal
 
         public void LoadAthleteDash()
         {
-            if (User.userID != null)
+            if (_database._dbConnection.Table<User>().Count() != 0)
             {
                 Routing.RegisterRoute("AthleteDash", typeof(AthleteDash));
                 Navigation.PushAsync(new AthleteDash());
-            }
-            else
-            { 
-            Routing.RegisterRoute("TellUsAboutYourself", typeof(TellUsPage));
-                Navigation.PushAsync(new TellUsPage());
             }
         }
 
