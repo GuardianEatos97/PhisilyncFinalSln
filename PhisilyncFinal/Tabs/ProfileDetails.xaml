@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhisilyncFinal.Tabs.ProfileDetails"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <toolkit:AvatarView Text="Noah"
+                            BorderColor="#6bb834"
+                            TextColor="White"
+                            ImageSource="gelant.jpg"
+                            HorizontalOptions="CenterAndExpand"
+                            CornerRadius="360"
+                            Margin="0,30,0,15"
+                            WidthRequest="200"
+                            HeightRequest="200"
+                            BorderWidth="15"/>
+
+            <Label Text="Name Surname"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+
+            <Frame WidthRequest="500"
+               HorizontalOptions="CenterAndExpand"
+               CornerRadius="10">
+                <Editor Placeholder="Name"
+                    PlaceholderColor="Grey"
+                    FontAttributes="Bold"
+                    FontSize="15"/>
+            </Frame>
+
+            <Frame WidthRequest="500"
+               HorizontalOptions="CenterAndExpand"
+               CornerRadius="10">
+                <Editor Placeholder="Surname"
+                    PlaceholderColor="Grey"
+                    FontAttributes="Bold"
+                    FontSize="15"/>
+            </Frame>
+
+            <Frame WidthRequest="500"
+               HorizontalOptions="CenterAndExpand"
+               CornerRadius="10">
+                <Editor Placeholder="Email Address "
+                    PlaceholderColor="Grey"
+                    FontAttributes="Bold"
+                    FontSize="15"/>
+            </Frame>
+
+            <Frame WidthRequest="500"
+               HorizontalOptions="CenterAndExpand"
+               CornerRadius="10">
+                <Editor Placeholder="Name"
+                    PlaceholderColor="Grey"
+                    FontAttributes="Bold"
+                    FontSize="15"/>
+            </Frame>
+
+            <Frame WidthRequest="500"
+               HorizontalOptions="CenterAndExpand"
+               CornerRadius="10">
+                <Entry IsPassword="True"
+                   FontSize="15"
+                   MaxLength="12"
+                   Placeholder="Change Password"
+                   PlaceholderColor="Grey"
+                   SelectionLength="8"/>
+            </Frame>
+
+            <Frame WidthRequest="330"
+               HorizontalOptions="CenterAndExpand"
+               CornerRadius="10">
+                <DatePicker HorizontalOptions="CenterAndExpand"
+                        MinimumDate="01/01/1970"
+                        MaximumDate="01/01/2010"
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        />
+            </Frame>
+        </VerticalStackLayout>
+
+    </ScrollView>
+</ContentPage>
