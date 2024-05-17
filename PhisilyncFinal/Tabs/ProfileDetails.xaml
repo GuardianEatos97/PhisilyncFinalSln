@@ -17,64 +17,145 @@
                             HeightRequest="200"
                             BorderWidth="15"/>
 
-
-            <Frame WidthRequest="500"
+            <Frame BorderColor="Transparent" HasShadow="False">
+                <VerticalStackLayout Spacing="10">
+                    <BoxView VerticalOptions="Start" Color="LightGrey" HeightRequest="2"/>
+                    <Label Text="Personal Details"
+                       HorizontalTextAlignment="Center"
+                       TextColor="Grey"
+                       FontSize="20"
+                       FontAttributes="Bold"/>
+                    <Frame WidthRequest="500"
                HorizontalOptions="CenterAndExpand"
                CornerRadius="10">
-                <Editor Placeholder="Name"
+                        <Editor Placeholder="Name"
                     PlaceholderColor="Grey"
                     FontAttributes="Bold"
                     FontSize="15"/>
-            </Frame>
+                    </Frame>
 
-            <Frame WidthRequest="500"
+                    <Frame WidthRequest="500"
                HorizontalOptions="CenterAndExpand"
                CornerRadius="10">
-                <Editor Placeholder="Surname"
+                        <Editor Placeholder="Surname"
                     PlaceholderColor="Grey"
                     FontAttributes="Bold"
                     FontSize="15"/>
-            </Frame>
+                    </Frame>
 
-            <Frame WidthRequest="500"
+                    <Frame WidthRequest="500"
                HorizontalOptions="CenterAndExpand"
                CornerRadius="10">
-                <Editor Placeholder="Email Address "
+                        <Editor Placeholder="Email Address "
                     PlaceholderColor="Grey"
                     FontAttributes="Bold"
                     FontSize="15"/>
-            </Frame>
+                    </Frame>
 
-            <Frame WidthRequest="500"
+                    <Frame WidthRequest="500"
                HorizontalOptions="CenterAndExpand"
                CornerRadius="10">
-                <Editor Placeholder="Name"
-                    PlaceholderColor="Grey"
-                    FontAttributes="Bold"
-                    FontSize="15"/>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+
+                            <Label Text="Date Of Birth"
+                               FontSize="15"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"
+                               TextColor="Grey"/>
+
+                            <DatePicker HorizontalOptions="CenterAndExpand"
+                                    MinimumDate="01/01/1970"
+                                    MaximumDate="01/01/2024"
+                                    FontAttributes="Bold"
+                                    FontSize="20"/>
+                        </StackLayout>
+                    </Frame>
+                    <BoxView VerticalOptions="End" Color="LightGrey" HeightRequest="2"  Margin="0,20,0,0"/>
+                </VerticalStackLayout>
             </Frame>
 
-            <Frame WidthRequest="500"
-               HorizontalOptions="CenterAndExpand"
-               CornerRadius="10">
-                <Entry IsPassword="True"
-                   FontSize="15"
-                   MaxLength="12"
-                   Placeholder="Change Password"
-                   PlaceholderColor="Grey"
-                   SelectionLength="8"/>
+            <StackLayout Spacing="10">
+                <Label Text="Sport Related Details"
+                       HorizontalTextAlignment="Center"
+                       TextColor="Grey"
+                       FontSize="20"
+                       FontAttributes="Bold"/>
+                
+                <Frame WidthRequest="500"
+                       HorizontalOptions="CenterAndExpand"
+                       CornerRadius="10">
+                    
+                    <Editor Placeholder="Sport Played"
+                            PlaceholderColor="Grey"
+                            FontAttributes="Bold"
+                            FontSize="15"/>
+                </Frame>
+
+                <Frame WidthRequest="500"
+                       HorizontalOptions="CenterAndExpand"
+                       CornerRadius="10">
+                    <Editor Placeholder="Postion/Team Role"
+                            PlaceholderColor="Grey"
+                            FontAttributes="Bold"
+                            FontSize="15"/>
+                </Frame>
+
+                <Frame WidthRequest="500"
+                       HorizontalOptions="CenterAndExpand"
+                       CornerRadius="10">
+                    <Editor Placeholder="Team/Club/School"
+                            PlaceholderColor="Grey"
+                            FontAttributes="Bold"
+                            FontSize="15"/>
+                </Frame>
+
+                <Frame WidthRequest="500"
+                       HorizontalOptions="CenterAndExpand"
+                       CornerRadius="10">
+                    <Editor Placeholder="Location"
+                            PlaceholderColor="Grey"
+                            FontAttributes="Bold"
+                            FontSize="15"/>
+                </Frame>
+
+            </StackLayout>
+
+            <Frame HasShadow="False" BorderColor="Transparent">
+                <StackLayout Spacing="10" Margin="0,50,0,0">
+                    <BoxView VerticalOptions="Start" Color="LightGrey" HeightRequest="2"/>
+                    <Frame WidthRequest="500"
+                       HorizontalOptions="CenterAndExpand"
+                       CornerRadius="10">
+
+                        <Entry IsPassword="True"
+                           FontSize="15"
+                           MaxLength="12"
+                           Placeholder="Change Password"
+                           PlaceholderColor="Grey"
+                           SelectionLength="8"
+                           FontAttributes="Bold"/>
+                    </Frame>
+
+
+                    <Frame WidthRequest="500"
+                       HorizontalOptions="CenterAndExpand"
+                       CornerRadius="10">
+
+                        <Entry IsPassword="True"
+                           FontSize="15"
+                           MaxLength="12"
+                           FontAttributes="Bold"
+                           Placeholder="Confirm Password"
+                           PlaceholderColor="Grey"
+                           SelectionLength="8"/>
+                    </Frame>
+                    <BoxView VerticalOptions="End" Color="LightGrey" HeightRequest="2"  Margin="0,20,0,0"/>
+                </StackLayout>
             </Frame>
 
-            <Frame WidthRequest="330"
-               HorizontalOptions="CenterAndExpand"
-               CornerRadius="10">
-                <DatePicker HorizontalOptions="CenterAndExpand"
-                        MinimumDate="01/01/1970"
-                        MaximumDate="01/01/2010"
-                        FontAttributes="Bold"
-                        FontSize="20"
-                        />
-            </Frame>
+
+
+
         </VerticalStackLayout>
 
     </ScrollView>
