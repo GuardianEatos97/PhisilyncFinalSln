@@ -18,68 +18,59 @@
                                 HeightRequest="200"
                                 BorderWidth="15"/>
 
-                    <Label Text="Name Surname"
+            <Label Text="Name Surname"
                            FontSize="20"
                            FontAttributes="Bold"
                            HorizontalTextAlignment="Center"/>
+            
+            <StackLayout Margin="0,80,0,0">
+                <Frame Padding="0" HasShadow="False" BorderColor="Transparent" HeightRequest="60">
+                    <Grid GestureRecognizers="{TapGestureRecognizer Command={Binding NavigateToProfileDetailsCommand}}">
+                        <BoxView HeightRequest="2" BackgroundColor="LightGrey" VerticalOptions="Start" />
+                        <Image Source="user.png" HorizontalOptions="StartAndExpand" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" Margin="40,0,0,0"  BackgroundColor="White"/>
+                        <Label Text="Profile Details" FontSize="18" VerticalOptions="Center" Margin="100,0,0,0" BackgroundColor="White"/>
+                        <Image Source="arrow.png" HorizontalOptions="End" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" BackgroundColor="White" Margin="0,0,20,0"/>
+                        <BoxView HeightRequest="2" BackgroundColor="LightGrey"  VerticalOptions="End"/>
+                    </Grid>
+                </Frame>
 
-            <Frame WidthRequest="500"
-                   HorizontalOptions="CenterAndExpand"
-                   CornerRadius="10">
-                <Editor Placeholder="Name"
-                        PlaceholderColor="Grey"
-                        FontAttributes="Bold"
-                        FontSize="15"/>
+                <Frame Padding="0" HasShadow="False" BorderColor="Transparent" HeightRequest="60">
+                    <Grid GestureRecognizers="{TapGestureRecognizer Command={Binding NavigateToPaymentsCommand}}">
+                        <Image Source="credit_card.png" HorizontalOptions="StartAndExpand" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" Margin="40,0,0,0"  BackgroundColor="White"/>
+                        <Label Text="Payment Methods" FontSize="18" VerticalOptions="Center" Margin="100,0,0,0" BackgroundColor="White"/>
+                        <Image Source="arrow.png" HorizontalOptions="End" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" BackgroundColor="White" Margin="0,0,20,0"/>
+                        <BoxView HeightRequest="2" BackgroundColor="LightGrey"  VerticalOptions="End"/>
+                    </Grid>
+                </Frame>
+
+                <Frame Padding="0" HasShadow="False" BorderColor="Transparent" HeightRequest="60">
+                    <Grid GestureRecognizers="{TapGestureRecognizer Command={Binding NavigateToSettingsCommand}}">
+                        <Image Source="settings.png" HorizontalOptions="StartAndExpand" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" Margin="40,0,0,0"  BackgroundColor="White"/>
+                        <Label Text="Settings" FontSize="18" VerticalOptions="Center" Margin="100,0,0,0" BackgroundColor="White"/>
+                        <Image Source="arrow.png" HorizontalOptions="End" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" BackgroundColor="White" Margin="0,0,20,0"/>
+                        <BoxView HeightRequest="2" BackgroundColor="LightGrey"  VerticalOptions="End"/>
+                    </Grid>
+                </Frame>
+
+                <Frame Padding="0" HasShadow="False" BorderColor="Transparent" HeightRequest="60">
+                    <Grid>
+                        <Image Source="sign_out" HorizontalOptions="StartAndExpand" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" Margin="40,0,0,0"  BackgroundColor="White"/>
+                        <Label Text="Logout" FontSize="18" VerticalOptions="Center" Margin="100,0,0,0" BackgroundColor="White"/>
+                        <Image Source="arrow.png" HorizontalOptions="End" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" BackgroundColor="White" Margin="0,0,20,0"/>
+                        <BoxView HeightRequest="2" BackgroundColor="LightGrey"  VerticalOptions="End"/>
+                    </Grid>
+                </Frame>
+
+            </StackLayout>
+            
+            <Frame HasShadow="False" BorderColor="Transparent" Padding="0" Margin="0,80,0,0">
+                <Grid>
+                    <Label Text="Dark mode" FontSize="18" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,80,0"/>
+                    <Switch IsToggled="False" VerticalOptions="Center" HorizontalOptions="Center" Margin="80,0,0,0" ThumbColor="Green" OnColor="Orange"/>
+                </Grid>
             </Frame>
 
-            <Frame WidthRequest="500"
-                   HorizontalOptions="CenterAndExpand"
-                   CornerRadius="10">
-                <Editor Placeholder="Surname"
-                        PlaceholderColor="Grey"
-                        FontAttributes="Bold"
-                        FontSize="15"/>
-            </Frame>
 
-            <Frame WidthRequest="500"
-                   HorizontalOptions="CenterAndExpand"
-                   CornerRadius="10">
-                <Editor Placeholder="Email Address "
-                        PlaceholderColor="Grey"
-                        FontAttributes="Bold"
-                        FontSize="15"/>
-            </Frame>
-
-            <Frame WidthRequest="500"
-                   HorizontalOptions="CenterAndExpand"
-                   CornerRadius="10">
-                <Editor Placeholder="Name"
-                        PlaceholderColor="Grey"
-                        FontAttributes="Bold"
-                        FontSize="15"/>
-            </Frame>
-
-            <Frame WidthRequest="500"
-                   HorizontalOptions="CenterAndExpand"
-                   CornerRadius="10">
-                <Entry IsPassword="True"
-                       FontSize="15"
-                       MaxLength="12"
-                       Placeholder="Change Password"
-                       PlaceholderColor="Grey"
-                       SelectionLength="8"/>
-            </Frame>
-
-            <Frame WidthRequest="330"
-                   HorizontalOptions="CenterAndExpand"
-                   CornerRadius="10">
-                <DatePicker HorizontalOptions="CenterAndExpand"
-                            MinimumDate="01/01/1970"
-                            MaximumDate="01/01/2010"
-                            FontAttributes="Bold"
-                            FontSize="20"
-                            />
-            </Frame>
         </VerticalStackLayout>
 
     </ScrollView>
