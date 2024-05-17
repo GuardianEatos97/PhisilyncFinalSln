@@ -17,10 +17,6 @@
                             HeightRequest="200"
                             BorderWidth="15"/>
 
-            <Label Text="Name Surname"
-                       FontSize="20"
-                       FontAttributes="Bold"
-                       HorizontalTextAlignment="Center"/>
 
             <Frame WidthRequest="500"
                HorizontalOptions="CenterAndExpand"

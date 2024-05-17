@@ -56,8 +56,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\arrow.png" />
 	  <None Remove="Resources\Images\compliant.png" />
 	  <None Remove="Resources\Images\confident.jpg" />
+	  <None Remove="Resources\Images\credit_card.png" />
 	  <None Remove="Resources\Images\dashboard.png" />
 	  <None Remove="Resources\Images\davids.jpg" />
 	  <None Remove="Resources\Images\determination.avif" />
@@ -69,7 +71,6 @@
 	  <None Remove="Resources\Images\freedom.jpg" />
 	  <None Remove="Resources\Images\gelant.jpg" />
 	  <None Remove="Resources\Images\googleb.jpg" />
-	  <None Remove="Resources\Images\googleremove.png" />
 	  <None Remove="Resources\Images\greenback.jpg" />
 	  <None Remove="Resources\Images\greyg.jpg" />
 	  <None Remove="Resources\Images\info.png" />
@@ -89,6 +90,8 @@
 	  <None Remove="Resources\Images\proud.jpg" />
 	  <None Remove="Resources\Images\qa.png" />
 	  <None Remove="Resources\Images\sacha.jpg" />
+	  <None Remove="Resources\Images\settings.png" />
+	  <None Remove="Resources\Images\sign_out.png" />
 	  <None Remove="Resources\Images\strength.jpg" />
 	  <None Remove="Resources\Images\tac.png" />
 	  <None Remove="Resources\Images\tiktok.png" />
@@ -97,6 +100,7 @@
 	  <None Remove="Resources\Images\tt.png" />
 	  <None Remove="Resources\Images\twitter.png" />
 	  <None Remove="Resources\Images\twitter_bird.png" />
+	  <None Remove="Resources\Images\user.png" />
 	  <None Remove="Resources\Images\willemse.png" />
 	  <None Remove="Resources\Images\workout.jpg" />
 	</ItemGroup>

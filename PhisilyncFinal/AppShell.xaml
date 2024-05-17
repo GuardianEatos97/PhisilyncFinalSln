@@ -58,7 +58,7 @@
             Icon="dashboard.png"
         Style="{StaticResource BaseStyle}"
 
-ContentTemplate="{DataTemplate local:EditProfile}"
+ContentTemplate="{DataTemplate local:AthleteDash}"
 Route="AthleteDash" />
 
 
