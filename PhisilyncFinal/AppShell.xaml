@@ -22,7 +22,7 @@
         <Style x:Key="BaseStyle"
    TargetType="Element">
             <Setter Property="Shell.BackgroundColor"
-        Value="#23583a" />
+        Value="Black" />
             <Setter Property="Shell.ForegroundColor"
         Value="White" />
             <Setter Property="Shell.TitleColor"
