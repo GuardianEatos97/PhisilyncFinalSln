@@ -61,6 +61,16 @@
                 FontSize="20" 
                 Text="{Binding Details.Password}"/>
 
+            <Entry
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="White"
+                Placeholder="Confirm Password "
+                WidthRequest="500"
+                MaxLength="14"
+                FontSize="20" 
+                Text="{Binding Details.Password}"/>
+
             <Button
                 Text="Create Account"
                 TextColor="White"
