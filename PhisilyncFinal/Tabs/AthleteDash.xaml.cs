@@ -1,5 +1,5 @@
 using Plugin.Maui.Calendar.Models;
-using PhisilyncFinal.Models;
+
 
 namespace PhisilyncFinal.Tabs;
 
@@ -10,6 +10,7 @@ public partial class AthleteDash : ContentPage
     {
         InitializeComponent();
         Routing.RegisterRoute("TreatmentPage", typeof(TreatmentPage));
+        Routing.RegisterRoute("InjuryPage", typeof(InjuryPage));
 
         Events = new EventCollection
         {
@@ -44,11 +45,13 @@ public partial class AthleteDash : ContentPage
         public string Description { get; set; }
     }
 
-    private void ConBtn_Clicked(object sender, EventArgs e)
+    private async void ImageButton_Clicked(object sender, EventArgs e)
     {
-        //await Shell.Current.GoToAsync("TreatmentPage");
-        Navigation.PushAsync(new TreatmentPage());
+        await Shell.Current.GoToAsync("TreatmentPage");
     }
 
-
+    private async void Button_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("InjuryPage");
+    }
 }

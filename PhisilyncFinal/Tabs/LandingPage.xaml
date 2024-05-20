@@ -2,9 +2,9 @@
 <TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PhisilyncFinal.Tabs"
-             x:Class="PhyisilyncFinal.Tabs.LandingPage"
+             x:Class="PhisilyncFinal.Tabs.LandingPage"
              >
     <local:AthleteDash />
-    <local:Injuries/>
-    <local:TreatmentPage/>
+    <local:InjuryPage/>
+    
 </TabbedPage>

@@ -1,4 +1,4 @@
-namespace PhyisilyncFinal.Tabs;
+namespace PhisilyncFinal.Tabs;
 
 public partial class LandingPage : TabbedPage
 {

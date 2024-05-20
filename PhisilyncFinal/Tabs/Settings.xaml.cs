@@ -1,8 +1,8 @@
 namespace PhisilyncFinal.Tabs;
 
-public partial class Injuries : ContentPage
+public partial class Settings : ContentPage
 {
-	public Injuries()
+	public Settings()
 	{
 		InitializeComponent();
 	}

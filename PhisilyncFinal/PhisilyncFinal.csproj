@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿ <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
@@ -47,7 +47,6 @@
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -60,39 +59,66 @@
 	  <None Remove="Resources\Images\compliant.png" />
 	  <None Remove="Resources\Images\confident.jpg" />
 	  <None Remove="Resources\Images\dashboard.png" />
+	  <None Remove="Resources\Images\davids.jpg" />
 	  <None Remove="Resources\Images\determination.avif" />
+	  <None Remove="Resources\Images\dotnet_bot.png" />
 	  <None Remove="Resources\Images\facebook.png" />
+	  <None Remove="Resources\Images\facebook_sq.png" />
+	  <None Remove="Resources\Images\fbook.png" />
 	  <None Remove="Resources\Images\flexi.avif" />
 	  <None Remove="Resources\Images\freedom.jpg" />
+	  <None Remove="Resources\Images\gelant.jpg" />
+	  <None Remove="Resources\Images\googleb.jpg" />
+	  <None Remove="Resources\Images\googleremove.png" />
+	  <None Remove="Resources\Images\greenback.jpg" />
+	  <None Remove="Resources\Images\greyg.jpg" />
 	  <None Remove="Resources\Images\info.png" />
 	  <None Remove="Resources\Images\insta.png" />
+	  <None Remove="Resources\Images\instagram.png" />
+	  <None Remove="Resources\Images\libok.jpg" />
+	  <None Remove="Resources\Images\lin.png" />
 	  <None Remove="Resources\Images\linkedin.png" />
-	  <None Remove="Resources\Images\phisilync_logo.png" />
+	  <None Remove="Resources\Images\moerat.jpg" />
+	  <None Remove="Resources\Images\moos.jpg" />
+	  <None Remove="Resources\Images\phisilyncappshell.png" />
+	  <None Remove="Resources\Images\phisilyncfinal.png" />
+	  <None Remove="Resources\Images\phisilyncgreen.png" />
+	  <None Remove="Resources\Images\phisilyncgreenback.png" />
 	  <None Remove="Resources\Images\phisilync_nobg.png" />
+	  <None Remove="Resources\Images\profileimage.webp" />
 	  <None Remove="Resources\Images\proud.jpg" />
+	  <None Remove="Resources\Images\qa.png" />
+	  <None Remove="Resources\Images\sacha.jpg" />
 	  <None Remove="Resources\Images\strength.jpg" />
 	  <None Remove="Resources\Images\tac.png" />
 	  <None Remove="Resources\Images\tiktok.png" />
+	  <None Remove="Resources\Images\tiktoky.png" />
 	  <None Remove="Resources\Images\treatment.jpg" />
+	  <None Remove="Resources\Images\tt.png" />
 	  <None Remove="Resources\Images\twitter.png" />
 	  <None Remove="Resources\Images\twitter_bird.png" />
+	  <None Remove="Resources\Images\willemse.png" />
 	  <None Remove="Resources\Images\workout.jpg" />
-	  <None Remove="Services\AppDataDB.db" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <EmbeddedResource Include="Services\AppDataDB.db" />
-	</ItemGroup>
-
-	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui" Version="9.0.0" />
+		<PackageReference Include="Microcharts.Maui" Version="1.0.0" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.20" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.20" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 		<PackageReference Include="Plugin.Maui.Calendar" Version="1.1.6" />
+		<PackageReference Include="SkiaSharp.Views.Maui.Controls" Version="2.88.8" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
 		<PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
 		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.8" />
 		<PackageReference Include="SQLitePCLRaw.core" Version="2.1.8" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Tabs\InjuryPage.xaml.cs">
+	    <DependentUpon>InjuryPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -108,10 +134,13 @@
 	  <MauiXaml Update="Tabs\CoachDashboard.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Tabs\EditProfile.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Tabs\FAQs.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\Injuries.xaml">
+	  <MauiXaml Update="Tabs\InjuryPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Tabs\LandingPage.xaml">
@@ -120,10 +149,28 @@
 	  <MauiXaml Update="Tabs\LogInPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Tabs\LynoTherapyPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Tabs\MassageTherapyPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Tabs\Payment.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Tabs\PrivacyPolicy.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Tabs\ProfileDetails.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Tabs\RangeOfMovementPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Tabs\ServiceProviderDashboard.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Tabs\Settings.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Tabs\SignUpPageAC.xaml">
@@ -135,10 +182,22 @@
 	  <MauiXaml Update="Tabs\SignUpPageSP.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Tabs\StretchesAndExercisePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Tabs\TACPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Tabs\TapingPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Tabs\TeamStatsPopUp.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Tabs\TellUsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Tabs\TestPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Tabs\TreatmentPage.xaml">

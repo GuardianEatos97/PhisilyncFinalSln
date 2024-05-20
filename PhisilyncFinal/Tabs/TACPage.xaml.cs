@@ -30,9 +30,9 @@ public partial class TACPage : ContentPage
         await Launcher.OpenAsync("https://x.com/Phisilync?t=faQ29iNN7H7jQyTghd9UpQ&s=09");
     }
 
-    private void TikTokBtn_Clicked(object sender, EventArgs e)
+    private async void TikTokBtn_Clicked(object sender, EventArgs e)
     {
-
+        await Launcher.OpenAsync("https://www.tiktok.com/@phisilync?lang=en");
     }
 
     private async void LinkedinBtn_Clicked(object sender, EventArgs e)

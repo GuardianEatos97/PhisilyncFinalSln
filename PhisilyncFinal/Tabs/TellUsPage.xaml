@@ -1,108 +1,113 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             BackgroundColor="Black" 
+             BackgroundColor="#23583a" 
              x:Class="PhisilyncFinal.Tabs.TellUsPage">
+    <ScrollView Orientation="Vertical">
+        <VerticalStackLayout>
+            <Image
+                Source="phisilyncgreenback.png"
+                HeightRequest="100"
+                WidthRequest="400"
+                Aspect="AspectFill"
+                SemanticProperties.Description="Phisilync Logo"
+                Margin="0,0,0,0"/>
+            
+            <Label
+                Text="Let's Get Started"
+                TextColor="White"
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalOptions="Center" 
+                Margin="0,0,0,10"/>
 
-    <VerticalStackLayout>
-        <Image
-            Source="phisilync.png"
-            HeightRequest="210"
-            WidthRequest="400"
-            Aspect="AspectFit"
-            Margin="0"
-            SemanticProperties.Description="Phisilync Logo" />
+            <Label
+                Text="Fully Personalize Your Phisilync Experience"
+                TextColor="White"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalOptions="Center"
+                Margin="10"/>
 
-        <Label
-            Text="Let's Get Started"
-            TextColor="white"
-            FontAttributes="Bold"
-            FontSize="Large"
-            HorizontalOptions="Center" 
-            Margin="10"/>
+            <Label
+                Text="Tell Us About You :"
+                TextColor="White"
+                FontSize="Medium" 
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                Margin="10"/>
 
-        <Label
-            Text="Fully Personalize Your Phisilync Experience"
-            TextColor="White"
-            FontAttributes="Bold"
-            FontSize="Medium"
-            HorizontalOptions="Center"
-            Margin="10"/>
+            <Button
+                Text="I Am An Athlete"
+                FontAttributes="Bold"
+                TextColor="White"
+                BorderColor="SeaGreen"
+                BackgroundColor="SeaGreen"
+                Clicked="Button_Clicked"
+                BorderWidth="1"
+                CornerRadius="100"
+                WidthRequest="500"
+                VerticalOptions="CenterAndExpand"
+                HeightRequest="70"
+                Margin="10"/>
 
-        <Label
-            Text="Tell Us About You :"
-            TextColor="White"
-            FontSize="Medium" 
-            FontAttributes="Bold"
-            HorizontalTextAlignment="Center"
-            Margin="10"/>
+            <Button
+                Text="I Am A Coach"
+                FontAttributes="Bold"
+                CornerRadius="100"
+                TextColor="White"
+                BorderColor="SeaGreen"
+                BorderWidth="1"
+                VerticalOptions="CenterAndExpand"
+                BackgroundColor="SeaGreen"
+                Clicked="Button_Clicked_3"
+                WidthRequest="500"
+                HeightRequest="70"
+                Margin="10"/>
 
-        <Button
-            Text="I Am An Athlete"
-            FontAttributes="Bold"
-            TextColor="White"
-            BorderColor="White"
-            BackgroundColor="Red"
-            Clicked="Button_Clicked"
-            BorderWidth="1"
-            CornerRadius="100"
-            WidthRequest="500"
-            HeightRequest="70"
-            Margin="10"/>
+            <Button
+                Text="I Am A Service Provider"
+                FontAttributes="Bold"
+                TextColor="White"
+                CornerRadius="100"
+                BackgroundColor="SeaGreen"
+                BorderColor="SeaGreen" 
+                VerticalOptions="CenterAndExpand"
+                BorderWidth="1"
+                Clicked="Button_Clicked_1"
+                WidthRequest="500"
+                HeightRequest="70"
+                Margin="10"/>
 
-        <Button
-            Text="I Am A Coach"
-            FontAttributes="Bold"
-            CornerRadius="100"
-            TextColor="White"
-            BorderColor="White"
-            BorderWidth="1"
-            BackgroundColor="Red"
-            Clicked="Button_Clicked_3"
-            WidthRequest="500"
-            HeightRequest="70"
-            Margin="10"/>
+            <Frame 
+                Grid.Row="0" 
+                Grid.ColumnSpan="0"
+                HeightRequest="350"
+                WidthRequest="600"
+                CornerRadius="50"
+                HorizontalOptions="CenterAndExpand"
+                IsClippedToBounds="True"
+                Padding="0"
+                BackgroundColor="White"
+                BorderColor="White" 
+                Margin="10">
 
-        <Button
-            Text="I Am A Service Provider"
-            FontAttributes="Bold"
-            TextColor="White"
-            CornerRadius="100"
-            BackgroundColor="Red"
-            BorderColor="White"
-            BorderWidth="1"
-            Clicked="Button_Clicked_1"
-            WidthRequest="500"
-            HeightRequest="70"
-            Margin="10"/>
+                <ImageButton Source="workout" Aspect="Fill"/>
+            </Frame>
 
-        <Frame 
-            Grid.Row="0" 
-            Grid.ColumnSpan="0"
-            HeightRequest="350"
-            WidthRequest="600"
-            CornerRadius="50"
-            HorizontalOptions="CenterAndExpand"
-            IsClippedToBounds="True"
-            Padding="0"
-            BackgroundColor="White"
-            BorderColor="White" 
-            Margin="10">
-
-            <ImageButton Source="workout" Aspect="Fill"/>
-        </Frame>
-
-        <Button
-            Text="Already Have An Account?"
-            TextColor="White"
-            WidthRequest="300"
-            BackgroundColor="Black"
-            Clicked="Button_Clicked_2"
-            FontSize="Body" 
-            CornerRadius="100"
-            VerticalOptions="EndAndExpand"
-            HorizontalOptions="Center"
-            Margin="10" />
-
-    </VerticalStackLayout>
+            <Button
+                Text="Already Have An Account?"
+                TextColor="White"
+                WidthRequest="300"
+                BackgroundColor="Black"
+                BorderColor="Black"
+                Clicked="Button_Clicked_2"
+                FontSize="Body" 
+                BorderWidth="1"
+                CornerRadius="100"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="Center"
+                Margin="10" />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

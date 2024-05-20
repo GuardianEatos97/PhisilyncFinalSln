@@ -2,18 +2,17 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhisilyncFinal.Tabs.SignUpPageSP"
-             BackgroundColor="Black"
-             Title="SignUpPageSP">
+             BackgroundColor="#23583a">
 
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
             <Image
-                Source="phisilync.png"
+                Source="phisilyncgreenback.png"
                 HeightRequest="210"
                 WidthRequest="400"
-                Aspect="AspectFit"
+                Aspect="AspectFill"
                 SemanticProperties.Description="Phisilync Logo" />
 
             <Label
@@ -52,10 +51,20 @@
                 FontSize="20" 
                 Text="{Binding Details.Password}"/>
 
+            <Entry
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="White"
+                Placeholder="Confirm Password"
+                WidthRequest="500"
+                MaxLength="14"
+                FontSize="20" 
+                Text="{Binding Details.Password}"/>
+
             <Button
                 Text="Create Account"
                 TextColor="White"
-                BackgroundColor="Red"
+                BackgroundColor="SeaGreen"
                 Clicked="Button_Clicked_4"
                 StyleId="TellUsPage"
                 WidthRequest="500"/>
@@ -68,14 +77,14 @@
 
             <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                 <Image
-                    Source="googleb"
+                    Source="googleremove"
                     Aspect="AspectFit"
                     HeightRequest="70"
                     HorizontalOptions="Center" 
                     Margin="0,10,15,0"/>
 
                 <Image
-                    Source="facebook1"
+                    Source="facebook"
                     Aspect="AspectFit"
                     HeightRequest="50"
                     HorizontalOptions="Center" />
