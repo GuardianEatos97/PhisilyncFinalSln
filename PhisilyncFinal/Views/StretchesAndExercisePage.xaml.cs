@@ -3,6 +3,6 @@ public partial class StretchesAndExercisePage : ContentPage
 {
 	public StretchesAndExercisePage()
 	{
-		InitializeComponent();
+        InitializeComponent();
 	}
 }

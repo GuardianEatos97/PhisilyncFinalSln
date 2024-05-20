@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PhisilyncFinal.ViewModels
 {
-    public class InjuryLibraryViewModel
+    public class InjuryLibraryViewModel : BaseViewModel
     {
         public IList<InjuryLibrary> Injury { get; private set; }
 

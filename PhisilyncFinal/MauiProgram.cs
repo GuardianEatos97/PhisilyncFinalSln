@@ -1,6 +1,8 @@
 ﻿using CommunityToolkit.Maui;
 using Microcharts.Maui;
 using Microsoft.Extensions.Logging;
+using PhisilyncFinal.ViewModels;
+using PhisilyncFinal.Views;
 using SkiaSharp.Views.Maui.Controls.Hosting;
 
 namespace PhisilyncFinal
@@ -23,6 +25,9 @@ namespace PhisilyncFinal
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
+            builder.Services.AddTransient<InjuryPage>();
+
+            builder.Services.AddSingleton<InjuryLibraryViewModel>();
 
             return builder.Build();
         }

@@ -27,7 +27,7 @@ namespace PhisilyncFinal
 
         private void RegisterRoutes()
         {
-            Routing.RegisterRoute("InjuryLibrary", typeof(InjuryPage));
+            //Routing.RegisterRoute("InjuryLibrary", typeof(InjuryPage));
         }
 
     }
