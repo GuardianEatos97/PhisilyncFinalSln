@@ -5,16 +5,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Maui;
 
 namespace PhisilyncFinal.ViewModels
 {
-    public class InjuryLibraryViewModel : BaseViewModel
+    public partial class InjuryLibraryViewModel : BaseViewModel
     {
-        public IList<InjuryLibrary> Injury { get; private set; }
+        public ObservableCollection<InjuryLibrary> Injury { get; private set; }
 
         public InjuryLibraryViewModel() 
         {
-            Injury = new List<InjuryLibrary>();
+            Injury = new ObservableCollection<InjuryLibrary>();
 
             Injury.Add(new InjuryLibrary
             {
