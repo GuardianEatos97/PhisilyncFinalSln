@@ -4,23 +4,15 @@ namespace PhisilyncFinal.Views;
 
 public partial class SignUpPageAC : ContentPage
 {
-
-	public SignUpPageAC()
+	public SignUpPageAC(SUPageACVM vm)
 	{
 		InitializeComponent();
-        //Routing.RegisterRoute("AthleteDash", typeof(AthleteDash));
-        //Routing.RegisterRoute("LogInPage", typeof(LogInPage));
+
+
+		BindingContext = vm;
+
     }
 
-    /*private async void Button_Clicked_3(object sender, EventArgs e)
-    {
-        await Shell.Current.GoToAsync("AthleteDash");
-    }
-
-    private async void Button_Clicked_2(object sender, EventArgs e)
-    {
-        await Shell.Current.GoToAsync("LogInPage");
-    }*/
 
 
 }

@@ -117,6 +117,9 @@ Route="TellUsPage" />
         ContentTemplate="{DataTemplate local:Treatment}"/>
 </TabBar>-->
 
+    <ShellContent ContentTemplate="{DataTemplate local:TellUsPage}" Route="tellUsPage"/>
+    <ShellContent ContentTemplate="{DataTemplate local:AthleteDash}" Route="athleteDash"/>
+    <ShellContent ContentTemplate="{DataTemplate local:SignUpPageAC}" Route="athleteSignUp"/>
 </Shell>
 
 

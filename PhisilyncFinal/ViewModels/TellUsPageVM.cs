@@ -5,17 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.Input;
 
+
 namespace PhisilyncFinal.ViewModels
 {
-
-    public partial class SUPageACVM : BaseViewModel
+    public partial class TellUsPageVM : BaseViewModel
     {
         [RelayCommand]
-        private async Task SignUp()
+        private async Task Athlete()
         {
-            await Shell.Current.GoToAsync("///athleteDash");
+            await Shell.Current.GoToAsync("///athleteSignUp");
         }
     }
-
-
 }

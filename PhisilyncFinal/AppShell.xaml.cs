@@ -25,10 +25,6 @@ namespace PhisilyncFinal
             }
         }
 
-        private void RegisterRoutes()
-        {
-
-        }
 
     }
 }

@@ -8,5 +8,11 @@
 
             MainPage = new AppShell();
         }
+
+        protected override async void OnStart()
+        {
+            await Shell.Current.GoToAsync("///tellUsPage");
+            base.OnStart();
+        }
     }
 }
