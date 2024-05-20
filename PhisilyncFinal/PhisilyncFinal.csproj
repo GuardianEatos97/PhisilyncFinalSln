@@ -92,6 +92,8 @@
 	  <None Remove="Resources\Images\tac.png" />
 	  <None Remove="Resources\Images\tiktok.png" />
 	  <None Remove="Resources\Images\tiktoky.png" />
+	  <None Remove="Resources\Images\tiktok_large.png" />
+	  <None Remove="Resources\Images\toktik.png" />
 	  <None Remove="Resources\Images\treatment.jpg" />
 	  <None Remove="Resources\Images\tt.png" />
 	  <None Remove="Resources\Images\twitter.png" />

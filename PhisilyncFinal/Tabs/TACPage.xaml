@@ -488,7 +488,7 @@ Text="Any features, content, product specifications, prices, and other informati
                     <RowDefinition Height="*"/>
 
                 </Grid.RowDefinitions>
-                <Frame BackgroundColor="#23583A" Grid.Row="0" BorderColor="Transparent">
+                <Frame BackgroundColor="Transparent" Grid.Row="0" BorderColor="Transparent">
                     <StackLayout Orientation="Vertical">
                         <Label
                     Text="Contact Us"
@@ -542,7 +542,7 @@ VerticalOptions="Center"/>
                     </StackLayout>
                 </Frame>
 
-                <Frame BackgroundColor="#23583A" BorderColor="Transparent" Grid.Row="1" HasShadow="True" VerticalOptions="Center" MaximumWidthRequest="350">
+                <Frame BackgroundColor="Transparent" BorderColor="Transparent" Grid.Row="1" HasShadow="True" VerticalOptions="Center" MaximumWidthRequest="350">
                     <ScrollView Orientation="Horizontal">
                         <Grid
                         Margin="15,0,0,0"
@@ -558,14 +558,14 @@ VerticalOptions="Center"/>
                             <StackLayout Orientation="Horizontal" Grid.Column="1">
                                 <StackLayout Orientation="Horizontal">
                                     <ImageButton
-                                    Source="fbook.png"
+                                    Source="facebook.png"
                                     HeightRequest="50"
                                     WidthRequest="50"
                                     Margin="3,0"
                                     x:Name="FbBtn"
                                     Clicked="FbBtn_Clicked"/>
                                     <ImageButton
-                                    Source="instagram.png"
+                                    Source="insta.png"
                                     HeightRequest="50"
                                     WidthRequest="50"
                                     Margin="3,0"
@@ -576,17 +576,19 @@ VerticalOptions="Center"/>
                                     HeightRequest="50"
                                     WidthRequest="50"
                                     Margin="3,0"
+                                        BackgroundColor="White"
+                                        CornerRadius="5"
                                     x:Name="XBtn"
                                     Clicked="XBtn_Clicked"/>
                                     <ImageButton
-                                    Source="tiktoky.png"
+                                    Source="toktik.png"
                                     HeightRequest="50"
                                     WidthRequest="50"
                                     Margin="3,0"
                                     x:Name="TikTokBtn"
                                     Clicked="TikTokBtn_Clicked"/>
                                     <ImageButton
-                                    Source="lin.png"
+                                    Source="linkedin.png"
                                     HeightRequest="50"
                                     WidthRequest="50"
                                     Margin="3,0"
