@@ -2,11 +2,97 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhisilyncFinal.Tabs.MassageTherapyPage"
+             BackgroundImageSource="greenback"
              Title="MassageTherapyPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Massage Therapy Page"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Shell.TitleView Margin="0,0,0,0">
+        <Image 
+            Source="phisilyncgreen"
+            Aspect="Center"/>
+    </Shell.TitleView> 
+
+    <ScrollView Orientation="Vertical">
+        <VerticalStackLayout>
+            <Frame 
+                 Grid.Row="0" 
+                 Grid.ColumnSpan="0"
+                 HeightRequest="350"
+                 WidthRequest="600"
+                 CornerRadius="50"
+                 HorizontalOptions="CenterAndExpand"
+                 IsClippedToBounds="True"
+                 Padding="0"
+                 BackgroundColor="White"
+                 BorderColor="White" 
+                 Margin="0,30,0,0">
+
+                <ImageButton Source="massage" Aspect="Fill"/>
+            </Frame>
+
+            <Label
+                Text="What is Massage Therapy?"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                TextDecorations="Underline"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="In massage therapy, a massage therapist rubs and kneads the soft tissues of your body. The soft tissues include muscle, connective tissue, tendons, ligaments and skin. The massage therapist varies the amount of pressure and movement."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+            
+            <Label
+                 Text="Massage is part of integrative medicine. Medical centers often offer it with standard treatment. It can be used for a wide range of medical conditions."
+                 FontAttributes="Bold"
+                 TextColor="White"
+                 FontSize="Small"
+                 HorizontalOptions="Center"
+                 Margin="0,20,0,0"/>
+
+            <Label
+                Text="Studies of massage benefits have found massage can:"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                TextDecorations="Underline"
+                Margin="0,20,0,0"/>
+            
+            <Label
+                Text="1) Help reduce stress."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,20,0,0"/>
+
+            <Label
+                 Text="2) Lessen pain and muscle tightness."
+                 FontAttributes="Bold"
+                 TextColor="White"
+                 FontSize="Small"
+                 HorizontalOptions="Start"
+                 Margin="0,0,0,0"/>
+
+            <Label
+                Text="3) Increase relaxation."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="4) Improve the work of the immune system."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

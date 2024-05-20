@@ -2,11 +2,307 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhisilyncFinal.Tabs.StretchesAndExercisePage"
+             BackgroundImageSource="greenback"
              Title="StretchesAndExercisePage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Stretches And Exercise Page"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Shell.TitleView Margin="0,0,0,0">
+        <Image 
+            Source="phisilyncgreen"
+            Aspect="Center"/>
+    </Shell.TitleView>
+
+    <ScrollView Orientation="Vertical">
+        <VerticalStackLayout>
+            <Frame 
+                 Grid.Row="0" 
+                 Grid.ColumnSpan="0"
+                 HeightRequest="350"
+                 WidthRequest="600"
+                 CornerRadius="50"
+                 HorizontalOptions="CenterAndExpand"
+                 IsClippedToBounds="True"
+                 Padding="0"
+                 BackgroundColor="White"
+                 BorderColor="White" 
+                 Margin="0,30,0,0">
+
+                <ImageButton Source="stretches" Aspect="Fill"/>
+            </Frame>
+
+            <Label
+                Text="What are stretches and exercise?"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                TextDecorations="Underline"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="Stretching is a physical exercise that requires putting a body part in a certain position that'll serve in the lengthening and elongation of the muscle or muscle group and thus enhance its flexibility and elasticity."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="Effects of stretching"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                TextDecorations="Underline"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="1) Improves flexibility delaying impaired mobility associated with aging"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="2) Improves performance in physical activities as a result of improved flexibility"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="3) Reduce the risk of injury and damage"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="4) Improves blood circulation reducing muscle soreness and time for recovery"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="5) Increasing the range of motion"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="Stretching Indications"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                TextDecorations="Underline"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="1) Improves the joint range of motion"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="2) Improves posture by strengthening the back muscles"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="3) Returns normal neuromuscular balance between muscle groups"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="4) Reduce injuries, strains and damage"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="5) Before and after exercise to reduce muscle soreness"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Frame 
+                 Grid.Row="0" 
+                 Grid.ColumnSpan="0"
+                 HeightRequest="350"
+                 WidthRequest="600"
+                 CornerRadius="50"
+                 HorizontalOptions="CenterAndExpand"
+                 IsClippedToBounds="True"
+                 Padding="0"
+                 BackgroundColor="White"
+                 BorderColor="White" 
+                 Margin="0,30,0,0">
+
+                <ImageButton Source="exercise" Aspect="Fill"/>
+            </Frame>
+
+            <Label
+                Text="Types of stretches:"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                TextDecorations="Underline"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="Stretching exercises have traditionally been included as part of the training and recovery program. It's important to note that, maximal strength, number of repetitions and total volume is different for each type of stretching"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="The three types of stretches are:"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Medium"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="1) Static stretch (SS)"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="2) Dynamic stretch (DS)"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="3) Pre-contraction stretching: Proprioceptive Neuromuscular Facilitation stretching (PNFS)"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+            
+            <Label
+                Text="Static Streches (SS)"
+                FontAttributes="Bold"
+                TextColor="White"
+                TextDecorations="Underline"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="Static stretching (SS) is a slow-paced controlled physical activity which involves putting the body part in a comfortable position that elongates the muscle without causing pain with low force for a prolonged duration of time (usually 30 seconds)."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="There are two types of static stretches:"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Medium"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="1) Active-static stretching involves performing static stretches without assistance."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="2) Passive-static stretching involves performing the stretches passively with assistance from an external force which can be a partner, an accessory or the force of gravity."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="Dynamic Streches (DS)"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Large"
+                TextDecorations="Underline"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="Dynamic Stretching (DS) is a controlled movement, unlike ballistic stretches that involve bouncing movements which increase the risk of injury, involving the performance of a movement progressively increasing the range of motion through successive repetitive motions till the end of the range is achieved. It can be done standing or while moving."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="For individuals who perform specific sports such as swimming, dynamic stretching exercises involve mimicking the movement of the activity such as circling arms before getting in the water and is often done after static stretching."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="Pre-Contraction Stretching: Proprioceptive Neuromuscular"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Large"
+                TextDecorations="Underline"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="Facilitation Stretching (PNFS)"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Large"
+                TextDecorations="Underline"
+                HorizontalOptions="Center"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="Pre-contraction stretching is a type of stretching that involves both the contraction and stretching of the muscle. It has been originally developed for the sole reason of relaxing muscles and increasing muscle tone."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
+
+
+
+
