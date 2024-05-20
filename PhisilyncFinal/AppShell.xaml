@@ -94,6 +94,14 @@ ContentTemplate="{DataTemplate local:TellUsPage}"
   
 Route="TellUsPage" />
 
+        <ShellContent
+Title="Injury Library"
+            Icon="qa.png"
+        Style="{StaticResource BaseStyle}"
+ContentTemplate="{DataTemplate local:InjuryPage}"
+  
+Route="InjuryPage" />
+
     </FlyoutItem>
 
     <!--<TabBar>

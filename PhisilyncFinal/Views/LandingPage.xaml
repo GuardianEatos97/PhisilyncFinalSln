@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:PhisilyncFinal.Views"
              x:Class="PhisilyncFinal.Views.LandingPage"
              >
-    <local:AthleteDash />
-    <local:InjuryPage/>
+    <!--<local:AthleteDash />
+    <local:InjuryPage/>-->
     
 </TabbedPage>
