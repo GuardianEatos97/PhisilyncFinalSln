@@ -103,6 +103,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui" Version="9.0.0" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="Microcharts.Maui" Version="1.0.0" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.20" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.20" />
@@ -116,7 +117,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Tabs\InjuryPage.xaml.cs">
+	  <Compile Update="Views\InjuryPage.xaml.cs">
 	    <DependentUpon>InjuryPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
@@ -128,79 +129,79 @@
 	  <MauiXaml Update="FlyOutControls\FlyoutHeader.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\AthleteDash.xaml">
+	  <MauiXaml Update="Views\AthleteDash.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\CoachDashboard.xaml">
+	  <MauiXaml Update="Views\CoachDashboard.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\EditProfile.xaml">
+	  <MauiXaml Update="Views\EditProfile.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\FAQs.xaml">
+	  <MauiXaml Update="Views\FAQs.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\InjuryPage.xaml">
+	  <MauiXaml Update="Views\InjuryPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\LandingPage.xaml">
+	  <MauiXaml Update="Views\LandingPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\LogInPage.xaml">
+	  <MauiXaml Update="Views\LogInPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\LynoTherapyPage.xaml">
+	  <MauiXaml Update="Views\LynoTherapyPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\MassageTherapyPage.xaml">
+	  <MauiXaml Update="Views\MassageTherapyPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\Payment.xaml">
+	  <MauiXaml Update="Views\Payment.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\PrivacyPolicy.xaml">
+	  <MauiXaml Update="Views\PrivacyPolicy.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\ProfileDetails.xaml">
+	  <MauiXaml Update="Views\ProfileDetails.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\RangeOfMovementPage.xaml">
+	  <MauiXaml Update="Views\RangeOfMovementPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\ServiceProviderDashboard.xaml">
+	  <MauiXaml Update="Views\ServiceProviderDashboard.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\Settings.xaml">
+	  <MauiXaml Update="Views\Settings.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\SignUpPageAC.xaml">
+	  <MauiXaml Update="Views\SignUpPageAC.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\SignUpPageCoach.xaml">
+	  <MauiXaml Update="Views\SignUpPageCoach.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\SignUpPageSP.xaml">
+	  <MauiXaml Update="Views\SignUpPageSP.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\StretchesAndExercisePage.xaml">
+	  <MauiXaml Update="Views\StretchesAndExercisePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\TACPage.xaml">
+	  <MauiXaml Update="Views\TACPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\TapingPage.xaml">
+	  <MauiXaml Update="Views\TapingPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\TeamStatsPopUp.xaml">
+	  <MauiXaml Update="Views\TeamStatsPopUp.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\TellUsPage.xaml">
+	  <MauiXaml Update="Views\TellUsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\TestPage.xaml">
+	  <MauiXaml Update="Views\TestPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\TreatmentPage.xaml">
+	  <MauiXaml Update="Views\TreatmentPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

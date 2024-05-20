@@ -1,6 +1,6 @@
 ﻿using PhisilyncFinal.Models;
 using PhisilyncFinal.Services;
-using PhisilyncFinal.Tabs;
+using PhisilyncFinal.Views;
 
 namespace PhisilyncFinal
 {
@@ -23,6 +23,11 @@ namespace PhisilyncFinal
                 Routing.RegisterRoute("AthleteDash", typeof(AthleteDash));
                 Navigation.PushAsync(new AthleteDash());
             }
+        }
+
+        private void RegisterRoutes()
+        {
+
         }
 
     }

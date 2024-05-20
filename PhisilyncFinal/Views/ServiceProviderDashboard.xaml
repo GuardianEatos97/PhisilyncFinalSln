@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cal="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar"
+             xmlns:chart="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+             x:Class="PhisilyncFinal.Views.ServiceProviderDashboard"
+             BackgroundColor="Black"
+             Title="ServiceProviderDashboard">
+    
+    <ScrollView Orientation="Vertical">
+        <VerticalStackLayout>
+            <Image Source="phisilyncgreen"
+                   Aspect="AspectFill"
+                   HeightRequest="110"
+                   WidthRequest="500"/>
+
+            <Label Text="Welcome (Service Provider Name)"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                    
+                   FontSize="Medium"
+                   Margin="20,70,0,10"/>
+
+            <Label Text="Client Tracker"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                    
+                   Margin="0,40,0,0"
+                   HorizontalTextAlignment="Center"/>
+
+            <Frame HeightRequest="400"
+                   WidthRequest="600"
+                   CornerRadius="10"
+                   IsClippedToBounds="True"
+                   BackgroundColor="White"
+                   BorderColor="White">
+
+                <chart:ChartView x:Name="clientTracker"
+                                 HeightRequest="200"/>
+            </Frame>
+
+            <cal:Calendar 
+              EventsScrollViewVisible="True"
+              SelectedDayBackgroundColor="SeaGreen"
+              CalendarLayout="Month"
+              BackgroundColor="Black"
+              DayViewCornerRadius="5"
+              DeselectedDayTextColor="White"
+              SelectedDateColor="White"
+              ArrowsBackgroundColor="SeaGreen"
+              ArrowsBorderColor="Black"
+              ArrowsColor="White"
+              DaysTitleColor="WhiteSmoke"
+              DaysTitleWeekendColor="WhiteSmoke"
+              DisabledDayColor="White"
+              EventIndicatorColor="White"
+              EventIndicatorSelectedColor="White"
+              EventIndicatorSelectedTextColor="White"
+              MonthLabelColor="White"
+              OtherMonthDayColor="White"
+              SelectedDayTextColor="White"
+              SelectedTodayTextColor="White"
+              TodayFillColor="MediumSeaGreen"
+              TodayOutlineColor="SeaGreen"
+              TodayTextColor="White"
+              WeekendDayColor="White"
+              YearLabelColor="White"
+              EventIndicatorTextColor="White"
+              Margin="70"
+              HeightRequest="500">
+
+                <cal:Calendar.EventTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Name}"
+                       FontSize="25"
+                       TextColor="White"
+                       FontAttributes="Bold"/>
+
+                            <Label Text="{Binding Description}"
+                       TextColor="White"/>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </cal:Calendar.EventTemplate>
+            </cal:Calendar>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhisilyncFinal.Views.FAQs"
+             BackgroundColor="#2D2E2D">
+    
+    <Shell.TitleView Margin="0">
+        <Image 
+            Source="phisilync_nobg.png"
+            Aspect="Center"/>
+    </Shell.TitleView>
+    
+    <ScrollView>
+    <VerticalStackLayout Margin="20,20,20,20">
+        <Label
+            Text="FAQs"
+            FontSize="Large"
+            TextColor="White"
+            FontAttributes="Bold"
+             
+            TextDecorations="Underline"
+            Margin="0,10"
+            HorizontalOptions="Center"/>
+
+            <Label
+Text="What is Physiotherapy?"
+FontSize="Medium"
+    TextColor="#E21C21"
+FontAttributes="Bold"
+TextDecorations="Underline"
+     
+Margin="0,10"
+HorizontalOptions="Center"/>
+            <Label
+            Text="Physiotherapy is the treatment of disease, injury, or deformity by physical methods such as massage, heat treatment, and exercise rather than by drugs or surgery."
+                TextColor="White"
+                 FontSize="Small"
+                 
+                Margin="0,0"
+                HorizontalTextAlignment="Center"
+                HorizontalOptions="Center"
+            />
+            <Label
+Text="How do I book an appointment?"
+FontSize="Medium"
+    TextColor="#E21C21"
+FontAttributes="Bold"
+TextDecorations="Underline"
+     
+Margin="0,10"
+HorizontalOptions="Center"/>
+
+            <Label
+Text="Appointments are made online using our website or telephonically."
+    TextColor="White"
+     FontSize="Small"
+     
+    HorizontalTextAlignment="Center"
+    HorizontalOptions="Center"/>
+
+            <Label
+Text="How do payments work?"
+FontSize="Medium"
+    TextColor="#E21C21"
+FontAttributes="Bold"
+TextDecorations="Underline"
+     
+Margin="0,10"
+HorizontalOptions="Center"/>
+
+            <Label
+Text="Payment is made online using a secure portal. All MasterCards, VISA and American Express cards are accepted."
+    TextColor="White"
+     FontSize="Small"
+     
+    HorizontalTextAlignment="Center"
+    HorizontalOptions="Center"/>
+
+            <Label
+Text="Cancellation fee?"
+FontSize="Medium"
+    TextColor="#E21C21"
+FontAttributes="Bold"
+TextDecorations="Underline"
+     
+Margin="0,10"
+HorizontalOptions="Center"/>
+
+            <Label
+Text="All cancellations are subject to a 10% admin fee. Refunds are done within 48 hours."
+    TextColor="White"
+     FontSize="Small"
+     
+    HorizontalTextAlignment="Center"
+    HorizontalOptions="Center"/>
+
+            <Label
+Text="How many sessions will I need?"
+FontSize="Medium"
+    TextColor="#E21C21"
+FontAttributes="Bold"
+TextDecorations="Underline"
+     
+Margin="0,10"
+HorizontalOptions="Center"/>
+
+            <Label
+Text="The amount of sessions needed depends on the injury or injuries sustained."
+    TextColor="White"
+     FontSize="Small"
+     
+    HorizontalTextAlignment="Center"
+    HorizontalOptions="Center"/>
+
+            <Label
+Text="What is TeleHealth Physiotherapy?"
+FontSize="Medium"
+    TextColor="#E21C21"
+FontAttributes="Bold"
+TextDecorations="Underline"
+     
+Margin="0,10"
+HorizontalOptions="Center"/>
+
+            <Label
+Text="Telehealth physiotherapy is the remote delivery of healthcare services over the telecommunications infrastructure. Telehealth allows healthcare providers to evaluate, diagnose, inform and treat patients without an in-person visit."
+    TextColor="White"
+     FontSize="Small"
+     
+    HorizontalTextAlignment="Center"
+    HorizontalOptions="Center"/>
+
+            <Label
+Text="What is Lynotherapy?"
+FontSize="Medium"
+    TextColor="#E21C21"
+FontAttributes="Bold"
+TextDecorations="Underline"
+     
+Margin="0,10"
+HorizontalOptions="Center"/>
+
+            <Label
+Text="Lynotherapy is a complementary modality that aims at reducing restrictions in fascial tissue in order to restore movement and function."
+    TextColor="White"
+     FontSize="Small"
+     
+    HorizontalTextAlignment="Center"
+    HorizontalOptions="Center"/>
+
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+                <Frame BackgroundColor="#2D2E2D" Grid.Row="0" BorderColor="Transparent">
+                    <StackLayout Orientation="Vertical">
+                        <Label
+                    Text="Contact Us"
+                    FontSize="Medium"
+                             
+                    FontAttributes="Bold"
+                            Margin="0,10"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    TextColor="White"/>
+                        <Label
+Text="11 Adderley Street, Foreshore"
+TextColor="White"
+Margin="0"
+                             
+HorizontalOptions="Center"
+VerticalOptions="Center"
+ FontSize="Small"/>
+                        <Label
+                            Text="Cape Town, 8000"
+                            TextColor="White"
+                             
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                             FontSize="Small"/>
+                        <Label
+                        Text="info@phisilync.co.za"
+                        TextColor="White"
+                             
+                        Margin="0,20"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                         FontSize="Small"/>
+                        <Label
+                        Text="+27 (0) 215891201"
+                        TextColor="White"
+                             
+                        Margin="0,0"
+                         FontSize="Small"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+                        <Label
+Text="Or link with us via social media"
+TextColor="White"
+                             
+                            FontAttributes="Italic"
+Margin="0,20,0,0"
+ FontSize="Small"
+HorizontalOptions="Center"
+VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#E21C21" BorderColor="Transparent" Grid.Row="1" HasShadow="True" VerticalOptions="Center" MaximumWidthRequest="350">
+                    <ScrollView Orientation="Horizontal">
+                        <Grid
+                        Margin="15,0,0,0"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="CenterAndExpand">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout Orientation="Horizontal" Grid.Column="1">
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
+                                    <ImageButton
+                                    Source="facebook.png"
+                                    HeightRequest="50"
+                                    WidthRequest="50"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    Margin="3,0"
+                                    x:Name="FbBtn"
+                                    Clicked="FbBtn_Clicked"/>
+                                    <ImageButton
+                                    Source="insta.png"
+                                    HeightRequest="50"
+                                    WidthRequest="50"
+                                    HorizontalOptions="Center"
+VerticalOptions="Center"
+                                    Margin="3,0"
+                                    x:Name="InstaBtn"
+                                    Clicked="InstaBtn_Clicked"/>
+                                    <ImageButton
+                                    Source="twitter_bird.png"
+                                    HeightRequest="50"
+                                    WidthRequest="50"
+                                    Margin="3,0"
+                                    HorizontalOptions="Center"
+VerticalOptions="Center"
+                                    x:Name="XBtn"
+                                    Clicked="XBtn_Clicked"/>
+                                    <ImageButton
+                                    Source="tiktok.png"
+                                    HeightRequest="50"
+                                    WidthRequest="50"
+                                    HorizontalOptions="Center"
+VerticalOptions="Center"
+                                    Margin="3,0"
+                                    x:Name="TikTokBtn"
+                                    Clicked="TikTokBtn_Clicked"/>
+                                    <ImageButton
+                                    Source="linkedin.png"
+                                    HeightRequest="50"
+                                    WidthRequest="50"
+                                    HorizontalOptions="Center"
+VerticalOptions="Center"
+                                    Margin="3,0"
+                                    x:Name="LinkedinBtn"
+                                    Clicked="LinkedinBtn_Clicked"/>
+
+                                </StackLayout>
+                            </StackLayout>
+                        </Grid>
+                    </ScrollView>
+                </Frame>
+
+                <StackLayout Grid.Row="2">
+                    <Label
+VerticalOptions="Center"
+HorizontalOptions="Center"
+                         
+Text="© Copyright Phisilync (Pty) Ltd 2024 │ All Rights Reserved"
+                Margin="0,20"
+TextColor="White"/>
+                </StackLayout>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
