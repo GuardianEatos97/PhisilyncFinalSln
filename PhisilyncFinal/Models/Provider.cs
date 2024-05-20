@@ -20,11 +20,11 @@ namespace PhisilyncFinal.Models
         public string? serviceProviderPractitionerPassword { get; set; }
         public string? serviceProviderDescription { get; set; }
 
-        /*[OneToMany(CascadeOperations = CascadeOperation.All)]
+        [OneToMany(CascadeOperations = CascadeOperation.All)]
         public List<ServiceType>? serviceProviderServiceTypes { get; set; }
 
-        [ForeignKey(typeof(AddressLocation))]
-        public int serviceProviderLocation { get; set; }
+        /*[ForeignKey(typeof(AddressLocation))]
+        public int serviceProviderLocation { get; set; }*/
 
         [OneToMany(CascadeOperations = CascadeOperation.All)]
         public List<ProviderInjury>? serviceProviderInjuries { get; set; }
@@ -37,7 +37,7 @@ namespace PhisilyncFinal.Models
             serviceProviderServiceTypes = new();
             serviceProviderInjuries = new();
             serviceProviderTreatments = new();
-        }*/
+        }
 
     }
 }

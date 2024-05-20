@@ -1,4 +1,4 @@
-﻿/*using SQLite;
+﻿using SQLite;
 
 namespace PhisilyncFinal.Models
 {
@@ -11,4 +11,4 @@ namespace PhisilyncFinal.Models
         public string sportDescription { get; set; }
 
     }
-}*/
+}

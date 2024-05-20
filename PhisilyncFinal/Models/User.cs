@@ -22,10 +22,10 @@ namespace PhisilyncFinal.Models
         public string userPassword { get; set; }
         public string? userPhoneNumber { get; set; }
 
-        [ForeignKey(typeof(Treatment))]
+        /*[ForeignKey(typeof(Treatment))]
         public int? userTreatment { get; set; } //foreign key
 
-        /*[OneToMany(CascadeOperations = CascadeOperation.All)]
+        [OneToMany(CascadeOperations = CascadeOperation.All)]
         public List<Sport>? userSports { get; set; }
 
         public User() { userSports = new(); }
