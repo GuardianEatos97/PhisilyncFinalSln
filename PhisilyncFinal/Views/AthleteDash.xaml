@@ -24,7 +24,8 @@
                 Margin="10"
                 WidthRequest="70"
                 HeightRequest="70"
-                BorderWidth="5"/>
+                BorderWidth="5"
+                />
             
             <Label
                 Text="Noah Khan"

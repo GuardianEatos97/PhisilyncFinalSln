@@ -249,16 +249,18 @@ VerticalOptions="Center"
                                     x:Name="InstaBtn"
                                     Clicked="InstaBtn_Clicked"/>
                                     <ImageButton
-                                    Source="twitter_bird.png"
+                                    Source="twitter.png"
                                     HeightRequest="50"
                                     WidthRequest="50"
+                                        BackgroundColor="White"
+                                        CornerRadius="5"
                                     Margin="3,0"
                                     HorizontalOptions="Center"
 VerticalOptions="Center"
                                     x:Name="XBtn"
                                     Clicked="XBtn_Clicked"/>
                                     <ImageButton
-                                    Source="tiktok.png"
+                                    Source="toktik.png"
                                     HeightRequest="50"
                                     WidthRequest="50"
                                     HorizontalOptions="Center"

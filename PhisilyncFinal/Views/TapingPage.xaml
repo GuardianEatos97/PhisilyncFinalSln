@@ -1,12 +1,148 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PhisilyncFinal.Views.TapingPage"
+             x:Class="PhisilyncFinal.Tabs.TapingPage"
+             BackgroundImageSource="greenback"
              Title="TapingPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Taping Page"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Shell.TitleView Margin="0,0,0,0">
+        <Image 
+            Source="phisilyncgreen"
+            Aspect="Center"/>
+    </Shell.TitleView>
+
+    <ScrollView Orientation="Vertical">
+        <VerticalStackLayout>
+            <Frame 
+                 Grid.Row="0" 
+                 Grid.ColumnSpan="0"
+                 HeightRequest="350"
+                 WidthRequest="600"
+                 CornerRadius="50"
+                 HorizontalOptions="CenterAndExpand"
+                 IsClippedToBounds="True"
+                 Padding="0"
+                 BackgroundColor="White"
+                 BorderColor="White" 
+                 Margin="0,30,0,0">
+
+                <ImageButton Source="taping" Aspect="Fill"/>
+            </Frame>
+
+            <Label
+                Text="What is kinesiology taping?"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                TextDecorations="Underline"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="Kinesiology tape is a thin, flexible tape that was developed to aid muscle movement and enhance athletic performance. It is often used to relieve pain, reduce swelling and inflammation and provide support to joints and muscles."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="The elasticity, or stretchiness, of kinesiology tape allows for movement. This makes it different from the more rigid rehabilitation tape or support adhesives that have no stretch to them. Those are used to keep muscles and joints from moving and provide support after a sports-related injury, and for people who have conditions that make it difficult to activate muscles or control muscle contraction."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="Who benefits from using kinesiology tape?"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                TextDecorations="Underline"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="One of the main reasons we use kinesiology tape is to help people with muscle stimulation after an injury. The thin, stretchy tape imitates the skin’s elasticity, so it feels very natural. When you apply the tape, the skin sends signals to the nerves to activate the muscles. When the muscles receive that information, they respond to the stimulation and contract. Muscle contractions produce movement, sustain body posture and position and help stabilize joints."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="In addition, kinesiology tape is used to relieve pain from inflammation and lymphedema. It’s applied in a way that pulls the skin upward, creating a space under the skin that improves the lymphatic flow in that area. It may also help prevent arthritic inflammation from flaring, but there is little evidence to support that and it is even less beneficial if the condition is chronic or mobility is a problem."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Frame 
+                 Grid.Row="0" 
+                 Grid.ColumnSpan="0"
+                 HeightRequest="450"
+                 WidthRequest="600"
+                 CornerRadius="50"
+                 HorizontalOptions="CenterAndExpand"
+                 IsClippedToBounds="True"
+                 Padding="0"
+                 BackgroundColor="White"
+                 BorderColor="White" 
+                 Margin="0,30,0,0">
+
+                <ImageButton Source="kneetaping" Aspect="Fill"/>
+            </Frame>
+
+            <Label
+                Text="Are there misconceptions people should be aware of?"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                TextDecorations="Underline"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="Some people will benefit no matter what kind of tape we use or how we use it. Patients should feel more than 30% better when I apply kinesiology tape. That’s when I know it’s helping. If they only feel 5% or 10% better, then it’s probably a placebo effect."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="Additionally, some people think the various colors of kinesiology tape have specific properties and benefits, but they do not. Color choice is simply a matter of personal preference."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="The biggest misconception, however, involves claims that applying kinesiology tape for knee or shoulder instability can provide support similar to a brace, but that is not necessarily true. In my opinion, the material is too soft, so it doesn’t create enough stability. There is no conclusive research to support its use in this area. People may want to ask their provider about using the more rigid support adhesives for these particular issues instead."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="What does kinesiology tape do?"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                TextDecorations="Underline"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="What Is Kinesiology Tape? Kinesiology refers to the study of movement. Kinesio tape, as it's often called, got its name because it is used to aid muscle movement. It's a thin, flexible tape that is meant to relieve pain, reduce swelling and inflammation, and provide support to joints and muscles."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

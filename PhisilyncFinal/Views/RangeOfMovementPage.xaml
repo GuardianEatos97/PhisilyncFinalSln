@@ -1,12 +1,147 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PhisilyncFinal.Views.RangeOfMovementPage"
+             x:Class="PhisilyncFinal.Tabs.RangeOfMovementPage"
+             BackgroundImageSource="greenback"
              Title="RangeOfMovementPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Range of Movement page"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Shell.TitleView Margin="0,0,0,0">
+        <Image 
+            Source="phisilyncgreen"
+            Aspect="Center"/>
+    </Shell.TitleView>
+
+    <ScrollView Orientation="Vertical">
+        <VerticalStackLayout>
+            <Frame 
+                 Grid.Row="0" 
+                 Grid.ColumnSpan="0"
+                 HeightRequest="350"
+                 WidthRequest="600"
+                 CornerRadius="50"
+                 HorizontalOptions="CenterAndExpand"
+                 IsClippedToBounds="True"
+                 Padding="0"
+                 BackgroundColor="White"
+                 BorderColor="White" 
+                 Margin="0,30,0,0">
+
+                <ImageButton Source="roms" Aspect="Fill"/>
+            </Frame>
+
+            <Label
+                Text="What is range of motion testing?"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                TextDecorations="Underline"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="Range of motion (ROM) means the extent or limit to which a part of the body can be moved around a joint or a fixed point; the totality of movement a joint is capable of doing. Range of motion of a joint is gauged during passive ROM (assisted) PROM or active ROM (independent) AROM."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="1) ROM is usually assessed during a physical therapy assessment or treatment. Normal values depend on the body part, and individual variations."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="2) The purpose of ROM exercises are prevention the development of adaptive muscle shortening, contractures, and shortening of the capsule, ligaments, and tendons. ROM exercises also provide sensory stimulation."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="Types of ROM:"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                TextDecorations="Underline"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="1) Passive range of motion (PROM) is the ROM that is achieved when an outside force (such as a therapist or a CPM machine) exclusively causes movement of a joint and is usually the maximum range of motion that a joint can move. Usually performed when the patient is unable or not permitted to move the body part."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="2) Active-assisted range of motion (AAROM) is when the joint receives partial assistance from an outside force. Usually performed when the patient needs assistance with movement from an external force because of weakness, pain, or changes in muscle tone"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="3) Active range of motion (AROM) is the ROM that can be achieved when opposing muscles contract and relax, resulting in joint movement. For example, the active range of motion to allow the elbow to bend requires the biceps to contract while the triceps muscle relaxes. Active range of motion is usually less than passive range of motion. Usually performed by the patient independently and when the patient is able to voluntarily contract, control, and coordinate a movement."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,20,0,0"/>
+
+            <Frame 
+                 Grid.Row="0" 
+                 Grid.ColumnSpan="0"
+                 HeightRequest="350"
+                 WidthRequest="600"
+                 CornerRadius="50"
+                 HorizontalOptions="CenterAndExpand"
+                 IsClippedToBounds="True"
+                 Padding="0"
+                 BackgroundColor="White"
+                 BorderColor="White" 
+                 Margin="0,30,0,0">
+
+                <ImageButton Source="goniometer" Aspect="Fill"/>
+            </Frame>
+
+            <Label
+                Text="Measuring range of motion:"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                TextDecorations="Underline"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="ROM measurements are an integral part of the physiotherapy assessment since monitoring patient status and documenting patient progress are standard requirements of physiotherapy practice. The tool used may depend on the body part, ease of use and physiotherapist's experience."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="A Goniometer is the most common tool for measuring range of motion of the joints of the body. It uses a stationary arm, fulcrum, and movement arm to measure joint angles from the axis of the joint. Making a ROM measurement by using a goniometer requires training for reliable results. See the goniometry collection of pages for instructions on how to correctly (reliably and accurately) place the goniometer when measuring range of motion."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="Other types of ROM measurement: Tape measures can also be used to measure range of motion in some specific parts of the body. For example lumbar spine flexion can be assessed with a tape measure in the Schober Test."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,20,0,0"/>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
