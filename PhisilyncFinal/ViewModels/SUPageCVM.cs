@@ -1,23 +1,18 @@
-﻿using System;
+﻿using CommunityToolkit.Mvvm.Input;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CommunityToolkit.Mvvm.Input;
 
 namespace PhisilyncFinal.ViewModels
 {
-
-    public partial class SUPageACVM : BaseViewModel
+    public partial class SUPageCVM : BaseViewModel
     {
         [RelayCommand]
-        private async Task AthleteDash()
+        private async Task Coach()
         {
             await Shell.Current.GoToAsync("//athleteDash");
         }
-
-
     }
-
-
 }

@@ -74,7 +74,7 @@
                 Text="Create Account"
                 TextColor="White"
                 BackgroundColor="SeaGreen"
-                Clicked="Button_Clicked_3"
+
                 StyleId="TellUsPage"
                 WidthRequest="500"/>
 
@@ -105,7 +105,7 @@
                 WidthRequest="300"
                 BackgroundColor="Black"
                 CornerRadius="100"
-                Clicked="Button_Clicked_2"
+
                 FontSize="Body" 
                 HorizontalOptions="Center"
                 Margin="0,0,0,0" />

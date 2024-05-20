@@ -74,7 +74,7 @@
                 BorderColor="SeaGreen" 
                 VerticalOptions="CenterAndExpand"
                 BorderWidth="1"
-                
+                Command="{Binding CoachCommand}"
                 WidthRequest="500"
                 HeightRequest="70"
                 Margin="10"/>
@@ -101,7 +101,7 @@
                 WidthRequest="300"
                 BackgroundColor="Black"
                 BorderColor="Black"
-               
+                Command="{Binding ProviderCommand}"
                 FontSize="Body" 
                 BorderWidth="1"
                 CornerRadius="100"

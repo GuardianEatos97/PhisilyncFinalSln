@@ -15,5 +15,17 @@ namespace PhisilyncFinal.ViewModels
         {
             await Shell.Current.GoToAsync("///athleteSignUp");
         }
+
+        [RelayCommand]
+        private async Task Coach()
+        {
+            await Shell.Current.GoToAsync("///coachSignUp");
+        }
+
+        [RelayCommand]
+        private async Task Provider()
+        {
+            await Shell.Current.GoToAsync("///spSignUp");
+        }
     }
 }
