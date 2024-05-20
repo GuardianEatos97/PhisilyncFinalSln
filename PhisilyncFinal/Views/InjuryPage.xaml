@@ -11,7 +11,7 @@
         Aspect="Center"/>
     </Shell.TitleView>
 
-    <VerticalStackLayout>
+    <StackLayout>
         <toolkit:AvatarView
             Text="Noah"
             BorderColor="SeaGreen"
@@ -29,14 +29,44 @@
             HorizontalOptions="End"
             Margin="10,0"
             />
-        
+
         <Label
             Text="Injury Library"
             VerticalOptions="Center"
             HorizontalOptions="Center"/>
-    
-        <SearchBar
-            Placeholder="Tap To Search Library"/>
-    
-    </VerticalStackLayout>
+
+        <ListView ItemsSource="{Binding InjuryLibrary}" 
+               HasUnevenRows="true">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.RowSpan="2" 
+                                Source="{Binding InjuryImage}" 
+                                Aspect="AspectFill" 
+                                HeightRequest="60" 
+                                WidthRequest="60" />
+                            <Label Grid.Column="1" 
+                                Text="{Binding InjuryName}" 
+                                Style="{DynamicResource TitleStyle}" />
+                            <Label Grid.Row="1" 
+                                Grid.Column="1" 
+                                Text="{Binding InjuryDescription}" 
+                                VerticalOptions="End" 
+                                Style="{DynamicResource SubtitleTextStyle}" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
 </ContentPage>
