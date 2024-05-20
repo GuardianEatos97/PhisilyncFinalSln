@@ -36,7 +36,12 @@
             HorizontalOptions="Center"/>
     
         <SearchBar
-            Placeholder="Tap To Search Library"/>
-    
+            Placeholder="Tap To Search Library"
+            Keyboard="Text"
+            />
+        <ListView>
+            
+            
+        </ListView>
     </VerticalStackLayout>
 </ContentPage>
