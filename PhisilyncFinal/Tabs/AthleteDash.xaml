@@ -179,7 +179,7 @@
                 FontAttributes="Bold"
                  
                 TextColor="White"
-                BorderColor="#6bb834"
+                BorderColor="Beige"
                 BorderWidth="2"
                 BackgroundColor="#6bb834"
                 Clicked="Button_Clicked"

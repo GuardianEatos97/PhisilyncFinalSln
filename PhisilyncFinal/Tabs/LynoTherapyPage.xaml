@@ -2,11 +2,280 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhisilyncFinal.Tabs.LynoTherapyPage"
+             BackgroundImageSource="greenback"
              Title="LynoTherapyPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Lyno Therapy Page"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Shell.TitleView Margin="0,0,0,0">
+        <Image 
+        Source="phisilyncgreen"
+        Aspect="Center"/>
+    </Shell.TitleView>
+    
+    <ScrollView Orientation="Vertical">
+        <VerticalStackLayout>
+            <Frame 
+                Grid.Row="0" 
+                Grid.ColumnSpan="0"
+                HeightRequest="350"
+                WidthRequest="600"
+                CornerRadius="50"
+                HorizontalOptions="CenterAndExpand"
+                IsClippedToBounds="True"
+                Padding="0"
+                BackgroundColor="White"
+                BorderColor="White" 
+                Margin="0,30,0,0">
+
+                <ImageButton Source="thelynoacademy" Aspect="Fill"/>
+            </Frame>
+
+            <Label
+                Text="What is Lyno Therapy?"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                TextDecorations="Underline"
+                Margin="0,20,0,0"/>
+            
+            <Label
+                Text="We start with the anatomy of the fascia"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Margin="0,30,0,0"/>
+            
+            <Label
+                Text="There are 2 layers of fascia that is of particular interest for the Lyno Method;"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="the superficial fascia and the deep fascia"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Image
+                Source="anatomy"
+                HeightRequest="400"
+                WidthRequest="700"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="THE SUPERFICIAL FASCIA"
+                TextColor="White"
+                FontSize="Large"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"
+                TextDecorations="Underline"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="The superficial fascia is situated directly underneath the skin and consists of a fibrous membrane, which is tightly connected  to the skin by perpendicular fibres called the superficial retinacula cutis fibres. The deep retinacula cutis fibres, which runs in a diagnal direction between the superficial fascia membrane and the deep fascia, allows for a lot more movement between these 2 layers. Many neurovascular and lymphatic vessels branch throughout the superficial fascia. Stiffness and densification of the superficial fascua can therefore lead to sensory and circulatory problems, including the accumulation of waste products and toxins under the skin. The superficial fascia also contains adipose cells, fibroblasts, Mast cells and macrophages as well as elastin which allows stretching."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,10,0,0"/>
+
+            <Label
+                Text="THE DEEP FASCIA"
+                TextColor="White"
+                FontSize="Large"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"
+                TextDecorations="Underline"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="The deep fascia or aponeurotic fascia forms a sheath around the nerves, blood vessels, muscles, joints, organs etc. These sheaths interconnect and form the structure that holds everything together. The deep fascia membrane secretes hyaluronic acid, which allows for the gliding of this membrane on the superficial fascia, the epimyssium and other deep fascia layers."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="THE MYOFASCIAL LINES"
+                TextColor="White"
+                FontSize="Large"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"
+                TextDecorations="Underline"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="In the Lyno Method, muscles are grouped into 12 myofacial lines. All these fascial slings work together according to the principles of bio-tensegrity, to maintain a stable, balanced and functional body."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="The 12 functional lines are:"
+                TextColor="White"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"
+                TextDecorations="Underline"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="1) The Lateral Line"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="2) The Posterior Line"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="3) The Anterior Line"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="4) The Medial Line"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="5) The Anterior Upper Spiral Line"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="6) The Posterior Upper Spiral Line"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="7) The Anterior Arm Spiral Line (LAT Line)"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="8) The Posterior Arm Spiral Line (HBB Line)"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="9) The Weight Bearing Lower Spiral Line"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="10) The Non-weight Bearing Lower Spiral Line"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="11) The Anterior Diagonal Line"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="12) The Posterior Diagonal Line"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Start"
+                Margin="0,0,0,0"/>
+
+            <Label
+                Text="The outer surface of each of these lines, the aponeurotic fascia, runs continuously from one end of the line to the other. The aponeurotic fascia blends into the periosteum or joint capsules and its mobility or immobility directly influences the mobility of the joints and muscle function."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Image
+                Source="musclestructure"
+                HeightRequest="400"
+                WidthRequest="700"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="Tendons are made up of the combination of the epimysium, perimysium and endomysium. These layers evertually blend into the aponeuortic fascia and continue across joints to form the next tendon and muscle. Inthis way all muscles are connected through the continuous fascia layers."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="Muscles are made up of muscle fibres which are imbedded in the pockets formed by the endomysium. Nomuscle in the body is therefore able to funtion independently and when fascia layers lock together and thereby block normal movement, it has a direct effect on the muscle function."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="Symptoms normally show up in these weakened area and it is important to release the locked short fascia forst before attempting the strengthen weak muscles."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="The FROM Tests will show up which lines have areas of 'locked-short' fascia, while the Bunkie Test shows the areas of 'locked-long' fascia."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+            <Label
+                Text="Once the practioner has this information, it is clear where the techniques should be applied to release locked fascia, in order to achieve neutral function."
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
