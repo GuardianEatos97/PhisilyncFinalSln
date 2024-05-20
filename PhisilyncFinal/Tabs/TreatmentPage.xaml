@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             BackgroundColor="Black"
+             BackgroundImageSource="greenback"
              x:Class="PhisilyncFinal.TreatmentPage">
-    
-    
+
+    <Shell.TitleView Margin="0,0,0,0">
+        <Image 
+         Source="phisilyncgreen"
+         Aspect="Center"/>
+    </Shell.TitleView>
+
     <ScrollView>
-    <VerticalStackLayout>
-            <Image 
-                Source="phisilyncgreen"
-                Aspect="AspectFill"
-                HeightRequest="110"
-                WidthRequest="500"/>
+        <VerticalStackLayout>
             <Frame 
                 Grid.Row="0" 
                 Grid.ColumnSpan="0"
@@ -43,7 +43,7 @@
                 VerticalOptions="CenterAndExpand"
                 FontSize="Medium"
                  
-                BackgroundColor="Red"
+                BackgroundColor="SeaGreen"
                 Margin="40"
                 Clicked="LynoBtn_Clicked"/>
             <Button

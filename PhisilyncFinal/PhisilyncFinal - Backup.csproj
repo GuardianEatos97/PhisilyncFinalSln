@@ -56,9 +56,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\anatomy.jpg" />
+	  <None Remove="Resources\Images\arrow.png" />
 	  <None Remove="Resources\Images\compliant.png" />
 	  <None Remove="Resources\Images\confident.jpg" />
+	  <None Remove="Resources\Images\credit_card.png" />
 	  <None Remove="Resources\Images\dashboard.png" />
 	  <None Remove="Resources\Images\davids.jpg" />
 	  <None Remove="Resources\Images\determination.avif" />
@@ -70,7 +71,6 @@
 	  <None Remove="Resources\Images\freedom.jpg" />
 	  <None Remove="Resources\Images\gelant.jpg" />
 	  <None Remove="Resources\Images\googleb.jpg" />
-	  <None Remove="Resources\Images\googleremove.png" />
 	  <None Remove="Resources\Images\greenback.jpg" />
 	  <None Remove="Resources\Images\greyg.jpg" />
 	  <None Remove="Resources\Images\info.png" />
@@ -79,10 +79,8 @@
 	  <None Remove="Resources\Images\libok.jpg" />
 	  <None Remove="Resources\Images\lin.png" />
 	  <None Remove="Resources\Images\linkedin.png" />
-	  <None Remove="Resources\Images\lynoheader.jpg" />
 	  <None Remove="Resources\Images\moerat.jpg" />
 	  <None Remove="Resources\Images\moos.jpg" />
-	  <None Remove="Resources\Images\musclestructure.jpg" />
 	  <None Remove="Resources\Images\phisilyncappshell.png" />
 	  <None Remove="Resources\Images\phisilyncfinal.png" />
 	  <None Remove="Resources\Images\phisilyncgreen.png" />
@@ -92,17 +90,17 @@
 	  <None Remove="Resources\Images\proud.jpg" />
 	  <None Remove="Resources\Images\qa.png" />
 	  <None Remove="Resources\Images\sacha.jpg" />
+	  <None Remove="Resources\Images\settings.png" />
+	  <None Remove="Resources\Images\sign_out.png" />
 	  <None Remove="Resources\Images\strength.jpg" />
 	  <None Remove="Resources\Images\tac.png" />
-	  <None Remove="Resources\Images\thelynoacademy.webp" />
 	  <None Remove="Resources\Images\tiktok.png" />
 	  <None Remove="Resources\Images\tiktoky.png" />
-	  <None Remove="Resources\Images\tiktok_large.png" />
-	  <None Remove="Resources\Images\toktik.png" />
 	  <None Remove="Resources\Images\treatment.jpg" />
 	  <None Remove="Resources\Images\tt.png" />
 	  <None Remove="Resources\Images\twitter.png" />
 	  <None Remove="Resources\Images\twitter_bird.png" />
+	  <None Remove="Resources\Images\user.png" />
 	  <None Remove="Resources\Images\willemse.png" />
 	  <None Remove="Resources\Images\workout.jpg" />
 	</ItemGroup>
@@ -155,12 +153,6 @@
 	  <MauiXaml Update="Tabs\LogInPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\LynoTherapyPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Tabs\MassageTherapyPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="Tabs\Payment.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -168,9 +160,6 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Tabs\ProfileDetails.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Tabs\RangeOfMovementPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Tabs\ServiceProviderDashboard.xaml">
@@ -188,13 +177,7 @@
 	  <MauiXaml Update="Tabs\SignUpPageSP.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Tabs\StretchesAndExercisePage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="Tabs\TACPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Tabs\TapingPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Tabs\TeamStatsPopUp.xaml">

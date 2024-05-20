@@ -2,14 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhisilyncFinal.Tabs.SignUpPageSP"
-             BackgroundColor="Black">
+             BackgroundColor="#23583a">
 
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
             <Image
-                Source="phisilyncgreen.png"
+                Source="phisilyncgreenback.png"
                 HeightRequest="210"
                 WidthRequest="400"
                 Aspect="AspectFill"
@@ -51,6 +51,16 @@
                 FontSize="20" 
                 Text="{Binding Details.Password}"/>
 
+            <Entry
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="White"
+                Placeholder="Confirm Password"
+                WidthRequest="500"
+                MaxLength="14"
+                FontSize="20" 
+                Text="{Binding Details.Password}"/>
+
             <Button
                 Text="Create Account"
                 TextColor="White"
@@ -67,7 +77,7 @@
 
             <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                 <Image
-                    Source="googleb"
+                    Source="googleremove"
                     Aspect="AspectFit"
                     HeightRequest="70"
                     HorizontalOptions="Center" 
