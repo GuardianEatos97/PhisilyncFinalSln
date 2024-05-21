@@ -58,8 +58,7 @@ namespace PhisilyncFinal
             builder.Services.AddSingleton<SPDashVM>();
             builder.Services.AddSingleton<ProfileDetailsVM>();
             builder.Services.AddSingleton<EditProfileVM>();
-            builder.Services.AddSingleton<FAQsVM>();
-            builder.Services.AddSingleton<InjuryPageVM>();
+            builder.Services.AddSingleton<InjuryViewModel>();
             builder.Services.AddSingleton<LynoTherapyPageVM>();
             builder.Services.AddSingleton<MassageTherapyVM>();
             builder.Services.AddSingleton<StretchesandExercisesVM>();
