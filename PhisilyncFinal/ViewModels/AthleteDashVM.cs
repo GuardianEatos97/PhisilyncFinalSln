@@ -38,16 +38,6 @@ namespace PhisilyncFinal.ViewModels
             Dashboard = new ObservableCollection<TreatmentAction>(_database.GetTreatmentActions());
         }
 
-        [RelayCommand]
-        private async Task Image()
-        {
-            await Shell.Current.GoToAsync("///treatmentPage");
-        }
 
-        [RelayCommand]
-        private async Task Injury()
-        {
-            await Shell.Current.GoToAsync("///treatmentPage");
-        }
     }
 }
