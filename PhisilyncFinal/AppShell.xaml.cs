@@ -21,7 +21,7 @@ namespace PhisilyncFinal
             if (_database._dbConnection.Table<User>().Count() != 0)
             {
                 Routing.RegisterRoute("AthleteDash", typeof(AthleteDash));
-                Navigation.PushAsync(new AthleteDash());
+                //Navigation.PushAsync(new AthleteDash());
             }
         }
 

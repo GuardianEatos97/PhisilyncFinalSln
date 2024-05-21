@@ -73,7 +73,7 @@
                                 x:Name="ConBtn"
                                 Source="confident.jpg" 
                                 Aspect="Fill"
-                                Clicked="ImageButton_Clicked"/>
+                                Command="{Binding ImageCommand}"/>
 
                         </Frame>
 
@@ -93,7 +93,7 @@
                             <ImageButton 
                                 Source="proud" 
                                 Aspect="AspectFill"
-                                Clicked="ImageButton_Clicked"/>
+                                Command="{Binding ImageCommand}"/>
                         </Frame>
 
                         <Frame 
@@ -112,7 +112,7 @@
                             <ImageButton 
                                 Source="strength" 
                                 Aspect="AspectFill"
-                                Clicked="ImageButton_Clicked"/>
+                                Command="{Binding ImageCommand}"/>
                         </Frame>
 
                         <Frame 
@@ -131,7 +131,7 @@
                             <ImageButton 
                                 Source="flexi" 
                                 Aspect="AspectFill"
-                                Clicked="ImageButton_Clicked"/>
+                                Command="{Binding ImageCommand}"/>
                         </Frame>
 
                         <Frame 
@@ -150,7 +150,7 @@
                             <ImageButton 
                                 Source="freedom" 
                                 Aspect="AspectFill"
-                                Clicked="ImageButton_Clicked"/>
+                                Command="{Binding ImageCommand}"/>
                         </Frame>
 
                         <Frame 
@@ -169,7 +169,7 @@
                             <ImageButton 
                                 Source="determination" 
                                 Aspect="AspectFill"
-                                Clicked="ImageButton_Clicked"/>
+                                Command="{Binding ImageCommand}"/>
                         </Frame>
                     </Grid>
                 </HorizontalStackLayout>
@@ -183,7 +183,7 @@
                 BorderColor="Beige"
                 BorderWidth="2"
                 BackgroundColor="SeaGreen"
-                Clicked="Button_Clicked"
+                Command="{Binding InjuryCommand}"
                 CornerRadius="100"
                 WidthRequest="500"
                 HeightRequest="70"
