@@ -1,24 +1,16 @@
-﻿using PhisilyncFinal.ViewModels;
-
-namespace PhisilyncFinal.Views;
+﻿namespace PhisilyncFinal.Views;
 public partial class TellUsPage : ContentPage
 {
     public TellUsPage()
     {
         InitializeComponent();
-
-    }
-    public TellUsPage(TellUsPageVM vm)
-    {
-        InitializeComponent();
-        BindingContext = vm;
-        /*Routing.RegisterRoute("SignUpPageAC", typeof(SignUpPageAC));
+        Routing.RegisterRoute("SignUpPageAC", typeof(SignUpPageAC));
         Routing.RegisterRoute("SignUpPageSP", typeof(SignUpPageSP));
         Routing.RegisterRoute("LogInPage", typeof(LogInPage));
-        Routing.RegisterRoute("SignUpPageCoach", typeof(SignUpPageCoach));*/
+        Routing.RegisterRoute("SignUpPageCoach", typeof(SignUpPageCoach));
     }
 
-    /*private async void Button_Clicked(object sender, EventArgs e)
+    private async void Button_Clicked(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("SignUpPageAC");
     }
@@ -36,5 +28,5 @@ public partial class TellUsPage : ContentPage
     private async void Button_Clicked_3(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("SignUpPageCoach");
-    }*/
+    }
 }

@@ -2,13 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              BackgroundColor="#23583a"
-             x:Class="PhisilyncFinal.Views.SignUpPageAC"
-             xmlns:viewmodels="clr-namespace:PhisilyncFinal.ViewModels">
-
-    <ContentPage.BindingContext>
-        <viewmodels:SUPageACVM />
-    </ContentPage.BindingContext>
-
+             x:Class="PhisilyncFinal.Views.SignUpPageAC">
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
@@ -80,7 +74,7 @@
                 Text="Create Account"
                 TextColor="White"
                 BackgroundColor="SeaGreen"
-                Command="{Binding AthleteDashCommand}"
+                Clicked="Button_Clicked"
                 StyleId="TellUsPage"
                 WidthRequest="500"/>
 
@@ -109,6 +103,7 @@
                 Text="Already Have An Account?"
                 TextColor="White"
                 WidthRequest="300"
+                Clicked="Button_Clicked_1"
                 CornerRadius="100"
                 BackgroundColor="Black"
                 FontSize="Body" 
