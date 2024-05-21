@@ -8,6 +8,7 @@ public partial class AthleteDash : ContentPage
     public AthleteDash()
     {
         InitializeComponent();
+        
         Routing.RegisterRoute("TreatmentPage", typeof(TreatmentPage));
         Routing.RegisterRoute("InjuryPage", typeof(InjuryPage));
 
@@ -44,10 +45,10 @@ public partial class AthleteDash : ContentPage
         public string Description { get; set; }
     }
 
-    private async void ImageButton_Clicked(object sender, EventArgs e)
+    /*private async void ImageButton_Clicked(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("TreatmentPage");
-    }
+    }*/
 
     private async void Button_Clicked(object sender, EventArgs e)
     {

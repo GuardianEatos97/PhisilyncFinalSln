@@ -4,6 +4,7 @@
              xmlns:cal="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="PhisilyncFinal.Views.AthleteDash"
+
              BackgroundImageSource="greenback">   
 
     <Shell.TitleView Margin="0,0,0,0">
@@ -16,7 +17,7 @@
         <VerticalStackLayout>
             <toolkit:AvatarView
                 Text="Noah"
-                BorderColor="#6bb834"
+                BorderColor="SeaGreen"
                 TextColor="White"
                 ImageSource="profileimage"
                 HorizontalOptions="End"
@@ -73,7 +74,7 @@
                                 x:Name="ConBtn"
                                 Source="confident.jpg" 
                                 Aspect="Fill"
-                                Clicked="ImageButton_Clicked"/>
+/>
 
                         </Frame>
 
@@ -93,7 +94,7 @@
                             <ImageButton 
                                 Source="proud" 
                                 Aspect="AspectFill"
-                                Clicked="ImageButton_Clicked"/>
+/>
                         </Frame>
 
                         <Frame 
@@ -112,7 +113,7 @@
                             <ImageButton 
                                 Source="strength" 
                                 Aspect="AspectFill"
-                                Clicked="ImageButton_Clicked"/>
+/>
                         </Frame>
 
                         <Frame 
@@ -131,7 +132,7 @@
                             <ImageButton 
                                 Source="flexi" 
                                 Aspect="AspectFill"
-                                Clicked="ImageButton_Clicked"/>
+/>
                         </Frame>
 
                         <Frame 
@@ -150,7 +151,7 @@
                             <ImageButton 
                                 Source="freedom" 
                                 Aspect="AspectFill"
-                                Clicked="ImageButton_Clicked"/>
+/>
                         </Frame>
 
                         <Frame 
@@ -169,7 +170,7 @@
                             <ImageButton 
                                 Source="determination" 
                                 Aspect="AspectFill"
-                                Clicked="ImageButton_Clicked"/>
+/>
                         </Frame>
                     </Grid>
                 </HorizontalStackLayout>
@@ -182,7 +183,7 @@
                 TextColor="White"
                 BorderColor="Beige"
                 BorderWidth="2"
-                BackgroundColor="#6bb834"
+                BackgroundColor="SeaGreen"
                 Clicked="Button_Clicked"
                 CornerRadius="100"
                 WidthRequest="500"
@@ -191,19 +192,19 @@
 
             <cal:Calendar Events="{Binding Events}" 
                       EventsScrollViewVisible="True" 
-                      SelectedDayBackgroundColor="#6bb834"
+                      SelectedDayBackgroundColor="SeaGreen"
                       CalendarLayout="Month"
                       BackgroundColor="Transparent"
                       DayViewCornerRadius="5"
                       DeselectedDayTextColor="Beige"
                       SelectedDateColor="Beige"
-                      ArrowsBackgroundColor="#6bb834"
+                      ArrowsBackgroundColor="SeaGreen"
                       ArrowsBorderColor="Beige"
                       ArrowsColor="Beige"
                       DaysTitleColor="Beige"
                       DaysTitleWeekendColor="White" 
                       DisabledDayColor="Beige"
-                      EventIndicatorColor="#6bb834"
+                      EventIndicatorColor="SeaGreen"
                       EventIndicatorSelectedColor="Beige"
                       EventIndicatorSelectedTextColor="Beige"
                       MonthLabelColor="Beige"

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PhisilyncFinal.ViewModels
 {
-    internal class ProfileDetailsVM
+    class ProfileDetailsVM
     {
     }
 }

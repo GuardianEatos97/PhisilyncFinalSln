@@ -1,6 +1,4 @@
-﻿using PhisilyncFinal.ViewModels;
-
-namespace PhisilyncFinal.Views;
+﻿namespace PhisilyncFinal.Views;
 public partial class TellUsPage : ContentPage
 {
     public TellUsPage()

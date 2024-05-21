@@ -12,20 +12,9 @@ namespace PhisilyncFinal.Models
         [ForeignKey(typeof(TreatmentAction))]
         public int treatmentDashboardTreatmentAction { get; set; }
 
-        [OneToMany(CascadeOperations = CascadeOperation.All)]
-        public List<Provider>? treatmentDashboardServiceProviders { get; set; }
-
-        [OneToMany(CascadeOperations = CascadeOperation.All)]
-        public List<BodyPart>? treatmentDashboardBodyParts { get; set; }
-
-        [ForeignKey(typeof(Treatment))]
-        public int treatmentDashboardTreatment { get; set; }
-
-        public TreatmentDashboard()
-        { 
-            treatmentDashboardServiceProviders = new(); 
-            treatmentDashboardBodyParts = new();
-        }
+        [ForeignKey(typeof(User))]
+        public int treatmentDashboardUser { get; set; }
+        public DateTime treatmentDashDate { get; set; }
 
     }
 }

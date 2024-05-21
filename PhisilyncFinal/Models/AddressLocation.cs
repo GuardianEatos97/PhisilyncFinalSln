@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using SQLite;
 using SQLiteNetExtensions.Attributes;
@@ -20,4 +20,4 @@ namespace PhisilyncFinal.Models
         public string? locationZipCode { get; set; }
 
     }
-}*/
+}

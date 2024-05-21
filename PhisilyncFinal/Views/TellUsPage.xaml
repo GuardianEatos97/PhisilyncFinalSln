@@ -43,6 +43,7 @@
                 TextColor="White"
                 BorderColor="SeaGreen"
                 BackgroundColor="SeaGreen"
+                Clicked="Button_Clicked"
                 BorderWidth="1"
                 Clicked="Button_Clicked"
                 CornerRadius="100"
@@ -61,7 +62,7 @@
                 Clicked="Button_Clicked_3"
                 VerticalOptions="CenterAndExpand"
                 BackgroundColor="SeaGreen"
-                
+                Clicked="Button_Clicked_3"
                 WidthRequest="500"
                 HeightRequest="70"
                 Margin="10"/>
@@ -70,6 +71,7 @@
                 Text="I Am A Service Provider"
                 FontAttributes="Bold"
                 TextColor="White"
+                Clicked="Button_Clicked_1"
                 CornerRadius="100"
                 BackgroundColor="SeaGreen"
                 BorderColor="SeaGreen" 
@@ -105,6 +107,7 @@
                 BorderColor="Black"
                 FontSize="Body" 
                 BorderWidth="1"
+                Clicked="Button_Clicked_2"
                 CornerRadius="100"
                 VerticalOptions="EndAndExpand"
                 HorizontalOptions="Center"

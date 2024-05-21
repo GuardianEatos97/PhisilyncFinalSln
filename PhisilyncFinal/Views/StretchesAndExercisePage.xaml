@@ -11,7 +11,7 @@
     </Shell.TitleView>
 
     <ScrollView Orientation="Vertical">
-        <VerticalStackLayout>
+        <VerticalStackLayout Margin="20,20,20,20">
             <Frame 
                  Grid.Row="0" 
                  Grid.ColumnSpan="0"

@@ -77,5 +77,16 @@ namespace PhisilyncFinal.Services
         {
             return _dbConnection.Table<ProviderInjury>().ToList();
         }
+
+        public List<Treatment> GetTreatments()
+        {
+            return _dbConnection.Table<Treatment>().ToList();
+        }
+
+        public List<TreatmentAction> GetTreatmentActions()
+        {
+            return _dbConnection.Table<TreatmentAction>().ToList();
+        }
+
     }
 }

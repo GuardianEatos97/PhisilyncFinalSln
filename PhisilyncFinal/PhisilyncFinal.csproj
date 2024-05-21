@@ -57,8 +57,11 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\anatomy.jpg" />
+	  <None Remove="Resources\Images\athleticscoach.jpg" />
 	  <None Remove="Resources\Images\compliant.png" />
 	  <None Remove="Resources\Images\confident.jpg" />
+	  <None Remove="Resources\Images\cricketcoach.webp" />
+	  <None Remove="Resources\Images\cricketcoachb.jpg" />
 	  <None Remove="Resources\Images\dashboard.png" />
 	  <None Remove="Resources\Images\davids.jpg" />
 	  <None Remove="Resources\Images\determination.avif" />
@@ -87,6 +90,7 @@
 	  <None Remove="Resources\Images\moerat.jpg" />
 	  <None Remove="Resources\Images\moos.jpg" />
 	  <None Remove="Resources\Images\musclestructure.jpg" />
+	  <None Remove="Resources\Images\netballcoach.jpg" />
 	  <None Remove="Resources\Images\phisilyncappshell.png" />
 	  <None Remove="Resources\Images\phisilyncfinal.png" />
 	  <None Remove="Resources\Images\phisilyncgreen.png" />
@@ -97,11 +101,15 @@
 	  <None Remove="Resources\Images\qa.png" />
 	  <None Remove="Resources\Images\rom.jpg" />
 	  <None Remove="Resources\Images\roms.jpg" />
+	  <None Remove="Resources\Images\rugbycoach.jpg" />
 	  <None Remove="Resources\Images\sacha.jpg" />
+	  <None Remove="Resources\Images\soccercoach.jpeg" />
 	  <None Remove="Resources\Images\strength.jpg" />
 	  <None Remove="Resources\Images\stretches.jpg" />
+	  <None Remove="Resources\Images\swimmingcoach.jpg" />
 	  <None Remove="Resources\Images\tac.png" />
 	  <None Remove="Resources\Images\taping.jpg" />
+	  <None Remove="Resources\Images\tenniscoach.jpg" />
 	  <None Remove="Resources\Images\thelynoacademy.webp" />
 	  <None Remove="Resources\Images\tiktok.png" />
 	  <None Remove="Resources\Images\tiktoky.png" />

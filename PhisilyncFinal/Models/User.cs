@@ -23,21 +23,17 @@ namespace PhisilyncFinal.Models
         public string userPassword { get; set; }
         public string? userPhoneNumber { get; set; }
 
-        /*[ForeignKey(typeof(Treatment))]
+        [ForeignKey(typeof(Treatment))]
         public int? userTreatment { get; set; } //foreign key
+        public int userSports { get; set; } //Foreign key to inbetween class
 
-        [OneToMany(CascadeOperations = CascadeOperation.All)]
-        public List<Sport>? userSports { get; set; }
-
-        public User() { userSports = new(); }
-        
         public DateTime userDateOfBirth { get; set; }
 
         [ForeignKey(typeof(UserType))]
         public int userType { get; set; }
 
         [ForeignKey(typeof(Club))]
-        public int userClub { get; set; }*/
+        public int userClub { get; set; } //Foreign key to inbetween class
 
     }
 }
