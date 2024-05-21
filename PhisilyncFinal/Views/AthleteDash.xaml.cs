@@ -1,17 +1,15 @@
-using PhisilyncFinal.ViewModels;
 using Plugin.Maui.Calendar.Models;
 
 namespace PhisilyncFinal.Views;
 
 public partial class AthleteDash : ContentPage
 {
-    /*public EventCollection Events { get; set; }*/
-    public AthleteDash(AthleteDashVM vm)
+    public EventCollection Events { get; set; }
+    public AthleteDash()
     {
         InitializeComponent();
-
-        BindingContext = vm;
-        /*Routing.RegisterRoute("TreatmentPage", typeof(TreatmentPage));
+        
+        Routing.RegisterRoute("TreatmentPage", typeof(TreatmentPage));
         Routing.RegisterRoute("InjuryPage", typeof(InjuryPage));
 
         Events = new EventCollection
@@ -47,14 +45,13 @@ public partial class AthleteDash : ContentPage
         public string Description { get; set; }
     }
 
-    private async void ImageButton_Clicked(object sender, EventArgs e)
+    /*private async void ImageButton_Clicked(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("TreatmentPage");
-    }
+    }*/
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("InjuryPage");
-    }*/
     }
 }

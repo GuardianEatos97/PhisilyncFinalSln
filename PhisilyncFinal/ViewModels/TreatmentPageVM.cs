@@ -36,5 +36,6 @@ namespace PhisilyncFinal.ViewModels
             Treatments = new ObservableCollection<Treatment>(_database.GetTreatments());
         }
 
+        
     }
 }
