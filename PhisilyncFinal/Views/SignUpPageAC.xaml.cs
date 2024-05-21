@@ -4,12 +4,11 @@ namespace PhisilyncFinal.Views;
 
 public partial class SignUpPageAC : ContentPage
 {
-	public SignUpPageAC(SUPageACVM vm)
+	public SignUpPageAC()
 	{
 		InitializeComponent();
 
 
-		BindingContext = vm;
 
     }
 

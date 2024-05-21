@@ -7,23 +7,23 @@ namespace PhisilyncFinal
     
     public partial class AppShell : Shell
     {
-        public LocalDb _database;
+        //public LocalDb _database;
         public AppShell()
         {
-            _database = new();
+           // _database = new();
             InitializeComponent();
-            LoadAthleteDash();
+            //LoadAthleteDash();
         }
 
 
-        public void LoadAthleteDash()
-        {
-            if (_database._dbConnection.Table<User>().Count() != 0)
-            {
-                Routing.RegisterRoute("AthleteDash", typeof(AthleteDash));
-                Navigation.PushAsync(new AthleteDash());
-            }
-        }
+        //public void LoadAthleteDash()
+        //{
+        //    if (_database._dbConnection.Table<User>().Count() != 0)
+        //    {
+        //        Routing.RegisterRoute("AthleteDash", typeof(AthleteDash));
+        //        Navigation.PushAsync(new AthleteDash());
+        //    }
+        //}
 
 
     }

@@ -155,6 +155,9 @@
 	  <MauiXaml Update="Views\FAQs.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\InjuryDetailsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\InjuryPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

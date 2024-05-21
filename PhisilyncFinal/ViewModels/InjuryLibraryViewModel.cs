@@ -8,30 +8,115 @@ using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Maui;
+using System.Windows.Input;
+//using Android.Content.Res;
+//using AndroidX.Navigation;
 
 namespace PhisilyncFinal.ViewModels
 {
-    public partial class InjuryLibraryViewModel : BaseViewModel
+    public class InjuryLibraryViewModel
     {
         public ObservableCollection<InjuryLibrary> Injury { get; private set; }
 
-        public InjuryLibraryViewModel() 
+        public InjuryLibraryViewModel()
         {
-            Injury = new ObservableCollection<InjuryLibrary>();
+            Injury =
+            [
+                new InjuryLibrary
+                {
+                    InjuryName = "Neck Side Flexion (Neck Side Strain)",
+                    Prompt = "Tap to see more info",
+                    InjuryDescription = "Get on thou knees you insufferable plebian!",
+                    InjuryImage = "moerat.jpg",
+                },
+                new InjuryLibrary
+                {
+                    InjuryName = "Neck Flexion (Frontal Neck Strain)",
+                    Prompt = "Tap to see more info",
+                    InjuryDescription = "off with the dog's head!",
+                    InjuryImage = "moerat.jpg"
+                },
+                new InjuryLibrary
+                {
+                    InjuryName = "Neck Rotation (Full Neck Strain)",
+                    Prompt = "Tap to see more info",
+                    InjuryDescription = "off with the dog's head!",
+                    InjuryImage = "moerat.jpg"
+                },
+                new InjuryLibrary
+                {
+                    InjuryName = "Trunk Rotation (Abdomen Strain)",
+                    Prompt = "Tap to see more info",
+                    InjuryDescription = "off with the dog's head!",
+                    InjuryImage = "moerat.jpg"
+                },
+                new InjuryLibrary
+                {
+                    InjuryName = "Hip Abduction",
+                    Prompt = "Tap to see more info",
+                    InjuryDescription = "off with the dog's head!",
+                    InjuryImage = "moerat.jpg"
+                },
+                new InjuryLibrary
+                {
+                    InjuryName = "Hip Adduction",
+                    Prompt = "Tap to see more info",
+                    InjuryDescription = "off with the dog's head!",
+                    InjuryImage = "moerat.jpg"
+                },
+                new InjuryLibrary
+                {
+                    InjuryName = "Knee Extension (Pulled Hamstring)",
+                    Prompt = "Tap to see more info",
+                    InjuryDescription = "off with the dog's head!",
+                    InjuryImage = "moerat.jpg"
+                },
+                new InjuryLibrary
+                {
+                    InjuryName = "Ankle Flexion (Pulled Calves)",
+                    Prompt = "Tap to see more info",
+                    InjuryDescription = "off with the dog's head!",
+                    InjuryImage = "moerat.jpg"
+                },
+                new InjuryLibrary
+                {
+                    InjuryName = "Ankle Eversion",
+                    Prompt = "Tap to see more info",
+                    InjuryDescription = "off with the dog's head!",
+                    InjuryImage = "moerat.jpg"
+                },
+                new InjuryLibrary
+                {
+                    InjuryName = "Ankle Inversion",
+                    Prompt = "Tap to see more info",
+                    InjuryDescription = "off with the dog's head!",
+                    InjuryImage = "moerat.jpg"
+                },
+                new InjuryLibrary
+                {
+                    InjuryName = "Toe Extension",
+                    Prompt = "Tap to see more info",
+                    InjuryDescription = "off with the dog's head!",
+                    InjuryImage = "moerat.jpg"
+                },
+                new InjuryLibrary
+                {
+                    InjuryName = "The LAT Test",
+                    Prompt = "Tap to see more info",
+                    InjuryDescription = "off with the dog's head!",
+                    InjuryImage = "moerat.jpg"
+                },
+                new InjuryLibrary
+                {
+                    InjuryName = "The HBB Test",
+                    Prompt = "Tap to see more info",
+                    InjuryDescription = "off with the dog's head!",
+                    InjuryImage = "moerat.jpg"
+                },
+            ];
 
-            Injury.Add(new InjuryLibrary
-            {
-                InjuryName = "Baboon",
-                InjuryDescription = "Baboons are African and Arabian Old World monkeys belonging to the genus Papio, part of the subfamily Cercopithecinae.",
-                InjuryImage = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Papio_anubis_%28Serengeti%2C_2009%29.jpg/200px-Papio_anubis_%28Serengeti%2C_2009%29.jpg",
-            });
 
-            Injury.Add(new InjuryLibrary
-            {
-                InjuryName = "Seated Monkey",
-                InjuryDescription = "This monkey is laid back and relaxed, and likes to watch the world go by. It doesn't make a lot of noise, often smiles mysteriously, and sleeps sitting up.",
-                InjuryImage = "moerat.jpg"
-            });
         }
     }
 }
+
