@@ -37,6 +37,7 @@
                 HorizontalOptions="Center"
                 TextColor="White"
                 Placeholder="Surname"
+                Keyboard="Email"
                 WidthRequest="500"
                 FontSize="20" 
                 Text="{Binding Details.Surname}"/>

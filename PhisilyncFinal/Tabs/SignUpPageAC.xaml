@@ -48,6 +48,7 @@
                 TextColor="White"
                 Placeholder="Email Address"
                 WidthRequest="500"
+                Keyboard="Email"
                 FontSize="20" 
                 Text="{Binding Details.EmailAddress}"/>
 

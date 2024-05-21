@@ -36,6 +36,7 @@
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
                 TextColor="White"
+                Keyboard="Email"
                 Placeholder="Company Email Address"
                 WidthRequest="500"
                 FontSize="20" 

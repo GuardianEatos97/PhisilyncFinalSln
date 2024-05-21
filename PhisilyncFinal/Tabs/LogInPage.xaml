@@ -17,6 +17,7 @@
             HorizontalOptions="Center"
             TextColor="White"
             Placeholder="Username/Email"
+            Keyboard="Email"
             WidthRequest="500"
             FontSize="20" 
             Text="{Binding Details.EmailAddress}"/>
@@ -25,7 +26,7 @@
             FontAttributes="Bold"
             HorizontalOptions="Center"
             TextColor="White"
-            Placeholder="Password "
+            Placeholder="Password"
             WidthRequest="500"
             MaxLength="14"
             FontSize="20" 
