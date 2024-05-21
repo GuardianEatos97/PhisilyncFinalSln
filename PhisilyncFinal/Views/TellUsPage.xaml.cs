@@ -1,12 +1,9 @@
-﻿using PhisilyncFinal.ViewModels;
-
-namespace PhisilyncFinal.Views;
+﻿namespace PhisilyncFinal.Views;
 public partial class TellUsPage : ContentPage
 {
     public TellUsPage()
     {
         InitializeComponent();
-        BindingContext = this;
         Routing.RegisterRoute("SignUpPageAC", typeof(SignUpPageAC));
         Routing.RegisterRoute("SignUpPageSP", typeof(SignUpPageSP));
         Routing.RegisterRoute("LogInPage", typeof(LogInPage));
