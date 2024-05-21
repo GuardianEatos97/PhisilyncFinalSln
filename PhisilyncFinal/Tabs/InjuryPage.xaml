@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="PhisilyncFinal.Tabs.InjuryPage"
+             BackgroundImageSource="greenback"
              Title="">
     
     <Shell.TitleView Margin="0">
@@ -12,31 +13,25 @@
     </Shell.TitleView>
 
     <VerticalStackLayout>
-        <toolkit:AvatarView
-            Text="Noah"
-            BorderColor="SeaGreen"
-            TextColor="Black"
-            ImageSource="gelant.jpg"
-            HorizontalOptions="End"
-            CornerRadius="360"
-            Margin="10"
-            WidthRequest="70"
-            HeightRequest="70"
-            BorderWidth="5"
-            />
+        
         <Label
             Text="Noah Khan"
             HorizontalOptions="End"
+            TextColor="White"
             Margin="10,0"
             />
         
         <Label
             Text="Injury Library"
+            TextColor="White"
             VerticalOptions="Center"
             HorizontalOptions="Center"/>
     
         <SearchBar
             Placeholder="Tap To Search Library"
+            TextColor="White"
+            PlaceholderColor="White"
+            CancelButtonColor="White"
             Keyboard="Text"
             />
         <ListView>

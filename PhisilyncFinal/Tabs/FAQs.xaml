@@ -215,7 +215,7 @@ VerticalOptions="Center"/>
                     </StackLayout>
                 </Frame>
 
-                <Frame BackgroundColor="#E21C21" BorderColor="Transparent" Grid.Row="1" HasShadow="True" VerticalOptions="Center" MaximumWidthRequest="350">
+                <Frame BackgroundColor="SeaGreen" BorderColor="Transparent" Grid.Row="1" HasShadow="True" VerticalOptions="Center" MaximumWidthRequest="350">
                     <ScrollView Orientation="Horizontal">
                         <Grid
                         Margin="15,0,0,0"

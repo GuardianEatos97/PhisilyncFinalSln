@@ -467,7 +467,7 @@ Text="Any features, content, product specifications, prices, and other informati
                 Margin="0,30"
            TextColor="White"
                  
-           BackgroundColor="#6BB834"
+           BackgroundColor="SeaGreen"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
            CornerRadius="10"
