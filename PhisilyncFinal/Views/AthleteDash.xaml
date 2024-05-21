@@ -4,6 +4,7 @@
              xmlns:cal="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="PhisilyncFinal.Views.AthleteDash"
+
              BackgroundImageSource="greenback">   
 
     <Shell.TitleView Margin="0,0,0,0">
@@ -73,7 +74,7 @@
                                 x:Name="ConBtn"
                                 Source="confident.jpg" 
                                 Aspect="Fill"
-                                Clicked="ImageButton_Clicked"/>
+/>
 
                         </Frame>
 
@@ -93,7 +94,7 @@
                             <ImageButton 
                                 Source="proud" 
                                 Aspect="AspectFill"
-                                Clicked="ImageButton_Clicked"/>
+/>
                         </Frame>
 
                         <Frame 
@@ -112,7 +113,7 @@
                             <ImageButton 
                                 Source="strength" 
                                 Aspect="AspectFill"
-                                Clicked="ImageButton_Clicked"/>
+/>
                         </Frame>
 
                         <Frame 
@@ -131,7 +132,7 @@
                             <ImageButton 
                                 Source="flexi" 
                                 Aspect="AspectFill"
-                                Clicked="ImageButton_Clicked"/>
+/>
                         </Frame>
 
                         <Frame 
@@ -150,7 +151,7 @@
                             <ImageButton 
                                 Source="freedom" 
                                 Aspect="AspectFill"
-                                Clicked="ImageButton_Clicked"/>
+/>
                         </Frame>
 
                         <Frame 
@@ -169,7 +170,7 @@
                             <ImageButton 
                                 Source="determination" 
                                 Aspect="AspectFill"
-                                Clicked="ImageButton_Clicked"/>
+/>
                         </Frame>
                     </Grid>
                 </HorizontalStackLayout>

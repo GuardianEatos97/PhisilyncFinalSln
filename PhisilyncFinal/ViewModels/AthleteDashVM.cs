@@ -37,5 +37,7 @@ namespace PhisilyncFinal.ViewModels
             base.Initialize();
             Dashboard = new ObservableCollection<TreatmentAction>(_database.GetTreatmentActions());
         }
+
+
     }
 }
