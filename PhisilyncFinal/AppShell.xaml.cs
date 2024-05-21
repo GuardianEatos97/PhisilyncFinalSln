@@ -1,5 +1,6 @@
 ﻿using PhisilyncFinal.Models;
 using PhisilyncFinal.Services;
+using PhisilyncFinal.ViewModels;
 using PhisilyncFinal.Views;
 
 namespace PhisilyncFinal
@@ -7,6 +8,7 @@ namespace PhisilyncFinal
     
     public partial class AppShell : Shell
     {
+<<<<<<< Updated upstream
         //public LocalDb _database;
         public AppShell()
         {
@@ -26,5 +28,13 @@ namespace PhisilyncFinal
         //}
 
 
+=======
+
+        public AppShell()
+        {
+            InitializeComponent();
+        }
+
+>>>>>>> Stashed changes
     }
 }
