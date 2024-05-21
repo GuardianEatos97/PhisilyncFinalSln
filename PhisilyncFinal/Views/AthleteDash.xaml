@@ -178,7 +178,6 @@
             <Button
                 Text="Test Your Boundries"
                 FontAttributes="Bold"
-                 
                 TextColor="White"
                 BorderColor="Beige"
                 BorderWidth="2"
