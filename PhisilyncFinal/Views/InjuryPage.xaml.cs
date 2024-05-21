@@ -4,11 +4,16 @@ namespace PhisilyncFinal.Views;
 public partial class InjuryPage : ContentPage
 {
 
-	public InjuryPage(InjuryLibraryViewModel vm)
+	public InjuryPage(InjuryViewModel vm)
 	{
 
 		InitializeComponent();
-		//BindingContext _viewmodel;
 		BindingContext = vm;
 	}
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        ((InjuryViewModel)BindingContext)?.Initialize();
+    }
 }

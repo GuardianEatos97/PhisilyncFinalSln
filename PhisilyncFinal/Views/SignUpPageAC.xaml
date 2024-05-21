@@ -2,12 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              BackgroundColor="#23583a"
-             x:Class="PhisilyncFinal.Views.SignUpPageAC"
-             xmlns:viewmodels="clr-namespace:PhisilyncFinal.ViewModels">
+             x:Class="PhisilyncFinal.Views.SignUpPageAC">
 
-    <ContentPage.BindingContext>
-        <viewmodels:SUPageACVM />
-    </ContentPage.BindingContext>
+    
 
     <ScrollView>
         <VerticalStackLayout

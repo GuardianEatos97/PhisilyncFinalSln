@@ -11,9 +11,5 @@ namespace PhisilyncFinal.Models
         public string serviceTypeName { get; set; }
         public string serviceTypeDescription { get; set; }
 
-
-        [ForeignKey(typeof(Provider))]
-        public int serviceTypeProvider { get; set; }
-
     }
 }

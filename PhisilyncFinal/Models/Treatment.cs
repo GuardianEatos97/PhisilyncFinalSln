@@ -19,17 +19,8 @@ namespace PhisilyncFinal.Models
         [ForeignKey(typeof(ProviderInjury))]
         public int treatmentInjury { get; set; } //foreign key
 
-        /*[ForeignKey(typeof(TreatmentType))]
+        [ForeignKey(typeof(TreatmentType))]
         public int treatmentType { get; set; }
-
-        [OneToMany(CascadeOperations = CascadeOperation.All)]
-        public List<ProviderInjury>? treatmentInjury { get; set; }
-        
-        public Treatment() { treatmentInjury = new(); }
-
-        [ForeignKey(typeof(Provider))]
-        public int treatmentServiceProvider { get; set; }*/
-
 
     }
 }

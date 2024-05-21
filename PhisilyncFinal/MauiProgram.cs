@@ -53,24 +53,12 @@ namespace PhisilyncFinal
 
 
             //Registering ViewModels
-            builder.Services.AddSingleton<TellUsPageVM>();
-            builder.Services.AddSingleton<SUPageACVM>();
-            builder.Services.AddSingleton<SUPageCVM>();
-            builder.Services.AddSingleton<SUPageSVM>();
             builder.Services.AddSingleton<AthleteDashVM>();
             builder.Services.AddSingleton<CoachDashVM>();
             builder.Services.AddSingleton<SPDashVM>();
-            builder.Services.AddSingleton<LoginPageVM>();
-            builder.Services.AddSingleton<ProfileDetailsVM>();
-            builder.Services.AddSingleton<EditProfileVM>();
-            builder.Services.AddSingleton<FAQsVM>();
-            builder.Services.AddSingleton<InjuryPageVM>();
             builder.Services.AddSingleton<LynoTherapyPageVM>();
             builder.Services.AddSingleton<MassageTherapyVM>();
-            builder.Services.AddSingleton<PrivacyPolicyVM>();
-            builder.Services.AddSingleton<SettingsVM>();
             builder.Services.AddSingleton<StretchesandExercisesVM>();
-            builder.Services.AddSingleton<TACPageVM>();
             builder.Services.AddSingleton<TapingPageVM>();
             builder.Services.AddSingleton<TeamStatsVM>();
             builder.Services.AddSingleton<TreatmentPageVM>();
