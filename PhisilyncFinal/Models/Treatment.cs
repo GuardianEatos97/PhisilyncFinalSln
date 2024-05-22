@@ -17,10 +17,11 @@ namespace PhisilyncFinal.Models
         public string treatmentDescription { get; set; }
 
         [ForeignKey(typeof(ProviderInjury))]
-        public int treatmentInjury { get; set; } //foreign key
+        public int treatmentInjury { get; set; }
 
-        [ForeignKey(typeof(TreatmentType))]
-        public int treatmentType { get; set; }
+        [ForeignKey(typeof(TreatmentFrequency))]
+        public int treatmentTreatmentFrequency { get; set; }
 
+        public int treatmentTreatmentFreqDimension { get; set; }
     }
 }
