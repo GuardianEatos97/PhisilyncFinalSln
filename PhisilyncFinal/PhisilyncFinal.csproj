@@ -231,4 +231,8 @@
 	  </MauiXaml>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Resources\Images\Injuries\" />
+	</ItemGroup>
+
 </Project>
