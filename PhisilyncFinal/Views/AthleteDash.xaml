@@ -4,8 +4,9 @@
              xmlns:cal="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="PhisilyncFinal.Views.AthleteDash"
+             BackgroundImageSource="greenback">
 
-             BackgroundImageSource="greenback">   
+
 
     <Shell.TitleView Margin="0,0,0,0">
         <Image 
@@ -74,10 +75,10 @@
                                 x:Name="ConBtn"
                                 Source="confident.jpg" 
                                 Aspect="Fill"
-/>
+                                Command="{Binding AthleteInjuryCommand}"/>
 
                         </Frame>
-
+ 
                         <Frame 
                             Grid.Row="0" 
                             Grid.Column="1"
@@ -91,10 +92,11 @@
                             BorderColor="White"
                             Margin="16,10,0,20">
 
-                            <ImageButton 
+                            <Image
                                 Source="proud" 
-                                Aspect="AspectFill"
-/>
+                                Aspect="AspectFill">
+
+                            </Image>
                         </Frame>
 
                         <Frame 
@@ -110,10 +112,11 @@
                             BorderColor="White" 
                             Margin="16,10,0,20">
 
-                            <ImageButton 
+                            <Image
                                 Source="strength" 
-                                Aspect="AspectFill"
-/>
+                                Aspect="AspectFill">
+
+                            </Image>
                         </Frame>
 
                         <Frame 
@@ -129,10 +132,11 @@
                             BorderColor="White"
                             Margin="16,10,0,20">
 
-                            <ImageButton 
+                            <Image 
                                 Source="flexi" 
-                                Aspect="AspectFill"
-/>
+                                Aspect="AspectFill">
+
+                            </Image>
                         </Frame>
 
                         <Frame 
@@ -148,10 +152,11 @@
                             BorderColor="White"
                             Margin="16,10,0,20">
 
-                            <ImageButton 
+                            <Image 
                                 Source="freedom" 
-                                Aspect="AspectFill"
-/>
+                                Aspect="AspectFill">
+
+                            </Image>
                         </Frame>
 
                         <Frame 
@@ -167,10 +172,10 @@
                             BorderColor="White"
                             Margin="16,10,0,20">
 
-                            <ImageButton 
-                                Source="determination" 
-                                Aspect="AspectFill"
-/>
+                            <Image
+                                Source="determination"  Aspect="AspectFill">
+
+                            </Image>
                         </Frame>
                     </Grid>
                 </HorizontalStackLayout>
@@ -183,7 +188,7 @@
                 BorderColor="Beige"
                 BorderWidth="2"
                 BackgroundColor="SeaGreen"
-                Clicked="Button_Clicked"
+                Command="{Binding InjuryCommand}"
                 CornerRadius="100"
                 WidthRequest="500"
                 HeightRequest="70"

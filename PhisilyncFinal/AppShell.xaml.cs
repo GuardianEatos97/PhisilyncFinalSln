@@ -1,5 +1,6 @@
 ﻿using PhisilyncFinal.Models;
 using PhisilyncFinal.Services;
+using PhisilyncFinal.ViewModels;
 using PhisilyncFinal.Views;
 
 namespace PhisilyncFinal
@@ -7,24 +8,33 @@ namespace PhisilyncFinal
     
     public partial class AppShell : Shell
     {
-        public LocalDb _database;
+<<<<<<< Updated upstream
+        //public LocalDb _database;
         public AppShell()
         {
-            _database = new();
+           // _database = new();
             InitializeComponent();
-            LoadAthleteDash();
+            //LoadAthleteDash();
         }
 
 
-        public void LoadAthleteDash()
+        //public void LoadAthleteDash()
+        //{
+        //    if (_database._dbConnection.Table<User>().Count() != 0)
+        //    {
+        //        Routing.RegisterRoute("AthleteDash", typeof(AthleteDash));
+        //        Navigation.PushAsync(new AthleteDash());
+        //    }
+        //}
+
+
+=======
+
+        public AppShell()
         {
-            if (_database._dbConnection.Table<User>().Count() != 0)
-            {
-                Routing.RegisterRoute("AthleteDash", typeof(AthleteDash));
-                Navigation.PushAsync(new AthleteDash());
-            }
+            InitializeComponent();
         }
 
-
+>>>>>>> Stashed changes
     }
 }

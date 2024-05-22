@@ -1,4 +1,5 @@
-﻿using System;
+﻿//using Android.Hardware.Biometrics;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,5 +12,6 @@ namespace PhisilyncFinal.Models
         public string InjuryName { get; set; }
         public string InjuryDescription { get; set; }
         public string InjuryImage {  get; set; }
+        public string Prompt { get; set; }
     }
 }
