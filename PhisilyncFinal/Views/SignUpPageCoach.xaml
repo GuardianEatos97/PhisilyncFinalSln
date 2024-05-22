@@ -24,33 +24,37 @@
                 HorizontalOptions="CenterAndExpand" />
 
             <Entry
+                x:Name="nameEntry"
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
                 TextColor="White"
                 Placeholder="Name"
                 WidthRequest="500"
                 FontSize="20" 
-                Text="{Binding Details.Name}"/>
+                Text="{Binding CurrentUser.userName}"/>
 
             <Entry
+                x:Name="surnameEntry"
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
                 TextColor="White"
                 Placeholder="Surname"
                 WidthRequest="500"
                 FontSize="20" 
-                Text="{Binding Details.Surname}"/>
+                Text="{Binding CurrentUser.userSurname}"/>
 
             <Entry
+                x:Name="emailEntry"
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
                 TextColor="White"
                 Placeholder="Email Address"
                 WidthRequest="500"
                 FontSize="20" 
-                Text="{Binding Details.EmailAddress}"/>
+                Text="{Binding CurrentUser.userEmail}"/>
 
             <Entry
+                x:Name="passwordEntry"
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
                 TextColor="White"
@@ -58,7 +62,7 @@
                 WidthRequest="500"
                 MaxLength="14"
                 FontSize="20" 
-                Text="{Binding Details.Password}"/>
+                Text="{Binding CurrentUser.password}"/>
 
             <Entry
                 FontAttributes="Bold"
@@ -68,7 +72,7 @@
                 WidthRequest="500"
                 MaxLength="14"
                 FontSize="20" 
-                Text="{Binding Details.Password}"/>
+                Text="{Binding CurrentUser.password}"/>
 
             <Button
                 Text="Create Account"

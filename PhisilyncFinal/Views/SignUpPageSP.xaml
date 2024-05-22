@@ -29,8 +29,7 @@
                 TextColor="White"
                 Placeholder="Company Name"
                 WidthRequest="500"
-                FontSize="20" 
-                Text="{Binding Details.Name}"/>
+                FontSize="20" />
 
             <Entry
                 FontAttributes="Bold"
