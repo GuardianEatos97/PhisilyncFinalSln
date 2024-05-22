@@ -53,7 +53,7 @@ namespace PhisilyncFinal
             mauiAppBuilder.Services.AddTransient<ProfileDetails>();
             mauiAppBuilder.Services.AddTransient<EditProfile>();
             mauiAppBuilder.Services.AddTransient<FAQs>();
-            mauiAppBuilder.Services.AddTransient<InjuryPage>();
+            mauiAppBuilder.Services.AddTransient<InjuryLibraryPage>();
             mauiAppBuilder.Services.AddTransient<LynoTherapyPage>();
             mauiAppBuilder.Services.AddTransient<MassageTherapyPage>();
             mauiAppBuilder.Services.AddTransient<PrivacyPolicy>();
@@ -73,24 +73,19 @@ namespace PhisilyncFinal
             public static MauiAppBuilder RegisterViewModels(this MauiAppBuilder mauiAppBuilder)
             {
 
-                mauiAppBuilder.Services.AddSingleton<TellUsPageVM>();
-                mauiAppBuilder.Services.AddSingleton<SUPageACVM>();
-                mauiAppBuilder.Services.AddSingleton<SUPageCVM>();
-                mauiAppBuilder.Services.AddSingleton<SUPageSVM>();
+                
                 mauiAppBuilder.Services.AddSingleton<AthleteDashVM>();
                 mauiAppBuilder.Services.AddSingleton<CoachDashVM>();
                 mauiAppBuilder.Services.AddSingleton<SPDashVM>();
-                mauiAppBuilder.Services.AddSingleton<LoginPageVM>();
+               
                 mauiAppBuilder.Services.AddSingleton<ProfileDetailsVM>();
                 mauiAppBuilder.Services.AddSingleton<EditProfileVM>();
-                mauiAppBuilder.Services.AddSingleton<FAQsVM>();
-                mauiAppBuilder.Services.AddSingleton<InjuryPageVM>();
+               
                 mauiAppBuilder.Services.AddSingleton<LynoTherapyPageVM>();
                 mauiAppBuilder.Services.AddSingleton<MassageTherapyVM>();
-                mauiAppBuilder.Services.AddSingleton<PrivacyPolicyVM>();
-                mauiAppBuilder.Services.AddSingleton<SettingsVM>();
+            
                 mauiAppBuilder.Services.AddSingleton<StretchesandExercisesVM>();
-                mauiAppBuilder.Services.AddSingleton<TACPageVM>();
+             
                 mauiAppBuilder.Services.AddSingleton<InjuryLibraryViewModel>();
                 mauiAppBuilder.Services.AddSingleton<TapingPageVM>();
                 mauiAppBuilder.Services.AddSingleton<TeamStatsVM>();

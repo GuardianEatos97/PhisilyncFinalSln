@@ -2,9 +2,9 @@ using PhisilyncFinal.ViewModels;
 using PhisilyncFinal.Models;
 namespace PhisilyncFinal.Views;
 
-public partial class InjuryPage : ContentPage
+public partial class InjuryLibraryPage : ContentPage
 {
-	public InjuryPage()
+	public InjuryLibraryPage()
 	{
 		InitializeComponent();
 		BindingContext = new InjuryLibraryViewModel();

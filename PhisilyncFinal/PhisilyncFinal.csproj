@@ -139,8 +139,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Views\InjuryPage.xaml.cs">
-	    <DependentUpon>InjuryPage.xaml</DependentUpon>
+	  <Compile Update="Views\InjuryLibraryPage.xaml.cs">
+	    <DependentUpon>InjuryLibraryPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
@@ -166,7 +166,7 @@
 	  <MauiXaml Update="Views\InjuryDetailsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\InjuryPage.xaml">
+	  <MauiXaml Update="Views\InjuryLibraryPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\LandingPage.xaml">

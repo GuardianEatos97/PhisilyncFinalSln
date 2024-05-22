@@ -98,7 +98,7 @@ Route="TellUsPage" />
 Title="Injury Library"
             Icon="qa.png"
         Style="{StaticResource BaseStyle}"
-ContentTemplate="{DataTemplate local:InjuryPage}"
+ContentTemplate="{DataTemplate local:InjuryLibraryPage}"
   
 Route="InjuryPage" />
 
@@ -117,7 +117,7 @@ Route="InjuryPage" />
         <ShellContent
         Title="LIBRARY"
         Icon="search.png"
-        ContentTemplate="{DataTemplate local:InjuryPage}"/>
+        ContentTemplate="{DataTemplate local:InjuryLibraryPage}"/>
 
         <ShellContent
         Title="TREATMENT PLAN"
