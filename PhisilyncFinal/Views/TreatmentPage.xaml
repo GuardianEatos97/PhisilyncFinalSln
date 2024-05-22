@@ -60,7 +60,7 @@
                 VerticalOptions="Center" 
                 HorizontalOptions="Center"
                 TextColor="White"
-                 
+                
                 FontAttributes="Bold"
                 Margin="50"     
                 FontSize="Large"/>
