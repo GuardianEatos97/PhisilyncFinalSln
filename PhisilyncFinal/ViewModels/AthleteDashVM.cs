@@ -46,7 +46,7 @@ namespace PhisilyncFinal.ViewModels
         [RelayCommand]
         private async Task Injury()
         {
-            await Shell.Current.GoToAsync("///profileDetails");
+            await Shell.Current.GoToAsync("///library");
         }
 
         [RelayCommand]

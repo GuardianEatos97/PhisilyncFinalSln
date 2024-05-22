@@ -52,7 +52,7 @@
         </DataTemplate>
     </Shell.ItemTemplate>
 
-    <FlyoutItem FlyoutDisplayOptions="AsSingleItem">
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent  
             Title="Dashboard"
             Icon="dashboard.png"
@@ -127,7 +127,7 @@ Route="InjuryPage" />
 
     <ShellContent ContentTemplate="{DataTemplate local:TellUsPage}" Route="tellUsPage"/>
 
-    <!--<ShellContent ContentTemplate="{DataTemplate local:AthleteDash}" Route="athleteDash"/>
+    <ShellContent ContentTemplate="{DataTemplate local:AthleteDash}" Route="athleteDash"/>
     <ShellContent ContentTemplate="{DataTemplate local:SignUpPageAC}" Route="athleteSignUp"/>
     <ShellContent ContentTemplate="{DataTemplate local:SignUpPageCoach}" Route="coachSignUp"/>
     <ShellContent ContentTemplate="{DataTemplate local:SignUpPageSP}" Route="spSignUp"/>
@@ -147,7 +147,8 @@ Route="InjuryPage" />
     <ShellContent ContentTemplate="{DataTemplate local:RangeOfMovementPage}" Route="romPage"/>
     <ShellContent ContentTemplate="{DataTemplate local:TapingPage}" Route="tapingPage"/>
     <ShellContent ContentTemplate="{DataTemplate local:StretchesAndExercisePage}" Route="stretchesPage"/>
-    <ShellContent ContentTemplate="{DataTemplate local:TeamStatsPopUp}" Route="teamStats"/>-->
+    <ShellContent ContentTemplate="{DataTemplate local:TeamStatsPopUp}" Route="teamStats"/>
+    <ShellContent ContentTemplate="{DataTemplate local:InjuryLibraryPage}" Route="library"/>
 
 </Shell>
 
