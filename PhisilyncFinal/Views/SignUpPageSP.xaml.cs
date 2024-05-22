@@ -1,6 +1,7 @@
 namespace PhisilyncFinal.Views;
 public partial class SignUpPageSP : ContentPage
 {
+
 	public SignUpPageSP()
 	{
 		InitializeComponent();
