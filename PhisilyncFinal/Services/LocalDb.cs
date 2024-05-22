@@ -73,6 +73,7 @@ namespace PhisilyncFinal.Services
             }
         }
 
+
         public List<ProviderInjury> GetInjuries()
         {
             return _dbConnection.Table<ProviderInjury>().ToList();

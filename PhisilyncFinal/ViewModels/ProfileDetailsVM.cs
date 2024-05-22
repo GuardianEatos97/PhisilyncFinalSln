@@ -1,12 +1,15 @@
 ﻿using System;
+using PhisilyncFinal.Services;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace PhisilyncFinal.ViewModels
 {
-    class ProfileDetailsVM
+    public partial class ProfileDetailsVM
     {
+          
     }
 }
