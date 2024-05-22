@@ -92,11 +92,12 @@
                             BorderColor="White"
                             Margin="16,10,0,20">
 
-                            <Image
+                            <ImageButton
                                 Source="proud" 
-                                Aspect="AspectFill">
+                                Aspect="AspectFill"
+                                Command="{Binding AthleteInjuryCommand}"/>
 
-                            </Image>
+
                         </Frame>
 
                         <Frame 
@@ -112,11 +113,12 @@
                             BorderColor="White" 
                             Margin="16,10,0,20">
 
-                            <Image
+                            <ImageButton
                                 Source="strength" 
-                                Aspect="AspectFill">
+                                Aspect="AspectFill"
+                                Command="{Binding AthleteInjuryCommand}"/>
 
-                            </Image>
+
                         </Frame>
 
                         <Frame 
@@ -132,11 +134,12 @@
                             BorderColor="White"
                             Margin="16,10,0,20">
 
-                            <Image 
+                            <ImageButton 
                                 Source="flexi" 
-                                Aspect="AspectFill">
+                                Aspect="AspectFill"
+                                Command="{Binding AthleteInjuryCommand}"/>
 
-                            </Image>
+
                         </Frame>
 
                         <Frame 
@@ -152,11 +155,12 @@
                             BorderColor="White"
                             Margin="16,10,0,20">
 
-                            <Image 
+                            <ImageButton 
                                 Source="freedom" 
-                                Aspect="AspectFill">
+                                Aspect="AspectFill"
+                                Command="{Binding AthleteInjuryCommand}"/>
 
-                            </Image>
+
                         </Frame>
 
                         <Frame 
@@ -172,10 +176,12 @@
                             BorderColor="White"
                             Margin="16,10,0,20">
 
-                            <Image
-                                Source="determination"  Aspect="AspectFill">
+                            <ImageButton
+                                Source="determination" 
+                                Aspect="AspectFill"
+                                Command="{Binding AthleteInjuryCommand}"/>
 
-                            </Image>
+
                         </Frame>
                     </Grid>
                 </HorizontalStackLayout>

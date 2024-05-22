@@ -73,6 +73,7 @@ namespace PhisilyncFinal.Services
             }
         }
 
+
         public List<ProviderInjury> GetInjuries()
         {
             return _dbConnection.Table<ProviderInjury>().ToList();
@@ -88,5 +89,9 @@ namespace PhisilyncFinal.Services
             return _dbConnection.Table<TreatmentAction>().ToList();
         }
 
+        public User GetUser(int id)
+        {
+            return _dbConnection.Table<User>().Where(x => x.userID == id).FirstOrDefault();
+        }
     }
 }
