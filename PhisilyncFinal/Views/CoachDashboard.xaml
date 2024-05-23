@@ -6,12 +6,13 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              BackgroundImageSource="greenback"
              Title="CoachDashboard">
+
     <Shell.TitleView Margin="0,0,0,0">
         <Image 
         Source="phisilyncgreen"
         Aspect="Center"/>
     </Shell.TitleView>
-
+    
     <ScrollView Orientation="Vertical">
         <VerticalStackLayout>
 
@@ -64,7 +65,7 @@
                             <ImageButton x:Name="DonBtn"
                                          Source="cricketcoachb"
                                          Aspect="AspectFill"
-                                         Clicked="ImageButton_Clicked"/>
+                                         Command="{Binding TappedAthleteCommand}"/>
 
                         </Frame>
 
@@ -81,7 +82,7 @@
 
                             <ImageButton Source="athleticscoach"
                                          Aspect="AspectFill"
-                                         Clicked="ImageButton_Clicked"/>
+                                         Command="{Binding TappedAthleteCommmand}"/>
 
                         </Frame>
 
@@ -98,7 +99,7 @@
 
                             <ImageButton Source="swimmingcoach"
                                          Aspect="AspectFill"
-                                         Clicked="ImageButton_Clicked"/>
+                                         Command="{Binding TappedAthleteCommmand}"/>
                         </Frame>
 
                         <Frame Grid.Row="0"
@@ -114,7 +115,7 @@
 
                             <ImageButton Source="rugbycoach"
                                          Aspect="AspectFill"
-                                         Clicked="ImageButton_Clicked"/>
+                                         Command="{Binding TappedAthleteCommmand}"/>
                         </Frame>
                         
                         <Frame Grid.Row="0"
@@ -130,7 +131,7 @@
 
                             <ImageButton Source="netballcoach"
                                          Aspect="AspectFill"
-                                         Clicked="ImageButton_Clicked"/>
+                                         Command="{Binding TappedAthleteCommmand}"/>
 
                         </Frame>
                         
@@ -147,7 +148,7 @@
 
                             <ImageButton Source="tenniscoach"
                                          Aspect="AspectFill"
-                                         Clicked="ImageButton_Clicked"/>
+                                         Command="{Binding TappedAthleteCommmand}"/>
 
                         </Frame>
                         
@@ -164,7 +165,7 @@
 
                             <ImageButton Source="soccercoach"
                                          Aspect="AspectFill"
-                                         Clicked="ImageButton_Clicked"/>
+                                         Command="{Binding TappedAthleteCommmand}"/>
 
                         </Frame>
                         
@@ -174,7 +175,7 @@
 
             <Button Text="Team Stats"
                     FontAttributes="Bold"
-                     
+                    Clicked="PopUpClicked" 
                     TextColor="White"
                     BorderColor="White"
                     BorderWidth="2"
@@ -182,8 +183,7 @@
                     CornerRadius="100"
                     WidthRequest="500"
                     HeightRequest="70"
-                    Margin="50"
-                    Clicked="PopUpClicked"/>
+                    Margin="50"/>
 
             <cal:Calendar Events="{Binding Events}" 
            EventsScrollViewVisible="True" 

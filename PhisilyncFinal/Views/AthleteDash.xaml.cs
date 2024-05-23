@@ -47,13 +47,4 @@ public partial class AthleteDash : ContentPage
     //    public string Description { get; set; }
     //}
 
-    /*private async void ImageButton_Clicked(object sender, EventArgs e)
-    {
-        await Shell.Current.GoToAsync("TreatmentPage");
-    }*
-
-    private async void Button_Clicked(object sender, EventArgs e)
-    {
-        await Shell.Current.GoToAsync("InjuryPage");
-    }*/
 }

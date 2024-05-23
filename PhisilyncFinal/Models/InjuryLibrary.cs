@@ -10,7 +10,9 @@ namespace PhisilyncFinal.Models
     public class InjuryLibrary
     {
         public string InjuryName { get; set; }
-        public string InjuryDescription { get; set; }
+        public string InjuryAnatomy { get; set; }
+        public string InjuryTest { get; set; }
+        public string InjuryRelease { get; set; }
         public string InjuryImage {  get; set; }
         public string Prompt { get; set; }
     }

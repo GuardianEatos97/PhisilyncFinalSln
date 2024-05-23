@@ -2,6 +2,7 @@
 using System.Runtime;
 using Microcharts.Maui;
 using Microsoft.Extensions.Logging;
+using PhisilyncFinal.Services;
 using PhisilyncFinal.ViewModels;
 using PhisilyncFinal.Views;
 using SkiaSharp.Views.Maui.Controls.Hosting;
@@ -36,6 +37,8 @@ namespace PhisilyncFinal
         //Registering Pages
         public static MauiAppBuilder RegisterServices(this MauiAppBuilder mauiAppBuilder)
         {
+            mauiAppBuilder.Services.AddSingleton<IPageService, TeamStatsVM>();
+
             return mauiAppBuilder;
         }
 

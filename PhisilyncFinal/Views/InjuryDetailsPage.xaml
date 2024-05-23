@@ -4,20 +4,59 @@
              x:Class="PhisilyncFinal.Views.InjuryDetailsPage"
              BackgroundColor="MintCream"
              Title="">
+    
+    <Shell.TitleView Margin="0">
+        <Image 
+    Source="phisilyncgreen"
+    Aspect="Center"/>
+    </Shell.TitleView>
+    
     <ScrollView>
         <StackLayout Margin="20">
-            <Label Text="{Binding InjuryName}"
+            <Label 
+               Text="{Binding InjuryName}"
                HorizontalOptions="Center"
-                   FontSize="Large"
+               FontAttributes="Bold"
+               FontSize="Large"
                Style="{DynamicResource TitleStyle}" />
             <Image Source="{Binding InjuryImage}"
                HeightRequest="200"
                WidthRequest="200"
-                   Margin="20"
+               Margin="20"
                HorizontalOptions="Center" />
-            <Label Text="{Binding InjuryDescription}"
-                   FontSize="Small"
-               Style="{DynamicResource BodyStyle}" />
+            <Label
+                Text="Anatomy"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                Style="{DynamicResource TitleStyle}"
+                HorizontalTextAlignment="Center"/>
+            <Label 
+                Text="{Binding InjuryAnatomy}"
+                FontSize="Medium"
+                HorizontalTextAlignment="Start"
+                Style="{DynamicResource BodyStyle}" />
+            <Label
+                Text="Test"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                Style="{DynamicResource TitleStyle}"
+                HorizontalTextAlignment="Center"/>
+            <Label 
+                Text="{Binding InjuryTest}"
+                FontSize="Medium"
+                HorizontalTextAlignment="Start"
+                Style="{DynamicResource BodyStyle}" />
+            <Label
+                Text="Release"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                Style="{DynamicResource TitleStyle}"
+                HorizontalTextAlignment="Center"/>
+            <Label 
+                Text="{Binding InjuryRelease}"
+                FontSize="Medium"
+                HorizontalTextAlignment="Start"
+                Style="{DynamicResource BodyStyle}" />
         </StackLayout>
     </ScrollView>
 </ContentPage>
