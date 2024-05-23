@@ -14,7 +14,7 @@ namespace PhisilyncFinal.Models
         [PrimaryKey,AutoIncrement]
         public int injurySportsID { get; set; }
 
-        [ForeignKey(typeof(ProviderInjury))]]
+        [ForeignKey(typeof(ProviderInjury))]
         public int injurySportsInjury { get; set; }
         [ForeignKey(typeof(Sport))]
         public int injurySportsSport { get; set; }
