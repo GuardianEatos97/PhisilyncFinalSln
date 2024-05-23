@@ -14,7 +14,6 @@ namespace PhisilyncFinal.Services
 {
     public class LocalDb
     {
-
         public SQLiteConnection _dbConnection;
 
         public string GetDataBasePath()
