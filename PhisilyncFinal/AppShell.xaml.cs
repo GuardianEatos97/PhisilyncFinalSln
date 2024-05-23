@@ -8,19 +8,9 @@ namespace PhisilyncFinal
     
     public partial class AppShell : Shell
     {
-
-        
-
-        
-
-
-
-
         public AppShell()
         {
             InitializeComponent();
-        }
-
-
+        } 
     }
 }

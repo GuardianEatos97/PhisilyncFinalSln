@@ -31,12 +31,11 @@
                 Text="Noah Khan"
                 HorizontalOptions="End"
                 Margin="10,0"
-                TextColor="Beige"/>
+                TextColor="White"/>
 
             <Label Text="Welcome (Your Name)"
                    TextColor="White"
                    FontAttributes="Bold"
-                    
                    FontSize="Medium"
                    Margin="20,0,0,0"/>
 
@@ -44,7 +43,6 @@
                    TextColor="White"
                    FontAttributes="Bold"
                    FontSize="Large"
-                    
                    Margin="20,0,0,0"/>
 
             <ScrollView Orientation="Horizontal">
@@ -193,27 +191,27 @@
            CalendarLayout="Month"
            BackgroundColor="Transparent"
            DayViewCornerRadius="5"
-           DeselectedDayTextColor="Beige"
-           SelectedDateColor="Beige"
+           DeselectedDayTextColor="White"
+           SelectedDateColor="White"
            ArrowsBackgroundColor="SeaGreen"
-           ArrowsBorderColor="Beige"
-           ArrowsColor="Beige"
-           DaysTitleColor="Beige"
+           ArrowsBorderColor="White"
+           ArrowsColor="White"
+           DaysTitleColor="White"
            DaysTitleWeekendColor="White" 
-           DisabledDayColor="Beige"
+           DisabledDayColor="White"
            EventIndicatorColor="SeaGreen"
-           EventIndicatorSelectedColor="Beige"
-           EventIndicatorSelectedTextColor="Beige"
-           MonthLabelColor="Beige"
-           OtherMonthDayColor="Beige"
-           SelectedDayTextColor="Beige"
-           SelectedTodayTextColor="Beige"
+           EventIndicatorSelectedColor="White"
+           EventIndicatorSelectedTextColor="White"
+           MonthLabelColor="White"
+           OtherMonthDayColor="White"
+           SelectedDayTextColor="White"
+           SelectedTodayTextColor="White"
            TodayFillColor="#89a18b"
-           TodayOutlineColor="Beige"
-           TodayTextColor="Beige" 
-           WeekendDayColor="Beige"
-           YearLabelColor="Beige"
-           EventIndicatorTextColor="Beige"
+           TodayOutlineColor="White"
+           TodayTextColor="White" 
+           WeekendDayColor="White"
+           YearLabelColor="White"
+           EventIndicatorTextColor="White"
            Margin="70"
            HeightRequest="500">
                 <cal:Calendar.EventTemplate>
@@ -222,11 +220,11 @@
                             <Label 
                  Text="{Binding Name}" 
                  FontSize="25" 
-                 TextColor="Beige"
+                 TextColor="White"
                  FontAttributes="Bold"/>
                             <Label 
                  Text="{Binding Description}"
-                 TextColor="Beige"/>
+                 TextColor="White"/>
                         </VerticalStackLayout>
                     </DataTemplate>
                 </cal:Calendar.EventTemplate>

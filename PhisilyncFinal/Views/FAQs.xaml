@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhisilyncFinal.Views.FAQs"
-             BackgroundColor="#2D2E2D">
+             BackgroundImageSource="greenback">
     
     <Shell.TitleView Margin="0">
         <Image 
@@ -161,7 +161,7 @@ Text="Lynotherapy is a complementary modality that aims at reducing restrictions
                     <RowDefinition Height="*"/>
 
                 </Grid.RowDefinitions>
-                <Frame BackgroundColor="#2D2E2D" Grid.Row="0" BorderColor="Transparent">
+                <Frame BackgroundColor="Transparent" Grid.Row="0" BorderColor="Transparent">
                     <StackLayout Orientation="Vertical">
                         <Label
                     Text="Contact Us"
@@ -215,7 +215,7 @@ VerticalOptions="Center"/>
                     </StackLayout>
                 </Frame>
 
-                <Frame BackgroundColor="#E21C21" BorderColor="Transparent" Grid.Row="1" HasShadow="True" VerticalOptions="Center" MaximumWidthRequest="350">
+                <Frame BackgroundColor="Transparent" BorderColor="Transparent" Grid.Row="1" HasShadow="True" VerticalOptions="Center" MaximumWidthRequest="350">
                     <ScrollView Orientation="Horizontal">
                         <Grid
                         Margin="15,0,0,0"
@@ -251,9 +251,9 @@ VerticalOptions="Center"
                                     <ImageButton
                                     Source="twitter.png"
                                     HeightRequest="50"
+                                    BackgroundColor="White"
+                                    CornerRadius="5"
                                     WidthRequest="50"
-                                        BackgroundColor="White"
-                                        CornerRadius="5"
                                     Margin="3,0"
                                     HorizontalOptions="Center"
 VerticalOptions="Center"
