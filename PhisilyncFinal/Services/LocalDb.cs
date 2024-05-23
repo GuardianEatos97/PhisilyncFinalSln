@@ -58,6 +58,12 @@ namespace PhisilyncFinal.Services
             _dbConnection = new SQLiteConnection(GetDataBasePath());
 
             _dbConnection.CreateTable<User>();
+            _dbConnection.CreateTable<Club>();
+            _dbConnection.CreateTable<TreatmentFeedback>();
+            _dbConnection.CreateTable<ClubSport>();
+            _dbConnection.CreateTable<UserClub>();
+            _dbConnection.CreateTable<UserSport>();
+            _dbConnection.CreateTable<TreatmentDashboard>();
         }
 
         public void SaveUser(User user)
@@ -65,6 +71,19 @@ namespace PhisilyncFinal.Services
             try
             {
                 _dbConnection.Insert(user);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public void SaveDash(TreatmentDashboard dash, User user)
+        {
+            try
+            {
+                _dbConnection.Insert(dash);
+                _dbConnection.UpdateWithChildren(user);
             }
             catch (Exception ex)
             {
@@ -91,6 +110,11 @@ namespace PhisilyncFinal.Services
         public User GetUser(int id)
         {
             return _dbConnection.Table<User>().Where(x => x.userID == id).FirstOrDefault();
+        }
+
+        public User GetUserByEmail(string email)
+        {
+            return _dbConnection.Table<User>().Where(x => x.userEmail == email).FirstOrDefault();
         }
     }
 }

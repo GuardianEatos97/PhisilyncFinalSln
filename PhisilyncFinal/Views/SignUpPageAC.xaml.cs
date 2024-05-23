@@ -16,6 +16,15 @@ public partial class SignUpPageAC : ContentPage
         set { _currentUser = value; OnPropertyChanged(); }
     }
 
+    private TreatmentDashboard _userDash;
+
+    public TreatmentDashboard UserDash
+    {
+        get { return _userDash; }
+        set { _userDash = value; OnPropertyChanged(); }
+    }
+
+
     public SignUpPageAC()
 	{
 		InitializeComponent();
@@ -26,26 +35,21 @@ public partial class SignUpPageAC : ContentPage
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
-        CurrentUser = new()
-        {
-            userName = nameEntry.Text,
-            userSurname = surnameEntry.Text,
-            userEmail = emailEntry.Text,
-            userPassword = passwordEntry.Text,
-        };
+        CurrentUser = _database.GetUserByEmail(emailEntry.Text);
 
-        try
+        if (CurrentUser == null)
         {
-            _database.SaveUser(CurrentUser);
-            await Shell.Current.GoToAsync("AthleteDash");
+            try
+            {
+                _database.SaveUser(CurrentUser);
+                _database.SaveDash(UserDash, CurrentUser);
+                await Shell.Current.GoToAsync("AthleteDash");
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Profile already exists", ex.Message, "Please login");
+            }
         }
-        catch (Exception ex)
-        {
-            await DisplayAlert("Profile already exists", ex.Message, "Please login");
-        }
-
-
-
     }
 
     private async void Button_Clicked_1(object sender, EventArgs e)
