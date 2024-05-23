@@ -64,6 +64,7 @@
                                    BackgroundColor="White"
                                    Margin="20"
                                    HeightRequest="300"
+                                   WidthRequest="600"
                                    HorizontalOptions="Center"
                                    VerticalOptions="CenterAndExpand">
                                 <StackLayout>
