@@ -22,8 +22,5 @@ namespace PhisilyncFinal.Models
         [ForeignKey(typeof(Provider))]
         public int providerInjuryServiceProvider { get; set; }
 
-        [ForeignKey(typeof(Sport))]
-        public int injurySport { get; set; }
-
     }
 }

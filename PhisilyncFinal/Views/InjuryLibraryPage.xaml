@@ -40,7 +40,7 @@
             HorizontalOptions="Center"/>
 
         <ListView ItemsSource="{Binding Injury}" 
-               HasUnevenRows="true"
+                  HasUnevenRows="true"
                   Margin="10"
                   ItemTapped="ListView_ItemTapped"
                   ItemSelected="ListView_ItemSelected">

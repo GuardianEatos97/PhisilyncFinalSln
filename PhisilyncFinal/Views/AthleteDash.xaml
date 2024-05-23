@@ -4,7 +4,8 @@
              xmlns:cal="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="PhisilyncFinal.Views.AthleteDash"
-             BackgroundImageSource="greenback">
+             BackgroundImageSource="greenback"
+             >
 
 
 
@@ -26,19 +27,23 @@
                 Margin="10"
                 WidthRequest="70"
                 HeightRequest="70"
-                BorderWidth="5"
-                />
-            
-            <Label
+                BorderWidth="5">
+                
+                <toolkit:AvatarView.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding OnAvatarTappedCommand}"/>
+                 </toolkit:AvatarView.GestureRecognizers>
+                </toolkit:AvatarView>
+                
+                <Label
                 Text="Noah Khan"
                 HorizontalOptions="End"
                 Margin="10,0"
-                TextColor="Beige"
+                TextColor="White"
                 />
 
             <Label
                 Text="Welcome (Your Name)"
-                TextColor="Beige"
+                TextColor="White"
                 FontAttributes="Bold"
                  
                 FontSize="Medium"
@@ -46,146 +51,55 @@
 
             <Label
                 Text="Dashboard"
-                TextColor="Beige"
+                TextColor="White"
                 FontAttributes="Bold"
                 FontSize="Large"
                  
                 Margin="20,0,0,0"/>
 
-            <ScrollView Orientation="Horizontal">
-                <HorizontalStackLayout>
-                    <Grid 
-                        ColumnDefinitions="*,*,*,*,*,*"
-                        RowDefinitions="*" >
+            <CarouselView ItemsSource="{Binding Injury}"
+                          IndicatorView="indicatorView"
+                          BackgroundColor="Transparent">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Frame HasShadow="True"
+                                   BorderColor="DarkGray"
+                                   CornerRadius="5"
+                                   BackgroundColor="White"
+                                   Margin="20"
+                                   HeightRequest="300"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="CenterAndExpand">
+                                <StackLayout>
+                                    <Label Text="{Binding InjuryName}" 
+                                           FontAttributes="Bold"
+                                           FontSize="20"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center" />
 
-                        <Frame 
-                            Grid.Row="0" 
-                            Grid.ColumnSpan="0"
-                            HeightRequest="300"
-                            WidthRequest="200"
-                            CornerRadius="10"
-                            HorizontalOptions="Start"
-                            IsClippedToBounds="True"
-                            Padding="0"
-                            BackgroundColor="White"
-                            BorderColor="White" 
-                            Margin="16,10,0,20">
+                                    <Image Source="{Binding InjuryImage}" 
+                                           Aspect="AspectFill"
+                                           HeightRequest="150"
+                                           WidthRequest="150"
+                                           HorizontalOptions="Center" />
 
-                            <ImageButton
-                                x:Name="ConBtn"
-                                Source="confident.jpg" 
-                                Aspect="Fill"
-                                Command="{Binding AthleteInjuryCommand}"/>
-
-                        </Frame>
- 
-                        <Frame 
-                            Grid.Row="0" 
-                            Grid.Column="1"
-                            HeightRequest="300"
-                            WidthRequest="200"
-                            CornerRadius="10"
-                            HorizontalOptions="Start"
-                            IsClippedToBounds="True"
-                            Padding="0"
-                            BackgroundColor="White"
-                            BorderColor="White"
-                            Margin="16,10,0,20">
-
-                            <ImageButton
-                                Source="proud" 
-                                Aspect="AspectFill"
-                                Command="{Binding AthleteInjuryCommand}"/>
-
-
-                        </Frame>
-
-                        <Frame 
-                            Grid.Row="0" 
-                            Grid.Column="2"
-                            HeightRequest="300"
-                            WidthRequest="200"
-                            CornerRadius="10"
-                            HorizontalOptions="Start"
-                            IsClippedToBounds="True"
-                            Padding="0"
-                            BackgroundColor="White"
-                            BorderColor="White" 
-                            Margin="16,10,0,20">
-
-                            <ImageButton
-                                Source="strength" 
-                                Aspect="AspectFill"
-                                Command="{Binding AthleteInjuryCommand}"/>
-
-
-                        </Frame>
-
-                        <Frame 
-                            Grid.Row="0" 
-                            Grid.Column="3"
-                            HeightRequest="300"
-                            WidthRequest="200"
-                            CornerRadius="10"
-                            HorizontalOptions="Start"
-                            IsClippedToBounds="True"
-                            Padding="0"
-                            BackgroundColor="White"
-                            BorderColor="White"
-                            Margin="16,10,0,20">
-
-                            <ImageButton 
-                                Source="flexi" 
-                                Aspect="AspectFill"
-                                Command="{Binding AthleteInjuryCommand}"/>
-
-
-                        </Frame>
-
-                        <Frame 
-                            Grid.Row="0" 
-                            Grid.Column="4"
-                            HeightRequest="300"
-                            WidthRequest="200"
-                            CornerRadius="10"
-                            HorizontalOptions="Start"
-                            IsClippedToBounds="True"
-                            Padding="0"
-                            BackgroundColor="White"
-                            BorderColor="White"
-                            Margin="16,10,0,20">
-
-                            <ImageButton 
-                                Source="freedom" 
-                                Aspect="AspectFill"
-                                Command="{Binding AthleteInjuryCommand}"/>
-
-
-                        </Frame>
-
-                        <Frame 
-                            Grid.Row="0" 
-                            Grid.Column="5"
-                            HeightRequest="300"
-                            WidthRequest="200"
-                            CornerRadius="10"
-                            HorizontalOptions="Start"
-                            IsClippedToBounds="True"
-                            Padding="0"
-                            BackgroundColor="White"
-                            BorderColor="White"
-                            Margin="16,10,0,20">
-
-                            <ImageButton
-                                Source="determination" 
-                                Aspect="AspectFill"
-                                Command="{Binding AthleteInjuryCommand}"/>
-
-
-                        </Frame>
-                    </Grid>
-                </HorizontalStackLayout>
-            </ScrollView>
+                                    <Label Text="{Binding Prompt}"
+                                           FontAttributes="Italic"
+                                           HorizontalOptions="Center"
+                                           MaxLines="5"
+                                           LineBreakMode="TailTruncation" />
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <IndicatorView x:Name="indicatorView"
+                           Margin="0,0,0,40"
+                           IndicatorColor="White"
+                           SelectedIndicatorColor="Black"
+                           HorizontalOptions="Center" />
 
             <Button
                 Text="Test Your Boundries"
@@ -201,45 +115,45 @@
                 Margin="50"/>
 
             <cal:Calendar Events="{Binding Events}" 
-                      EventsScrollViewVisible="True" 
-                      SelectedDayBackgroundColor="SeaGreen"
-                      CalendarLayout="Month"
-                      BackgroundColor="Transparent"
-                      DayViewCornerRadius="5"
-                      DeselectedDayTextColor="Beige"
-                      SelectedDateColor="Beige"
-                      ArrowsBackgroundColor="SeaGreen"
-                      ArrowsBorderColor="Beige"
-                      ArrowsColor="Beige"
-                      DaysTitleColor="Beige"
-                      DaysTitleWeekendColor="White" 
-                      DisabledDayColor="Beige"
-                      EventIndicatorColor="SeaGreen"
-                      EventIndicatorSelectedColor="Beige"
-                      EventIndicatorSelectedTextColor="Beige"
-                      MonthLabelColor="Beige"
-                      OtherMonthDayColor="Beige"
-                      SelectedDayTextColor="Beige"
-                      SelectedTodayTextColor="Beige"
-                      TodayFillColor="#89a18b"
-                      TodayOutlineColor="Beige"
-                      TodayTextColor="Beige" 
-                      WeekendDayColor="Beige"
-                      YearLabelColor="Beige"
-                      EventIndicatorTextColor="Beige"
-                      Margin="70"
-                      HeightRequest="500">
+                          EventsScrollViewVisible="True" 
+                          SelectedDayBackgroundColor="SeaGreen"
+                          CalendarLayout="Month"
+                          BackgroundColor="Transparent"
+                          DayViewCornerRadius="5"
+                          DeselectedDayTextColor="White"
+                          SelectedDateColor="White"
+                          ArrowsBackgroundColor="SeaGreen"
+                          ArrowsBorderColor="White"
+                          ArrowsColor="White"
+                          DaysTitleColor="White"
+                          DaysTitleWeekendColor="Beige" 
+                          DisabledDayColor="White"
+                          EventIndicatorColor="SeaGreen"
+                          EventIndicatorSelectedColor="White"
+                          EventIndicatorSelectedTextColor="White"
+                          MonthLabelColor="White"
+                          OtherMonthDayColor="DarkSeaGreen"
+                          SelectedDayTextColor="White"
+                          SelectedTodayTextColor="White"
+                          TodayFillColor="#89a18b"
+                          TodayOutlineColor="White"
+                          TodayTextColor="White" 
+                          WeekendDayColor="White"
+                          YearLabelColor="White"
+                          EventIndicatorTextColor="White"
+                          Margin="70"
+                          HeightRequest="500">
                 <cal:Calendar.EventTemplate>
                     <DataTemplate>
                         <VerticalStackLayout>
                             <Label 
                             Text="{Binding Name}" 
                             FontSize="25" 
-                            TextColor="Beige"
+                            TextColor="White"
                             FontAttributes="Bold"/>
                             <Label 
                             Text="{Binding Description}"
-                            TextColor="Beige"/>
+                            TextColor="White"/>
                         </VerticalStackLayout>
                     </DataTemplate>
                 </cal:Calendar.EventTemplate>

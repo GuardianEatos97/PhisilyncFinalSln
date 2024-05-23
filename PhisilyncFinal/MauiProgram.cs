@@ -6,6 +6,9 @@ using PhisilyncFinal.Services;
 using PhisilyncFinal.ViewModels;
 using PhisilyncFinal.Views;
 using SkiaSharp.Views.Maui.Controls.Hosting;
+using PhisilyncFinal.Services.LennyAI.Interfaces;
+using PhisilyncFinal.Services.LennyAI;
+using PhisilyncFinal.LennyConfiguration;
 
 namespace PhisilyncFinal
 {
@@ -37,8 +40,9 @@ namespace PhisilyncFinal
         //Registering Pages
         public static MauiAppBuilder RegisterServices(this MauiAppBuilder mauiAppBuilder)
         {
-            mauiAppBuilder.Services.AddSingleton<IPageService, TeamStatsVM>();
-
+            mauiAppBuilder.Services.AddTransient<IPageService, TeamStatsVM>();
+            mauiAppBuilder.Services.AddTransient<IAiAssistant, LennyAiAssistant>();
+            mauiAppBuilder.Services.AddTransient<ISettings,AiSettings>();
             return mauiAppBuilder;
         }
 
@@ -66,6 +70,9 @@ namespace PhisilyncFinal
             mauiAppBuilder.Services.AddTransient<TapingPage>();
             mauiAppBuilder.Services.AddTransient<TeamStatsPopUp>();
             mauiAppBuilder.Services.AddTransient<TreatmentPage>();
+            mauiAppBuilder.Services.AddTransient<LennyAiAnswerPage>();
+            mauiAppBuilder.Services.AddTransient<LennyAiQuestionPage>();  
+
 
             return mauiAppBuilder;
         }
@@ -85,7 +92,7 @@ namespace PhisilyncFinal
                 mauiAppBuilder.Services.AddSingleton<InjuryLibraryViewModel>();
                 mauiAppBuilder.Services.AddSingleton<TeamStatsVM>();
 
-                return mauiAppBuilder;
+            return mauiAppBuilder;
             }  
     }
 }
