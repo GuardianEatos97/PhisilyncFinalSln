@@ -125,6 +125,7 @@ Route="InjuryPage" />
         ContentTemplate="{DataTemplate local:TreatmentPage}"/>
     </TabBar>
 
+    <ShellContent ContentTemplate="{DataTemplate local:LennyAiQuestionPage}" Route="lennyQuestionPage"/>
     <ShellContent ContentTemplate="{DataTemplate local:TellUsPage}" Route="tellUsPage"/>
     <ShellContent ContentTemplate="{DataTemplate local:AthleteDash}" Route="athleteDash"/>
     <ShellContent ContentTemplate="{DataTemplate local:SignUpPageAC}" Route="athleteSignUp"/>
@@ -148,6 +149,7 @@ Route="InjuryPage" />
     <ShellContent ContentTemplate="{DataTemplate local:StretchesAndExercisePage}" Route="stretchesPage"/>
     <ShellContent ContentTemplate="{DataTemplate local:TeamStatsPopUp}" Route="teamStats"/>
     <ShellContent ContentTemplate="{DataTemplate local:InjuryLibraryPage}" Route="library"/>
+    
 
 </Shell>
 

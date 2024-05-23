@@ -23,17 +23,10 @@ namespace PhisilyncFinal.Models
         public string userPassword { get; set; }
         public string? userPhoneNumber { get; set; }
 
-        [ForeignKey(typeof(Treatment))]
-        public int? userTreatment { get; set; } //foreign key
-        public int userSports { get; set; } //Foreign key to inbetween class
-
-        public DateTime userDateOfBirth { get; set; }
+        [ForeignKey(typeof(TreatmentDashboard))]
+        public int? userTreatment { get; set; }
 
         [ForeignKey(typeof(UserType))]
         public int userType { get; set; }
-
-        [ForeignKey(typeof(Club))]
-        public int userClub { get; set; } //Foreign key to inbetween class
-
     }
 }
