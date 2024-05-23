@@ -16,9 +16,7 @@ public partial class SignUpPageCoach : ContentPage
     }
     public SignUpPageCoach()
 	{
-		InitializeComponent();
-        Routing.RegisterRoute("CoachDashboard", typeof(CoachDashboard));
-        Routing.RegisterRoute("LogInPage", typeof(LogInPage));
+        InitializeComponent();
         _database = new();
     }
     private async void Button_Clicked(object sender, EventArgs e)
@@ -34,7 +32,7 @@ public partial class SignUpPageCoach : ContentPage
         try
         {
             _database.SaveUser(CurrentUser);
-            await Shell.Current.GoToAsync("CoachDashboard");
+            await Shell.Current.GoToAsync("CoachDash");
         }
         catch (Exception ex)
         {

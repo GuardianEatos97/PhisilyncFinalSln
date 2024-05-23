@@ -46,132 +46,49 @@
                    FontSize="Large"
                    Margin="20,0,0,0"/>
 
-            <ScrollView Orientation="Horizontal">
-                <HorizontalStackLayout>
-                    <Grid ColumnDefinitions="*,*,*,*,*,*"
-                          RowDefinitions="*">
+            <CarouselView ItemsSource="{Binding Injury}"
+              IndicatorView="indicatorView"
+              BackgroundColor="Transparent">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Frame HasShadow="True"
+                       BorderColor="DarkGray"
+                       CornerRadius="5"
+                       BackgroundColor="White"
+                       Margin="20"
+                       HeightRequest="300"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand">
+                                <StackLayout>
+                                    <Label Text="{Binding InjuryName}" 
+                               FontAttributes="Bold"
+                               FontSize="20"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
 
-                        <Frame Grid.Row="0"
-                               Grid.ColumnSpan="0"
-                               HeightRequest="300"
-                               WidthRequest="200"
-                               CornerRadius="10"
-                               HorizontalOptions="Start"
-                               IsClippedToBounds="True"
-                               Padding="0"
-                               BackgroundColor="White"
-                               Margin="16,10,0,20">
+                                    <Image Source="{Binding InjuryImage}" 
+                               Aspect="AspectFill"
+                               HeightRequest="150"
+                               WidthRequest="150"
+                               HorizontalOptions="Center" />
 
-                            <ImageButton x:Name="DonBtn"
-                                         Source="cricketcoachb"
-                                         Aspect="AspectFill"
-                                         Command="{Binding TappedAthleteCommand}"/>
-
-                        </Frame>
-
-                        <Frame Grid.Row="0"
-                               Grid.Column="1"
-                               HeightRequest="300"
-                               WidthRequest="200"
-                               CornerRadius="10"
-                               HorizontalOptions="Start"
-                               IsClippedToBounds="True"
-                               Padding="0"
-                               BackgroundColor="White"
-                               Margin="16,10,0,20">
-
-                            <ImageButton Source="athleticscoach"
-                                         Aspect="AspectFill"
-                                         Command="{Binding TappedAthleteCommmand}"/>
-
-                        </Frame>
-
-                        <Frame Grid.Row="0"
-                               Grid.Column="2"
-                               HeightRequest="300"
-                               WidthRequest="200"
-                               CornerRadius="10"
-                               HorizontalOptions="Start"
-                               IsClippedToBounds="True"
-                               Padding="0"
-                               BackgroundColor="White"
-                               Margin="16,10,0,20">
-
-                            <ImageButton Source="swimmingcoach"
-                                         Aspect="AspectFill"
-                                         Command="{Binding TappedAthleteCommmand}"/>
-                        </Frame>
-
-                        <Frame Grid.Row="0"
-                               Grid.Column="3"
-                               HeightRequest="300"
-                               WidthRequest="200"
-                               CornerRadius="10"
-                               HorizontalOptions="Start"
-                               IsClippedToBounds="True"
-                               Padding="0"
-                               BackgroundColor="White"
-                               Margin="16,10,0,20">
-
-                            <ImageButton Source="rugbycoach"
-                                         Aspect="AspectFill"
-                                         Command="{Binding TappedAthleteCommmand}"/>
-                        </Frame>
-                        
-                        <Frame Grid.Row="0"
-                               Grid.Column="4"
-                               HeightRequest="300"
-                               WidthRequest="200"
-                               CornerRadius="10"
-                               HorizontalOptions="Start"
-                               IsClippedToBounds="True"
-                               Padding="0"
-                               BackgroundColor="White"
-                               Margin="16,10,0,20">
-
-                            <ImageButton Source="netballcoach"
-                                         Aspect="AspectFill"
-                                         Command="{Binding TappedAthleteCommmand}"/>
-
-                        </Frame>
-                        
-                        <Frame Grid.Row="0"
-                               Grid.Column="5"
-                               HeightRequest="300"
-                               WidthRequest="200"
-                               CornerRadius="10"
-                               HorizontalOptions="Start"
-                               IsClippedToBounds="True"
-                               Padding="0"
-                               BackgroundColor="White"
-                               Margin="16,10,0,20">
-
-                            <ImageButton Source="tenniscoach"
-                                         Aspect="AspectFill"
-                                         Command="{Binding TappedAthleteCommmand}"/>
-
-                        </Frame>
-                        
-                        <Frame Grid.Row="0"
-                               Grid.Column="6"
-                               HeightRequest="300"
-                               WidthRequest="200"
-                               CornerRadius="10"
-                               HorizontalOptions="Start"
-                               IsClippedToBounds="True"
-                               Padding="0"
-                               BackgroundColor="White"
-                               Margin="16,10,0,20">
-
-                            <ImageButton Source="soccercoach"
-                                         Aspect="AspectFill"
-                                         Command="{Binding TappedAthleteCommmand}"/>
-
-                        </Frame>
-                        
-                    </Grid>
-                </HorizontalStackLayout>
-            </ScrollView>
+                                    <Label Text="{Binding Prompt}"
+                               FontAttributes="Italic"
+                               HorizontalOptions="Center"
+                               MaxLines="5"
+                               LineBreakMode="TailTruncation" />
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <IndicatorView x:Name="indicatorView"
+               Margin="0,0,0,40"
+               IndicatorColor="White"
+               SelectedIndicatorColor="Black"
+               HorizontalOptions="Center" />
 
             <Button Text="Team Stats"
                     FontAttributes="Bold"
@@ -197,13 +114,13 @@
            ArrowsBorderColor="White"
            ArrowsColor="White"
            DaysTitleColor="White"
-           DaysTitleWeekendColor="White" 
+           DaysTitleWeekendColor="Beige" 
            DisabledDayColor="White"
            EventIndicatorColor="SeaGreen"
            EventIndicatorSelectedColor="White"
            EventIndicatorSelectedTextColor="White"
            MonthLabelColor="White"
-           OtherMonthDayColor="White"
+           OtherMonthDayColor="DarkSeaGreen"
            SelectedDayTextColor="White"
            SelectedTodayTextColor="White"
            TodayFillColor="#89a18b"

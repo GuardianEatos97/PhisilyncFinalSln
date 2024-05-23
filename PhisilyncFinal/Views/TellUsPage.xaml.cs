@@ -4,20 +4,16 @@ public partial class TellUsPage : ContentPage
     public TellUsPage()
     {
         InitializeComponent();
-        Routing.RegisterRoute("SignUpPageAC", typeof(SignUpPageAC));
-        Routing.RegisterRoute("SignUpPageSP", typeof(SignUpPageSP));
-        Routing.RegisterRoute("LogInPage", typeof(LogInPage));
-        Routing.RegisterRoute("SignUpPageCoach", typeof(SignUpPageCoach));
     }
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("SignUpPageAC");
+        await Shell.Current.GoToAsync("SUAthlete");
     }
 
     private async void Button_Clicked_1(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("SignUpPageSP");
+        await Shell.Current.GoToAsync("SUSP");
     }
 
     private async void Button_Clicked_2(object sender, EventArgs e)
@@ -27,6 +23,6 @@ public partial class TellUsPage : ContentPage
 
     private async void Button_Clicked_3(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("SignUpPageCoach");
+        await Shell.Current.GoToAsync("SUCoach");
     }
 }
