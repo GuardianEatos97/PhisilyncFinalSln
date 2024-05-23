@@ -16,8 +16,6 @@ namespace PhisilyncFinal
 
         protected override async void OnStart()
         {
-            //await Shell.Current.GoToAsync("///tellUsPage");
-            //base.OnStart();
             bool isUserLoggedIn = _database._dbConnection.Table<User>().Count() != 0;
             
             if (isUserLoggedIn)

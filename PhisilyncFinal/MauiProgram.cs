@@ -86,16 +86,12 @@ namespace PhisilyncFinal
                 
                 mauiAppBuilder.Services.AddSingleton<AthleteDashVM>();
                 mauiAppBuilder.Services.AddSingleton<CoachDashVM>();
-                mauiAppBuilder.Services.AddSingleton<SPDashVM>();
-               
+                mauiAppBuilder.Services.AddSingleton<SPDashVM>();              
                 mauiAppBuilder.Services.AddSingleton<ProfileDetailsVM>();
-                mauiAppBuilder.Services.AddSingleton<EditProfileVM>();
-               
+                mauiAppBuilder.Services.AddSingleton<EditProfileVM>();               
                 mauiAppBuilder.Services.AddSingleton<LynoTherapyPageVM>();
-                mauiAppBuilder.Services.AddSingleton<MassageTherapyVM>();
-            
-                mauiAppBuilder.Services.AddSingleton<StretchesandExercisesVM>();
-             
+                mauiAppBuilder.Services.AddSingleton<MassageTherapyVM>();            
+                mauiAppBuilder.Services.AddSingleton<StretchesandExercisesVM>();            
                 mauiAppBuilder.Services.AddSingleton<InjuryLibraryViewModel>();
                 mauiAppBuilder.Services.AddSingleton<TapingPageVM>();
                 mauiAppBuilder.Services.AddSingleton<TeamStatsVM>();

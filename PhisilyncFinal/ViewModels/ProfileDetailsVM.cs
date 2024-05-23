@@ -1,4 +1,5 @@
 ﻿using System;
+using PhisilyncFinal.Models;
 using PhisilyncFinal.Services;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace PhisilyncFinal.ViewModels
 {
-    public partial class ProfileDetailsVM
+    public partial class ProfileDetailsVM : BaseViewModel
     {
-          
+
     }
 }
