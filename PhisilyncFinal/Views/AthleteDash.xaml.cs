@@ -1,18 +1,19 @@
-using PhisilyncFinal.ViewModels;
+﻿using PhisilyncFinal.ViewModels;
 using Plugin.Maui.Calendar.Models;
+
 
 namespace PhisilyncFinal.Views;
 
 public partial class AthleteDash : ContentPage
 {
-    //public EventCollection Events { get; set; }
-    public AthleteDash(AthleteDashVM vm)
+    
+    public AthleteDash()
     {
         InitializeComponent();
         
         /*Routing.RegisterRoute("TreatmentPage", typeof(TreatmentPage));
         Routing.RegisterRoute("InjuryPage", typeof(InjuryPage));*/
-        BindingContext = vm;
+        BindingContext = new InjuryLibraryViewModel();
 
         //Events = new EventCollection
         //{
