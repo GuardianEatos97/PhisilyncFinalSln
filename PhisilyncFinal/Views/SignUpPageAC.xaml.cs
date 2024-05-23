@@ -19,8 +19,6 @@ public partial class SignUpPageAC : ContentPage
     public SignUpPageAC()
 	{
 		InitializeComponent();
-        Routing.RegisterRoute("AthleteDash", typeof(AthleteDash));
-        Routing.RegisterRoute("LogInPage", typeof(LogInPage));
         _database = new();
     }
 

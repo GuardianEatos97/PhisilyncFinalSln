@@ -76,6 +76,7 @@
 	  <None Remove="Resources\Images\flexi.avif" />
 	  <None Remove="Resources\Images\freedom.jpg" />
 	  <None Remove="Resources\Images\gelant.jpg" />
+	  <None Remove="Resources\Images\glossary.png" />
 	  <None Remove="Resources\Images\goniometer.jpg" />
 	  <None Remove="Resources\Images\googleb.jpg" />
 	  <None Remove="Resources\Images\googleremove.png" />

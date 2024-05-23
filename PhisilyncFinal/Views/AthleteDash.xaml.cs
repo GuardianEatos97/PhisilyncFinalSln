@@ -9,9 +9,6 @@ public partial class AthleteDash : ContentPage
     public AthleteDash(AthleteDashVM vm)
     {
         InitializeComponent();
-        
-        /*Routing.RegisterRoute("TreatmentPage", typeof(TreatmentPage));
-        Routing.RegisterRoute("InjuryPage", typeof(InjuryPage));*/
         BindingContext = vm;
 
         //Events = new EventCollection

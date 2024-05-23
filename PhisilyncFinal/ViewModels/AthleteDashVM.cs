@@ -46,13 +46,13 @@ namespace PhisilyncFinal.ViewModels
         [RelayCommand]
         private async Task Injury()
         {
-            await Shell.Current.GoToAsync("///library");
+            await Shell.Current.GoToAsync("Library");
         }
 
         [RelayCommand]
         private async Task AthleteInjury()
         {
-            await Shell.Current.GoToAsync("///treatmentPage");
+            await Shell.Current.GoToAsync("treatmentPage");
         }
     }
 }

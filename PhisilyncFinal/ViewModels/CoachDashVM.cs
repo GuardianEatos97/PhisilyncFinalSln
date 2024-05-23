@@ -27,7 +27,7 @@ namespace PhisilyncFinal.ViewModels
         [RelayCommand]
         private async Task TappedAthlete()
         {
-            await Shell.Current.GoToAsync("///treatmentPage");
+            await Shell.Current.GoToAsync("treatmentPage");
         }
 
         public void PopUpClicked(object sender, EventArgs e)

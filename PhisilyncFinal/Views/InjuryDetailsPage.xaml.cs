@@ -6,4 +6,9 @@ public partial class InjuryDetailsPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void GlossaryBtn_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }

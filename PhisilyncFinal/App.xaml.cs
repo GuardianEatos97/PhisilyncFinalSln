@@ -13,7 +13,7 @@ namespace PhisilyncFinal
 
         protected override async void OnStart()
         {
-            await Shell.Current.GoToAsync("///tellUsPage");
+            await Shell.Current.GoToAsync("TellUs");
             base.OnStart();
         }
     }
