@@ -36,8 +36,9 @@ public partial class SignUpPageAC : ContentPage
     private async void Button_Clicked(object sender, EventArgs e)
     {
         CurrentUser = _database.GetUserByEmail(emailEntry.Text);
+        UserDash = new TreatmentDashboard();
 
-        if (CurrentUser == null)
+        if (CurrentUser != null)
         {
             try
             {
