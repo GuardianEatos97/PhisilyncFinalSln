@@ -36,10 +36,19 @@ public partial class SignUpPageAC : ContentPage
     private async void Button_Clicked(object sender, EventArgs e)
     {
         CurrentUser = _database.GetUserByEmail(emailEntry.Text);
-        UserDash = new TreatmentDashboard();
+        UserDash = new();
 
-        if (CurrentUser != null)
+        if (CurrentUser == null)
         {
+            CurrentUser = new()
+            {
+                userName = nameEntry.Text,
+                userSurname = surnameEntry.Text,
+                userEmail = emailEntry.Text,
+                userPassword = passwordEntry.Text,
+                userType = 1
+            };
+
             try
             {
                 _database.SaveUser(CurrentUser);
