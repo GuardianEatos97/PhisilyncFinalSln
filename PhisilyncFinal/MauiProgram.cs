@@ -43,6 +43,7 @@ namespace PhisilyncFinal
             mauiAppBuilder.Services.AddTransient<IPageService, TeamStatsVM>();
             mauiAppBuilder.Services.AddTransient<IAiAssistant, LennyAiAssistant>();
             mauiAppBuilder.Services.AddTransient<ISettings,AiSettings>();
+            mauiAppBuilder.Services.AddSingleton<LocalDb>();
             return mauiAppBuilder;
         }
 
@@ -102,6 +103,9 @@ namespace PhisilyncFinal
                 mauiAppBuilder.Services.AddSingleton<TreatmentPageVM>();
                 mauiAppBuilder.Services.AddSingleton<LennyAnswerPageVM>();
                 mauiAppBuilder.Services.AddSingleton<LennyQuestionPageVM>();
+                mauiAppBuilder.Services.AddSingleton<SignUpACVM>();
+            mauiAppBuilder.Services.AddSingleton<SignUpCoachVM>();
+            mauiAppBuilder.Services.AddSingleton<SignUpSPVM>();
 
             return mauiAppBuilder;
             }  

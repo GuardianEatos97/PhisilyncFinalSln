@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              BackgroundColor="#23583a"
-             x:Class="PhisilyncFinal.Views.SignUpPageAC">
+             xmlns:local="clr-namespace:PhisilyncFinal.ViewModels"
+             x:Class="PhisilyncFinal.Views.SignUpPageAC" x:DataType="local:SignUpACVM" >
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
@@ -63,7 +64,7 @@
                 WidthRequest="500"
                 MaxLength="14"
                 FontSize="20" 
-                Text="{Binding CurrentUser.password}"/>
+                Text="{Binding CurrentUser.userPassword}"/>
 
             <Entry
                 FontAttributes="Bold"
@@ -74,14 +75,14 @@
                 WidthRequest="500"
                 MaxLength="14"
                 FontSize="20" 
-                Text="{Binding CurrentUser.userpassword}"/>
+                Text="{Binding CurrentUser.userPassword}"/>
 
             <Button
                 Text="Create Account"
                 TextColor="White"
                 BackgroundColor="SeaGreen"
-                Clicked="Button_Clicked"
                 StyleId="TellUsPage"
+                Command="{Binding CreateUserCommand}"
                 WidthRequest="500"/>
 
             <Label
@@ -109,7 +110,7 @@
                 Text="Already Have An Account?"
                 TextColor="White"
                 WidthRequest="300"
-                Clicked="Button_Clicked_1"
+               
                 CornerRadius="100"
                 BackgroundColor="Black"
                 FontSize="Body" 
