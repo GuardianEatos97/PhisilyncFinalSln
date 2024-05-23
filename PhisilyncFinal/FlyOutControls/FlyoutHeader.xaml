@@ -6,7 +6,7 @@
 
     <Grid BackgroundColor="Black">
         <Image Aspect="AspectFit" 
-               Source="phisilync_nobg.png" 
+               Source="phisilyncgreen.png" 
                Opacity="1" />
     </Grid>
 </ContentView>

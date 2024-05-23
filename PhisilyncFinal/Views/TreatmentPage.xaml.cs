@@ -5,35 +5,30 @@ public partial class TreatmentPage : ContentPage
 	public TreatmentPage()
 	{
 		InitializeComponent();
-        Routing.RegisterRoute("LynoTherapyPage", typeof(LynoTherapyPage));
-        Routing.RegisterRoute("MassageTherapyPage", typeof(MassageTherapyPage));
-        Routing.RegisterRoute("TapingPage", typeof(TapingPage));
-        Routing.RegisterRoute("StretchesAndExercisePage", typeof(StretchesAndExercisePage));
-        Routing.RegisterRoute("RangeOfMovementPage", typeof(RangeOfMovementPage));
     }
 
     private async void LynoBtn_Clicked(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("LynoTherapyPage");
+        await Shell.Current.GoToAsync("LynoPage");
     }
 
     private async void MassageBtn_Clicked(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("MassageTherapyPage");
+        await Shell.Current.GoToAsync("MassagePage");
     }
 
     private async void TapingBtn_Clicked(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("TapingPage");
+        await Shell.Current.GoToAsync("Taping");
     }
 
     private async void StretchBtn_Clicked(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("StretchesAndExercisePage");
+        await Shell.Current.GoToAsync("Stretch");
     }
 
     private async void RomBtn_Clicked(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("RangeOfMovementPage");
+        await Shell.Current.GoToAsync("ROMPage");
     }
 }

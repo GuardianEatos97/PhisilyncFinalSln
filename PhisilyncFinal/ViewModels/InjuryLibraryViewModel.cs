@@ -140,7 +140,6 @@ namespace PhisilyncFinal.ViewModels
                     InjuryTest = "Position:\r\nThe client is in prone position. Bring his arm into full adduction and internal rotation. Make sure the hand is in the neutral position.\r\n\r\nMeasure:\r\nMeasure in fingers from the client’s little finger to the inferior border of the scapula.\r\n\r\nFull range:\r\nYou should be able to place the entire hand on the scapula, with all the fingers on top of the scapula. Make sure that the wrist is in the neutral position and not deviated to reach the full range.\r\n",
                 },
             ];
-            
 
         }
     }

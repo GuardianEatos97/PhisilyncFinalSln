@@ -16,18 +16,7 @@ namespace PhisilyncFinal
 
         protected override async void OnStart()
         {
-            //await Shell.Current.GoToAsync("///tellUsPage");
-            //base.OnStart();
-            bool isUserLoggedIn = _database._dbConnection.Table<User>().Count() != 0;
-            
-            if (isUserLoggedIn)
-            {
-                await Shell.Current.GoToAsync("///athleteDash");
-            }
-            else
-            {
-                await Shell.Current.GoToAsync("///tellUsPage");
-            }
+            await Shell.Current.GoToAsync("TellUs");
             base.OnStart();
         }
     }

@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 
 namespace PhisilyncFinal.Models
 {
-    internal class Event
+    public class Event
     {
         public string Name { get; set; }
         public string Description { get; set; }
+    
+        public DateTime EventDate { get; set; }
     }
 }

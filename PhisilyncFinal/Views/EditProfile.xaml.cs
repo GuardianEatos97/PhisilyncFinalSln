@@ -16,16 +16,19 @@ public partial class EditProfile : ContentPage
 
     private async void NavigateToProfileDetails()
     {
-        await Navigation.PushAsync(new ProfileDetails());
+        //await Navigation.PushAsync(new ProfileDetails());
+        await Shell.Current.GoToAsync("ProfileDetails");
     }
 
     private async void NavigateToPayments()
     {
-        await Navigation.PushAsync(new Payment());
+        //await Navigation.PushAsync(new Payment());
+        await Shell.Current.GoToAsync("Payment");
     }
 
     private async void NavigateToSettings()
     {
-        await Navigation.PushAsync(new Settings());
+        //await Navigation.PushAsync(new Settings());
+        await Shell.Current.GoToAsync("Settings");
     }
 }

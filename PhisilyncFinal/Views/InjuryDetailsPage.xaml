@@ -7,7 +7,7 @@
     
     <Shell.TitleView Margin="0">
         <Image 
-    Source="phisilyncgreen"
+    Source="phisilyncgreen.png"
     Aspect="Center"/>
     </Shell.TitleView>
     
@@ -57,6 +57,21 @@
                 FontSize="Medium"
                 HorizontalTextAlignment="Start"
                 Style="{DynamicResource BodyStyle}" />
+
+            <Label
+                Text="Click below to access our built-in Glossary"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                Margin="0,20"/>
+            <ImageButton
+                x:Name="GlossaryBtn"
+                Clicked="GlossaryBtn_Clicked"
+                CornerRadius="0"
+                Aspect="Center"
+                HeightRequest="250"
+                WidthRequest="250"
+                HorizontalOptions="Center"
+                Source="glossary.png"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>
