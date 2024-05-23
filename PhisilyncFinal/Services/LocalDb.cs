@@ -78,12 +78,14 @@ namespace PhisilyncFinal.Services
             }
         }
 
-        public void SaveDash(TreatmentDashboard dash, User user)
+        public void SaveDash(TreatmentDashboard dash,User user)
         {
             try
             {
+                dash.treatmentDashboardUser = user.userID;
                 _dbConnection.Insert(dash);
-                _dbConnection.UpdateWithChildren(user);
+                user.userTreatment = dash.treatmentDashID;
+                _dbConnection.Update(user);
             }
             catch (Exception ex)
             {

@@ -52,7 +52,7 @@ public partial class SignUpPageAC : ContentPage
             try
             {
                 _database.SaveUser(CurrentUser);
-                _database.SaveDash(UserDash, CurrentUser);
+                _database.SaveDash(UserDash,CurrentUser);
                 await Shell.Current.GoToAsync("AthleteDash");
             }
             catch (Exception ex)
