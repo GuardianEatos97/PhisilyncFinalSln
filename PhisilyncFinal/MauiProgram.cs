@@ -83,7 +83,8 @@ namespace PhisilyncFinal
             public static MauiAppBuilder RegisterViewModels(this MauiAppBuilder mauiAppBuilder)
             {
 
-                
+                mauiAppBuilder.Services.AddSingleton<LennyAnswerPageVM>();
+                mauiAppBuilder.Services.AddSingleton<LennyQuestionPageVM>();
                 mauiAppBuilder.Services.AddSingleton<AthleteDashVM>();
                 mauiAppBuilder.Services.AddSingleton<CoachDashVM>();
                 mauiAppBuilder.Services.AddSingleton<SPDashVM>();
