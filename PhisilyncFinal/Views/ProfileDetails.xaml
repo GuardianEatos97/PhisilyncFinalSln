@@ -4,7 +4,7 @@
              x:Class="PhisilyncFinal.Views.ProfileDetails"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
     <ScrollView>
-        <VerticalStackLayout>
+        <VerticalStackLayout >
 
             <toolkit:AvatarView Text="Noah"
                             BorderColor="#6bb834"
@@ -28,28 +28,33 @@
                     <Frame WidthRequest="500"
                HorizontalOptions="CenterAndExpand"
                CornerRadius="10">
-                        <Editor Placeholder="Name"
+                        <Editor
                     PlaceholderColor="Grey"
                     FontAttributes="Bold"
-                    FontSize="15"/>
+                    FontSize="15"
+                    Text="{Binding userName}"/>
                     </Frame>
 
                     <Frame WidthRequest="500"
                HorizontalOptions="CenterAndExpand"
                CornerRadius="10">
-                        <Editor Placeholder="Surname"
+                        <Editor
                     PlaceholderColor="Grey"
                     FontAttributes="Bold"
-                    FontSize="15"/>
+                    FontSize="15"
+                                Text="{Binding userSurname}"/>
                     </Frame>
 
                     <Frame WidthRequest="500"
                HorizontalOptions="CenterAndExpand"
                CornerRadius="10">
-                        <Editor Placeholder="Email Address "
-                    PlaceholderColor="Grey"
-                    FontAttributes="Bold"
-                    FontSize="15"/>
+                        
+                        <Editor 
+                                PlaceholderColor="Grey"
+                                FontAttributes="Bold"
+                                FontSize="15"
+                                Text="{Binding userEmail}"/>
+
                     </Frame>
 
                     <Frame WidthRequest="500"
