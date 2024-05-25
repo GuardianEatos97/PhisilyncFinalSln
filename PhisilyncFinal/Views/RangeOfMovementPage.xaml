@@ -7,7 +7,7 @@
     <Shell.TitleView Margin="0,0,0,0">
         <Image 
             Source="phisilyncgreen"
-            Aspect="Center"/>
+            Aspect="AspectFill"/>
     </Shell.TitleView>
 
     <ScrollView Orientation="Vertical">
@@ -16,7 +16,7 @@
                  Grid.Row="0" 
                  Grid.ColumnSpan="0"
                  HeightRequest="350"
-                 WidthRequest="600"
+                 WidthRequest="350"
                  CornerRadius="50"
                  HorizontalOptions="CenterAndExpand"
                  IsClippedToBounds="True"
@@ -98,7 +98,7 @@
                  Grid.Row="0" 
                  Grid.ColumnSpan="0"
                  HeightRequest="350"
-                 WidthRequest="600"
+                 WidthRequest="350"
                  CornerRadius="50"
                  HorizontalOptions="CenterAndExpand"
                  IsClippedToBounds="True"
