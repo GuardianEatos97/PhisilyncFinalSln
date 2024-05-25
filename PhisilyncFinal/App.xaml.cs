@@ -20,7 +20,7 @@ namespace PhisilyncFinal
 
             if (isUserLoggedIn)
             {
-                await Shell.Current.GoToAsync("///AthleteDash");
+                await Shell.Current.GoToAsync("AthleteDash");
             }
             else
             {

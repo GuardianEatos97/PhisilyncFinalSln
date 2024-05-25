@@ -4,6 +4,7 @@ using PhisilyncFinal.ViewModels;
 
 namespace PhisilyncFinal.Views;
 public partial class CoachDashboard : ContentPage
+
 {
 	public CoachDashboard(CoachDashVM vm)
 	{
