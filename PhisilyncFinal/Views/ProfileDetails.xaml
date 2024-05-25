@@ -25,7 +25,7 @@
                        TextColor="Grey"
                        FontSize="20"
                        FontAttributes="Bold"/>
-                    <Frame WidthRequest="500"
+                    <Frame WidthRequest="350"
                HorizontalOptions="CenterAndExpand"
                CornerRadius="10">
                         <Editor
@@ -35,7 +35,7 @@
                     Text="{Binding userName}"/>
                     </Frame>
 
-                    <Frame WidthRequest="500"
+                    <Frame WidthRequest="350"
                HorizontalOptions="CenterAndExpand"
                CornerRadius="10">
                         <Editor
@@ -45,7 +45,7 @@
                                 Text="{Binding userSurname}"/>
                     </Frame>
 
-                    <Frame WidthRequest="500"
+                    <Frame WidthRequest="350"
                HorizontalOptions="CenterAndExpand"
                CornerRadius="10">
                         
@@ -57,7 +57,7 @@
 
                     </Frame>
 
-                    <Frame WidthRequest="500"
+                    <Frame WidthRequest="350"
                HorizontalOptions="CenterAndExpand"
                CornerRadius="10">
                         <StackLayout Orientation="Horizontal" VerticalOptions="Center">
@@ -86,7 +86,7 @@
                        FontSize="20"
                        FontAttributes="Bold"/>
                 
-                <Frame WidthRequest="500"
+                <Frame WidthRequest="350"
                        HorizontalOptions="CenterAndExpand"
                        CornerRadius="10">
                     
@@ -96,7 +96,7 @@
                             FontSize="15"/>
                 </Frame>
 
-                <Frame WidthRequest="500"
+                <Frame WidthRequest="350"
                        HorizontalOptions="CenterAndExpand"
                        CornerRadius="10">
                     <Editor Placeholder="Postion/Team Role"
@@ -105,7 +105,7 @@
                             FontSize="15"/>
                 </Frame>
 
-                <Frame WidthRequest="500"
+                <Frame WidthRequest="350"
                        HorizontalOptions="CenterAndExpand"
                        CornerRadius="10">
                     <Editor Placeholder="Team/Club/School"
@@ -114,7 +114,7 @@
                             FontSize="15"/>
                 </Frame>
 
-                <Frame WidthRequest="500"
+                <Frame WidthRequest="350"
                        HorizontalOptions="CenterAndExpand"
                        CornerRadius="10">
                     <Editor Placeholder="Location"
@@ -128,7 +128,7 @@
             <Frame HasShadow="False" BorderColor="Transparent">
                 <StackLayout Spacing="10" Margin="0,50,0,0">
                     <BoxView VerticalOptions="Start" Color="LightGrey" HeightRequest="2"/>
-                    <Frame WidthRequest="500"
+                    <Frame WidthRequest="350"
                        HorizontalOptions="CenterAndExpand"
                        CornerRadius="10">
 
@@ -142,7 +142,7 @@
                     </Frame>
 
 
-                    <Frame WidthRequest="500"
+                    <Frame WidthRequest="350"
                        HorizontalOptions="CenterAndExpand"
                        CornerRadius="10">
 
