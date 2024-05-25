@@ -57,11 +57,19 @@
                 FontSize="Medium"
                 HorizontalTextAlignment="Start"
                 Style="{DynamicResource BodyStyle}" />
+            <Label
+                Text="Click the scroll below to view our Anatomy glossary"
+                FontSize="Small"
+                HorizontalOptions="Center"/>
+            <Frame CornerRadius="365" BackgroundColor="MintCream" WidthRequest="80" BorderColor="SeaGreen" >
             <ImageButton
+                x:Name="GlossaryBtn"
+                Clicked="GlossaryBtn_Clicked"
                 Source="glossary.png"
                 HorizontalOptions="Center"
-                HeightRequest="150"
-                WidthRequest="150"/>
+                HeightRequest="50"
+                WidthRequest="50"/>
+            </Frame>
         </StackLayout>
     </ScrollView>
 </ContentPage>

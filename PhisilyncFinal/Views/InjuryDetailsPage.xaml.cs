@@ -11,4 +11,5 @@ public partial class InjuryDetailsPage : ContentPage
     {
 		await Shell.Current.GoToAsync("GlossaryView");
     }
+
 }
