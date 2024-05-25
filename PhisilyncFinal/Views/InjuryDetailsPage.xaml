@@ -57,6 +57,11 @@
                 FontSize="Medium"
                 HorizontalTextAlignment="Start"
                 Style="{DynamicResource BodyStyle}" />
+            <ImageButton
+                Source="glossary.png"
+                HorizontalOptions="Center"
+                HeightRequest="150"
+                WidthRequest="150"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>
