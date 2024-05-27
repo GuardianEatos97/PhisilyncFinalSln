@@ -4,7 +4,7 @@
              x:Class="PhisilyncFinal.Views.ProfileDetails"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
     <ScrollView>
-        <VerticalStackLayout>
+        <VerticalStackLayout >
 
             <toolkit:AvatarView Text="Noah"
                             BorderColor="#6bb834"
@@ -25,34 +25,39 @@
                        TextColor="Grey"
                        FontSize="20"
                        FontAttributes="Bold"/>
-                    <Frame WidthRequest="500"
+                    <Frame WidthRequest="350"
                HorizontalOptions="CenterAndExpand"
                CornerRadius="10">
-                        <Editor Placeholder="Name"
+                        <Editor
                     PlaceholderColor="Grey"
                     FontAttributes="Bold"
-                    FontSize="15"/>
+                    FontSize="15"
+                    Text="{Binding userName}"/>
                     </Frame>
 
-                    <Frame WidthRequest="500"
+                    <Frame WidthRequest="350"
                HorizontalOptions="CenterAndExpand"
                CornerRadius="10">
-                        <Editor Placeholder="Surname"
+                        <Editor
                     PlaceholderColor="Grey"
                     FontAttributes="Bold"
-                    FontSize="15"/>
+                    FontSize="15"
+                                Text="{Binding userSurname}"/>
                     </Frame>
 
-                    <Frame WidthRequest="500"
+                    <Frame WidthRequest="350"
                HorizontalOptions="CenterAndExpand"
                CornerRadius="10">
-                        <Editor Placeholder="Email Address "
-                    PlaceholderColor="Grey"
-                    FontAttributes="Bold"
-                    FontSize="15"/>
+                        
+                        <Editor 
+                                PlaceholderColor="Grey"
+                                FontAttributes="Bold"
+                                FontSize="15"
+                                Text="{Binding userEmail}"/>
+
                     </Frame>
 
-                    <Frame WidthRequest="500"
+                    <Frame WidthRequest="350"
                HorizontalOptions="CenterAndExpand"
                CornerRadius="10">
                         <StackLayout Orientation="Horizontal" VerticalOptions="Center">
@@ -81,7 +86,7 @@
                        FontSize="20"
                        FontAttributes="Bold"/>
                 
-                <Frame WidthRequest="500"
+                <Frame WidthRequest="350"
                        HorizontalOptions="CenterAndExpand"
                        CornerRadius="10">
                     
@@ -91,7 +96,7 @@
                             FontSize="15"/>
                 </Frame>
 
-                <Frame WidthRequest="500"
+                <Frame WidthRequest="350"
                        HorizontalOptions="CenterAndExpand"
                        CornerRadius="10">
                     <Editor Placeholder="Postion/Team Role"
@@ -100,7 +105,7 @@
                             FontSize="15"/>
                 </Frame>
 
-                <Frame WidthRequest="500"
+                <Frame WidthRequest="350"
                        HorizontalOptions="CenterAndExpand"
                        CornerRadius="10">
                     <Editor Placeholder="Team/Club/School"
@@ -109,7 +114,7 @@
                             FontSize="15"/>
                 </Frame>
 
-                <Frame WidthRequest="500"
+                <Frame WidthRequest="350"
                        HorizontalOptions="CenterAndExpand"
                        CornerRadius="10">
                     <Editor Placeholder="Location"
@@ -123,7 +128,7 @@
             <Frame HasShadow="False" BorderColor="Transparent">
                 <StackLayout Spacing="10" Margin="0,50,0,0">
                     <BoxView VerticalOptions="Start" Color="LightGrey" HeightRequest="2"/>
-                    <Frame WidthRequest="500"
+                    <Frame WidthRequest="350"
                        HorizontalOptions="CenterAndExpand"
                        CornerRadius="10">
 
@@ -137,7 +142,7 @@
                     </Frame>
 
 
-                    <Frame WidthRequest="500"
+                    <Frame WidthRequest="350"
                        HorizontalOptions="CenterAndExpand"
                        CornerRadius="10">
 

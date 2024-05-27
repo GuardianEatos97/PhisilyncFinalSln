@@ -10,14 +10,14 @@ namespace PhisilyncFinal
         public App()
         {
             InitializeComponent();
-            _database = new LocalDb();
             MainPage = new AppShell();
         }
 
         protected override async void OnStart()
         {
+
             await Shell.Current.GoToAsync("TellUs");
-            base.OnStart();
+
         }
     }
 }

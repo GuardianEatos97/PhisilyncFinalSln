@@ -7,8 +7,9 @@ public partial class InjuryDetailsPage : ContentPage
 		InitializeComponent();
 	}
 
-    private void GlossaryBtn_Clicked(object sender, EventArgs e)
+    private async void GlossaryBtn_Clicked(object sender, EventArgs e)
     {
-
+		await Shell.Current.GoToAsync("GlossaryView");
     }
+
 }
