@@ -33,6 +33,15 @@
              FontSize="Medium"
              HorizontalTextAlignment="Start"
              Style="{DynamicResource BodyStyle}" />
+
+            <Button
+                Text="Return To Word List"
+                x:Name="BackBtn"
+                Clicked="BackBtn_Clicked"
+                VerticalOptions="End"
+                Margin="0,50"
+                HorizontalOptions="Center"
+                />
         </StackLayout>
     </ScrollView>
 </ContentPage>

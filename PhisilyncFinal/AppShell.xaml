@@ -99,6 +99,35 @@ Route="Library" />
 
     </FlyoutItem>
 
+    <ShellContent
+        Title="AthleteDash"
+        ContentTemplate="{DataTemplate local:AthleteDash}"
+        Route="AthleteDash"/>
+    <ShellContent
+        Title="CoachDashboard"
+        ContentTemplate="{DataTemplate local:CoachDashboard}"
+        Route="CoachDash"/>
+    <ShellContent
+        Title="EditProfile"
+        ContentTemplate="{DataTemplate local:EditProfile}"
+        Route="EditProfile"/>
+    <ShellContent
+        Title="InjuryLibraryPage"
+        ContentTemplate="{DataTemplate local:InjuryLibraryPage}"
+        Route="LIbrary"/>
+    <ShellContent
+        Title="ProfileDetails"
+        ContentTemplate="{DataTemplate local:ProfileDetails}"
+        Route="ProfileDetails"/>
+    <ShellContent
+        Title="ServiceProviderDashboard"
+        ContentTemplate="{DataTemplate local:ServiceProviderDashboard}"
+        Route="SPDash"/>
+    <ShellContent
+        Title="TeamStatsPopUp"
+        ContentTemplate="{DataTemplate local:TeamStatsPopUp}"
+        Route="TeamStats"/>
+
 </Shell>
 
 
