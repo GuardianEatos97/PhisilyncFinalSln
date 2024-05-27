@@ -85,7 +85,10 @@ namespace PhisilyncFinal
             //Registering ViewModels
             public static MauiAppBuilder RegisterViewModels(this MauiAppBuilder mauiAppBuilder)
             {
-                mauiAppBuilder.Services.AddSingleton<AthleteDashVM>();
+            mauiAppBuilder.Services.AddSingleton<SignUpACVM>();
+            mauiAppBuilder.Services.AddSingleton<SignUpCoachVM>();
+            mauiAppBuilder.Services.AddSingleton<SignUpSPVM>();
+            mauiAppBuilder.Services.AddSingleton<AthleteDashVM>();
                 mauiAppBuilder.Services.AddSingleton<CoachDashVM>();
                 mauiAppBuilder.Services.AddSingleton<SPDashVM>();
                 mauiAppBuilder.Services.AddSingleton<ProfileDetailsVM>();
