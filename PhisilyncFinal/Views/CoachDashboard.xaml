@@ -53,6 +53,7 @@
                     <DataTemplate>
                         <StackLayout>
                             <Frame HasShadow="True"
+<<<<<<< HEAD
                        BorderColor="DarkGray"
                        CornerRadius="5"
                        BackgroundColor="White"
@@ -78,6 +79,34 @@
                                HorizontalOptions="Center"
                                MaxLines="5"
                                LineBreakMode="TailTruncation" />
+=======
+                                   BorderColor="DarkGray"
+                                   CornerRadius="5"
+                                   BackgroundColor="White"
+                                   Margin="20"
+                                   HeightRequest="300"
+                                   WidthRequest="600"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="CenterAndExpand">
+                                <StackLayout>
+                                    <Label Text="{Binding InjuryName}" 
+                                           FontAttributes="Bold"
+                                           FontSize="20"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center" />
+
+                                    <Image Source="{Binding InjuryImage}" 
+                                           Aspect="AspectFill"
+                                           HeightRequest="150"
+                                           WidthRequest="150"
+                                           HorizontalOptions="Center" />
+
+                                    <Label Text="{Binding Prompt}"
+                                           FontAttributes="Italic"
+                                           HorizontalOptions="Center"
+                                           MaxLines="5"
+                                           LineBreakMode="TailTruncation" />
+>>>>>>> parent of a450491 (Merge branch 'Back-End' of https://github.com/GuardianEatos97/PhisilyncFinalSln into Back-End)
                                 </StackLayout>
                             </Frame>
                         </StackLayout>

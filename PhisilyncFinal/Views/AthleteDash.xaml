@@ -69,6 +69,10 @@
                                    BackgroundColor="White"
                                    Margin="20"
                                    HeightRequest="300"
+<<<<<<< HEAD
+=======
+                                   WidthRequest="600"
+>>>>>>> parent of a450491 (Merge branch 'Back-End' of https://github.com/GuardianEatos97/PhisilyncFinalSln into Back-End)
                                    HorizontalOptions="Center"
                                    VerticalOptions="CenterAndExpand">
                                 <StackLayout>
