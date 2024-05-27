@@ -19,45 +19,52 @@
                FontAttributes="Bold"
                FontSize="Large"
                Style="{DynamicResource TitleStyle}" />
+            
             <Image Source="{Binding InjuryImage}"
                HeightRequest="200"
                WidthRequest="200"
                Margin="20"
                HorizontalOptions="Center" />
+            
             <Label
                 Text="Anatomy"
                 FontAttributes="Bold"
                 FontSize="Medium"
                 Style="{DynamicResource TitleStyle}"
                 HorizontalTextAlignment="Center"/>
+            
             <Label 
                 Text="{Binding InjuryAnatomy}"
                 FontSize="Medium"
                 HorizontalTextAlignment="Start"
                 Style="{DynamicResource BodyStyle}" />
+            
             <Label
                 Text="Test"
                 FontAttributes="Bold"
                 FontSize="Medium"
                 Style="{DynamicResource TitleStyle}"
                 HorizontalTextAlignment="Center"/>
+            
             <Label 
                 Text="{Binding InjuryTest}"
                 FontSize="Medium"
                 HorizontalTextAlignment="Start"
                 Style="{DynamicResource BodyStyle}" />
+            
             <Label
                 Text="Release"
                 FontAttributes="Bold"
                 FontSize="Medium"
                 Style="{DynamicResource TitleStyle}"
                 HorizontalTextAlignment="Center"/>
+            
             <Label 
                 Text="{Binding InjuryRelease}"
                 FontSize="Medium"
                 HorizontalTextAlignment="Start"
                 Style="{DynamicResource BodyStyle}" />
-<<<<<<< HEAD
+
 
             <Label
                 Text="Click below to access our built-in Glossary"
@@ -73,13 +80,13 @@
                 WidthRequest="250"
                 HorizontalOptions="Center"
                 Source="glossary.png"/>
-=======
+
             <ImageButton
                 Source="glossary.png"
                 HorizontalOptions="Center"
                 HeightRequest="150"
                 WidthRequest="150"/>
->>>>>>> parent of d194181 (Glossary Navigation added)
+
         </StackLayout>
     </ScrollView>
 </ContentPage>

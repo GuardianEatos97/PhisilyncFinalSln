@@ -10,7 +10,7 @@
     <Shell.TitleView Margin="0,0,0,0">
         <Image 
         Source="phisilyncgreen"
-        Aspect="Center"/>
+        Aspect="AspectFill"/>
     </Shell.TitleView>
     
     <ScrollView Orientation="Vertical">
@@ -38,13 +38,13 @@
                    TextColor="White"
                    FontAttributes="Bold"
                    FontSize="Medium"
-                   Margin="20,0,0,0"/>
+                   Margin="0,10,0,0"/>
 
             <Label Text="Dashboard"
                    TextColor="White"
                    FontAttributes="Bold"
                    FontSize="Large"
-                   Margin="20,0,0,0"/>
+                   Margin="0,10,0,0"/>
 
             <CarouselView ItemsSource="{Binding Injury}"
               IndicatorView="indicatorView"
@@ -53,60 +53,36 @@
                     <DataTemplate>
                         <StackLayout>
                             <Frame HasShadow="True"
-<<<<<<< HEAD
-                       BorderColor="DarkGray"
-                       CornerRadius="5"
-                       BackgroundColor="White"
-                       Margin="20"
-                       HeightRequest="300"
-                       HorizontalOptions="Center"
-                       VerticalOptions="CenterAndExpand">
-                                <StackLayout>
-                                    <Label Text="{Binding InjuryName}" 
-                               FontAttributes="Bold"
-                               FontSize="20"
-                               HorizontalOptions="Center"
-                               VerticalOptions="Center" />
-
-                                    <Image Source="{Binding InjuryImage}" 
-                               Aspect="AspectFill"
-                               HeightRequest="150"
-                               WidthRequest="150"
-                               HorizontalOptions="Center" />
-
-                                    <Label Text="{Binding Prompt}"
-                               FontAttributes="Italic"
-                               HorizontalOptions="Center"
-                               MaxLines="5"
-                               LineBreakMode="TailTruncation" />
-=======
                                    BorderColor="DarkGray"
                                    CornerRadius="5"
                                    BackgroundColor="White"
-                                   Margin="20"
+                                   Margin="0,0,0,0"
                                    HeightRequest="300"
-                                   WidthRequest="600"
+                                   WidthRequest="350"
                                    HorizontalOptions="Center"
                                    VerticalOptions="CenterAndExpand">
+                                
                                 <StackLayout>
                                     <Label Text="{Binding InjuryName}" 
                                            FontAttributes="Bold"
                                            FontSize="20"
+                                           Margin="0,10,0,0"
                                            HorizontalOptions="Center"
                                            VerticalOptions="Center" />
 
                                     <Image Source="{Binding InjuryImage}" 
                                            Aspect="AspectFill"
                                            HeightRequest="150"
+                                           Margin="0,10,0,0"
                                            WidthRequest="150"
                                            HorizontalOptions="Center" />
 
                                     <Label Text="{Binding Prompt}"
                                            FontAttributes="Italic"
                                            HorizontalOptions="Center"
+                                           Margin="0,10,0,0"
                                            MaxLines="5"
                                            LineBreakMode="TailTruncation" />
->>>>>>> parent of a450491 (Merge branch 'Back-End' of https://github.com/GuardianEatos97/PhisilyncFinalSln into Back-End)
                                 </StackLayout>
                             </Frame>
                         </StackLayout>
@@ -114,7 +90,7 @@
                 </CarouselView.ItemTemplate>
             </CarouselView>
             <IndicatorView x:Name="indicatorView"
-               Margin="0,0,0,40"
+               Margin="0,0,0,20"
                IndicatorColor="White"
                SelectedIndicatorColor="Black"
                HorizontalOptions="Center" />
@@ -127,9 +103,9 @@
                     BorderWidth="2"
                     BackgroundColor="SeaGreen"
                     CornerRadius="100"
-                    WidthRequest="500"
+                    WidthRequest="350"
                     HeightRequest="70"
-                    Margin="50"/>
+                    Margin="0,0,0,0"/>
 
             <cal:Calendar Events="{Binding Events}" 
            EventsScrollViewVisible="True" 
@@ -158,7 +134,7 @@
            WeekendDayColor="White"
            YearLabelColor="White"
            EventIndicatorTextColor="White"
-           Margin="70"
+           Margin="0,30,0,0"
            HeightRequest="500">
                 <cal:Calendar.EventTemplate>
                     <DataTemplate>
