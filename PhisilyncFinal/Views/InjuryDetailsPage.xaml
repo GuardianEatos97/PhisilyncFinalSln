@@ -70,7 +70,7 @@
                 Text="Click the scroll below to view our Anatomy glossary"
                 FontSize="Small"
                 HorizontalOptions="Center"/>
-            
+
             <Frame CornerRadius="365" BackgroundColor="MintCream" WidthRequest="80" BorderColor="SeaGreen" >
                 <ImageButton
                 x:Name="GlossaryBtn"
@@ -80,7 +80,7 @@
                 HeightRequest="50"
                 WidthRequest="50"
                 HorizontalOptions="Center"
-                Source="glossary.png"/>
+                Source="manuscript.png"/>
             </Frame>
             
         </StackLayout>

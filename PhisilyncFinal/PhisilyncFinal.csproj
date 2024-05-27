@@ -95,6 +95,7 @@
 	  <None Remove="Resources\Images\lin.png" />
 	  <None Remove="Resources\Images\linkedin.png" />
 	  <None Remove="Resources\Images\lynoheader.jpg" />
+	  <None Remove="Resources\Images\manuscript.png" />
 	  <None Remove="Resources\Images\massage.jpg" />
 	  <None Remove="Resources\Images\moerat.jpg" />
 	  <None Remove="Resources\Images\moos.jpg" />
