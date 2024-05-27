@@ -83,7 +83,10 @@
                 BackgroundColor="SeaGreen"
                 StyleId="TellUsPage"
 <<<<<<< HEAD
+<<<<<<< HEAD
                 Command="{Binding CreateUserCommand}"
+=======
+>>>>>>> parent of a450491 (Merge branch 'Back-End' of https://github.com/GuardianEatos97/PhisilyncFinalSln into Back-End)
 =======
 >>>>>>> parent of a450491 (Merge branch 'Back-End' of https://github.com/GuardianEatos97/PhisilyncFinalSln into Back-End)
                 WidthRequest="500"/>
