@@ -31,16 +31,19 @@
             <Label 
              Text="{Binding WordDescription}"
              FontSize="Medium"
-             HorizontalTextAlignment="Start"
+             Margin="0,20"
+             HorizontalTextAlignment="Center"
              Style="{DynamicResource BodyStyle}" />
 
-            <Button
-                Text="Return To Word List"
+            <ImageButton
+                Source="backarrow.png"
                 x:Name="BackBtn"
                 Clicked="BackBtn_Clicked"
                 VerticalOptions="End"
                 Margin="0,50"
-                HorizontalOptions="Center"
+                HeightRequest="50"
+                WidthRequest="50"
+                HorizontalOptions="End"
                 />
         </StackLayout>
     </ScrollView>

@@ -60,6 +60,7 @@
 	  <None Remove="Resources\Images\ankleever.webp" />
 	  <None Remove="Resources\Images\ankleinver.jfif" />
 	  <None Remove="Resources\Images\athleticscoach.jpg" />
+	  <None Remove="Resources\Images\backarrow.png" />
 	  <None Remove="Resources\Images\calf.jpg" />
 	  <None Remove="Resources\Images\compliant.png" />
 	  <None Remove="Resources\Images\confident.jpg" />
@@ -68,6 +69,7 @@
 	  <None Remove="Resources\Images\dashboard.png" />
 	  <None Remove="Resources\Images\davids.jpg" />
 	  <None Remove="Resources\Images\determination.avif" />
+	  <None Remove="Resources\Images\dic.png" />
 	  <None Remove="Resources\Images\dotnet_bot.png" />
 	  <None Remove="Resources\Images\exercise.webp" />
 	  <None Remove="Resources\Images\facebook.png" />
