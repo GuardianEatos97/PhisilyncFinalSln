@@ -57,6 +57,7 @@
                 FontSize="Medium"
                 HorizontalTextAlignment="Start"
                 Style="{DynamicResource BodyStyle}" />
+<<<<<<< HEAD
 
             <Label
                 Text="Click below to access our built-in Glossary"
@@ -72,6 +73,13 @@
                 WidthRequest="250"
                 HorizontalOptions="Center"
                 Source="glossary.png"/>
+=======
+            <ImageButton
+                Source="glossary.png"
+                HorizontalOptions="Center"
+                HeightRequest="150"
+                WidthRequest="150"/>
+>>>>>>> parent of d194181 (Glossary Navigation added)
         </StackLayout>
     </ScrollView>
 </ContentPage>

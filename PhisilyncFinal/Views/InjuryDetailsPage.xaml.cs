@@ -9,6 +9,10 @@ public partial class InjuryDetailsPage : ContentPage
 
     private void GlossaryBtn_Clicked(object sender, EventArgs e)
     {
+<<<<<<< HEAD
 
+=======
+		await Shell.Current.GoToAsync("GlossaryView");
+>>>>>>> parent of d194181 (Glossary Navigation added)
     }
 }
