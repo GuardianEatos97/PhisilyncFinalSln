@@ -7,10 +7,10 @@
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
-            Spacing="25">
+            Spacing="0">
             <Image
                 Source="phisilyncgreenback.png"
-                HeightRequest="210"
+                HeightRequest="100"
                 WidthRequest="400"
                 Aspect="AspectFill"
                 SemanticProperties.Description="Phisilync Logo" />
@@ -29,7 +29,8 @@
                 HorizontalOptions="Center"
                 TextColor="White"
                 Placeholder="Name"
-                WidthRequest="500"
+                WidthRequest="350"
+                Margin="0,5,0,5"
                 FontSize="20" 
                 Text="{Binding CurrentUser.userName}"/>
 
@@ -39,7 +40,8 @@
                 HorizontalOptions="Center"
                 TextColor="White"
                 Placeholder="Surname"
-                WidthRequest="500"
+                WidthRequest="350"
+                Margin="0,5,0,5"
                 FontSize="20" 
                 Text="{Binding CurrentUser.userSurname}"/>
 
@@ -49,7 +51,8 @@
                 HorizontalOptions="Center"
                 TextColor="White"
                 Placeholder="Email Address"
-                WidthRequest="500"
+                WidthRequest="350"
+                Margin="0,5,0,5"
                 FontSize="20" 
                 Text="{Binding CurrentUser.userEmail}"/>
 
@@ -60,7 +63,8 @@
                 TextColor="White"
                 IsPassword="True"
                 Placeholder="Password "
-                WidthRequest="500"
+                WidthRequest="350"
+                Margin="0,5,0,5"
                 MaxLength="14"
                 FontSize="20" 
                 Text="{Binding CurrentUser.password}"/>
@@ -71,7 +75,8 @@
                 TextColor="White"
                 IsPassword="True"
                 Placeholder="Confirm Password"
-                WidthRequest="500"
+                WidthRequest="350"
+                Margin="0,5,0,5"
                 MaxLength="14"
                 FontSize="20" 
                 Text="{Binding CurrentUser.password}"/>
@@ -82,13 +87,14 @@
                 BackgroundColor="SeaGreen"
                 Clicked="Button_Clicked"
                 StyleId="TellUsPage"
-                WidthRequest="500"/>
+                WidthRequest="350"/>
 
             <Label
                 Text="Sign Up Using :"
                 TextColor="White" 
                 HorizontalOptions="CenterAndExpand"
-                FontSize="Body"/>
+                FontSize="Body"
+                Margin="0,10,0,0"/>
 
             <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                 <Image
@@ -96,11 +102,12 @@
                     Aspect="AspectFit"
                     HeightRequest="70"
                     HorizontalOptions="Center" 
-                    Margin="0,10,15,0"/>
+                    Margin="0,10,10,0"/>
 
                 <Image
                     Source="facebook"
                     Aspect="AspectFit"
+                    Margin="0,0,0,0"
                     HeightRequest="50"
                     HorizontalOptions="Center" />
             </HorizontalStackLayout>
@@ -114,7 +121,7 @@
                 Clicked="Button_Clicked_1"
                 FontSize="Body" 
                 HorizontalOptions="Center"
-                Margin="0,0,0,0" />
+                Margin="0,10,0,0" />
 
         </VerticalStackLayout>
     </ScrollView>

@@ -10,7 +10,7 @@
     <Shell.TitleView Margin="0,0,0,0">
         <Image 
         Source="phisilyncgreen"
-        Aspect="Center"/>
+        Aspect="AspectFill"/>
     </Shell.TitleView>
 
     <ScrollView Orientation="Vertical">
@@ -38,7 +38,7 @@
                    TextColor="White"
                    FontAttributes="Bold"
                    FontSize="Medium"
-                   Margin="20,70,0,10"/>
+                   Margin="20,10,0,0"/>
 
             <Label
                 Text="Dashboard"
@@ -51,13 +51,12 @@
             <Label Text="Client Tracker"
                    TextColor="White"
                    FontAttributes="Bold"
-                   FontSize="20"
-                    
-                   Margin="0,40,0,0"
+                   FontSize="20"                   
+                   Margin="0,20,0,0"
                    HorizontalTextAlignment="Center"/>
 
-            <Frame HeightRequest="400"
-                   WidthRequest="600"
+            <Frame HeightRequest="300"
+                   WidthRequest="350"
                    CornerRadius="10"
                    IsClippedToBounds="True"
                    BackgroundColor="White"
@@ -94,7 +93,7 @@
           WeekendDayColor="White"
           YearLabelColor="White"
           EventIndicatorTextColor="White"
-          Margin="70"
+          Margin="0,30,0,0"
           HeightRequest="500">
                 <cal:Calendar.EventTemplate>
                     <DataTemplate>
