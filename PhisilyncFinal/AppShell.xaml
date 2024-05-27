@@ -127,6 +127,14 @@ Route="Library" />
         Title="TeamStatsPopUp"
         ContentTemplate="{DataTemplate local:TeamStatsPopUp}"
         Route="TeamStats"/>
+    <ShellContent
+    Title="TreatmentPage"
+    ContentTemplate="{DataTemplate local:TreatmentPage}"
+    Route="TreatmentPage"/>
+    <ShellContent
+Title="TellUsPage"
+ContentTemplate="{DataTemplate local:TellUsPage}"
+Route="TellUsPage"/>
 
 </Shell>
 

@@ -17,8 +17,8 @@ namespace PhisilyncFinal
 
         private void RegisterRoutes() 
         {
-            Routing.RegisterRoute("AthleteDash", typeof(AthleteDash));
-            Routing.RegisterRoute("CoachDash", typeof(CoachDashboard));
+            Routing.RegisterRoute("athleteDash", typeof(AthleteDash));
+            Routing.RegisterRoute("coachDash", typeof(CoachDashboard));
             Routing.RegisterRoute("EditProfile", typeof(EditProfile));
             Routing.RegisterRoute("FAQs", typeof(FAQs));
             Routing.RegisterRoute("InjuryDetailsPage", typeof(InjuryDetailsPage));
@@ -30,7 +30,7 @@ namespace PhisilyncFinal
             Routing.RegisterRoute("PrivacyPolicy", typeof(PrivacyPolicy));
             Routing.RegisterRoute("ProfileDetails", typeof(ProfileDetails));
             Routing.RegisterRoute("ROMPage", typeof(RangeOfMovementPage));
-            Routing.RegisterRoute("SPDash", typeof(ServiceProviderDashboard));
+            Routing.RegisterRoute("sPDash", typeof(ServiceProviderDashboard));
             Routing.RegisterRoute("Settings", typeof(Settings));
             Routing.RegisterRoute("SUAthlete", typeof(SignUpPageAC));
             Routing.RegisterRoute("SUCoach", typeof(SignUpPageCoach));

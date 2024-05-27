@@ -10,28 +10,28 @@ using System.Threading.Tasks;
 
 namespace PhisilyncFinal.ViewModels
 {
-    public partial class SignUpACVM
+    public partial class SignUpACVM : BaseViewModel
     {
-        private LocalDb localDb;
+        //private LocalDb localDb;
 
-        private User _currentUser;
+        //private User _currentUser;
 
-        public User CurrentUser
-        {
-            get { return _currentUser; }
-            set { _currentUser = value; }
-        }
+        //public User CurrentUser
+        //{
+        //    get { return _currentUser; }
+        //    set { _currentUser = value; }
+        //}
 
         //     public Command CreateUserCommand { get; }
 
-        public SignUpACVM()
-        {
+        //public SignUpACVM()
+        //{
 
-            Routing.RegisterRoute("AthleteDash", typeof(AthleteDash));
+        //    Routing.RegisterRoute("AthleteDash", typeof(AthleteDash));
 
-            localDb = new();
+        //    localDb = new();
 
-        }
+        //}
 
 
         //CreateUserCommand = new Command(async () =>
@@ -53,17 +53,17 @@ namespace PhisilyncFinal.ViewModels
         
         public async  Task CreateUser()
         {
-            CurrentUser = new();
+            //CurrentUser = new();
 
-            try
-            {
-                localDb.SaveUser(CurrentUser);
-                await Shell.Current.GoToAsync("AthleteDash");
-            }
-            catch (Exception ex)
-            {
-                await Application.Current.MainPage.DisplayAlert("Profile already exists", ex.Message, "Please login");
-            }
+            //try
+            //{
+            //    localDb.SaveUser(CurrentUser);
+                await Shell.Current.GoToAsync("athleteDash");
+            //}
+            //catch (Exception ex)
+            //{
+            //    await Application.Current.MainPage.DisplayAlert("Profile already exists", ex.Message, "Please login");
+            //}
         }
 
         //[RelayCommand]

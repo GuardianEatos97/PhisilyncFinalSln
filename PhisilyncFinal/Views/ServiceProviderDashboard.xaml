@@ -94,6 +94,7 @@
           YearLabelColor="White"
           EventIndicatorTextColor="White"
           Margin="0,30,0,0"
+                          WidthRequest="350"
           HeightRequest="500">
                 <cal:Calendar.EventTemplate>
                     <DataTemplate>
