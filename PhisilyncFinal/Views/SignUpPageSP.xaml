@@ -37,8 +37,7 @@
                 TextColor="White"
                 Placeholder="Company Email Address"
                  WidthRequest="350"
-                FontSize="20" 
-                Text="{Binding Details.EmailAddress}"/>
+                FontSize="20" />
 
             <Entry
                 FontAttributes="Bold"
@@ -48,8 +47,7 @@
                 Placeholder="Password "
                 WidthRequest="350"
                 MaxLength="14"
-                FontSize="20" 
-                Text="{Binding Details.Password}"/>
+                FontSize="20" />
 
             <Entry
                 FontAttributes="Bold"
@@ -59,14 +57,13 @@
                 Placeholder="Confirm Password"
                 WidthRequest="350"
                 MaxLength="14"
-                FontSize="20" 
-                Text="{Binding Details.Password}"/>
+                FontSize="20" />
 
             <Button
                 Text="Create Account"
                 TextColor="White"
                 BackgroundColor="SeaGreen"
-                Clicked="Button_Clicked_4"
+                Command="{Binding ServiceDashCommand}"
                 StyleId="TellUsPage"
                 WidthRequest="350"/>
 
@@ -97,7 +94,6 @@
                 WidthRequest="300"
                 BackgroundColor="Black"
                 CornerRadius="100"
-                Clicked="Button_Clicked_2"
                 FontSize="Body" 
                 HorizontalOptions="Center"
                 Margin="0,0,0,0" />

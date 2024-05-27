@@ -53,17 +53,17 @@ namespace PhisilyncFinal.ViewModels
         public async Task ChatSelected(LennyAIChatMessage message)
         {
             var navigationParameter = new Dictionary<string, object>
-     {
+        {
          { "Response", message }
-     };
-            await Shell.Current.GoToAsync($"loadsheddinganswer", navigationParameter);
+           };
+           // await Shell.Current.GoToAsync($"loadsheddinganswer", navigationParameter);
 
         }
 
         [RelayCommand]
         public async Task AskQuestion(ITextInput view, CancellationToken token)
         {
-            /*  QuestionResponseModel model = new QuestionResponseModel();
+             /* QuestionResponseModel model = new QuestionResponseModel();
               model.Answer = "Hello, World!";
               var navigationParameter = new Dictionary<string, object>
       {
