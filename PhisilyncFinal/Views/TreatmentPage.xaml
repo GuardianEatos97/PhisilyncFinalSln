@@ -34,7 +34,7 @@
                 HorizontalOptions="Center"
                  
                 FontAttributes="Bold"
-                Margin="40"     
+                Margin="0,20,0,20"     
                 FontSize="Large"/>
             <Button
                 x:Name="LynoBtn"
@@ -42,14 +42,14 @@
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand"
                 FontSize="Medium"
-                 
+                 WidthRequest="350"
                 BackgroundColor="SeaGreen"
-                Margin="40"
+                Margin="0,20,0,20"
                 Clicked="LynoBtn_Clicked"/>
             <Button
             x:Name="MassageBtn"
             Text="Massage Therapy"
-                 
+                 WidthRequest="350"
             HorizontalOptions="CenterAndExpand"
             FontSize="Medium"
             BackgroundColor="SeaGreen"
@@ -62,15 +62,15 @@
                 TextColor="White"
                 
                 FontAttributes="Bold"
-                Margin="50"     
+                Margin="0,20,0,20"     
                 FontSize="Large"/>
             <Button
                 x:Name="TapingBtn"
                 Text="                  Taping                  "
                 HorizontalOptions="CenterAndExpand"
                 FontSize="Medium"
-                 
-                Margin="20"
+                 WidthRequest="350"
+                Margin="0,10,0,10"
                 BackgroundColor="SeaGreen"
                 Clicked="TapingBtn_Clicked"/>
             <Button
@@ -78,8 +78,8 @@
                 Text="    Stretching And Exercise    "
                 HorizontalOptions="CenterAndExpand"
                 FontSize="Medium"
-                 
-                Margin="20"
+               WidthRequest="350" 
+                Margin="0,10,0,10"
                 BackgroundColor="SeaGreen"
                 Clicked="StretchBtn_Clicked"/>
             <Button
@@ -87,8 +87,8 @@
                 Text="Range Of Movement Therapy"
                 HorizontalOptions="CenterAndExpand"
                 FontSize="Medium"
-                 
-                Margin="20"
+                 WidthRequest="350"
+                Margin="0,10,0,10"
                 BackgroundColor="SeaGreen"
                 Clicked="RomBtn_Clicked"/>
         </VerticalStackLayout>
