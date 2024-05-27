@@ -7,10 +7,10 @@
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
-            Spacing="0">
+            Spacing="25">
             <Image
                 Source="phisilyncgreenback.png"
-                HeightRequest="100"
+                HeightRequest="210"
                 WidthRequest="400"
                 Aspect="AspectFill"
                 SemanticProperties.Description="Phisilync Logo" />
@@ -28,31 +28,28 @@
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
                 TextColor="White"
-                Margin="0,5,0,5"
                 Placeholder="Name"
-                WidthRequest="350"
+                WidthRequest="500"
                 FontSize="20" 
                 Text="{Binding CurrentUser.userName}"/>
 
             <Entry
                 x:Name="surnameEntry"
                 FontAttributes="Bold"
-                Margin="0,5,0,5"
                 HorizontalOptions="Center"
                 TextColor="White"
                 Placeholder="Surname"
-                WidthRequest="350"
+                WidthRequest="500"
                 FontSize="20" 
                 Text="{Binding CurrentUser.userSurname}"/>
 
             <Entry
                 x:Name="emailEntry"
                 FontAttributes="Bold"
-                Margin="0,5,0,5"
                 HorizontalOptions="Center"
                 TextColor="White"
                 Placeholder="Email Address"
-                WidthRequest="350"
+                WidthRequest="500"
                 FontSize="20" 
                 Text="{Binding CurrentUser.userEmail}"/>
 
@@ -61,10 +58,9 @@
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
                 TextColor="White"
-                Margin="0,5,0,5"
                 IsPassword="True"
                 Placeholder="Password "
-                WidthRequest="350"
+                WidthRequest="500"
                 MaxLength="14"
                 FontSize="20" 
                 Text="{Binding CurrentUser.password}"/>
@@ -73,10 +69,9 @@
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
                 TextColor="White"
-                Margin="0,5,0,5"
                 IsPassword="True"
                 Placeholder="Confirm Password"
-                WidthRequest="350"
+                WidthRequest="500"
                 MaxLength="14"
                 FontSize="20" 
                 Text="{Binding CurrentUser.password}"/>
@@ -86,14 +81,12 @@
                 TextColor="White"
                 BackgroundColor="SeaGreen"
                 Clicked="Button_Clicked"
-                Margin="0,10,0,10"
                 StyleId="TellUsPage"
-                WidthRequest="350"/>
+                WidthRequest="500"/>
 
             <Label
                 Text="Sign Up Using :"
                 TextColor="White" 
-                Margin="0,10,0,0"
                 HorizontalOptions="CenterAndExpand"
                 FontSize="Body"/>
 
@@ -103,12 +96,11 @@
                     Aspect="AspectFit"
                     HeightRequest="70"
                     HorizontalOptions="Center" 
-                    Margin="0,10,10,0"/>
+                    Margin="0,10,15,0"/>
 
                 <Image
                     Source="facebook"
                     Aspect="AspectFit"
-                    Margin="0,0,0,0"
                     HeightRequest="50"
                     HorizontalOptions="Center" />
             </HorizontalStackLayout>
@@ -122,7 +114,7 @@
                 Clicked="Button_Clicked_1"
                 FontSize="Body" 
                 HorizontalOptions="Center"
-                Margin="0,10,0,0" />
+                Margin="0,0,0,0" />
 
         </VerticalStackLayout>
     </ScrollView>

@@ -19,23 +19,23 @@
                 FontAttributes="Bold"
                 FontSize="Large"
                 HorizontalOptions="Center" 
-                Margin="0,0,0,0"/>
+                Margin="0,0,0,10"/>
 
             <Label
                 Text="Fully Personalize Your Phisilync Experience"
                 TextColor="White"
                 FontAttributes="Bold"
-                FontSize="Small"
+                FontSize="Medium"
                 HorizontalOptions="Center"
-                Margin="5"/>
+                Margin="10"/>
 
             <Label
                 Text="Tell Us About You :"
                 TextColor="White"
-                FontSize="Small" 
+                FontSize="Medium" 
                 FontAttributes="Bold"
                 HorizontalTextAlignment="Center"
-                Margin="5"/>
+                Margin="10"/>
 
             <Button
                 Text="I Am An Athlete"
@@ -45,8 +45,8 @@
                 BackgroundColor="SeaGreen"
                 Clicked="Button_Clicked"
                 BorderWidth="1"
-                CornerRadius="30"
-                WidthRequest="300"
+                CornerRadius="100"
+                WidthRequest="500"
                 VerticalOptions="CenterAndExpand"
                 HeightRequest="70"
                 Margin="10"/>
@@ -54,14 +54,14 @@
             <Button
                 Text="I Am A Coach"
                 FontAttributes="Bold"
-                CornerRadius="30"
+                CornerRadius="100"
                 TextColor="White"
                 BorderColor="SeaGreen"
                 BorderWidth="1"
                 Clicked="Button_Clicked_3"
                 VerticalOptions="CenterAndExpand"
                 BackgroundColor="SeaGreen"
-                WidthRequest="300"
+                WidthRequest="500"
                 HeightRequest="70"
                 Margin="10"/>
 
@@ -70,20 +70,20 @@
                 FontAttributes="Bold"
                 TextColor="White"
                 Clicked="Button_Clicked_1"
-                CornerRadius="30"
+                CornerRadius="100"
                 BackgroundColor="SeaGreen"
                 BorderColor="SeaGreen" 
                 VerticalOptions="CenterAndExpand"
                 BorderWidth="1"
-                WidthRequest="300"
+                WidthRequest="500"
                 HeightRequest="70"
                 Margin="10"/>
 
             <Frame 
                 Grid.Row="0" 
                 Grid.ColumnSpan="0"
-                HeightRequest="180"
-                WidthRequest="350"
+                HeightRequest="350"
+                WidthRequest="600"
                 CornerRadius="50"
                 HorizontalOptions="CenterAndExpand"
                 IsClippedToBounds="True"
@@ -104,7 +104,7 @@
                 BorderColor="Black"
                 FontSize="Body" 
                 BorderWidth="1"
-                CornerRadius="50"
+                CornerRadius="100"
                 VerticalOptions="EndAndExpand"
                 HorizontalOptions="Center"
                 Margin="10" />

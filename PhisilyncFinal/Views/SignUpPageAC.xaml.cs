@@ -33,33 +33,31 @@ public partial class SignUpPageAC : ContentPage
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
-        //CurrentUser = _database.GetUserByEmail(emailEntry.Text);
-        //UserDash = new();
+        CurrentUser = _database.GetUserByEmail(emailEntry.Text);
+        UserDash = new();
 
-        //if (CurrentUser == null)
-        //{
-        //    CurrentUser = new()
-        //    {
-        //        userName = nameEntry.Text,
-        //        userSurname = surnameEntry.Text,
-        //        userEmail = emailEntry.Text,
-        //        userPassword = passwordEntry.Text,
-        //        userType = 1
-        //    };
+        if (CurrentUser == null)
+        {
+            CurrentUser = new()
+            {
+                userName = nameEntry.Text,
+                userSurname = surnameEntry.Text,
+                userEmail = emailEntry.Text,
+                userPassword = passwordEntry.Text,
+                userType = 1
+            };
 
-        //    try
-        //    {
-        //        _database.SaveUser(CurrentUser);
-        //        _database.SaveDash(UserDash,CurrentUser);
-        //        await Shell.Current.GoToAsync("///AthleteDash");
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        await DisplayAlert("Profile already exists", ex.Message, "Please login");
-        //    }
-        //}
-
-        await Shell.Current.GoToAsync("AthleteDash");
+            try
+            {
+                _database.SaveUser(CurrentUser);
+                _database.SaveDash(UserDash,CurrentUser);
+                await Shell.Current.GoToAsync("AthleteDash");
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Profile already exists", ex.Message, "Please login");
+            }
+        }
     }
 
     private async void Button_Clicked_1(object sender, EventArgs e)

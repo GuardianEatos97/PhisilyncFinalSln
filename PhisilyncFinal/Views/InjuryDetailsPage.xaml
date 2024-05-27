@@ -7,7 +7,7 @@
     
     <Shell.TitleView Margin="0">
         <Image 
-    Source="phisilyncgreen"
+    Source="phisilyncgreen.png"
     Aspect="Center"/>
     </Shell.TitleView>
     
@@ -57,19 +57,21 @@
                 FontSize="Medium"
                 HorizontalTextAlignment="Start"
                 Style="{DynamicResource BodyStyle}" />
+
             <Label
-                Text="Click the scroll below to view our Anatomy glossary"
+                Text="Click below to access our built-in Glossary"
                 FontSize="Small"
-                HorizontalOptions="Center"/>
-            <Frame CornerRadius="365" BackgroundColor="MintCream" WidthRequest="80" BorderColor="SeaGreen" >
+                HorizontalOptions="Center"
+                Margin="0,20"/>
             <ImageButton
                 x:Name="GlossaryBtn"
                 Clicked="GlossaryBtn_Clicked"
-                Source="glossary.png"
+                CornerRadius="0"
+                Aspect="Center"
+                HeightRequest="250"
+                WidthRequest="250"
                 HorizontalOptions="Center"
-                HeightRequest="50"
-                WidthRequest="50"/>
-            </Frame>
+                Source="glossary.png"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

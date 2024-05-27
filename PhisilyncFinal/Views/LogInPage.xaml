@@ -7,7 +7,7 @@
         <VerticalStackLayout>
             <Image
             Source="phisilyncgreenback.png"
-            HeightRequest="100"
+            HeightRequest="210"
             WidthRequest="400"
             Aspect="AspectFill"
             SemanticProperties.Description="Phisilync Logo" />
@@ -17,7 +17,7 @@
             HorizontalOptions="Center"
             TextColor="White"
             Placeholder="Username/Email"
-            WidthRequest="350"
+            WidthRequest="500"
             FontSize="20" 
             Text="{Binding Details.EmailAddress}"/>
 
@@ -26,7 +26,7 @@
             HorizontalOptions="Center"
             TextColor="White"
             Placeholder="Password "
-            WidthRequest="350"
+            WidthRequest="500"
             MaxLength="14"
             FontSize="20" 
             Text="{Binding Details.Password}"/>
@@ -35,7 +35,7 @@
              Text="Log In"
              TextColor="White"
              BackgroundColor="SeaGreen"
-             WidthRequest="350"
+             WidthRequest="500"
              Margin="15"/>
 
             <Label

@@ -2,14 +2,15 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              BackgroundColor="#23583a"
-             x:Class="PhisilyncFinal.Views.SignUpPageAC">
+             xmlns:local="clr-namespace:PhisilyncFinal.ViewModels"
+             x:Class="PhisilyncFinal.Views.SignUpPageAC" x:DataType="local:SignUpACVM" >
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
-            Spacing="0">
+            Spacing="25">
             <Image
                 Source="phisilyncgreenback"
-                HeightRequest="100"
+                HeightRequest="210"
                 WidthRequest="400"
                 Aspect="AspectFill"
                 SemanticProperties.Description="Phisilync Logo" />
@@ -17,7 +18,6 @@
             <Label
                 Text="Sign Up"
                 FontSize="Large"
-                Margin="0,0,0,0"
                 FontAttributes="Bold"
                 FontFamily="bubble"
                 TextColor="White" 
@@ -30,8 +30,7 @@
                 HorizontalOptions="Center"
                 TextColor="White"
                 Placeholder="Name"
-                WidthRequest="350"
-                Margin="0,5,0,5"
+                WidthRequest="500"
                 FontSize="20" 
                 Text="{Binding CurrentUser.userName}"/>
 
@@ -41,8 +40,7 @@
                 HorizontalOptions="Center"
                 TextColor="White"
                 Placeholder="Surname"
-                WidthRequest="350"
-                Margin="0,5,0,5"
+                WidthRequest="500"
                 FontSize="20" 
                 Text="{Binding CurrentUser.userSurname}"/>
 
@@ -50,10 +48,9 @@
                 x:Name="emailEntry"
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
-                Margin="0,5,0,5"
                 TextColor="White"
                 Placeholder="Email Address"
-                WidthRequest="350"
+                WidthRequest="500"
                 FontSize="20" 
                 Text="{Binding CurrentUser.userEmail}"/>
 
@@ -62,49 +59,45 @@
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
                 TextColor="White"
-                Margin="0,5,0,5"
                 IsPassword="True"
                 Placeholder="Password "
-                WidthRequest="350"
+                WidthRequest="500"
                 MaxLength="14"
                 FontSize="20" 
-                Text="{Binding CurrentUser.password}"/>
+                Text="{Binding CurrentUser.userPassword}"/>
 
             <Entry
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
                 TextColor="White"
-                Margin="0,5,0,5"
                 IsPassword="True"
                 Placeholder="Confirm Password "
-                WidthRequest="350"
+                WidthRequest="500"
                 MaxLength="14"
                 FontSize="20" 
-                Text="{Binding CurrentUser.userpassword}"/>
+                Text="{Binding CurrentUser.userPassword}"/>
 
             <Button
                 Text="Create Account"
                 TextColor="White"
                 BackgroundColor="SeaGreen"
-                Clicked="Button_Clicked"
                 StyleId="TellUsPage"
-                Margin="0,10,0,10"
-                WidthRequest="350"/>
+                Command="{Binding CreateUserCommand}"
+                WidthRequest="500"/>
 
             <Label
                 Text="Sign Up Using :"
                 TextColor="White" 
-                Margin="0,10,0,0"
                 HorizontalOptions="CenterAndExpand"
                 FontSize="Body"/>
 
-            <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Margin="0,10,0,10">
+            <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                 <Image
                     Source="googleremove"
                     Aspect="AspectFit"
                     HeightRequest="70"
                     HorizontalOptions="Center" 
-                    Margin="0,10,10,0"/>
+                    Margin="0,10,15,0"/>
 
                 <Image
                     Source="facebook"
@@ -117,7 +110,7 @@
                 Text="Already Have An Account?"
                 TextColor="White"
                 WidthRequest="300"
-                Clicked="Button_Clicked_1"
+               
                 CornerRadius="100"
                 BackgroundColor="Black"
                 FontSize="Body" 

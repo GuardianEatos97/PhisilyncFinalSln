@@ -11,10 +11,10 @@ public partial class AthleteDash : ContentPage
 {
     
 
-    public AthleteDash()
+    public AthleteDash(AthleteDashVM vm)
     {
         InitializeComponent();
-        BindingContext = new AthleteDashVM();
+        BindingContext = vm;
         BindingContext = new InjuryLibraryViewModel();
 
         }

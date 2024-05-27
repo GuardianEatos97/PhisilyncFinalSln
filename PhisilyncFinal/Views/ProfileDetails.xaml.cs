@@ -1,17 +1,33 @@
 using PhisilyncFinal.Models;
 using PhisilyncFinal.Services;
-using PhisilyncFinal.ViewModels;
 using System.ComponentModel;
 
 namespace PhisilyncFinal.Views;
 
 public partial class ProfileDetails : ContentPage, INotifyPropertyChanged
 {
+    private LocalDb _database;
 
-    public ProfileDetails(ProfileDetailsVM profileDetailsVM)
+    private User _currentUser;
+    public User CurrentUser
+    {
+        get { return _currentUser; }
+        set { _currentUser = value; OnPropertyChanged(); }
+    }
+    public ProfileDetails()
 	{
 		InitializeComponent();
-        BindingContext = profileDetailsVM;
+        CurrentUser = LoadUser();
     }
-
+    private User LoadUser()
+    {
+        if (_database._dbConnection.Table<User>().Count() != 0)
+        {
+            return _database.GetUser(1);
+        }
+        else
+        {
+            return new User();
+        }
+    }
 }

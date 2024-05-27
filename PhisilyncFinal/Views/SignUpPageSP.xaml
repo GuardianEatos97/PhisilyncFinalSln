@@ -10,7 +10,7 @@
             Spacing="25">
             <Image
                 Source="phisilyncgreenback.png"
-                HeightRequest="100"
+                HeightRequest="210"
                 WidthRequest="400"
                 Aspect="AspectFill"
                 SemanticProperties.Description="Phisilync Logo" />
@@ -28,7 +28,7 @@
                 HorizontalOptions="Center"
                 TextColor="White"
                 Placeholder="Company Name"
-                WidthRequest="350"
+                WidthRequest="500"
                 FontSize="20" />
 
             <Entry
@@ -36,7 +36,7 @@
                 HorizontalOptions="Center"
                 TextColor="White"
                 Placeholder="Company Email Address"
-                WidthRequest="350"
+                WidthRequest="500"
                 FontSize="20" 
                 Text="{Binding Details.EmailAddress}"/>
 
@@ -46,7 +46,7 @@
                 TextColor="White"
                 IsPassword="True"
                 Placeholder="Password "
-                WidthRequest="350"
+                WidthRequest="500"
                 MaxLength="14"
                 FontSize="20" 
                 Text="{Binding Details.Password}"/>
@@ -57,7 +57,7 @@
                 TextColor="White"
                 IsPassword="True"
                 Placeholder="Confirm Password"
-                WidthRequest="350"
+                WidthRequest="500"
                 MaxLength="14"
                 FontSize="20" 
                 Text="{Binding Details.Password}"/>
@@ -68,7 +68,7 @@
                 BackgroundColor="SeaGreen"
                 Clicked="Button_Clicked_4"
                 StyleId="TellUsPage"
-                WidthRequest="350"/>
+                WidthRequest="500"/>
 
             <Label
                 Text="Sign Up Using :"

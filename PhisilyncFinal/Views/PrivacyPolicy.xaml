@@ -6,8 +6,8 @@
 
     <Shell.TitleView Margin="0">
         <Image 
-        Source="phisilyncgreen"
-        Aspect="AspectFill"/>
+        Source="phisilync_nobg.png"
+        Aspect="Center"/>
     </Shell.TitleView>
 
     <ScrollView>

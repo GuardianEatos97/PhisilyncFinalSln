@@ -68,8 +68,7 @@ namespace PhisilyncFinal.ViewModels
         [RelayCommand]
         private async Task OnAvatarTapped()
         {
-            const string State = "ProfileDetails";
-            await Shell.Current.GoToAsync(State);
+            await Shell.Current.GoToAsync("///profileDetails");
         }
     }
 
