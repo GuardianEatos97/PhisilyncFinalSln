@@ -101,6 +101,7 @@ namespace PhisilyncFinal
             mauiAppBuilder.Services.AddSingleton<LennyAnswerPageVM>();
             mauiAppBuilder.Services.AddSingleton<LennyQuestionPageVM>();
 
+           
 
             return mauiAppBuilder;
             }  

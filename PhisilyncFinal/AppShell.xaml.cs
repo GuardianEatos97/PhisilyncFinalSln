@@ -46,6 +46,7 @@ namespace PhisilyncFinal
             Routing.RegisterRoute("GlossaryDetails", typeof(GlossaryDetailsPage));
             Routing.RegisterRoute("AnswerPage", typeof(LennyAiAnswerPage));
             Routing.RegisterRoute("QuestionPage", typeof(LennyAiQuestionPage));
+            Routing.RegisterRoute("TestAndReleasePage", typeof(TestAndReleasePage));
 
         }
     }

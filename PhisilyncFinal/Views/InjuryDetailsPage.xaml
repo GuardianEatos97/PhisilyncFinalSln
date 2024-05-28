@@ -2,13 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhisilyncFinal.Views.InjuryDetailsPage"
-             BackgroundColor="MintCream"
+             BackgroundImageSource="greenback"
              Title="">
     
     <Shell.TitleView Margin="0">
         <Image 
     Source="phisilyncgreen.png"
-    Aspect="Center"/>
+    Aspect="AspectFill"/>
     </Shell.TitleView>
     
     <ScrollView>
@@ -17,6 +17,7 @@
                Text="{Binding InjuryName}"
                HorizontalOptions="Center"
                FontAttributes="Bold"
+                TextColor="White"
                FontSize="Large"
                Style="{DynamicResource TitleStyle}" />
             
@@ -29,6 +30,7 @@
             <Label
                 Text="Anatomy"
                 FontAttributes="Bold"
+                TextColor="White"
                 FontSize="Medium"
                 Style="{DynamicResource TitleStyle}"
                 HorizontalTextAlignment="Center"/>
@@ -36,12 +38,14 @@
             <Label 
                 Text="{Binding InjuryAnatomy}"
                 FontSize="Medium"
+                TextColor="White"
                 HorizontalTextAlignment="Start"
                 Style="{DynamicResource BodyStyle}" />
             
             <Label
                 Text="Test"
                 FontAttributes="Bold"
+                TextColor="White"
                 FontSize="Medium"
                 Style="{DynamicResource TitleStyle}"
                 HorizontalTextAlignment="Center"/>
@@ -49,12 +53,14 @@
             <Label 
                 Text="{Binding InjuryTest}"
                 FontSize="Medium"
+                TextColor="White"
                 HorizontalTextAlignment="Start"
                 Style="{DynamicResource BodyStyle}" />
             
             <Label
                 Text="Release"
                 FontAttributes="Bold"
+                TextColor="White"
                 FontSize="Medium"
                 Style="{DynamicResource TitleStyle}"
                 HorizontalTextAlignment="Center"/>
@@ -62,13 +68,28 @@
             <Label 
                 Text="{Binding InjuryRelease}"
                 FontSize="Medium"
+                TextColor="White"
                 HorizontalTextAlignment="Start"
                 Style="{DynamicResource BodyStyle}" />
+
+            <Button
+                Text="Take Me To My Treatment Plan"
+                FontAttributes="Bold"
+                TextColor="White"
+                BorderColor="Beige"
+                BorderWidth="2"
+                BackgroundColor="SeaGreen"
+                CornerRadius="100"
+                 WidthRequest="350"
+                HeightRequest="70"
+                Margin="0,20,0,20"/>
 
 
             <Label
                 Text="Click the scroll below to view our Anatomy glossary"
                 FontSize="Small"
+                TextColor="White"
+                Margin="0,20,0,20"
                 HorizontalOptions="Center"/>
 
             <Frame CornerRadius="365" BackgroundColor="MintCream" WidthRequest="80" BorderColor="SeaGreen" >
@@ -79,6 +100,7 @@
                 Aspect="Center"
                 HeightRequest="50"
                 WidthRequest="50"
+                    Margin="0,20,0,20"
                 HorizontalOptions="Center"
                 Source="manuscript.png"/>
             </Frame>

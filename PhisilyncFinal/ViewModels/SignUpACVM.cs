@@ -12,64 +12,101 @@ namespace PhisilyncFinal.ViewModels
 {
     public partial class SignUpACVM : BaseViewModel
     {
-        //private LocalDb localDb;
+        private LocalDb localDb;
 
-        //private User _currentUser;
+        private string _name;
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; OnPropertyChanged(); }
+        }
 
-        //public User CurrentUser
-        //{
-        //    get { return _currentUser; }
-        //    set { _currentUser = value; }
-        //}
+        private bool _isNameValid;
+        public bool IsNameValid
+        {
+            get { return _isNameValid; }
+            set { _isNameValid = value; OnPropertyChanged(); }
+        }
 
-        //     public Command CreateUserCommand { get; }
+        private string _surname;
+        public string Surname
+        {
+            get { return _surname; }
+            set { _surname = value; OnPropertyChanged(); }
+        }
 
-        //public SignUpACVM()
-        //{
+        private bool _isSurnameValid;
+        public bool IsSurnameValid
+        {
+            get { return _isSurnameValid; }
+            set { _isSurnameValid = value; OnPropertyChanged(); }
+        }
 
-        //    Routing.RegisterRoute("AthleteDash", typeof(AthleteDash));
+        private string _email;
+        public string Email
+        {
+            get { return _email; }
+            set { _email = value; OnPropertyChanged(); }
+        }
 
-        //    localDb = new();
+        private bool _isEmailValid;
 
-        //}
+        public bool IsEmailValid
+        {
+            get { return _isEmailValid; }
+            set { _isEmailValid = value; OnPropertyChanged(); }
+        }
 
+        private string _password;
+        public string Password
+        {
+            get { return _password; }
+            set { _password = value; OnPropertyChanged(); }
+        }
 
-        //CreateUserCommand = new Command(async () =>
-        //{
-        //    try
-        //    {
-        //        localDb.SaveUser(CurrentUser);
-        //        await Shell.Current.GoToAsync("AthleteDash");
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        await Application.Current.MainPage.DisplayAlert("Profile already exists", ex.Message, "Please login");
-        //    }
-        //});
+        private bool _isPasswordValid;
+        public bool IsPasswordValid
+        {
+            get { return _isPasswordValid; }
+            set { _isPasswordValid = value; OnPropertyChanged(); }
+        }
 
+        private bool _isConfirmedPasswordValid;
+
+        public bool IsConfirmedPasswordValid
+        {
+            get { return _isConfirmedPasswordValid; }
+            set { _isConfirmedPasswordValid = value; }
+        }
 
 
         [RelayCommand]
-        
-        public async  Task CreateUser()
+        private async void SaveAthlete()
         {
-            //CurrentUser = new();
+            if (IsEmailValid && IsNameValid && IsPasswordValid && IsSurnameValid && IsConfirmedPasswordValid)
+            {
+                var user = new User
+                {
+                    userName = this.Name,
+                    userSurname = this.Surname,
+                    userEmail = this.Email,
+                    userPassword = this.Password,
+                    userType = 1
+                };
 
-            //try
-            //{
-            //    localDb.SaveUser(CurrentUser);
+                localDb.SaveUser(user);
+
                 await Shell.Current.GoToAsync("athleteDash");
-            //}
-            //catch (Exception ex)
-            //{
-            //    await Application.Current.MainPage.DisplayAlert("Profile already exists", ex.Message, "Please login");
-            //}
+            }
+            else
+            {
+                await App.Current.MainPage.DisplayAlert("Invalid Input", "Please enter valid input", "OK");
+            }
         }
 
-        //[RelayCommand]
-        //private async void Button_Clicked_1()
-        //{
-        //    await Shell.Current.GoToAsync("LogInPage");
-        //}
+        public SignUpACVM()
+        {
+            localDb = new();
+        }
     }
 }
