@@ -135,6 +135,10 @@ Route="Library" />
 Title="TellUsPage"
 ContentTemplate="{DataTemplate local:TellUsPage}"
 Route="TellUsPage"/>
+    <ShellContent
+Title="TestAndRelaeasePage"
+ContentTemplate="{DataTemplate local:TestAndReleasePage}"
+Route="TestAndReleasePage"/>
 
 </Shell>
 

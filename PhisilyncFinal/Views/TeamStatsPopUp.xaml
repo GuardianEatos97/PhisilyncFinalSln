@@ -19,7 +19,7 @@
 
         <Frame BackgroundColor="White"
                HeightRequest="250"
-               WidthRequest="450">
+               WidthRequest="350">
 
             <VerticalStackLayout Spacing="10">
                 

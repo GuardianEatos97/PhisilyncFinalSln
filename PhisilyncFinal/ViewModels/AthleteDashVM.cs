@@ -1,4 +1,4 @@
-﻿using CommunityToolkit.Mvvm.Input;
+﻿ using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.ComponentModel;
 using PhisilyncFinal.Services;
 using PhisilyncFinal.Views;
@@ -98,6 +98,8 @@ namespace PhisilyncFinal.ViewModels
         {
             await Shell.Current.GoToAsync("EditProfile");
         }
+
+        
     }
 
 

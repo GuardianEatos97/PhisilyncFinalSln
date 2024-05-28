@@ -33,7 +33,7 @@ namespace PhisilyncFinal.ViewModels
         public override void Initialize()
         {
             base.Initialize();
-            Treatments = new ObservableCollection<Treatment>(_database.GetTreatments());
+            Treatments = new ObservableCollection<Treatment>(_database.GetTreatmentsList());
         }
 
         
