@@ -1,4 +1,4 @@
-﻿//using CoreML;
+﻿
 using PhisilyncFinal.Models;
 using System;
 using System.Collections.Generic;
@@ -9,8 +9,6 @@ using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Maui;
 using System.Windows.Input;
-//using Android.Content.Res;
-//using AndroidX.Navigation;
 
 namespace PhisilyncFinal.ViewModels
 {
