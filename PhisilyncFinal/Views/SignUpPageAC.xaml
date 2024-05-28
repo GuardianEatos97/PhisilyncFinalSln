@@ -102,10 +102,7 @@
                 WidthRequest="350"
                 FontSize="20"
                 Margin="0,5,0,5"
-                Text="{Binding Email}"/>
-
-            <Entry Placeholder="Enter your email"
-     FontSize="20" Text="{Binding EmailAddress}">
+                Text="{Binding Email}">
 
                 <Entry.Behaviors>
                     <toolkit:EmailValidationBehavior 
