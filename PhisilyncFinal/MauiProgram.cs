@@ -96,6 +96,7 @@ namespace PhisilyncFinal
                 mauiAppBuilder.Services.AddSingleton<InjuryLibraryViewModel>();
                 mauiAppBuilder.Services.AddSingleton<TeamStatsVM>();
                 mauiAppBuilder.Services.AddSingleton<GlossaryViewModel>();
+            mauiAppBuilder.Services.AddSingleton<InjuryViewModel>();
 
             return mauiAppBuilder;
             }  
