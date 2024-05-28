@@ -18,5 +18,15 @@ public partial class ProfileDetails : ContentPage, INotifyPropertyChanged
 	{
 		InitializeComponent();
     }
-    
+    private User LoadUser()
+    {
+        if (_database._dbConnection.Table<User>().Count() != 0)
+        {
+            return _database.GetUserByID(1);
+        }
+        else
+        {
+            return new User();
+        }
+    }
 }
