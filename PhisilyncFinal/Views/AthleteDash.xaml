@@ -110,7 +110,7 @@
                 BorderColor="Beige"
                 BorderWidth="2"
                 BackgroundColor="SeaGreen"
-                Command="{Binding InjuryLibraryPageCommand}"
+                Command="{Binding InjuryCommand}"
                 CornerRadius="100"
                  WidthRequest="350"
                 HeightRequest="70"

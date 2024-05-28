@@ -54,7 +54,7 @@ namespace PhisilyncFinal.ViewModels
 
 //Commands
 [RelayCommand]
-        private async Task InjuryLibraryPage()
+        private async Task Injury()
         {
             await Shell.Current.GoToAsync("Library");
         }

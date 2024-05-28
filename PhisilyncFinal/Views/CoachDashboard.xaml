@@ -165,7 +165,7 @@
             </cal:Calendar>
 
             <Button Text="Learn About Our Service Providers"
-                     FontAttributes="Bold"
+                     FontAttributes="Bold" 
                      TextColor="White"
                      BorderColor="White"
                      BorderWidth="2"
