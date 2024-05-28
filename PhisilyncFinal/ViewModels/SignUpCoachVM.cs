@@ -42,7 +42,7 @@ namespace PhisilyncFinal.ViewModels
         }
 
         [RelayCommand]
-        private async void SaveUser()
+        private async void SaveCoach()
         {
             var user = new User
             {
