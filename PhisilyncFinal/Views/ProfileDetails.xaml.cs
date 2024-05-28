@@ -17,13 +17,12 @@ public partial class ProfileDetails : ContentPage, INotifyPropertyChanged
     public ProfileDetails()
 	{
 		InitializeComponent();
-        CurrentUser = LoadUser();
     }
     private User LoadUser()
     {
         if (_database._dbConnection.Table<User>().Count() != 0)
         {
-            return _database.GetUser(1);
+            return _database.GetUserByID(1);
         }
         else
         {

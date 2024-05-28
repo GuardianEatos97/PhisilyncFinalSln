@@ -44,6 +44,7 @@ namespace PhisilyncFinal
             Routing.RegisterRoute("Treatment", typeof(TreatmentPage));
             Routing.RegisterRoute("GlossaryView", typeof(GlossaryViewPage));
             Routing.RegisterRoute("GlossaryDetails", typeof(GlossaryDetailsPage));
+            Routing.RegisterRoute("TestAndReleasePage", typeof(TestAndReleasePage));
 
         }
     }

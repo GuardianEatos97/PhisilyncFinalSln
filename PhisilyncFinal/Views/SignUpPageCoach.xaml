@@ -198,7 +198,7 @@
                 Text="Create Account"
                 TextColor="White"
                 BackgroundColor="SeaGreen"
-                Command="{Binding CoachDashCommand}"
+                Command="{Binding SaveCoachCommand}"
                 StyleId="TellUsPage"
                 WidthRequest="350"/>
 

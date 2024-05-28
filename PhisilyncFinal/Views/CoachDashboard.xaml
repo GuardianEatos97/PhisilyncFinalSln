@@ -95,6 +95,17 @@
                SelectedIndicatorColor="Black"
                HorizontalOptions="Center" />
 
+            <Button Text="Types Of Injuries Your Athletes May Have"
+                     FontAttributes="Bold"
+                     TextColor="White"
+                     BorderColor="White"
+                     BorderWidth="2"
+                     BackgroundColor="SeaGreen"
+                     CornerRadius="100"
+                     WidthRequest="350"
+                     HeightRequest="70"
+                     Margin="0,20,0,20"/>
+
             <Button Text="Team Stats"
                     FontAttributes="Bold"
                     Clicked="PopUpClicked" 
@@ -153,6 +164,16 @@
                 </cal:Calendar.EventTemplate>
             </cal:Calendar>
 
+            <Button Text="Learn About Our Service Providers"
+                     FontAttributes="Bold"
+                     TextColor="White"
+                     BorderColor="White"
+                     BorderWidth="2"
+                     BackgroundColor="SeaGreen"
+                     CornerRadius="100"
+                     WidthRequest="350"
+                     HeightRequest="70"
+                     Margin="0,0,0,20"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
