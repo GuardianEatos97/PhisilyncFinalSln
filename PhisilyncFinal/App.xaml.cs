@@ -17,8 +17,13 @@ namespace PhisilyncFinal
         protected override async void OnStart()
         {
             bool isUsers = _database._dbConnection.Table<User>().Count() != 0;
+            var userType = _database.GetUser(1).userType;
 
-            if (isUsers)
+            if (isUsers & _database.GetUser(1).userType == 2)
+            {
+                await Shell.Current.GoToAsync("coachDash");
+            }
+            if (isUsers & _database.GetUser(1).userType == 1)
             {
                 await Shell.Current.GoToAsync("athleteDash");
             }
