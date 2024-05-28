@@ -48,6 +48,8 @@ namespace PhisilyncFinal
 
         public static MauiAppBuilder RegisterViews(this MauiAppBuilder mauiAppBuilder)
         {
+            mauiAppBuilder.Services.AddSingleton<LennyAiAnswerPage>();
+            mauiAppBuilder.Services.AddSingleton<LennyAiQuestionPage>();
             mauiAppBuilder.Services.AddTransient<TellUsPage>();
             mauiAppBuilder.Services.AddTransient<SignUpPageAC>();
             mauiAppBuilder.Services.AddTransient<SignUpPageCoach>();
@@ -70,8 +72,8 @@ namespace PhisilyncFinal
             mauiAppBuilder.Services.AddTransient<TapingPage>();
             mauiAppBuilder.Services.AddTransient<TeamStatsPopUp>();
             mauiAppBuilder.Services.AddTransient<TreatmentPage>();
-            mauiAppBuilder.Services.AddTransient<LennyAiAnswerPage>();
-            mauiAppBuilder.Services.AddTransient<LennyAiQuestionPage>();
+            //mauiAppBuilder.Services.AddTransient<LennyAiAnswerPage>();
+            //mauiAppBuilder.Services.AddTransient<LennyAiQuestionPage>();
             mauiAppBuilder.Services.AddTransient<InjuryDetailsPage>();
             mauiAppBuilder.Services.AddTransient<GlossaryViewPage>();
             mauiAppBuilder.Services.AddTransient<GlossaryDetailsPage>();
@@ -96,6 +98,9 @@ namespace PhisilyncFinal
                 mauiAppBuilder.Services.AddSingleton<InjuryLibraryViewModel>();
                 mauiAppBuilder.Services.AddSingleton<TeamStatsVM>();
                 mauiAppBuilder.Services.AddSingleton<GlossaryViewModel>();
+            mauiAppBuilder.Services.AddSingleton<LennyAnswerPageVM>();
+            mauiAppBuilder.Services.AddSingleton<LennyQuestionPageVM>();
+
 
             return mauiAppBuilder;
             }  

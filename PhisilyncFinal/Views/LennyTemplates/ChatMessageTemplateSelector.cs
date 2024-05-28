@@ -15,7 +15,7 @@ namespace PhisilyncFinal.Views.LennyTemplates
 
         protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
         {
-            return ((LennyAIChatMessage)item).MessageType == LennyAIEnums.ChatMessageEnums.Inbound ? InboundTemplate : OutboundTemplate;
+            return ((LennyAIChatMessage)item).MessageType == LennyAIEnums.ChatMessageTypeEnum.Inbound ? InboundTemplate : OutboundTemplate;
         }
 
 
