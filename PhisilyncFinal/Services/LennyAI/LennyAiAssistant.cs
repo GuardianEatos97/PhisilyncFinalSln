@@ -14,7 +14,7 @@ namespace PhisilyncFinal.Services.LennyAI
     public class LennyAiAssistant:IAiAssistant
     {
         private ISettings _settings;
-        private const string AssistantBehaviorDescription = "I am an AI assistant that can help you with your loadshedding questions.";
+        private const string AssistantBehaviorDescription = "I am a friendly AI assistant bot that give you therapy advice.";
 
         public LennyAiAssistant(ISettings settings)
         {
@@ -34,7 +34,7 @@ namespace PhisilyncFinal.Services.LennyAI
 
             return chatContext;
 
-        }
+        }   
 
         public ChatResponseMessage GetCompletion(IList<LennyAIChatMessage> chatInboundHistory, LennyAIChatMessage userMessage)
         {

@@ -2,14 +2,9 @@
 using CommunityToolkit.Mvvm.Input;
 using PhisilyncFinal.Models;
 using PhisilyncFinal.Services.LennyAI.Interfaces;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-using PhisilyncFinal.LennyAIEnums;
+
 
 namespace PhisilyncFinal.ViewModels
 {
@@ -45,8 +40,8 @@ namespace PhisilyncFinal.ViewModels
         {
             _assistant = assistant;
 
-            ChatHistory = new ObservableCollection<LennyAIChatMessage>();
-            ChatHistory.Add(new LennyAIChatMessage { MessageType = LennyAIEnums.ChatMessageEnums.Inbound, MessageBody = "Hi Im Lenny! Your friendly Phyisilync Assistant. How Can I Help You?" });
+            _chatHistory = new ObservableCollection<LennyAIChatMessage>();
+            ChatHistory.Add(new LennyAIChatMessage { MessageType = LennyAIEnums.ChatMessageTypeEnum.Inbound, MessageBody = "Hi Im Lenny! Your friendly Phyisilync Assistant. How Can I Help You?" } );
         }
 
         [RelayCommand]
@@ -55,35 +50,24 @@ namespace PhisilyncFinal.ViewModels
             var navigationParameter = new Dictionary<string, object>
         {
          { "Response", message }
-           };
-           // await Shell.Current.GoToAsync($"loadsheddinganswer", navigationParameter);
+        };
+            await Shell.Current.GoToAsync($"AnswerPage", navigationParameter);
 
         }
 
         [RelayCommand]
         public async Task AskQuestion(ITextInput view, CancellationToken token)
         {
-             /* QuestionResponseModel model = new QuestionResponseModel();
-              model.Answer = "Hello, World!";
-              var navigationParameter = new Dictionary<string, object>
-      {
-          { "Response", model }
-      };
-              await Shell.Current.GoToAsync($"loadsheddinganswer", navigationParameter);
-            */
+            var inboundMessages = ChatHistory.Where(x => x.MessageType == LennyAIEnums.ChatMessageTypeEnum.Inbound).ToList();
 
-
-
-            var inboundMessages = ChatHistory.Where(x => x.MessageType == LennyAIEnums.ChatMessageEnums.Inbound).ToList();
-
-            var currentChatMessage = new LennyAIChatMessage { MessageType = LennyAIEnums.ChatMessageEnums.Outbound, MessageBody = CurrentQuestion };
+            var currentChatMessage = new LennyAIChatMessage { MessageType = LennyAIEnums.ChatMessageTypeEnum.Outbound, MessageBody = CurrentQuestion };
 
             try
             {
                 var response = _assistant.GetCompletion(inboundMessages, currentChatMessage);
                 ChatHistory.Add(currentChatMessage);
 
-                var responseChatMessage = new LennyAIChatMessage { MessageType = LennyAIEnums.ChatMessageEnums.Inbound, MessageBody = response.Content };
+                var responseChatMessage = new LennyAIChatMessage { MessageType = LennyAIEnums.ChatMessageTypeEnum.Inbound, MessageBody = response.Content };
                 ChatHistory.Add(responseChatMessage);
 
 
@@ -95,7 +79,5 @@ namespace PhisilyncFinal.ViewModels
             }
             bool isSuccessful = await view.HideKeyboardAsync(token);
         }
-
-
     }
 }

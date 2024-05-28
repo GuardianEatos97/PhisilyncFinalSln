@@ -9,7 +9,7 @@ namespace PhisilyncFinal.Models
     public class LennyAIChatMessage
     {
          
-        public ChatMessageEnums MessageType { get; set; }
+        public ChatMessageTypeEnum MessageType { get; set; }
         public string? MessageBody { get; set; }
 
     }

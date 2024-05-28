@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace PhisilyncFinal.ViewModels
 {
+    [QueryProperty(nameof(Response), "Response")]
     public class LennyAnswerPageVM:BaseViewModel
     {
         private LennyAIChatMessage _questionResponseModel;
@@ -14,7 +15,11 @@ namespace PhisilyncFinal.ViewModels
         public LennyAIChatMessage Response
         {
             get { return _questionResponseModel; }
-            set { _questionResponseModel = value; OnPropertyChanged(); }
+            set 
+            { 
+                _questionResponseModel = value; 
+                OnPropertyChanged(); 
+            }
         }
     
     

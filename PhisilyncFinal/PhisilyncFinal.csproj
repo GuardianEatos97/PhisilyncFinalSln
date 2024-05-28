@@ -123,6 +123,7 @@
 	  <None Remove="Resources\Images\roms.jpg" />
 	  <None Remove="Resources\Images\rugbycoach.jpg" />
 	  <None Remove="Resources\Images\sacha.jpg" />
+	  <None Remove="Resources\Images\sendicon.png" />
 	  <None Remove="Resources\Images\sideflexremovebg.png" />
 	  <None Remove="Resources\Images\soccercoach.jpeg" />
 	  <None Remove="Resources\Images\strength.jpg" />
@@ -149,6 +150,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Azure.AI.OpenAI" Version="1.0.0-beta.15" />
 		<PackageReference Include="CommunityToolkit.Maui" Version="9.0.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="Microcharts.Maui" Version="1.0.0" />
@@ -161,7 +163,6 @@
 		<PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
 		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.8" />
 		<PackageReference Include="SQLitePCLRaw.core" Version="2.1.8" />
-		<PackageReference Include="Azure.AI.OpenAI" Version="1.0.0-beta.15" />
 	</ItemGroup>
 
 	<ItemGroup>

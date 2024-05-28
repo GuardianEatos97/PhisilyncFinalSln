@@ -128,13 +128,17 @@ Route="Library" />
         ContentTemplate="{DataTemplate local:TeamStatsPopUp}"
         Route="TeamStats"/>
     <ShellContent
-    Title="TreatmentPage"
-    ContentTemplate="{DataTemplate local:TreatmentPage}"
-    Route="TreatmentPage"/>
+        Title="TreatmentPage"
+        ContentTemplate="{DataTemplate local:TreatmentPage}"
+        Route="TreatmentPage"/>
     <ShellContent
-Title="TellUsPage"
-ContentTemplate="{DataTemplate local:TellUsPage}"
-Route="TellUsPage"/>
+        Title="TellUsPage"
+        ContentTemplate="{DataTemplate local:TellUsPage}"
+        Route="TellUsPage"/>
+    <ShellContent
+        Title="Lenny"
+        ContentTemplate="{DataTemplate local:LennyAiQuestionPage}"
+        Route="LennyQuestionPage"/>
     <ShellContent
 Title="TestAndRelaeasePage"
 ContentTemplate="{DataTemplate local:TestAndReleasePage}"
