@@ -66,6 +66,17 @@
                                  HeightRequest="200"/>
             </Frame>
 
+            <Button Text="Types Of Injuries"
+                     FontAttributes="Bold"
+                     TextColor="White"
+                     BorderColor="White"
+                     BorderWidth="2"
+                     BackgroundColor="SeaGreen"
+                     CornerRadius="100"
+                     WidthRequest="350"
+                     HeightRequest="70"
+                     Margin="0,20,0,0"/>
+
             <cal:Calendar Events="{Binding Events}" 
           EventsScrollViewVisible="True" 
           SelectedDayBackgroundColor="SeaGreen"

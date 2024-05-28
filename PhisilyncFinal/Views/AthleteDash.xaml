@@ -104,13 +104,13 @@
                            HorizontalOptions="Center" />
 
             <Button
-                Text="Learn About Our Service Providers"
+                Text="Take Me To My Injury"
                 FontAttributes="Bold"
                 TextColor="White"
                 BorderColor="Beige"
                 BorderWidth="2"
                 BackgroundColor="SeaGreen"
-                Command="{Binding InjuryCommand}"
+                Command="{Binding InjuryLibraryPageCommand}"
                 CornerRadius="100"
                  WidthRequest="350"
                 HeightRequest="70"
@@ -161,6 +161,18 @@
                     </DataTemplate>
                 </cal:Calendar.EventTemplate>
             </cal:Calendar>
+
+            <Button
+                Text="Learn About Our Service Providers"
+                FontAttributes="Bold"
+                TextColor="White"
+                BorderColor="Beige"
+                BorderWidth="2"
+                BackgroundColor="SeaGreen"
+                CornerRadius="100"
+                 WidthRequest="350"
+                HeightRequest="70"
+                Margin="0,0,0,20"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

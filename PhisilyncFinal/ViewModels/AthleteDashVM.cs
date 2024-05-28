@@ -1,4 +1,4 @@
-﻿using CommunityToolkit.Mvvm.Input;
+﻿ using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.ComponentModel;
 using PhisilyncFinal.Services;
 using PhisilyncFinal.Views;
@@ -54,7 +54,7 @@ namespace PhisilyncFinal.ViewModels
 
 //Commands
 [RelayCommand]
-        private async Task Injury()
+        private async Task InjuryLibraryPage()
         {
             await Shell.Current.GoToAsync("Library");
         }
@@ -70,6 +70,8 @@ namespace PhisilyncFinal.ViewModels
         {
             await Shell.Current.GoToAsync("///profileDetails");
         }
+
+        
     }
 
 

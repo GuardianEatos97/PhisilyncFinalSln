@@ -17,7 +17,7 @@ public partial class AthleteDash : ContentPage
         BindingContext = vm;
         BindingContext = new InjuryLibraryViewModel();
 
-        }
+    }
 
     
 }
