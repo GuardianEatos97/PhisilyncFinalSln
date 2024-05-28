@@ -12,64 +12,56 @@ namespace PhisilyncFinal.ViewModels
 {
     public partial class SignUpACVM : BaseViewModel
     {
-        //private LocalDb localDb;
+        private LocalDb localDb;
 
-        //private User _currentUser;
-
-        //public User CurrentUser
-        //{
-        //    get { return _currentUser; }
-        //    set { _currentUser = value; }
-        //}
-
-        //     public Command CreateUserCommand { get; }
-
-        //public SignUpACVM()
-        //{
-
-        //    Routing.RegisterRoute("AthleteDash", typeof(AthleteDash));
-
-        //    localDb = new();
-
-        //}
-
-
-        //CreateUserCommand = new Command(async () =>
-        //{
-        //    try
-        //    {
-        //        localDb.SaveUser(CurrentUser);
-        //        await Shell.Current.GoToAsync("AthleteDash");
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        await Application.Current.MainPage.DisplayAlert("Profile already exists", ex.Message, "Please login");
-        //    }
-        //});
-
-
-
-        [RelayCommand]
-        
-        public async  Task CreateUser()
+        private string _name;
+        public string Name
         {
-            //CurrentUser = new();
-
-            //try
-            //{
-            //    localDb.SaveUser(CurrentUser);
-                await Shell.Current.GoToAsync("athleteDash");
-            //}
-            //catch (Exception ex)
-            //{
-            //    await Application.Current.MainPage.DisplayAlert("Profile already exists", ex.Message, "Please login");
-            //}
+            get { return _name; }
+            set { _name = value; OnPropertyChanged(); }
         }
 
-        //[RelayCommand]
-        //private async void Button_Clicked_1()
-        //{
-        //    await Shell.Current.GoToAsync("LogInPage");
-        //}
+        private string _surname;
+        public string Surname
+        {
+            get { return _surname; }
+            set { _surname = value; OnPropertyChanged(); }
+        }
+
+        private string _email;
+        public string Email
+        {
+            get { return _email; }
+            set { _email = value; OnPropertyChanged(); }
+        }
+
+        private string _password;
+        public string Password
+        {
+            get { return _password; }
+            set { _password = value; OnPropertyChanged(); }
+        }
+
+        [RelayCommand]
+        private async void SaveUser()
+        {
+            var user = new User
+            {
+                userName = this.Name,
+                userSurname = this.Surname,
+                userEmail = this.Email,
+                userPassword = this.Password,
+                userType = 1
+            };
+            
+            localDb.SaveUser(user);
+            
+            await Shell.Current.GoToAsync("athleteDash");
+        }
+
+        public SignUpACVM()
+        {
+            localDb = new();
+        }
     }
 }
