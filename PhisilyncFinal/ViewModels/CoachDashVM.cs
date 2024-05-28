@@ -16,29 +16,59 @@ namespace PhisilyncFinal.ViewModels
 {
     public partial class CoachDashVM : BaseViewModel
     {
+        private InjuryLibraryViewModel _injuryLibraryViewModel1;
 
-        public ObservableCollection<Event> Events { get; set; }
+        public InjuryLibraryViewModel InjuryLibraryVM1
+        {
+            get { return _injuryLibraryViewModel1; }
+            set { _injuryLibraryViewModel1 = value;
+            
+                OnPropertyChanged();
+            }
+        }
 
- = new ObservableCollection<Event>()
-{
-            new Event { Name = "Cool event1", Description = "This is Cool event1's description!", EventDate = DateTime.Now},
-            new Event { Name = "Cool event2", Description = "This is Cool event2's description!", EventDate = DateTime.Now.AddDays(5) },
-            new Event { Name = "Cool event3", Description = "This is Cool event3's description!", EventDate = DateTime.Now.AddDays(-3) },
-            new Event { Name = "Cool event4", Description = "This is Cool event4's description!", EventDate = new DateTime(2020, 3, 16)}
-};
+
+        private ObservableCollection<Event> events;
+
+         public ObservableCollection<Event> Events
+        {
+            get { return events; }
+            set { events = value;
+
+                OnPropertyChanged();            
+            }
+        }
+
+
 
 
         private readonly IPageService _pageService;
 
-        public CoachDashVM(IPageService pageService)
+        public CoachDashVM(InjuryLibraryViewModel _injuryLibraryViewModel1)
         {
-            _pageService = pageService;
+            InjuryLibraryVM1 = _injuryLibraryViewModel1;
+
+
+            Events = new ObservableCollection<Event>()
+        {
+            new Event { Name = "Cool event1", Description = "This is Cool event1's description!", EventDate = DateTime.Now},
+            new Event { Name = "Cool event2", Description = "This is Cool event2's description!", EventDate = DateTime.Now.AddDays(5) },
+            new Event { Name = "Cool event3", Description = "This is Cool event3's description!", EventDate = DateTime.Now.AddDays(-3) },
+            new Event { Name = "Cool event4", Description = "This is Cool event4's description!", EventDate = new DateTime(2020, 3, 16)}
+        };
+
         }
 
         [RelayCommand]
-        private async Task TappedAthlete()
+        private async Task Injury()
         {
-            await Shell.Current.GoToAsync("treatmentPage");
+            await Shell.Current.GoToAsync("Library");
+        }
+
+        [RelayCommand]
+        private async Task OnAvatarTapped()
+        {
+            await Shell.Current.GoToAsync("EditProfile");
         }
 
         public void PopUpClicked(object sender, EventArgs e)
