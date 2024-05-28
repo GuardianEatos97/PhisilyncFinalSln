@@ -43,10 +43,8 @@
                 Placeholder="Name"
                 WidthRequest="350"
                 Margin="0,5,0,5"
-                FontSize="20" />
-            
-            <Entry Placeholder="Enter your name" 
-            FontSize="20" Text="{Binding Name}">
+                FontSize="20"
+                Text="{Binding Name}">
 
                 <Entry.Behaviors>
                     <toolkit:TextValidationBehavior 
@@ -69,10 +67,8 @@
                 Placeholder="Surname"
                 WidthRequest="350"
                 Margin="0,5,0,5"
-                FontSize="20" />
-
-            <Entry Placeholder="Enter your Surname" 
-             FontSize="20" Text="{Binding Surname}">
+                FontSize="20"
+                Text="{Binding Surname}">
 
                 <Entry.Behaviors>
                     <toolkit:TextValidationBehavior 
@@ -95,7 +91,8 @@
                 Placeholder="Email Address"
                 WidthRequest="350"
                 Margin="0,5,0,5"
-                FontSize="20" >
+                FontSize="20" 
+                Text="{Binding Email}">
 
                 <Entry.Behaviors>
                 <toolkit:EmailValidationBehavior 
@@ -117,14 +114,8 @@
                 WidthRequest="350"
                 Margin="0,5,0,5"
                 MaxLength="14"
-                FontSize="20" />
-
-
-            <Label Text="Password" 
-               FontSize="20" />
-
-            <Entry  IsPassword="True" Placeholder="Password" Text="{Binding Password}" 
-               FontSize="20" >  
+                Text="{Binding Password}" 
+                FontSize="20" >  
 
                 <Entry.Behaviors>
                 <toolkit:MultiValidationBehavior 
@@ -175,10 +166,7 @@
                 WidthRequest="350"
                 Margin="0,5,0,5"
                 MaxLength="14"
-                FontSize="20" />
-
-            <Entry  IsPassword="True" Placeholder="Confirm Password"  Text="{Binding ConfirmedPassword}"
-               FontSize="20" >
+                FontSize="20" >
 
                 <Entry.Behaviors>
                     <toolkit:RequiredStringValidationBehavior 

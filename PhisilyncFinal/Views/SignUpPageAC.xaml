@@ -46,11 +46,7 @@
                 WidthRequest="350"
                 FontSize="20"
                 Margin="0,5,0,5"
-                Text="{Binding Name}"/>
-
-
-            <Entry Placeholder="Enter your name" 
-               FontSize="20" Text="{Binding Name}">
+                Text="{Binding Name}">
 
                 <Entry.Behaviors>
                     <toolkit:TextValidationBehavior 
@@ -74,11 +70,7 @@
                 WidthRequest="350"
                 FontSize="20"
                 Margin="0,5,0,5"
-                Text="{Binding Surname}"/>
-
-
-            <Entry Placeholder="Enter your Surname"
-               FontSize="20" Text="{Binding Surname}">
+                Text="{Binding Surname}">
 
                 <Entry.Behaviors>
                     <toolkit:TextValidationBehavior 
@@ -125,13 +117,7 @@
                 Margin="0,5,0,5"
                 MaxLength="14"
                 FontSize="20" 
-                Text="{Binding Password}"/>
-
-            <Label Text="Password" 
-    FontSize="20" />
-
-            <Entry  IsPassword="True" Placeholder="Password" Text="{Binding Password}" 
-    FontSize="20" >
+                Text="{Binding Password}">
 
                 <Entry.Behaviors>
                     <toolkit:MultiValidationBehavior 
@@ -182,11 +168,7 @@
                 WidthRequest="350"
                 Margin="0,5,0,5"
                 MaxLength="14"
-                FontSize="20" />
-
-
-            <Entry  IsPassword="True" Placeholder="Confirm Password"  Text="{Binding ConfirmedPassword}"
-               FontSize="20" >
+                FontSize="20">
 
                 <Entry.Behaviors>
                     <toolkit:RequiredStringValidationBehavior 
