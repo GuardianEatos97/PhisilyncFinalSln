@@ -29,11 +29,7 @@ namespace PhisilyncFinal.ViewModels
             _database = database;
         }
 
-        public override void Initialize()
-        {
-            base.Initialize();
-            Injuries = new ObservableCollection<ProviderInjury>(_database.GetInjuriesList());
-        }
+        
 
     }
 }
