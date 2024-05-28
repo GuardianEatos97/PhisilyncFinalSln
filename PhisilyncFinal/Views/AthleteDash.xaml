@@ -4,8 +4,10 @@
              xmlns:cal="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="PhisilyncFinal.Views.AthleteDash"
+             xmlns:viewmodel="clr-namespace:PhisilyncFinal.ViewModels"
+             xmlns:models="clr-namespace:PhisilyncFinal.Models"
              BackgroundImageSource="greenback"
-             >
+             x:DataType="viewmodel:AthleteDashVM">
 
 
 
@@ -30,7 +32,7 @@
                 BorderWidth="5">
                 
                 <toolkit:AvatarView.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding OnAvatarTappedCommand}"/>
+                    <TapGestureRecognizer Command="{Binding AvatarTappedCommand}"/>
                  </toolkit:AvatarView.GestureRecognizers>
                 </toolkit:AvatarView>
                 
@@ -55,11 +57,11 @@
                 FontSize="Large"
                 Margin="20,0,0,0"/>
 
-            <CarouselView ItemsSource="{Binding Injury}"
+            <CarouselView ItemsSource="{Binding InjuryLibraryVM.Injury}"
                           IndicatorView="indicatorView"
-                          BackgroundColor="Transparent">
+                          BackgroundColor="Transparent" >
                 <CarouselView.ItemTemplate>
-                    <DataTemplate>
+                    <DataTemplate x:DataType="models:InjuryLibrary">
                         <StackLayout>
                             <Frame HasShadow="True"
                                    BorderColor="DarkGray"
@@ -67,7 +69,7 @@
                                    BackgroundColor="White"
                                    Margin="20"
                                    HeightRequest="300"
-                                    WidthRequest="350"
+                                   WidthRequest="350"
                                    HorizontalOptions="Center"
                                    VerticalOptions="CenterAndExpand">
                                 <StackLayout>
@@ -89,7 +91,7 @@
                                            FontAttributes="Italic"
                                            HorizontalOptions="Center"
                                            MaxLines="5"
-                                            Margin="0,10,0,0"
+                                           Margin="0,10,0,0"
                                            LineBreakMode="TailTruncation" />
                                 </StackLayout>
                             </Frame>
@@ -110,7 +112,7 @@
                 BorderColor="Beige"
                 BorderWidth="2"
                 BackgroundColor="SeaGreen"
-                Command="{Binding InjuryLibraryPageCommand}"
+                Command="{Binding InjuryCommand}"
                 CornerRadius="100"
                  WidthRequest="350"
                 HeightRequest="70"
@@ -147,7 +149,7 @@
                           WidthRequest="350 "
                           HeightRequest="500">
                 <cal:Calendar.EventTemplate>
-                    <DataTemplate>
+                    <DataTemplate x:DataType="models:Event">
                         <VerticalStackLayout>
                             <Label 
                             Text="{Binding Name}" 

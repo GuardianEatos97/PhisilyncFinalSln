@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              BackgroundColor="#23583a"
              xmlns:local="clr-namespace:PhisilyncFinal.ViewModels"
              x:Class="PhisilyncFinal.Views.SignUpPageAC" x:DataType="local:SignUpACVM" >
+
+    <ContentPage.Resources>
+        <Style x:Key="InvalidEntryStyle" TargetType="Entry">
+            <Setter Property="TextColor" Value="Red" />
+        </Style>
+        <Style x:Key="ValidEntryStyle" TargetType="Entry">
+            <Setter Property="TextColor" Value="Green" />
+        </Style>
+
+    </ContentPage.Resources>
+
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
@@ -34,7 +46,20 @@
                 WidthRequest="350"
                 FontSize="20"
                 Margin="0,5,0,5"
-                Text="{Binding Name}"/>
+                Text="{Binding Name}">
+
+                <Entry.Behaviors>
+                    <toolkit:TextValidationBehavior 
+                InvalidStyle="{StaticResource InvalidEntryStyle}"
+                ValidStyle="{StaticResource ValidEntryStyle}"
+                Flags="ValidateOnValueChanged"
+                MinimumLength="1"
+                MaximumLength="20"
+                IsValid="{Binding IsNameValid}"
+                        />
+
+                </Entry.Behaviors>
+            </Entry>
 
             <Entry
                 x:Name="surnameEntry"
@@ -45,7 +70,20 @@
                 WidthRequest="350"
                 FontSize="20"
                 Margin="0,5,0,5"
-                Text="{Binding Surname}"/>
+                Text="{Binding Surname}">
+
+                <Entry.Behaviors>
+                    <toolkit:TextValidationBehavior 
+                InvalidStyle="{StaticResource InvalidEntryStyle}"
+                ValidStyle="{StaticResource ValidEntryStyle}"
+                Flags="ValidateOnValueChanged"
+                MinimumLength="1"
+                MaximumLength="20"
+                IsValid="{Binding IsSurnameValid}"  
+                        />
+
+                </Entry.Behaviors>
+            </Entry>
 
             <Entry
                 x:Name="emailEntry"
@@ -56,7 +94,17 @@
                 WidthRequest="350"
                 FontSize="20"
                 Margin="0,5,0,5"
-                Text="{Binding Email}"/>
+                Text="{Binding Email}">
+
+                <Entry.Behaviors>
+                    <toolkit:EmailValidationBehavior 
+      InvalidStyle="{StaticResource InvalidEntryStyle}"
+      IsValid="{Binding IsEmailValid}"                                                
+      ValidStyle="{StaticResource NormalEntryStyle}"                                                     
+      Flags="ValidateOnValueChanged" >
+                    </toolkit:EmailValidationBehavior>
+                </Entry.Behaviors>
+            </Entry>
 
             <Entry
                 x:Name="passwordEntry"
@@ -69,7 +117,47 @@
                 Margin="0,5,0,5"
                 MaxLength="14"
                 FontSize="20" 
-                Text="{Binding Password}"/>
+                Text="{Binding Password}">
+
+                <Entry.Behaviors>
+                    <toolkit:MultiValidationBehavior 
+      x:Name="PasswordMultiValidation"
+     InvalidStyle="{StaticResource InvalidEntryStyle}"  
+     ValidStyle="{StaticResource ValidEntryStyle}"
+     IsValid="{Binding IsPasswordValid}"
+     Flags="ValidateOnValueChanged">
+
+                        <toolkit:CharactersValidationBehavior 
+         x:Name="DigitValidation" 
+         CharacterType="Digit" 
+         MinimumCharacterTypeCount="1" 
+         toolkit:MultiValidationBehavior.Error="1 digit" 
+         RegexPattern="" />
+
+                        <toolkit:CharactersValidationBehavior 
+         x:Name="UpperValidation" 
+         CharacterType="UppercaseLetter" 
+         MinimumCharacterTypeCount="1" 
+         toolkit:MultiValidationBehavior.Error="1 upper case" 
+         RegexPattern="" />
+
+                        <toolkit:CharactersValidationBehavior 
+         x:Name="SymbolValidation" 
+         CharacterType="NonAlphanumericSymbol" 
+         MinimumCharacterTypeCount="1" 
+         toolkit:MultiValidationBehavior.Error="1 symbol" 
+         RegexPattern=""  />
+
+                        <toolkit:CharactersValidationBehavior 
+         x:Name="AnyValidation" 
+         CharacterType="Any" 
+         MinimumCharacterTypeCount="8" 
+         toolkit:MultiValidationBehavior.Error="8 characters" 
+         RegexPattern="" />
+                    </toolkit:MultiValidationBehavior>
+                </Entry.Behaviors>
+
+            </Entry>
 
             <Entry
                 FontAttributes="Bold"
@@ -80,7 +168,17 @@
                 WidthRequest="350"
                 Margin="0,5,0,5"
                 MaxLength="14"
-                FontSize="20" />
+                FontSize="20">
+
+                <Entry.Behaviors>
+                    <toolkit:RequiredStringValidationBehavior 
+      InvalidStyle="{StaticResource InvalidEntryStyle}"
+      ValidStyle="{StaticResource ValidEntryStyle}"
+      IsValid="{Binding IsConfirmedPasswordValid}"                                                
+      Flags="ValidateOnValueChanged"
+      RequiredString="{Binding Password}" />
+                </Entry.Behaviors>
+            </Entry>
 
             <Button
                 Text="Create Account"

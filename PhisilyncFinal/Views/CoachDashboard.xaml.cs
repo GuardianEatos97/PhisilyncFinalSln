@@ -6,11 +6,10 @@ namespace PhisilyncFinal.Views;
 public partial class CoachDashboard : ContentPage
 {
 	//public EventCollection CoachEvents { get; set; }
-	public CoachDashboard(CoachDashVM vm)
+	public CoachDashboard(CoachDashVM coachDashVM)
 	{
 		InitializeComponent();
-        BindingContext = vm;
-        BindingContext = new InjuryLibraryViewModel();
+        BindingContext = coachDashVM;
 
     }
 

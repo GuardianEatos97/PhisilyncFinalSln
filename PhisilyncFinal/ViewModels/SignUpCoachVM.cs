@@ -20,11 +20,25 @@ namespace PhisilyncFinal.ViewModels
             set { _name = value; OnPropertyChanged(); }
         }
 
+        private bool _isNameValid;
+        public bool IsNameValid
+        {
+            get { return _isNameValid; }
+            set { _isNameValid = value; OnPropertyChanged(); }
+        }
+
         private string _surname;
         public string Surname
         {
             get { return _surname; }
             set { _surname = value; OnPropertyChanged(); }
+        }
+
+        private bool _isSurnameValid;
+        public bool IsSurnameValid
+        {
+            get { return _isSurnameValid; }
+            set { _isSurnameValid = value; OnPropertyChanged(); }
         }
 
         private string _email;
@@ -34,6 +48,14 @@ namespace PhisilyncFinal.ViewModels
             set { _email = value; OnPropertyChanged(); }
         }
 
+        private bool _isEmailValid;
+
+        public bool IsEmailValid
+        {
+            get { return _isEmailValid; }
+            set { _isEmailValid = value; OnPropertyChanged(); }
+        }
+
         private string _password;
         public string Password
         {
@@ -41,21 +63,43 @@ namespace PhisilyncFinal.ViewModels
             set { _password = value; OnPropertyChanged(); }
         }
 
+        private bool _isPasswordValid;
+        public bool IsPasswordValid
+        {
+            get { return _isPasswordValid; }
+            set { _isPasswordValid = value; OnPropertyChanged(); }
+        }
+
+        private bool _isConfirmedPasswordValid;
+
+        public bool IsConfirmedPasswordValid
+        {
+            get { return _isConfirmedPasswordValid; }
+            set { _isConfirmedPasswordValid = value; }
+        }
+
         [RelayCommand]
         private async void SaveCoach()
         {
-            var user = new User
+            if (IsEmailValid && IsNameValid && IsPasswordValid && IsSurnameValid && IsConfirmedPasswordValid)
             {
-                userName = this.Name,
-                userSurname = this.Surname,
-                userEmail = this.Email,
-                userPassword = this.Password,
-                userType = 2
-            };
+                var user = new User
+                {
+                    userName = this.Name,
+                    userSurname = this.Surname,
+                    userEmail = this.Email,
+                    userPassword = this.Password,
+                    userType = 2
+                };
 
-            localDb.SaveUser(user);
+                localDb.SaveUser(user);
 
-            await Shell.Current.GoToAsync("coachDash");
+                await Shell.Current.GoToAsync("coachDash");
+            }
+            else
+            {
+                await App.Current.MainPage.DisplayAlert("Invalid Input", "Please enter valid input", "OK");
+            }
         }
 
         public SignUpCoachVM()

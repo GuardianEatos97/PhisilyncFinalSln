@@ -4,8 +4,10 @@
              xmlns:cal="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar"
              x:Class="PhisilyncFinal.Views.CoachDashboard"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:viewmodel="clr-namespace:PhisilyncFinal.ViewModels"
+             xmlns:models="clr-namespace:PhisilyncFinal.Models"
              BackgroundImageSource="greenback"
-             Title="CoachDashboard">
+             x:DataType="viewmodel:CoachDashVM">
 
     <Shell.TitleView Margin="0,0,0,0">
         <Image 
@@ -26,7 +28,12 @@
                 Margin="10"
                 WidthRequest="70"
                 HeightRequest="70"
-                BorderWidth="5"/>
+                BorderWidth="5">
+
+                <toolkit:AvatarView.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding AvatarTappedCommand}"/>
+                </toolkit:AvatarView.GestureRecognizers>
+            </toolkit:AvatarView>
 
             <Label
                 Text="Noah Khan"
@@ -46,11 +53,11 @@
                    FontSize="Large"
                    Margin="20,10,0,0"/>
 
-            <CarouselView ItemsSource="{Binding Injury}"
-              IndicatorView="indicatorView"
-              BackgroundColor="Transparent">
+            <CarouselView ItemsSource="{Binding InjuryLibraryVM1.Injury}"
+                          IndicatorView="indicatorView"
+                          BackgroundColor="Transparent">
                 <CarouselView.ItemTemplate>
-                    <DataTemplate>
+                    <DataTemplate x:DataType="models:InjuryLibrary">
                         <StackLayout>
                             <Frame HasShadow="True"
                                    BorderColor="DarkGray"
@@ -118,54 +125,56 @@
                     HeightRequest="70"
                     Margin="0,0,0,0"/>
 
-            <cal:Calendar Events="{Binding Events}" 
-           EventsScrollViewVisible="True" 
-           SelectedDayBackgroundColor="SeaGreen"
-           CalendarLayout="Month"
-           BackgroundColor="Transparent"
-           DayViewCornerRadius="5"
-           DeselectedDayTextColor="White"
-           SelectedDateColor="White"
-           ArrowsBackgroundColor="SeaGreen"
-           ArrowsBorderColor="White"
-           ArrowsColor="White"
-           DaysTitleColor="White"
-           DaysTitleWeekendColor="Beige" 
-           DisabledDayColor="White"
-           EventIndicatorColor="SeaGreen"
-           EventIndicatorSelectedColor="White"
-           EventIndicatorSelectedTextColor="White"
-           MonthLabelColor="White"
-           OtherMonthDayColor="DarkSeaGreen"
-           SelectedDayTextColor="White"
-           SelectedTodayTextColor="White"
-           TodayFillColor="#89a18b"
-           TodayOutlineColor="White"
-           TodayTextColor="White" 
-           WeekendDayColor="White"
-           YearLabelColor="White"
-           EventIndicatorTextColor="White"
-           Margin="0,30,0,0"
-                          WidthRequest="350"
-           HeightRequest="500">
+            <cal:Calendar 
+                Events="{Binding Events}" 
+                EventsScrollViewVisible="True" 
+                SelectedDayBackgroundColor="SeaGreen"
+                CalendarLayout="Month"
+                BackgroundColor="Transparent"
+                DayViewCornerRadius="5"
+                DeselectedDayTextColor="White"
+                SelectedDateColor="White"
+                ArrowsBackgroundColor="SeaGreen"
+                ArrowsBorderColor="White"
+                ArrowsColor="White"
+                DaysTitleColor="White"
+                DaysTitleWeekendColor="Beige" 
+                DisabledDayColor="White"
+                EventIndicatorColor="SeaGreen"
+                EventIndicatorSelectedColor="White"
+                EventIndicatorSelectedTextColor="White"
+                MonthLabelColor="White"
+                OtherMonthDayColor="DarkSeaGreen"
+                SelectedDayTextColor="White"
+                SelectedTodayTextColor="White"
+                TodayFillColor="#89a18b"
+                TodayOutlineColor="White"
+                TodayTextColor="White" 
+                WeekendDayColor="White"
+                YearLabelColor="White"
+                EventIndicatorTextColor="White"
+                Margin="0,30,0,0"
+                WidthRequest="350"
+                HeightRequest="500">
+                
                 <cal:Calendar.EventTemplate>
-                    <DataTemplate>
+                    <DataTemplate x:DataType="models:Event">
                         <VerticalStackLayout>
                             <Label 
-                 Text="{Binding Name}" 
-                 FontSize="25" 
-                 TextColor="White"
-                 FontAttributes="Bold"/>
+                                Text="{Binding Name}" 
+                                FontSize="25" 
+                                TextColor="White"
+                                FontAttributes="Bold"/>
                             <Label 
-                 Text="{Binding Description}"
-                 TextColor="White"/>
+                                Text="{Binding Description}"
+                                TextColor="White"/>
                         </VerticalStackLayout>
                     </DataTemplate>
                 </cal:Calendar.EventTemplate>
             </cal:Calendar>
 
             <Button Text="Learn About Our Service Providers"
-                     FontAttributes="Bold"
+                     FontAttributes="Bold" 
                      TextColor="White"
                      BorderColor="White"
                      BorderWidth="2"
