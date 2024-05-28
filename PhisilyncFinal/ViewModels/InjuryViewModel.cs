@@ -32,7 +32,7 @@ namespace PhisilyncFinal.ViewModels
         public override void Initialize()
         {
             base.Initialize();
-            Injuries = new ObservableCollection<ProviderInjury>(_database.GetInjuries());
+            Injuries = new ObservableCollection<ProviderInjury>(_database.GetInjuriesList());
         }
 
     }
