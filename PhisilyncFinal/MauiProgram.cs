@@ -89,13 +89,13 @@ namespace PhisilyncFinal
             mauiAppBuilder.Services.AddSingleton<SignUpCoachVM>();
             mauiAppBuilder.Services.AddSingleton<SignUpSPVM>();
             mauiAppBuilder.Services.AddSingleton<AthleteDashVM>();
-                mauiAppBuilder.Services.AddSingleton<CoachDashVM>();
-                mauiAppBuilder.Services.AddSingleton<SPDashVM>();
-                mauiAppBuilder.Services.AddSingleton<ProfileDetailsVM>();
-                mauiAppBuilder.Services.AddSingleton<EditProfileVM>();
-                mauiAppBuilder.Services.AddSingleton<InjuryLibraryViewModel>();
-                mauiAppBuilder.Services.AddSingleton<TeamStatsVM>();
-                mauiAppBuilder.Services.AddSingleton<GlossaryViewModel>();
+            mauiAppBuilder.Services.AddSingleton<CoachDashVM>();
+            mauiAppBuilder.Services.AddSingleton<SPDashVM>();
+            mauiAppBuilder.Services.AddSingleton<ProfileDetailsVM>();
+            mauiAppBuilder.Services.AddSingleton<EditProfileVM>();
+            mauiAppBuilder.Services.AddSingleton<InjuryLibraryViewModel>();
+            mauiAppBuilder.Services.AddSingleton<TeamStatsVM>();
+            mauiAppBuilder.Services.AddSingleton<GlossaryViewModel>();
 
             return mauiAppBuilder;
             }  
