@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhisilyncFinal.Views.TestAndReleasePage"
+             xmlns:local="clr-namespace:PhisilyncFinal.ViewModels"
              BackgroundImageSource="greenback">
 
     <Shell.TitleView Margin="0">
@@ -13,60 +14,20 @@
     <ScrollView>
         <StackLayout Margin="20">
             <Label 
-               Text="{Binding InjuryName}"
+               Text="{Binding providerInjuryName}"
                HorizontalOptions="Center"
                TextColor="White"
                FontAttributes="Bold"
                FontSize="Large"
                Style="{DynamicResource TitleStyle}" />
 
-            <Image Source="{Binding InjuryImage}"
+            <Image Source="{Binding providerInjuryImage}"
                    HeightRequest="200"
                    WidthRequest="200"
                    Margin="20"
                    HorizontalOptions="Center" />
 
-            <Label
-                Text="Test"
-                FontAttributes="Bold"
-                FontSize="Medium"
-                TextColor="White"
-                Style="{DynamicResource TitleStyle}"
-                HorizontalTextAlignment="Center"/>
 
-            <Label 
-                Text="{Binding InjuryTest}"
-                FontSize="Medium"
-                TextColor="White"
-                HorizontalTextAlignment="Start"
-                Style="{DynamicResource BodyStyle}" />
-
-            <Label
-                Text="Release"
-                FontAttributes="Bold"
-                FontSize="Medium"
-                TextColor="White"
-                Style="{DynamicResource TitleStyle}"
-                HorizontalTextAlignment="Center"/>
-
-            <Label 
-                Text="{Binding InjuryRelease}"
-                FontSize="Medium"
-                TextColor="White"
-                HorizontalTextAlignment="Start"
-                Style="{DynamicResource BodyStyle}" />
-
-            <Button
-                Text="Return To Dashboard"
-                FontAttributes="Bold"
-                TextColor="White"
-                BorderColor="Beige"
-                BorderWidth="2"
-                BackgroundColor="SeaGreen"
-                CornerRadius="100"
-                 WidthRequest="350"
-                HeightRequest="70"
-                Margin="0,0,0,20"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

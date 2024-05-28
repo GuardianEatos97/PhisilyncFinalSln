@@ -5,7 +5,9 @@
              xmlns:selector="clr-namespace:PhisilyncFinal.Views.LennyTemplates"
              xmlns:models="clr-namespace:PhisilyncFinal.Models"
              xmlns:viewmodels="clr-namespace:PhisilyncFinal.ViewModels"
-             Title="LennyAiQuestionPage">
+             xmlns:services="clr-namespace:PhisilyncFinal.Services"
+             BackgroundColor="MintCream"
+             Title="What do you need?">
     <ContentPage.Resources>
         <Style TargetType="Grid">
             <Setter Property="VisualStateManager.VisualStateGroups">
@@ -15,7 +17,7 @@
                         <VisualState x:Name="Selected">
                             <VisualState.Setters>
                                 <Setter Property="BackgroundColor"
-                                     Value="LightSkyBlue" />
+                                     Value="MintCream" />
                             </VisualState.Setters>
                         </VisualState>
                     </VisualStateGroup>

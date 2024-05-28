@@ -14,14 +14,14 @@
     <ScrollView>
         <StackLayout Margin="20">
             <Label 
-               Text="{Binding InjuryName}"
+               Text="{Binding providerInjuryName}"
                HorizontalOptions="Center"
                FontAttributes="Bold"
                 TextColor="White"
                FontSize="Large"
                Style="{DynamicResource TitleStyle}" />
             
-            <Image Source="{Binding InjuryImage}"
+            <Image Source="{Binding providerInjuryImage}"
                HeightRequest="200"
                WidthRequest="200"
                Margin="20"
@@ -36,13 +36,13 @@
                 HorizontalTextAlignment="Center"/>
             
             <Label 
-                Text="{Binding InjuryAnatomy}"
+                Text="{Binding providerInjuryAnatomy}"
                 FontSize="Medium"
                 TextColor="White"
                 HorizontalTextAlignment="Start"
                 Style="{DynamicResource BodyStyle}" />
             
-            <Label
+            <!--<Label
                 Text="Test"
                 FontAttributes="Bold"
                 TextColor="White"
@@ -55,22 +55,22 @@
                 FontSize="Medium"
                 TextColor="White"
                 HorizontalTextAlignment="Start"
-                Style="{DynamicResource BodyStyle}" />
+                Style="{DynamicResource BodyStyle}" />-->
             
-            <Label
+            <!--<Label
                 Text="Release"
                 FontAttributes="Bold"
                 TextColor="White"
                 FontSize="Medium"
                 Style="{DynamicResource TitleStyle}"
                 HorizontalTextAlignment="Center"/>
-            
+
             <Label 
                 Text="{Binding InjuryRelease}"
                 FontSize="Medium"
                 TextColor="White"
                 HorizontalTextAlignment="Start"
-                Style="{DynamicResource BodyStyle}" />
+                Style="{DynamicResource BodyStyle}"/>-->
 
             <Button
                 Text="Take Me To My Treatment Plan"
@@ -78,6 +78,7 @@
                 TextColor="White"
                 BorderColor="Beige"
                 BorderWidth="2"
+                Clicked="Button_Clicked"
                 BackgroundColor="SeaGreen"
                 CornerRadius="100"
                  WidthRequest="350"

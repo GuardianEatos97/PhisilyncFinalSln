@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PhisilyncFinal.LennyAIEnums
+﻿namespace PhisilyncFinal.LennyAIEnums
 {
-    public enum ChatMessageEnums
+    public enum ChatMessageTypeEnum
     {
         Inbound,
         Outbound

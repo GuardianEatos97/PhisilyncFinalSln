@@ -15,21 +15,30 @@ namespace PhisilyncFinal.ViewModels
         private LocalDb _database;
         private ObservableCollection<ProviderInjury> _injuries;
 
-        public ObservableCollection<ProviderInjury> Injuries
-        {
-            get => _injuries;
-            set
-            {
-                _injuries = value;
-                OnPropertyChanged();
-            }
-        }
-        public InjuryViewModel(LocalDb database)
-        {
-            _database = database;
-        }
+        public ObservableCollection<ProviderInjury> Injuries { get; set; }
 
         
+        //public ObservableCollection<ProviderInjury> Injuries
+        //{
+        //    get => _injuries;
+        //    set
+        //    {
+        //        _injuries = value;
+        //        OnPropertyChanged();
+        //    }
+        //}
+        public InjuryViewModel()
+        {
+            
+            _database = new();
+            Injuries = new ObservableCollection<ProviderInjury>(_database.GetInjuriesList());
+        }
+
+        public override void Initialize()
+        {
+            base.Initialize();
+           
+        }
 
     }
 }
