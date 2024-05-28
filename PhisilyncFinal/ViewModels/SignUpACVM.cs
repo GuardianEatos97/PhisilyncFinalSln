@@ -71,10 +71,19 @@ namespace PhisilyncFinal.ViewModels
             set { _isPasswordValid = value; OnPropertyChanged(); }
         }
 
+        private bool _isConfirmedPasswordValid;
+
+        public bool IsConfirmedPasswordValid
+        {
+            get { return _isConfirmedPasswordValid; }
+            set { _isConfirmedPasswordValid = value; }
+        }
+
+
         [RelayCommand]
         private async void SaveAthlete()
         {
-            if (IsEmailValid && IsNameValid && IsPasswordValid && IsSurnameValid)
+            if (IsEmailValid && IsNameValid && IsPasswordValid && IsSurnameValid && IsConfirmedPasswordValid)
             {
                 var user = new User
                 {
