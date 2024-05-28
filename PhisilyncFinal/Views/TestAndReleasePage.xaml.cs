@@ -7,6 +7,6 @@ public partial class TestAndReleasePage : ContentPage
 {
 	public TestAndReleasePage()
 	{
-		InitializeComponent();
+		 InitializeComponent();
 	}
 }
