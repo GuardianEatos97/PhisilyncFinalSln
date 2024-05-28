@@ -73,22 +73,25 @@ namespace PhisilyncFinal.Services
 
         public void SeedDatabase()
         {
-            UserType userType = new UserType()
+            if (_dbConnection.Table<UserType>().Count() == 0)
             {
-                userTypeID = 1,
-                userTypeName = "Athlete",
-                userTypeDetails = "It's the Athlete"
-            };
+                UserType userType = new UserType()
+                {
+                    userTypeID = 1,
+                    userTypeName = "Athlete",
+                    userTypeDetails = "It's the Athlete"
+                };
 
-            _dbConnection.Insert(userType);
+                _dbConnection.Insert(userType);
 
-            userType = new UserType()
-            {
-                userTypeID = 2,
-                userTypeName = "Coach",
-                userTypeDetails = "It's the Coach"
-            };
-            _dbConnection.Insert(userType);
+                userType = new UserType()
+                {
+                    userTypeID = 2,
+                    userTypeName = "Coach",
+                    userTypeDetails = "It's the Coach"
+                };
+                _dbConnection.Insert(userType);
+            }
 
             ServiceType serviceType = new ServiceType()
             {

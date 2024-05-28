@@ -31,7 +31,21 @@ namespace PhisilyncFinal
             //{
             //    await Shell.Current.GoToAsync("TellUs");
             //}
-            await Shell.Current.GoToAsync("TellUs");
+            //await Shell.Current.GoToAsync("TellUs");
+            //base.OnStart();
+
+            if (_database._dbConnection.Table<User>().Count() != 0 && _database.GetUser(1).userType == 1)
+            {
+                await Shell.Current.GoToAsync("athleteDash");
+            }
+            else if (_database._dbConnection.Table<User>().Count() != 0 && _database.GetUser(1).userType == 2)
+            {
+                await Shell.Current.GoToAsync("coachDash");
+            }
+            else
+            {
+                await Shell.Current.GoToAsync("TellUs");
+            }
             base.OnStart();
         }
     }
