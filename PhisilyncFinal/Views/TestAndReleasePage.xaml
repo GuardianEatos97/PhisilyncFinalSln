@@ -55,6 +55,18 @@
                 TextColor="White"
                 HorizontalTextAlignment="Start"
                 Style="{DynamicResource BodyStyle}" />
+
+            <Button
+                Text="Return To Dashboard"
+                FontAttributes="Bold"
+                TextColor="White"
+                BorderColor="Beige"
+                BorderWidth="2"
+                BackgroundColor="SeaGreen"
+                CornerRadius="100"
+                 WidthRequest="350"
+                HeightRequest="70"
+                Margin="0,0,0,20"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>
