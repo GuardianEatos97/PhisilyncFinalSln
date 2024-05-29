@@ -109,6 +109,7 @@
                      BorderWidth="2"
                      BackgroundColor="SeaGreen"
                      CornerRadius="100"
+                    Command="{Binding InjuryCommand}"
                      WidthRequest="350"
                      HeightRequest="70"
                      Margin="0,20,0,20"/>
@@ -178,6 +179,7 @@
                      TextColor="White"
                      BorderColor="White"
                      BorderWidth="2"
+                    Clicked="TreatmentProviderBtn_Clicked"
                      BackgroundColor="SeaGreen"
                      CornerRadius="100"
                      WidthRequest="350"

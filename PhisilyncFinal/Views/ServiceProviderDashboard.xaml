@@ -70,6 +70,7 @@
                      FontAttributes="Bold"
                      TextColor="White"
                      BorderColor="White"
+                     Command="{Binding InjuryCommand}"
                      BorderWidth="2"
                      BackgroundColor="SeaGreen"
                      CornerRadius="100"

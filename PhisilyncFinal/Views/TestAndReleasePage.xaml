@@ -14,20 +14,46 @@
     <ScrollView>
         <StackLayout Margin="20">
             <Label 
-               Text="{Binding providerInjuryName}"
-               HorizontalOptions="Center"
-               TextColor="White"
-               FontAttributes="Bold"
-               FontSize="Large"
-               Style="{DynamicResource TitleStyle}" />
+                Text="{Binding InjuryName}"
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                FontSize="Large"
+                Style="{DynamicResource TitleStyle}" />
+            
+            <Image 
+                Source="{Binding InjuryImage}"
+                HeightRequest="200"
+                WidthRequest="200"
+                Margin="20"
+                HorizontalOptions="Center" />
 
-            <Image Source="{Binding providerInjuryImage}"
-                   HeightRequest="200"
-                   WidthRequest="200"
-                   Margin="20"
-                   HorizontalOptions="Center" />
+            <Label
+                Text="Test"
+                FontAttributes="Bold"
+                TextColor="White"
+                FontSize="Medium"
+                Style="{DynamicResource TitleStyle}"
+                HorizontalTextAlignment="Center" />
 
+            <Label 
+                Text="{Binding InjuryTest}"
+                FontSize="Medium"
+                HorizontalTextAlignment="Start"
+                Style="{DynamicResource BodyStyle}" />
+                
+            <Label
+                Text="Release"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                TextColor="White"
+                Style="{DynamicResource TitleStyle}"
+                HorizontalTextAlignment="Center"/>
 
+                <Label 
+                Text="{Binding InjuryRelease}"
+                FontSize="Medium"
+                HorizontalTextAlignment="Start"
+                Style="{DynamicResource BodyStyle}" />
         </StackLayout>
     </ScrollView>
 </ContentPage>

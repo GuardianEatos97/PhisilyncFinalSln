@@ -11,4 +11,11 @@ public partial class InjuryDetailsPage : ContentPage
     {
 		await Shell.Current.GoToAsync("GlossaryView");
     }
+
+    private async void TestAndReleaseBtn_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("TestAndReleasePage");
+    }
+
+   
 }
