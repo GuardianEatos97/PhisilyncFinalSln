@@ -31,13 +31,21 @@
         />
 
         <Label
-        Text="Anatomy Glossary"
-        VerticalOptions="Center"
-        FontSize="Large"
-        TextDecorations="Underline"
-        FontAttributes="Bold"
-        Margin="10"
-        HorizontalOptions="Center"/>
+                Text="Anatomy Glossary"
+                VerticalOptions="Center"
+                FontSize="Large"
+                TextDecorations="Underline"
+                FontAttributes="Bold"
+                Margin="10"
+                HorizontalOptions="Center"/>
+
+        <!--<ImageButton
+                Source="backarrow.png"
+                HorizontalOptions="End"
+                x:Name="BackBtn"
+                Clicked="BackBtn_Clicked"
+                HeightRequest="20"
+                WidthRequest="50"/>-->
 
         <ListView ItemsSource="{Binding Glossarys}" 
               HasUnevenRows="true"
@@ -69,7 +77,7 @@
                             <Label Grid.Row="1" 
                             Grid.Column="1" 
                             Text="{Binding Prompt}"
-                               Margin="20,-20,0,0"
+                            Margin="20,-20,0,0"
                             VerticalOptions="End" 
                             Style="{DynamicResource SubtitleTextStyle}" />
                         </Grid>

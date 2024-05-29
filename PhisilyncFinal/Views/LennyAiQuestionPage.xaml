@@ -6,7 +6,7 @@
              xmlns:models="clr-namespace:PhisilyncFinal.Models"
              xmlns:viewmodels="clr-namespace:PhisilyncFinal.ViewModels"
              xmlns:services="clr-namespace:PhisilyncFinal.Services"
-             BackgroundImageSource="phisigreen_nobg.png"
+             BackgroundImageSource="lennybg.png"
              BackgroundColor="MintCream">
     <ContentPage.Resources>
         <Style TargetType="Grid">
@@ -35,7 +35,7 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Frame Margin="10" BackgroundColor="Beige" Grid.Row="1"  Padding="10">
+                    <Frame Margin="10" BackgroundColor="LightGreen" Grid.Row="1"  Padding="10" HorizontalOptions="StartAndExpand" WidthRequest="250">
                         <Label TextColor="Black" Text="{Binding MessageBody}" />
                     </Frame>
                 </Grid>
@@ -50,7 +50,7 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Frame Margin="10" BackgroundColor="MistyRose" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Padding="10"  HorizontalOptions="EndAndExpand">
+                    <Frame Margin="10" BackgroundColor="LightGray" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Padding="10"  HorizontalOptions="EndAndExpand">
                         <Label TextColor="Black" Text="{Binding MessageBody}" HorizontalTextAlignment="End" />
                     </Frame>
                 </Grid>

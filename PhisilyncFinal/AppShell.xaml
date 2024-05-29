@@ -45,7 +45,8 @@
 
                 <Image Source="{Binding FlyoutIcon}"
                Margin="5"
-               HeightRequest="24" />
+               WidthRequest="35"
+               HeightRequest="35" />
                 <Label Grid.Column="1"
                Text="{Binding Title}"
                FontSize="16"
@@ -63,6 +64,41 @@
         Style="{StaticResource BaseStyle}"
 ContentTemplate="{DataTemplate local:AthleteDash}"
 Route="AthleteDash" />
+
+        <ShellContent
+Title="Injury Library"
+            Icon="patient.png"
+        Style="{StaticResource BaseStyle}"
+ContentTemplate="{DataTemplate local:InjuryLibraryPage}"
+Route="Library" />
+
+        <ShellContent
+    Title="Treatment Methodology"
+            Icon="therapyicon.png"
+            Style="{StaticResource BaseStyle}"
+    ContentTemplate="{DataTemplate local:TreatmentPage}"
+    Route="Treatment"/>
+
+        <ShellContent
+            Title="Anatomy Glossary"
+            Icon="manuscript.png"
+            Style="{StaticResource BaseStyle}"
+            ContentTemplate="{DataTemplate local:GlossaryViewPage}"
+            Route="GlossaryView"/>
+
+        <ShellContent
+    Title="Lenny (ChatBot)"
+            Icon="robot.png"
+            Style="{StaticResource BaseStyle}"
+    ContentTemplate="{DataTemplate local:LennyAiQuestionPage}"
+    Route="LennyQuestionPage"/>
+
+        <ShellContent
+    Title="Profile Details"
+            Icon="information.png"
+            Style="{StaticResource BaseStyle}"
+    ContentTemplate="{DataTemplate local:EditProfile}"
+    Route="EditProfile"/>
 
         <ShellContent
 Title="Privacy Policy"
@@ -87,13 +123,7 @@ ContentTemplate="{DataTemplate local:FAQs}"
             
 Route="FAQs" />
 
-        <ShellContent
-Title="Injury Library"
-            Icon="qa.png"
-        Style="{StaticResource BaseStyle}"
-ContentTemplate="{DataTemplate local:InjuryLibraryPage}"
-  
-Route="Library" />
+        
 
     </FlyoutItem>
 

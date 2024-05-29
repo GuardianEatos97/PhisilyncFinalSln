@@ -94,9 +94,11 @@
 	  <None Remove="Resources\Images\hipadd.jpg" />
 	  <None Remove="Resources\Images\hipaddremovebg.png" />
 	  <None Remove="Resources\Images\info.png" />
+	  <None Remove="Resources\Images\information.png" />
 	  <None Remove="Resources\Images\insta.png" />
 	  <None Remove="Resources\Images\instagram.png" />
 	  <None Remove="Resources\Images\kneetaping.jpg" />
+	  <None Remove="Resources\Images\lennybg.png" />
 	  <None Remove="Resources\Images\libok.jpg" />
 	  <None Remove="Resources\Images\lin.png" />
 	  <None Remove="Resources\Images\linkedin.png" />
@@ -111,6 +113,7 @@
 	  <None Remove="Resources\Images\neckrot.jfif" />
 	  <None Remove="Resources\Images\neckrotremovebg.png" />
 	  <None Remove="Resources\Images\netballcoach.jpg" />
+	  <None Remove="Resources\Images\patient.png" />
 	  <None Remove="Resources\Images\phisigreen_nobg.png" />
 	  <None Remove="Resources\Images\phisilyncappshell.png" />
 	  <None Remove="Resources\Images\phisilyncfinal.png" />
@@ -120,6 +123,7 @@
 	  <None Remove="Resources\Images\profileimage.webp" />
 	  <None Remove="Resources\Images\proud.jpg" />
 	  <None Remove="Resources\Images\qa.png" />
+	  <None Remove="Resources\Images\robot.png" />
 	  <None Remove="Resources\Images\rom.jpg" />
 	  <None Remove="Resources\Images\roms.jpg" />
 	  <None Remove="Resources\Images\rugbycoach.jpg" />
@@ -134,6 +138,7 @@
 	  <None Remove="Resources\Images\taping.jpg" />
 	  <None Remove="Resources\Images\tenniscoach.jpg" />
 	  <None Remove="Resources\Images\thelynoacademy.webp" />
+	  <None Remove="Resources\Images\therapyicon.png" />
 	  <None Remove="Resources\Images\tiktok.png" />
 	  <None Remove="Resources\Images\tiktoky.png" />
 	  <None Remove="Resources\Images\tiktok_large.png" />
