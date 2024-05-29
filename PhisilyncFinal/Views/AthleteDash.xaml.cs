@@ -17,5 +17,9 @@ public partial class AthleteDash : ContentPage
         BindingContext = athleteDashVM;
     }
 
-    
+    private async void TreatmentProviderBtn_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("///TreatmentPage");
+    }
+
 }

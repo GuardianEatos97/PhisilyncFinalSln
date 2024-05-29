@@ -13,6 +13,11 @@ public partial class CoachDashboard : ContentPage
 
     }
 
+    private async void TreatmentProviderBtn_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("///TreatmentPage");
+    }
+
     private void PopUpClicked(object sender, EventArgs e)
     {
         if (BindingContext is CoachDashVM viewModel)

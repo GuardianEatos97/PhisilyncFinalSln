@@ -8,7 +8,7 @@
     <Shell.TitleView Margin="0">
         <Image 
     Source="phisilyncgreen.png"
-    Aspect="AspectFill"/>
+    Aspect="Center"/>
     </Shell.TitleView>
     
     <ScrollView>
@@ -36,7 +36,7 @@
                 FontSize="Medium"
                 HorizontalTextAlignment="Start"
                 Style="{DynamicResource BodyStyle}" />
-            <!--<Label
+            <Label
                 Text="Test"
                 FontAttributes="Bold"
                 FontSize="Medium"
@@ -57,7 +57,19 @@
                 Text="{Binding InjuryRelease}"
                 FontSize="Medium"
                 HorizontalTextAlignment="Start"
-                Style="{DynamicResource BodyStyle}" />-->
+                Style="{DynamicResource BodyStyle}" />
+            <Button
+                 Text="Take Me To My Treatment Plan"
+                 FontAttributes="Bold"
+                 TextColor="White"
+                 BorderColor="Beige"
+                 BorderWidth="2"
+                 BackgroundColor="SeaGreen"
+                 CornerRadius="100"
+                 Clicked="TestAndReleaseBtn_Clicked"
+                 WidthRequest="350"
+                 HeightRequest="70"
+                 Margin="0,0,0,0"/>
             <Label
                 Text="Click below to view our Anatomy glossary"
                 FontSize="Small"
@@ -74,7 +86,7 @@
                 WidthRequest="50"
                     Margin="0,20,0,20"
                 HorizontalOptions="Center"
-                Source="manuscript.png"/>
+                Source="manuscript"/>
             </Frame>
         </StackLayout>
     </ScrollView>

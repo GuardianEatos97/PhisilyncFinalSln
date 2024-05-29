@@ -137,10 +137,7 @@ Route="Library" />
         Title="Lenny"
         ContentTemplate="{DataTemplate local:LennyAiQuestionPage}"
         Route="LennyQuestionPage"/>
-    <ShellContent
-        Title="TestAndRelaeasePage"
-        ContentTemplate="{DataTemplate local:TestAndReleasePage}"
-        Route="TestAndReleasePage"/>
+   
 
 </Shell>
 
