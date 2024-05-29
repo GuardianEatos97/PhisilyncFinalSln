@@ -111,6 +111,7 @@
 	  <None Remove="Resources\Images\neckrot.jfif" />
 	  <None Remove="Resources\Images\neckrotremovebg.png" />
 	  <None Remove="Resources\Images\netballcoach.jpg" />
+	  <None Remove="Resources\Images\phisigreen_nobg.png" />
 	  <None Remove="Resources\Images\phisilyncappshell.png" />
 	  <None Remove="Resources\Images\phisilyncfinal.png" />
 	  <None Remove="Resources\Images\phisilyncgreen.png" />

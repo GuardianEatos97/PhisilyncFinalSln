@@ -56,21 +56,19 @@
     </Shell.ItemTemplate>
 
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+
         <ShellContent  
             Title="Dashboard"
             Icon="dashboard.png"
         Style="{StaticResource BaseStyle}"
-
 ContentTemplate="{DataTemplate local:AthleteDash}"
 Route="AthleteDash" />
-
 
         <ShellContent
 Title="Privacy Policy"
             Icon="compliant.png"
         Style="{StaticResource BaseStyle}"
 ContentTemplate="{DataTemplate local:PrivacyPolicy}"
-      
 Route="PrivacyPolicy" />
 
         <ShellContent
@@ -140,9 +138,9 @@ Route="Library" />
         ContentTemplate="{DataTemplate local:LennyAiQuestionPage}"
         Route="LennyQuestionPage"/>
     <ShellContent
-Title="TestAndRelaeasePage"
-ContentTemplate="{DataTemplate local:TestAndReleasePage}"
-Route="TestAndReleasePage"/>
+        Title="TestAndRelaeasePage"
+        ContentTemplate="{DataTemplate local:TestAndReleasePage}"
+        Route="TestAndReleasePage"/>
 
 </Shell>
 

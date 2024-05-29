@@ -6,8 +6,8 @@
              xmlns:models="clr-namespace:PhisilyncFinal.Models"
              xmlns:viewmodels="clr-namespace:PhisilyncFinal.ViewModels"
              xmlns:services="clr-namespace:PhisilyncFinal.Services"
-             BackgroundColor="MintCream"
-             Title="What do you need?">
+             BackgroundImageSource="phisigreen_nobg.png"
+             BackgroundColor="MintCream">
     <ContentPage.Resources>
         <Style TargetType="Grid">
             <Setter Property="VisualStateManager.VisualStateGroups">

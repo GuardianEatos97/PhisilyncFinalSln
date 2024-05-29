@@ -5,7 +5,7 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:local="clr-namespace:PhisilyncFinal.ViewModels"
              xmlns:models="clr-namespace:PhisilyncFinal.Models"
-             BackgroundImageSource="greenback" x:DataType="local:InjuryViewModel">
+             BackgroundColor="MintCream">
 
     <Shell.TitleView Margin="0">
         <Image 
@@ -43,14 +43,13 @@
             Margin="10"
             HorizontalOptions="Center"/>
 
-        <ListView ItemsSource="{Binding Injuries}" 
+        <ListView ItemsSource="{Binding Injury}" 
             HasUnevenRows="true"
                   Margin="10"
                   ItemTapped="ListView_ItemTapped"
                   ItemSelected="ListView_ItemSelected">
-            
             <ListView.ItemTemplate>
-                <DataTemplate x:DataType="models:ProviderInjury">
+                <DataTemplate>
                     <ViewCell>
                         <Grid Padding="10">
                             <Grid.RowDefinitions>
@@ -62,20 +61,18 @@
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
                             <Image Grid.RowSpan="2" 
-                                Source="{Binding providerInjuryImage}" 
+                                Source="{Binding InjuryImage}" 
                                 Aspect="AspectFill" 
                                 HeightRequest="100" 
                                 WidthRequest="100" />
                             <Label Grid.Column="1" 
-                                   TextColor="White"
-                                Text="{Binding providerInjuryName}" 
+                                Text="{Binding InjuryName}" 
                                    Margin="20,30"
                                 Style="{DynamicResource TitleStyle}" />
                             <Label Grid.Row="1" 
                                 Grid.Column="1" 
-                                Text="CLick to find out more"
+                                Text="{Binding Prompt}"
                                    Margin="20,-20,0,0"
-                                   TextColor="White"
                                 VerticalOptions="End" 
                                 Style="{DynamicResource SubtitleTextStyle}" />
                         </Grid>
@@ -83,6 +80,5 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
     </StackLayout>
 </ContentPage>

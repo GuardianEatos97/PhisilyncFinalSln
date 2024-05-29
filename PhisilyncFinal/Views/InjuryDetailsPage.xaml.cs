@@ -11,9 +11,4 @@ public partial class InjuryDetailsPage : ContentPage
     {
 		await Shell.Current.GoToAsync("GlossaryView");
     }
-
-    private async void Button_Clicked(object sender, EventArgs e)
-    {
-        await Shell.Current.GoToAsync("TestAndReleasePage");
-    }
 }
