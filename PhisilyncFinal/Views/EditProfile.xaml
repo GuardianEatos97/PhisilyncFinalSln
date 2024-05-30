@@ -4,19 +4,14 @@
              xmlns:viewmodel="clr-namespace:PhisilyncFinal.ViewModels"
              xmlns:models="clr-namespace:PhisilyncFinal.Models"
              x:Class="PhisilyncFinal.Views.EditProfile"
-<<<<<<< Updated upstream
-             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:DataType="viewmodel:EditProfileVM">
     <Shell.TitleView Margin="0,0,0,0">
         <Image 
         Source="phisilyncgreen"
         Aspect="Center"/>
     </Shell.TitleView>
 
-=======
-             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             x:DataType="viewmodel:EditProfileVM">
-    
->>>>>>> Stashed changes
     <ScrollView>
         <VerticalStackLayout>
 
