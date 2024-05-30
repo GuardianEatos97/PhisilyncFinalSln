@@ -17,5 +17,7 @@ namespace PhisilyncFinal.Models
         public string InjuryRelease { get; set; }
         public string InjuryImage {  get; set; }
         public string Prompt { get; set; }
+        public string GlossaryPrompt { get; set; }
+        public string GlossBtnImage { get; set; }
     }
 }

@@ -3,14 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhisilyncFinal.Views.LennyAiAnswerPage"
              BackgroundColor="MintCream"
-             BackgroundImageSource="phisigreen_nobg.png">
+             BackgroundImageSource="lennybg.png">
     <VerticalStackLayout>
         <Label
             Text="Lenny Chatbot"
             FontSize="Large"
             HorizontalOptions="Center"/>
         
-        <Frame BackgroundColor="Beige"  Margin="10"  VerticalOptions="FillAndExpand" 
+        <Frame BackgroundColor="Black"  Margin="10"  VerticalOptions="FillAndExpand" 
 HorizontalOptions="FillAndExpand">
             <Label
            Text="{Binding Response.MessageBody}"

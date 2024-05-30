@@ -71,13 +71,11 @@
                  HeightRequest="70"
                  Margin="0,0,0,0"/>
             <Label
-                Text="Click below to view our Anatomy glossary"
+                Text="{Binding GlossaryPrompt}"
                 FontSize="Small"
                 Margin="0,20,0,20"
                 HorizontalOptions="Center"/>
-
-            <Frame CornerRadius="365" BackgroundColor="MintCream" WidthRequest="80" BorderColor="SeaGreen" >
-                <ImageButton
+            <ImageButton
                 x:Name="GlossaryBtn"
                 Clicked="GlossaryBtn_Clicked"
                 CornerRadius="0"
@@ -86,8 +84,7 @@
                 WidthRequest="50"
                     Margin="0,20,0,20"
                 HorizontalOptions="Center"
-                Source="manuscript"/>
-            </Frame>
+                Source="{Binding GlossBtnImage}"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>
