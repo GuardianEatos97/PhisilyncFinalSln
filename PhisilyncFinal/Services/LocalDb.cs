@@ -408,6 +408,7 @@ namespace PhisilyncFinal.Services
                     treatmentActionStepAction = new List<string> { "Position:\r\nThe client stands with his back against the wall. Make sure that his shoulders are pushed flat against the wall. He then drops his chin down towards his chest", " Measure:\r\nMeasure in fingers from the chin to the chest ", "\r\n\r\nFull range:\r\n3 fingers between the chin and the chest\r\n " },
                     treatmentActionTreatment = 1,
                     treatmentActionStepOrder = 1,
+                    
                     treatmentActionCategory = "Test"
 
                 };

@@ -59,7 +59,7 @@
 
             <CarouselView ItemsSource="{Binding InjuryLibraryVM.Injury}"
                           IndicatorView="indicatorView"
-                          BackgroundColor="Transparent" >
+                          BackgroundColor="Transparent"  >
                 <CarouselView.ItemTemplate>
                     <DataTemplate x:DataType="models:InjuryLibrary">
                         <StackLayout>

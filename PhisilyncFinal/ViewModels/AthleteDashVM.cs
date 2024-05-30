@@ -84,11 +84,11 @@ namespace PhisilyncFinal.ViewModels
         [RelayCommand]
         private async Task Injury()
         {
-            await Shell.Current.GoToAsync("Library");
+            await Shell.Current.GoToAsync("SelectInjury");
         }
 
         [RelayCommand]
-        private async Task AthleteInjury()
+        private async Task AthleteInjury() 
         {
             await Shell.Current.GoToAsync("treatmentPage");
         }

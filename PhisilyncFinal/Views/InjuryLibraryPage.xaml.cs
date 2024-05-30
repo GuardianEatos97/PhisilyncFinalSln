@@ -18,6 +18,7 @@ public partial class InjuryLibraryPage : ContentPage
     private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
     {
         var injury = ((ListView)sender).SelectedItem as InjuryLibrary;
+      
         if (injury != null)
         {
             var page = new InjuryDetailsPage();
