@@ -1,3 +1,5 @@
+using PhisilyncFinal.Models;
+
 namespace PhisilyncFinal.Views;
 
 public partial class InjuryDetailsPage : ContentPage
