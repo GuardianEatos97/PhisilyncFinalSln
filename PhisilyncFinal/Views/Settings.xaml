@@ -2,11 +2,257 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhisilyncFinal.Views.Settings"
-             Title="Settings">
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+    <Shell.TitleView Margin="0,0,0,0">
+        <Image 
+        Source="phisilyncgreen"
+        Aspect="Center"/>
+    </Shell.TitleView>
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <SearchBar Placeholder="Search"
+           SearchButtonPressed="OnSearchBarButtonPressed" 
+                   Margin="0,20,0,0"/>
+
+        <ScrollView VerticalOptions="FillAndExpand">
+            <Label x:Name="resultsLabel" />
+        </ScrollView>
+
+        <toolkit:AvatarView Text="Noah"
+                    BorderColor="#6bb834"
+                    TextColor="White"
+                    ImageSource="gelant.jpg"
+                    HorizontalOptions="CenterAndExpand"
+                    CornerRadius="360"
+                    Margin="0,30,0,15"
+                    WidthRequest="200"
+                    HeightRequest="200"
+                    BorderWidth="15"/>
+
+        <Label Text="Name Surname"
+               FontSize="20"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"/>
+
+        <StackLayout Margin="0,80,0,0">
+            <Frame 
+                Padding="0" 
+                HasShadow="False" 
+                BorderColor="Transparent" 
+                HeightRequest="60">
+                <Grid>
+                    <BoxView 
+                        HeightRequest="2" 
+                        BackgroundColor="LightGrey" 
+                        VerticalOptions="Start" />
+                    <Image 
+                        Source="keysremovebg" 
+                        HorizontalOptions="StartAndExpand" 
+                        VerticalOptions="Center" 
+                        HeightRequest="30" 
+                        WidthRequest="30" 
+                        Margin="40,0,0,0"  
+                        BackgroundColor="White"/>
+                    <Label 
+                        Text="Account" 
+                        FontSize="18" 
+                        VerticalOptions="Center" 
+                        Margin="100,0,0,0" 
+                        BackgroundColor="White"/>
+                    <Image 
+                        Source="arrow.png" 
+                        HorizontalOptions="End" 
+                        VerticalOptions="Center" 
+                        HeightRequest="30" 
+                        WidthRequest="30" 
+                        BackgroundColor="White" 
+                        Margin="0,0,20,0"/>
+                    <BoxView 
+                        HeightRequest="2" 
+                        BackgroundColor="LightGrey"  
+                        VerticalOptions="End"/>
+                </Grid>
+            </Frame>
+
+            <Frame 
+                Padding="0" 
+                HasShadow="False" 
+                BorderColor="Transparent" 
+                HeightRequest="60">
+                <Grid>
+                    <Image 
+                        Source="locks" 
+                        HorizontalOptions="StartAndExpand" 
+                        VerticalOptions="Center" 
+                        HeightRequest="30" 
+                        WidthRequest="30" 
+                        Margin="40,0,0,0"  
+                        BackgroundColor="White"/>
+                    <Label 
+                        Text="Privacy" 
+                        FontSize="18" 
+                        VerticalOptions="Center" 
+                        Margin="100,0,0,0" 
+                        BackgroundColor="White"/>
+                    <Image 
+                        Source="arrow.png" 
+                        HorizontalOptions="End" 
+                        VerticalOptions="Center" 
+                        HeightRequest="30" 
+                        WidthRequest="30" 
+                        BackgroundColor="White" 
+                        Margin="0,0,20,0"/>
+                    <BoxView 
+                        HeightRequest="2" 
+                        BackgroundColor="LightGrey"  
+                        VerticalOptions="End"/>
+                </Grid>
+            </Frame>
+
+            <Frame 
+                Padding="0" 
+                HasShadow="False" 
+                BorderColor="Transparent" 
+                HeightRequest="60">
+                <Grid>
+                    <Image 
+                        Source="notificationstwo" 
+                        HorizontalOptions="StartAndExpand" 
+                        VerticalOptions="Center" 
+                        HeightRequest="30" 
+                        WidthRequest="30" 
+                        Margin="40,0,0,0"  
+                        BackgroundColor="White"/>
+                    <Label 
+                        Text="Notifications" 
+                        FontSize="18" 
+                        VerticalOptions="Center" 
+                        Margin="100,0,0,0" 
+                        BackgroundColor="White"/>
+                    <Image 
+                        Source="arrow.png" 
+                        HorizontalOptions="End" 
+                        VerticalOptions="Center" 
+                        HeightRequest="30" 
+                        WidthRequest="30" 
+                        BackgroundColor="White" 
+                        Margin="0,0,20,0"/>
+                    <BoxView 
+                        HeightRequest="2" 
+                        BackgroundColor="LightGrey"  
+                        VerticalOptions="End"/>
+                </Grid>
+            </Frame>
+
+            <Frame 
+                Padding="0" 
+                HasShadow="False" 
+                BorderColor="Transparent" 
+                HeightRequest="60">
+                <Grid>
+                    <Image 
+                        Source="storagetwo" 
+                        HorizontalOptions="StartAndExpand" 
+                        VerticalOptions="Center" 
+                        HeightRequest="30" 
+                        WidthRequest="30" 
+                        Margin="40,0,0,0"  
+                        BackgroundColor="White"/>
+                    <Label 
+                        Text="Storage and data" 
+                        FontSize="18" 
+                        VerticalOptions="Center" 
+                        Margin="100,0,0,0" 
+                        BackgroundColor="White"/>
+                    <Image 
+                        Source="arrow.png" 
+                        HorizontalOptions="End" 
+                        VerticalOptions="Center" 
+                        HeightRequest="30" 
+                        WidthRequest="30" 
+                        BackgroundColor="White" 
+                        Margin="0,0,20,0"/>
+                    <BoxView 
+                        HeightRequest="2" 
+                        BackgroundColor="LightGrey"  
+                        VerticalOptions="End"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+
+        <StackLayout Margin="0,70,0,0">
+            <Frame 
+                Padding="0" 
+                HasShadow="False" 
+                BorderColor="Transparent" 
+                HeightRequest="60">
+                <Grid>
+                    <BoxView 
+                        HeightRequest="2" 
+                        BackgroundColor="LightGrey" 
+                        VerticalOptions="Start" />
+                    <Image 
+                        Source="informationdesk" 
+                        HorizontalOptions="StartAndExpand" 
+                        VerticalOptions="Center" 
+                        HeightRequest="30" 
+                        WidthRequest="30" 
+                        Margin="40,0,0,0"  
+                        BackgroundColor="White"/>
+                    <Label 
+                        Text="Help" 
+                        FontSize="18" 
+                        VerticalOptions="Center" 
+                        Margin="100,0,0,0" 
+                        BackgroundColor="White"/>
+                    <Image 
+                        Source="arrow.png" 
+                        HorizontalOptions="End" 
+                        VerticalOptions="Center" 
+                        HeightRequest="30" 
+                        WidthRequest="30" 
+                        BackgroundColor="White" 
+                        Margin="0,0,20,0"/>
+                    <BoxView 
+                        HeightRequest="2" 
+                        BackgroundColor="LightGrey"  
+                        VerticalOptions="End"/>
+                </Grid>
+            </Frame>
+
+            <Frame 
+                    Padding="0" 
+                    HasShadow="False" 
+                    BorderColor="Transparent" 
+                    HeightRequest="60">
+                <Grid>
+                    <Image 
+                        Source="heart" 
+                        HorizontalOptions="StartAndExpand" 
+                        VerticalOptions="Center" 
+                        HeightRequest="30" 
+                        WidthRequest="30" 
+                        Margin="40,0,0,0"  
+                        BackgroundColor="White"/>
+                    <Label 
+                        Text="Tell a friend" 
+                        FontSize="18" 
+                        VerticalOptions="Center" 
+                        Margin="100,0,0,0" 
+                        BackgroundColor="White"/>
+                    <Image 
+                        Source="arrow.png" 
+                        HorizontalOptions="End" 
+                        VerticalOptions="Center" 
+                        HeightRequest="30" 
+                        WidthRequest="30" 
+                        BackgroundColor="White" 
+                        Margin="0,0,20,0"/>
+                    <BoxView 
+                        HeightRequest="2" 
+                        BackgroundColor="LightGrey"  
+                        VerticalOptions="End"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
     </VerticalStackLayout>
 </ContentPage>
