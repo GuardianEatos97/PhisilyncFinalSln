@@ -29,7 +29,7 @@
         <Label
             Text="Noah Khan"
             HorizontalOptions="End"
-            TextColor="White"
+            TextColor="Black"
             Margin="10,0"
             />
 
@@ -37,7 +37,7 @@
             Text="Injury Library"
             VerticalOptions="Center"
             FontSize="Large"
-            TextColor="White"
+            TextColor="Black"
             TextDecorations="Underline"
             FontAttributes="Bold"
             Margin="10"
