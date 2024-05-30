@@ -16,12 +16,12 @@ namespace PhisilyncFinal.ViewModels
 {
     public partial class CoachDashVM : BaseViewModel
     {
-        private InjuryLibraryViewModel _injuryLibraryViewModel1;
+        private InjuryViewModel _injuryViewModel1;
 
-        public InjuryLibraryViewModel InjuryLibraryVM1
+        public InjuryViewModel InjuryVM1
         {
-            get { return _injuryLibraryViewModel1; }
-            set { _injuryLibraryViewModel1 = value;
+            get { return _injuryViewModel1; }
+            set { _injuryViewModel1 = value;
             
                 OnPropertyChanged();
             }
@@ -44,9 +44,9 @@ namespace PhisilyncFinal.ViewModels
 
         private readonly IPageService _pageService;
 
-        public CoachDashVM(InjuryLibraryViewModel _injuryLibraryViewModel1)
+        public CoachDashVM(InjuryViewModel _injuryViewModel1)
         {
-            InjuryLibraryVM1 = _injuryLibraryViewModel1;
+            InjuryVM1 = _injuryViewModel1;
 
 
             Events = new ObservableCollection<Event>()
