@@ -2,11 +2,196 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhisilyncFinal.Views.Payment"
-             Title="Payment">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             BackgroundColor="White">
+    <Shell.TitleView Margin="0,0,0,0">
+        <Image 
+        Source="phisilyncgreen"
+        Aspect="Center"/>
+    </Shell.TitleView>
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label
+            Text="No more physical limitations."
+            TextColor="Black"
+            FontAttributes="Bold"
+            FontSize="Large" 
+            HorizontalOptions="Center"
+            Margin="0,30,0,0"/>
+
+            <Label
+            Text="Try one month of Premium Individual for free."
+            TextColor="Black"
+            FontAttributes="Bold"
+            FontSize="Medium" 
+            HorizontalOptions="Center"/>
+
+            <Label
+            Text="Available plans"
+            TextColor="Black"
+            FontAttributes="Bold"
+            FontSize="Large" 
+            HorizontalOptions="Center"
+            Margin="0,50,0,0"/>
+
+            <Frame 
+             Grid.Row="0" 
+             Grid.ColumnSpan="0"
+             HeightRequest="300"
+              WidthRequest="350"
+             CornerRadius="50"
+             HorizontalOptions="CenterAndExpand"
+             IsClippedToBounds="True"
+             Padding="0"
+             BackgroundColor="Black"
+             BorderColor="White" 
+             Margin="0,30,0,0">
+
+                <StackLayout>
+                    <Label
+                Text="Premium"
+                TextColor="White"
+                FontAttributes="Bold"
+                FontSize="Small"
+                Margin="0,30,0,0"
+                HorizontalOptions="Center"/>
+
+                    <Label
+                    Text="1 MONTH"
+                    TextColor="White" 
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    Margin="0,20,0,0"
+                    HorizontalOptions="Center"/>
+
+                    <Label
+                    Text="Starting from"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="Small" 
+                    Margin="0,0,0,0"
+                    HorizontalOptions="Center"/>
+
+                    <Label
+                    Text="R50.00"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="50" 
+                    Margin="0,30,0,0"
+                    HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame 
+      Grid.Row="0" 
+      Grid.ColumnSpan="0"
+      HeightRequest="300"
+       WidthRequest="350"
+      CornerRadius="50"
+      HorizontalOptions="CenterAndExpand"
+      IsClippedToBounds="True"
+      Padding="0"
+      BackgroundColor="Black"
+      BorderColor="White" 
+      Margin="0,30,0,0">
+
+                <StackLayout>
+                    <Label
+         Text="Premium"
+         TextColor="White"
+         FontAttributes="Bold"
+         FontSize="Small"
+         Margin="0,30,0,0"
+         HorizontalOptions="Center"/>
+
+                    <Label
+             Text="6 MONTHS"
+             TextColor="White" 
+             FontSize="Medium"
+             FontAttributes="Bold"
+             Margin="0,20,0,0"
+             HorizontalOptions="Center"/>
+
+                    <Label
+             Text="Starting from"
+             TextColor="White"
+             FontAttributes="Bold"
+             FontSize="Small" 
+             Margin="0,0,0,0"
+             HorizontalOptions="Center"/>
+
+                    <Label
+             Text="R280.00"
+             TextColor="White"
+             FontAttributes="Bold"
+             FontSize="50" 
+             Margin="0,30,0,0"
+             HorizontalOptions="Center"/>
+
+                    <Label
+            Text="Save R20.00"
+            TextColor="White"
+            FontAttributes="Bold"
+            FontSize="Small" 
+            Margin="0,0,0,0"
+            HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame 
+Grid.Row="0" 
+Grid.ColumnSpan="0"
+HeightRequest="300"
+ WidthRequest="350"
+CornerRadius="50"
+HorizontalOptions="CenterAndExpand"
+IsClippedToBounds="True"
+Padding="0"
+BackgroundColor="Black"
+BorderColor="White" 
+Margin="0,30,0,0">
+
+                <StackLayout>
+                    <Label
+   Text="Premium"
+   TextColor="White"
+   FontAttributes="Bold"
+   FontSize="Small"
+   Margin="0,30,0,0"
+   HorizontalOptions="Center"/>
+
+                    <Label
+       Text="12 MONTHS"
+       TextColor="White" 
+       FontSize="Medium"
+       FontAttributes="Bold"
+       Margin="0,20,0,0"
+       HorizontalOptions="Center"/>
+
+                    <Label
+       Text="Starting from"
+       TextColor="White"
+       FontAttributes="Bold"
+       FontSize="Small" 
+       Margin="0,0,0,0"
+       HorizontalOptions="Center"/>
+
+                    <Label
+       Text="R500.00"
+       TextColor="White"
+       FontAttributes="Bold"
+       FontSize="50" 
+       Margin="0,30,0,0"
+       HorizontalOptions="Center"/>
+
+                    <Label
+      Text="Save R100.00"
+      TextColor="White"
+      FontAttributes="Bold"
+      FontSize="Small" 
+      Margin="0,0,0,0"
+      HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

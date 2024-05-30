@@ -167,10 +167,10 @@ namespace PhisilyncFinal.Services
             {
                 ProviderInjury providerInjury = new ProviderInjury()
                 {
-                    providerInjuryName = "Neck Side Flexion(Neck Side Strain)",
+                    providerInjuryName = "Neck Side Flexion (Neck Side Strain)",
                     providerInjuryDescription = "Tension on the neck when the muscle does not fully release after contracting",
                     providerInjuryAnatomy = "The sternocleidomastoid runs from the top of the sternum and medial end of the clavicle to the mastoid process behind the ear. The upper trapezius runs from the occiput and cervical spinous processes to the superior scapula and clavicle. The scaleni runs from the processes of cervical vertebrae to the front of the 1st rib and lateral of 2nd rib.\r\n",
-                    providerInjuryImage = "sideflex.png",
+                    providerInjuryImage = "sideflexremovebg",
                     providerInjuryBodyPart = 1,
                     providerInjuryServiceProvider = 1
 
@@ -182,7 +182,7 @@ namespace PhisilyncFinal.Services
                     providerInjuryName = "Neck Flexion (Frontal Neck Strain)",
                     providerInjuryDescription = "Tension on the neck when the muscle does not fully release after contracting",
                     providerInjuryAnatomy = "The splenius capitis runs from the nuchal ligament and the spinous processes of C7 to T6 to the mastoid process and occipital bone. The upper trapezius runs from the clavicle and top of the scapula to the cervical vertebrae and the occipital bone.\r\n",
-                    providerInjuryImage = "neckflex.jpg",
+                    providerInjuryImage = "neckflexioncapture",
                     providerInjuryBodyPart = 1,
                     providerInjuryServiceProvider = 1
 
@@ -194,7 +194,7 @@ namespace PhisilyncFinal.Services
                     providerInjuryName = "Neck Rotation (Full Neck Strain)",
                     providerInjuryDescription = "Tension on the neck when the muscle does not fully release after contracting",
                     providerInjuryAnatomy = "The spenius capitis runs from the spinous processes of c7 to t6 to the mastoid process and the occipital bone. When it contracts it rotates the head to the same side. The sternocleidmastoid runs from the top sternum and the medial end of the clavicle to the mastoid process behind the ear. When it contracts it rotates the head away in the opposite direction.\r\n",
-                    providerInjuryImage = "neckrot.jfif",
+                    providerInjuryImage = "neckrotation",
                     providerInjuryBodyPart = 1,
                     providerInjuryServiceProvider = 1
 
@@ -206,7 +206,7 @@ namespace PhisilyncFinal.Services
                     providerInjuryName = "Trunk Rotation (Abdomen Strain)",
                     providerInjuryDescription = "An abdominal muscle strain, or pulled stomach muscle, is an injury that occurs when muscles in the stomach stretch or tear",
                     providerInjuryAnatomy = "The Anterior Upper Spiral Line:\r\nThe rhomboids run from the spinous processes of c7 to t5 to the medial border of the scapula. The serratus anterior runs from the medial border of the scapula to the upper 8 ribs. The external oblique runs from 5-12 to the linea alba and the inguinal ligament. The internal oblique runs from the lower ribs and the linea alba to the inguinal ligament, the iliac crest and the thoraco-lumbar fascia in the back.\r\n\r\nThe Posterior Upper Spiral Line:\r\nThe pectoralis major runs from the medial clavicle, the sternum and the costal cartilages 1-6 to the lateral aspect to bicipital groove on the humerus. The latissimus dorsi runs from the bicipital groove on the humerus and cuts underneath the arm towards the spinous processes of T7-T12, the thoracolumbar fascia and the iliac and the sacral crest.\r\n",
-                    providerInjuryImage = "trunkrot.jfif",
+                    providerInjuryImage = "trunkrotation",
                     providerInjuryBodyPart = 2,
                     providerInjuryServiceProvider = 1
 
@@ -219,7 +219,7 @@ namespace PhisilyncFinal.Services
                     providerInjuryName = "Hip Abduction",
                     providerInjuryDescription = "Hip abduction refers to the movement of the leg away from the midline of the body. We use this action daily when stepping to the side, getting out of bed, or exiting a car.",
                     providerInjuryAnatomy = "The adductor magnus runs from the back of the ischio-pubic ramus to the posterior shaft of the femur. The adductor longus runs from the medial pubis to the supero-posterior shaft of the femur. The adductor brervis runs from the medial pubis to the supero-posterior shaft of the femur. The pectineus runs from the lateral pubis to supero-posterior shaft of the femur. The gracilis runs from the infero-medial pubis to below the medial tibial condyle.\r\n\r\n Note that due to its origin on the posterior aspect of the pubis (the other adductors all originate from the anterior part of the pubis), it is also a hip extensor.",
-                    providerInjuryImage = "hipabd.jpg",
+                    providerInjuryImage = "hipabduction",
                     providerInjuryBodyPart = 5,
                     providerInjuryServiceProvider = 1
 
@@ -233,7 +233,7 @@ namespace PhisilyncFinal.Services
                     providerInjuryName = "Hip Adduction",
                     providerInjuryDescription = "Hip adduction refers to the movement of the leg toward the midline of the body. We use this action daily when crossing one leg over the other or bringing the legs together.",
                     providerInjuryAnatomy = "The tensor fascia lata and itb runs from the asis and terminates at the supero-lateral tibia and head of the fibula. The gluteus medius runs from the external iliac fossa to the greater trochanter. The gluteus minimus runs from the lateral part of the external iliac fossa to the greater trochanter.\r\n",
-                    providerInjuryImage = "hipadd.jpg",
+                    providerInjuryImage = "tensorcapture",
                     providerInjuryBodyPart = 5,
                     providerInjuryServiceProvider = 1,
 
@@ -245,7 +245,7 @@ namespace PhisilyncFinal.Services
                     providerInjuryName = "Knee Extension (Pulled Hamstring)",
                     providerInjuryDescription = "A pulled hamstring is a common muscle injury that occurs when one or more of the hamstring muscles are stretched or contracted beyond their limit, resulting in tearing of the muscle fibers.",
                     providerInjuryAnatomy = "The biceps femoris runs from the ischial tuberosity to the head of the fibula. The semimbranosus runs from the ischial tuberosity to the posteromedial aspect of the tibial condyle. The semitendinosus runs from the ischial tuberosity to the supero-medial tibial shaft.\r\n",
-                    providerInjuryImage = "hamstring.jpg",
+                    providerInjuryImage = "kneeextensioncapture",
                     providerInjuryBodyPart = 5,
                     providerInjuryServiceProvider = 1
 
@@ -257,7 +257,7 @@ namespace PhisilyncFinal.Services
                     providerInjuryName = "Ankle Dorsiflexion (Pulled Calves)",
                     providerInjuryDescription = "A calf strain is a common injury that occurs when the calf muscle is stretched beyond its limits, resulting in tearing of the muscle fibers.",
                     providerInjuryAnatomy = "The biceps femoris runs from the ischial tuberosity to the head of the fibula. The semimbranosus runs from the ischial tuberosity to the posteromedial aspect of the tibial condyle. The semitendinosus runs from the ischial tuberosity to the supero-medial tibial shaft.\r\n",
-                    providerInjuryImage = "calf.jpg",
+                    providerInjuryImage = "ankledorsiflexion",
                     providerInjuryBodyPart = 7,
                     providerInjuryServiceProvider = 1
                 };
@@ -268,7 +268,7 @@ namespace PhisilyncFinal.Services
                     providerInjuryName = "Ankle Eversion",
                     providerInjuryDescription = "An eversion ankle sprain is an injury to the ligaments on the inside of the ankle. It’s a common injury that can happen when the foot twists inward.",
                     providerInjuryAnatomy = "The tibialis anterior runs from the supero-lateral shaft of the shaft of the tibia to the base of the 1st metatarsal. The tibialis posterior runs from the postero-superior shafts of the tibia and fibula to the navicular, cuboid, cuneiform and 2nd to 5th metatarsals. The flexor digitorium longus runs from the postero-medial shaft of the tibia to the bottom of the distal 2nd to 5th phalanges. The flexor hallucis longus runs from the postero-inferior shaft of the fibula to the bottom of the 1st distal phalanx. The extensor hallucis longus runs from the central medial shaft of the fibula to the top of the 1st distal phalanx.\r\n",
-                    providerInjuryImage = "ankleever.jpg",
+                    providerInjuryImage = "ankleeversiontwo",
                     providerInjuryServiceProvider = 1,
                     providerInjuryBodyPart = 7
                 };
@@ -279,7 +279,7 @@ namespace PhisilyncFinal.Services
                     providerInjuryName = "Ankle Inversion",
                     providerInjuryDescription = "An inversion ankle sprain is an injury to the ligaments on the outside of the ankle. It’s a common injury that can happen when the foot twists outward.",
                     providerInjuryAnatomy = "The peroneus longus runs from the head and supero-lateral shaft of the fibula to the medial cuneiform and base of the first metatarsal. The peroneus brevis runs from the infero-lateral fibular shaft to the lateral tubercle of the 5th metatarsal.\r\n",
-                    providerInjuryImage = "ankleinver.jpg",
+                    providerInjuryImage = "ankleinversioncapture",
                     providerInjuryServiceProvider = 1,
                     providerInjuryBodyPart = 7
                 };
@@ -290,7 +290,7 @@ namespace PhisilyncFinal.Services
                     providerInjuryName = "Toe Extension",
                     providerInjuryDescription = "A toe sprain is an injury to the ligaments around the toe joint. It’s a common injury that can happen when the toe is bent or jammed.",
                     providerInjuryAnatomy = "The Extensor hallucis longus (EHL) muscle is a key muscle located in the anterior compartment of the lower leg. It is responsible for extending the big toe at both the metatarsophalangeal and interphalangeal joints.",
-                    providerInjuryImage = "toeextend.jpg",
+                    providerInjuryImage = "toeextension",
                     providerInjuryServiceProvider = 1,
                     providerInjuryBodyPart = 8
                 };
@@ -682,5 +682,12 @@ namespace PhisilyncFinal.Services
         {
             return _dbConnection.Table<User>().FirstOrDefault();
         }
+
+        public User UpdateUser(User user)
+        {             
+            _dbConnection.Update(user);
+            return user;
+        }
+
     }
 } 

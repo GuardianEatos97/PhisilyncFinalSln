@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Microsoft.Maui.Media;
+using PhisilyncFinal.Models;
+using PhisilyncFinal.Services;
+using PhisilyncFinal.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -17,8 +21,16 @@ namespace PhisilyncFinal.ViewModels
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        public event EventHandler? Appearing;
+        public virtual void OnAppearing()
+        {
+            Appearing?.Invoke(this, EventArgs.Empty);
+        }
+
         public virtual void Initialize()
         {
         }
+
+
     }
 }

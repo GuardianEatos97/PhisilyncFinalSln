@@ -15,7 +15,7 @@
             <Frame 
                 Grid.Row="0" 
                 Grid.ColumnSpan="0"
-                HeightRequest="350"
+                HeightRequest="250"
                 WidthRequest="350"
                 CornerRadius="50"
                 HorizontalOptions="CenterAndExpand"
@@ -61,11 +61,21 @@
                 HorizontalOptions="Center"
                 Margin="0,20,0,0"/>
 
-            <Image
-                Source="anatomy"
-                HeightRequest="350"
+            <Frame 
+                Grid.Row="0" 
+                Grid.ColumnSpan="0"
+                HeightRequest="300"
                 WidthRequest="350"
-                Margin="0,20,0,0"/>
+                CornerRadius="50"
+                HorizontalOptions="CenterAndExpand"
+                IsClippedToBounds="True"
+                Padding="0"
+                BackgroundColor="White"
+                BorderColor="White" 
+                Margin="0,30,0,0">
+
+                <ImageButton Source="anatomy" Aspect="Fill"/>
+            </Frame>
 
             <Label
                 Text="THE SUPERFICIAL FASCIA"
@@ -230,12 +240,21 @@
                 FontSize="Small"
                 HorizontalOptions="Center"
                 Margin="0,20,0,0"/>
-
-            <Image
-                Source="musclestructure"
-                HeightRequest="400"
+            <Frame 
+                Grid.Row="0" 
+                Grid.ColumnSpan="0"
+                HeightRequest="300"
                 WidthRequest="350"
-                Margin="0,20,0,0"/>
+                CornerRadius="20"
+                HorizontalOptions="CenterAndExpand"
+                IsClippedToBounds="True"
+                Padding="0"
+                BackgroundColor="White"
+                BorderColor="White" 
+                Margin="0,30,0,0">
+
+                <ImageButton Source="musclestructure" Aspect="Fill"/>
+            </Frame>
 
             <Label
                 Text="Tendons are made up of the combination of the epimysium, perimysium and endomysium. These layers evertually blend into the aponeuortic fascia and continue across joints to form the next tendon and muscle. Inthis way all muscles are connected through the continuous fascia layers."

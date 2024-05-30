@@ -14,7 +14,7 @@
     <Shell.TitleView Margin="0,0,0,0">
         <Image 
             Source="phisilyncgreen"
-             Aspect="AspectFill"/>
+             Aspect="Center"/>
     </Shell.TitleView>
     
     <ScrollView Orientation="Vertical">
@@ -57,11 +57,11 @@
                 FontSize="Large"
                 Margin="20,0,0,0"/>
 
-            <CarouselView ItemsSource="{Binding InjuryLibraryVM.Injury}"
+            <CarouselView ItemsSource="{Binding InjuryVM.Injuries}"
                           IndicatorView="indicatorView"
                           BackgroundColor="Transparent"  >
                 <CarouselView.ItemTemplate>
-                    <DataTemplate x:DataType="models:InjuryLibrary">
+                    <DataTemplate x:DataType="models:ProviderInjury">
                         <StackLayout>
                             <Frame HasShadow="True"
                                    BorderColor="DarkGray"
@@ -73,21 +73,21 @@
                                    HorizontalOptions="Center"
                                    VerticalOptions="CenterAndExpand">
                                 <StackLayout>
-                                    <Label Text="{Binding InjuryName}" 
+                                    <Label Text="{Binding providerInjuryName}" 
                                            FontAttributes="Bold"
                                            FontSize="20"
                                            Margin="0,10,0,0"
                                            HorizontalOptions="Center"
                                            VerticalOptions="Center" />
 
-                                    <Image Source="{Binding InjuryImage}" 
+                                    <Image Source="{Binding providerInjuryImage}" 
                                            Aspect="AspectFill"
                                            HeightRequest="150"
                                            WidthRequest="150"
                                            Margin="0,10,0,0"
                                            HorizontalOptions="Center" />
 
-                                    <Label Text="{Binding Prompt}"
+                                    <Label Text="{Binding providerInjuryDescription}"
                                            FontAttributes="Italic"
                                            HorizontalOptions="Center"
                                            MaxLines="5"

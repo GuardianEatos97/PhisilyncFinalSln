@@ -15,7 +15,7 @@
             <Frame 
                 Grid.Row="0" 
                 Grid.ColumnSpan="0"
-                HeightRequest="350"
+                HeightRequest="300"
                 WidthRequest="350"
                 CornerRadius="50"
                 HorizontalOptions="CenterAndExpand"
