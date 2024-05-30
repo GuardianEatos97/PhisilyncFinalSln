@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:viewmodel="clr-namespace:PhisilyncFinal.ViewModels"
-             xmlns:models="clr-namespace:PhisilyncFinal.Models"
              x:Class="PhisilyncFinal.Views.EditProfile"
-<<<<<<< Updated upstream
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
     <Shell.TitleView Margin="0,0,0,0">
         <Image 
@@ -12,11 +9,6 @@
         Aspect="Center"/>
     </Shell.TitleView>
 
-=======
-             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             x:DataType="viewmodel:EditProfileVM">
-    
->>>>>>> Stashed changes
     <ScrollView>
         <VerticalStackLayout>
 
@@ -38,7 +30,7 @@
             
             <StackLayout Margin="0,80,0,0">
                 <Frame Padding="0" HasShadow="False" BorderColor="Transparent" HeightRequest="60">
-                    <Grid GestureRecognizers="{TapGestureRecognizer Command={Binding ProfileDetailsCommand}}">
+                    <Grid GestureRecognizers="{TapGestureRecognizer Command={Binding NavigateToProfileDetailsCommand}}">
                         <BoxView HeightRequest="2" BackgroundColor="LightGrey" VerticalOptions="Start" />
                         <Image Source="user.png" HorizontalOptions="StartAndExpand" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" Margin="40,0,0,0"  BackgroundColor="White"/>
                         <Label Text="Profile Details" FontSize="18" VerticalOptions="Center" Margin="100,0,0,0" BackgroundColor="White"/>
@@ -48,7 +40,7 @@
                 </Frame>
 
                 <Frame Padding="0" HasShadow="False" BorderColor="Transparent" HeightRequest="60">
-                    <Grid GestureRecognizers="{TapGestureRecognizer Command={Binding PaymentsCommand}}">
+                    <Grid GestureRecognizers="{TapGestureRecognizer Command={Binding NavigateToPaymentsCommand}}">
                         <Image Source="credit_card.png" HorizontalOptions="StartAndExpand" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" Margin="40,0,0,0"  BackgroundColor="White"/>
                         <Label Text="Payment Methods" FontSize="18" VerticalOptions="Center" Margin="100,0,0,0" BackgroundColor="White"/>
                         <Image Source="arrow.png" HorizontalOptions="End" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" BackgroundColor="White" Margin="0,0,20,0"/>
@@ -57,7 +49,7 @@
                 </Frame>
 
                 <Frame Padding="0" HasShadow="False" BorderColor="Transparent" HeightRequest="60">
-                    <Grid GestureRecognizers="{TapGestureRecognizer Command={Binding SettingsCommand}}">
+                    <Grid GestureRecognizers="{TapGestureRecognizer Command={Binding NavigateToSettingsCommand}}">
                         <Image Source="settings.png" HorizontalOptions="StartAndExpand" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" Margin="40,0,0,0"  BackgroundColor="White"/>
                         <Label Text="Settings" FontSize="18" VerticalOptions="Center" Margin="100,0,0,0" BackgroundColor="White"/>
                         <Image Source="arrow.png" HorizontalOptions="End" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" BackgroundColor="White" Margin="0,0,20,0"/>

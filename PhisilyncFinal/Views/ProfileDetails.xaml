@@ -2,19 +2,17 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhisilyncFinal.Views.ProfileDetails"
-             xmlns:viewmodel="clr-namespace:PhisilyncFinal.ViewModels"
-             xmlns:model="clr-namespace:PhisilyncFinal.Models"
-             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             x:DataType="viewmodel:ProfileDetailsVM">
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
     <Shell.TitleView Margin="0,0,0,0">
         <Image 
         Source="phisilyncgreen"
         Aspect="Center"/>
     </Shell.TitleView>
-
+    
     <ScrollView>
         <VerticalStackLayout>
-            <toolkit:AvatarView Text=""
+
+            <toolkit:AvatarView Text="Noah"
                             BorderColor="#6bb834"
                             TextColor="White"
                             ImageSource="gelant.jpg"
@@ -36,46 +34,28 @@
                     <Frame WidthRequest="350"
                HorizontalOptions="CenterAndExpand"
                CornerRadius="10">
-                        <Editor
+                        <Editor Placeholder="Name"
                     PlaceholderColor="Grey"
-                            Placeholder="Name"
                     FontAttributes="Bold"
-                    FontSize="15"
-                            TextColor="Black"
-                    Text="{Binding CurrentUser.userName}"/>
+                    FontSize="15"/>
                     </Frame>
 
                     <Frame WidthRequest="350"
                HorizontalOptions="CenterAndExpand"
                CornerRadius="10">
-                        <Editor
+                        <Editor Placeholder="Surname"
                     PlaceholderColor="Grey"
-                            Placeholder="Surname"
                     FontAttributes="Bold"
-                    FontSize="15"
-                    Text="{Binding CurrentUser.userSurname}"/>
+                    FontSize="15"/>
                     </Frame>
 
                     <Frame WidthRequest="350"
                HorizontalOptions="CenterAndExpand"
                CornerRadius="10">
-                        <Editor
+                        <Editor Placeholder="Email Address "
                     PlaceholderColor="Grey"
-                            Placeholder="EmailAddress"
                     FontAttributes="Bold"
-                    FontSize="15"
-                    Text="{Binding CurrentUser.userEmail}"/>
-                    </Frame>
-
-                    <Frame WidthRequest="350"
-               HorizontalOptions="CenterAndExpand"
-               CornerRadius="10">
-                        <Editor
-                    PlaceholderColor="Grey"
-                            Placeholder="Contact Number"
-                    FontAttributes="Bold"
-                    FontSize="15"
-                    Text="{Binding CurrentUser.userPhoneNumber}"/>
+                    FontSize="15"/>
                     </Frame>
 
                     <Frame WidthRequest="350"
@@ -110,7 +90,7 @@
                 <Frame WidthRequest="350"
                        HorizontalOptions="CenterAndExpand"
                        CornerRadius="10">
-
+                    
                     <Editor Placeholder="Sport Played"
                             PlaceholderColor="Grey"
                             FontAttributes="Bold"
@@ -138,39 +118,10 @@
                 <Frame WidthRequest="350"
                        HorizontalOptions="CenterAndExpand"
                        CornerRadius="10">
-                    <StackLayout>
-                        <Editor Placeholder="Street Number"
+                    <Editor Placeholder="Location"
                             PlaceholderColor="Grey"
                             FontAttributes="Bold"
                             FontSize="15"/>
-
-                        <Editor Placeholder="Street Name"
-                            PlaceholderColor="Grey"
-                            FontAttributes="Bold"
-                            FontSize="15"/>
-
-                        <Editor Placeholder="Suburb"
-                            PlaceholderColor="Grey"
-                            FontAttributes="Bold"
-                            FontSize="15"/>
-
-                        <Editor Placeholder="Town"
-                            PlaceholderColor="Grey"
-                            FontAttributes="Bold"
-                            FontSize="15"/>
-                        
-                        <Editor Placeholder="Province"
-                            PlaceholderColor="Grey"
-                            FontAttributes="Bold"
-                            FontSize="15"/>
-
-                        <Editor Placeholder="Zip Code"
-                            PlaceholderColor="Grey"
-                            FontAttributes="Bold"
-                            FontSize="15"/>
-
-                    </StackLayout>
-
                 </Frame>
 
             </StackLayout>
@@ -208,14 +159,10 @@
                 </StackLayout>
             </Frame>
 
-            <Button Text="Save Changes"
-                      TextColor="White"
-                      BackgroundColor="#6bb834"
-                      Command="{Binding SaveChangesCommand}"
-                      WidthRequest="350"
-                      Margin="0,10,0,10"/>
+
 
 
         </VerticalStackLayout>
+
     </ScrollView>
 </ContentPage>

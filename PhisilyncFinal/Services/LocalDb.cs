@@ -681,12 +681,5 @@ namespace PhisilyncFinal.Services
         {
             return _dbConnection.Table<User>().FirstOrDefault();
         }
-
-        public User UpdateUser(User user)
-        {             
-            _dbConnection.Update(user);
-            return user;
-        }
-
     }
 } 
