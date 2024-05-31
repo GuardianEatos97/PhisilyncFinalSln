@@ -36,6 +36,7 @@ namespace PhisilyncFinal.Services
             _dbConnection.CreateTable<BodyPart>();
             _dbConnection.CreateTable<TreatmentFrequency>();
             _dbConnection.CreateTable<UserType>();
+            _dbConnection.CreateTable<Event>();
             SeedDatabase();
         }
 
@@ -395,7 +396,7 @@ namespace PhisilyncFinal.Services
                     treatmentName = "Toe Extension",
                     treatmentDescription = "A toe sprain is an injury to the ligaments around the toe joint. It’s a common injury that can happen when the toe is bent or jammed.",
                     treatmentInjury = 11,
-
+                          
                 };
                 _dbConnection.Insert(treatment);
             }
@@ -405,7 +406,7 @@ namespace PhisilyncFinal.Services
                 TreatmentAction treatmentAction = new TreatmentAction()
                 {
                     treatmentActionName = "Neck Side Flexion Test",
-                    treatmentActionStepAction =  "Position:\r\nThe client stands with his back against the wall. Make sure that his shoulders are pushed flat against the wall. He then drops his chin down towards his chest Measure:\r\nMeasure in fingers from the chin to the chest \r\n\r\nFull range:\r\n3 fingers between the chin and the chest\r\n " ,
+                    treatmentActionStepAction =  "Position:\nThe client stands with his back against the wall. Make sure that his shoulders are pushed flat against the wall. He then drops his chin down towards his chest Measure:\nMeasure in fingers from the chin to the chest \n\nFull range:\n3 fingers between the chin and the chest." ,
                     treatmentActionTreatment = 1,
                     treatmentActionStepOrder = 1,
                     
@@ -417,7 +418,7 @@ namespace PhisilyncFinal.Services
                 treatmentAction = new TreatmentAction()
                 {
                     treatmentActionName = "Neck Side Flexion Release",
-                    treatmentActionStepAction =  "Step 1:The client sits over the side of the bed. The client will actively move her head from neutral position towards the fully lengthened position, while you move your fingers from below her ear towards the clavicle (Sternocleidomastoid and Scaleni) and towards the clavicle, acromion and spine of the scapula (Trapezius). \r\n\r\nStep 2: Move your fingers from the top of the scalp, down towards the ear and then down the neck to top the shoulder, while the client laterally flexes her head in the opposite direction. Make sure you cover the area of the upper Traps and the SCM. \r\n" ,
+                    treatmentActionStepAction =  "Step 1:The client sits over the side of the bed. The client will actively move her head from neutral position towards the fully lengthened position, while you move your fingers from below her ear towards the clavicle (Sternocleidomastoid and Scaleni) and towards the clavicle, acromion and spine of the scapula (Trapezius). \n\r\nStep 2: Move your fingers from the top of the scalp, down towards the ear and then down the neck to top the shoulder, while the client laterally flexes her head in the opposite direction. Make sure you cover the area of the upper Traps and the SCM. \r\n" ,
                     treatmentActionStepOrder = 1,
                     treatmentActionTreatment = 1,
                     treatmentActionCategory = "Release"
@@ -646,15 +647,16 @@ namespace PhisilyncFinal.Services
             return _dbConnection.Table<ProviderInjury>().ToList();
         }
 
-        public List<TreatmentAction> GetTestTreatmentAction(int id) 
+        public TreatmentAction GetTestTreatmentAction(int id) 
         {
-            return _dbConnection.Table<TreatmentAction>().Where(x=>x.treatmentActionTreatment==id && x.treatmentActionCategory=="Test").ToList();
+            
+            return _dbConnection.Table<TreatmentAction>().Where(x=>x.treatmentActionTreatment==id && x.treatmentActionCategory=="Test").FirstOrDefault();
 
         }
 
-        public List<TreatmentAction> GetReleaseTreatmentAction(int id)
+        public TreatmentAction GetReleaseTreatmentAction(int id)
         {
-            return _dbConnection.Table<TreatmentAction>().Where(x => x.treatmentActionTreatment == id && x.treatmentActionCategory == "Release").ToList();
+            return _dbConnection.Table<TreatmentAction>().Where(x => x.treatmentActionTreatment == id && x.treatmentActionCategory == "Release").FirstOrDefault();
 
         }
 

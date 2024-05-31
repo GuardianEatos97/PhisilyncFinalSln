@@ -10,10 +10,7 @@ namespace PhisilyncFinal.Views;
 
 public partial class SelectedInjuryDetailsPage : ContentPage
 {
-    InjuryViewModel injuryViewModel;
-    private LocalDb db;
-
-
+    
     public ProviderInjury _injury;
     public SelectedInjuryDetailsPage(ProviderInjury injury)
 	{

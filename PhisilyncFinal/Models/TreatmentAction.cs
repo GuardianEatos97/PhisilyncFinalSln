@@ -6,7 +6,7 @@ namespace PhisilyncFinal.Models
     public class TreatmentAction
     {
         [PrimaryKey, AutoIncrement]
-        public int treatmentActionID { get; set; }
+        public int? treatmentActionID { get; set; }
         public string treatmentActionName { get; set; }
         
         public string treatmentActionStepAction { get; set; }

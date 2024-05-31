@@ -13,14 +13,16 @@
              Aspect="Center"/>
     </Shell.TitleView>
 
-    <StackLayout Margin="20">
+
+    <ScrollView>
+        <StackLayout Margin="20">
             <Label 
                 Text="clone"
                 HorizontalOptions="Center"
                 FontAttributes="Bold"
                 FontSize="Large"
                 Style="{DynamicResource TitleStyle}" />
-            
+
             <Image 
                 Source="null"
                 HeightRequest="200"
@@ -28,49 +30,37 @@
                 Margin="20"
                 HorizontalOptions="Center" />
 
+                            <Grid Padding="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                
 
 
-        <ListView ItemsSource="{Binding injurieTest}">
-            <ListView.ItemTemplate>
-                <DataTemplate x:DataType="models:TreatmentAction">
-                    <ViewCell>
-                        <Grid Padding="10">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="auto"/>
-                                <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="auto"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <Label 
-                             Text="{Binding treatmentActionName}"
-                             FontSize="Medium"
-                             HorizontalTextAlignment="Start"
-                             Style="{DynamicResource BodyStyle}"/>
-
-
-                            <Label
+                                <Label
                             Text="Test"
                             FontAttributes="Bold"
                             TextColor="White"
                             FontSize="Medium"
                             Style="{DynamicResource TitleStyle}"
                             HorizontalTextAlignment="Center" />
-                           
-                            <Label 
-                            Text="{Binding treatmentActionStepAction}"
+
+                                <Label 
+                            Text="{Binding injurieTest.treatmentActionStepAction}"
                             FontSize="Medium"
+                                    TextColor="White"
                             HorizontalTextAlignment="Start"
                             Style="{DynamicResource BodyStyle}"/>
-                            
-                        </Grid>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        
-        <Label
+
+                            </Grid>
+                     
+
+            <Label
                 Text="Release"
                 FontAttributes="Bold"
                 FontSize="Medium"
@@ -78,12 +68,16 @@
                 Style="{DynamicResource TitleStyle}"
                 HorizontalTextAlignment="Center"/>
 
-                <Label 
-                Text="InjuryRelease"
+            <Label 
+                Text="{Binding injurieRelease.treatmentActionStepAction}"
                 FontSize="Medium"
+                TextColor="White"
                 HorizontalTextAlignment="Start"
                 Style="{DynamicResource BodyStyle}" />
+                                    
+             
+                                  
         </StackLayout>
-    
-    
+    </ScrollView>
+
 </ContentPage>

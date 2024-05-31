@@ -2,6 +2,7 @@ using PhisilyncFinal.Models;
 using PhisilyncFinal.Services;
 using PhisilyncFinal.ViewModels;
 using System.Collections.ObjectModel;
+using System.Windows.Input;
 
 
 namespace PhisilyncFinal.Views;
@@ -9,28 +10,34 @@ namespace PhisilyncFinal.Views;
 public partial class TestAndReleasePage : ContentPage
 {
     
-    public ProviderInjury _injury;
+    //public ProviderInjury _injury;
     private LocalDb db;
+    
+    public TreatmentAction injurieTest { get; set; }
+    public TreatmentAction TreatmentAction;
 
-    public ObservableCollection<TreatmentAction> injurieTest { get; set; }
-    public ObservableCollection<TreatmentAction> injurieRelease { get; set; }
+    
+    public TreatmentAction injurieRelease { get; set ;}
     
     public TestAndReleasePage(ProviderInjury injury)
 	{
-		 InitializeComponent();
-       
+		InitializeComponent();
         db = new ();
+        injurieTest =  db.GetTestTreatmentAction(injury.providerInjuryID);
+        injurieRelease =  db.GetReleaseTreatmentAction(injury.providerInjuryID);
         BindingContext = this;
         OnPropertyChanged();
+        OnAppearing();
 
 
-        injurieTest = new ObservableCollection<TreatmentAction>(db.GetTestTreatmentAction(injury.providerInjuryID));
-       injurieRelease = new ObservableCollection<TreatmentAction>(db.GetReleaseTreatmentAction(injury.providerInjuryID));
     }
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+       
+    }
+
    
-
-	
-		
-
-
+    
 }
