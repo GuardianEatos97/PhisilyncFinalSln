@@ -17,6 +17,8 @@ namespace PhisilyncFinal.Models
         public string providerInjuryDescription { get; set; }
         public string providerInjuryImage { get; set; }
         public string providerInjuryAnatomy { get; set; }
+        public string providerPrompt { get; set; }
+        public string providerPromptTwo { get; set; }
 
         [ForeignKey(typeof(BodyPart))]
         public int providerInjuryBodyPart { get; set; }
