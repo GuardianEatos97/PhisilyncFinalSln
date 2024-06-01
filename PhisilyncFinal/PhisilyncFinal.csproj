@@ -136,6 +136,7 @@
 	  <None Remove="Resources\Images\netballcoach.jpg" />
 	  <None Remove="Resources\Images\notificationstwo.png" />
 	  <None Remove="Resources\Images\patient.png" />
+	  <None Remove="Resources\Images\paymentsremovebg.png" />
 	  <None Remove="Resources\Images\phisigreen_nobg.png" />
 	  <None Remove="Resources\Images\phisilyncappshell.png" />
 	  <None Remove="Resources\Images\phisilyncfinal.png" />
@@ -173,6 +174,7 @@
 	  <None Remove="Resources\Images\toeextension.png" />
 	  <None Remove="Resources\Images\toktik.png" />
 	  <None Remove="Resources\Images\treatment.jpg" />
+	  <None Remove="Resources\Images\treatmentthree.jpg" />
 	  <None Remove="Resources\Images\trunkrot.jfif" />
 	  <None Remove="Resources\Images\trunkrotation.png" />
 	  <None Remove="Resources\Images\trunkrotremovebg.png" />
@@ -253,6 +255,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Payment.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\PaymentDetailsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\PrivacyPolicy.xaml">

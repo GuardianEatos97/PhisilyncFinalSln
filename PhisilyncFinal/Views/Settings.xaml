@@ -253,6 +253,13 @@
                         VerticalOptions="End"/>
                 </Grid>
             </Frame>
+
+            <Frame HasShadow="False" BorderColor="Transparent" Padding="0" Margin="0,80,0,0">
+                <Grid>
+                    <Label Text="Dark mode" FontSize="18" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,80,0"/>
+                    <Switch IsToggled="False" VerticalOptions="Center" HorizontalOptions="Center" Margin="80,0,0,0" ThumbColor="Green" OnColor="Orange"/>
+                </Grid>
+            </Frame>
         </StackLayout>
     </VerticalStackLayout>
 </ContentPage>

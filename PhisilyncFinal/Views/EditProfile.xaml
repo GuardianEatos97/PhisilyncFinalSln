@@ -30,7 +30,7 @@
                            FontSize="20"
                            FontAttributes="Bold"
                            HorizontalTextAlignment="Center"/>
-            
+
             <StackLayout Margin="0,80,0,0">
                 <Frame Padding="0" HasShadow="False" BorderColor="Transparent" HeightRequest="60">
                     <Grid GestureRecognizers="{TapGestureRecognizer Command={Binding ProfileDetailsCommand}}">
@@ -70,15 +70,6 @@
                 </Frame>
 
             </StackLayout>
-            
-            <Frame HasShadow="False" BorderColor="Transparent" Padding="0" Margin="0,80,0,0">
-                <Grid>
-                    <Label Text="Dark mode" FontSize="18" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,80,0"/>
-                    <Switch IsToggled="False" VerticalOptions="Center" HorizontalOptions="Center" Margin="80,0,0,0" ThumbColor="Green" OnColor="Orange"/>
-                </Grid>
-            </Frame>
-
-
         </VerticalStackLayout>
 
     </ScrollView>
