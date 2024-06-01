@@ -175,7 +175,10 @@ Route="Skeleton" />
         Title="Lenny"
         ContentTemplate="{DataTemplate local:LennyAiQuestionPage}"
         Route="LennyQuestionPage"/>
-   
+    <ShellContent
+    Title="SelectPayment"
+    ContentTemplate="{DataTemplate local:PaymentDetailsPage}"
+    Route="SelectPayment"/>
 
 </Shell>
 

@@ -16,13 +16,7 @@
 
     <ScrollView>
         <StackLayout Margin="20">
-            
-
-            
-
-
-
-                <Label
+            <Label
                             Text="Test"
                             FontAttributes="Bold"
                             TextColor="White"
