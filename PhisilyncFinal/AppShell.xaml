@@ -123,7 +123,15 @@ ContentTemplate="{DataTemplate local:FAQs}"
             
 Route="FAQs" />
 
-        
+        <ShellContent
+Title="Skeleton"
+            Icon="qa.png"
+        Style="{StaticResource BaseStyle}"
+ContentTemplate="{DataTemplate local:SkeletonViewPage}"
+            
+Route="Skeleton" />
+
+
 
     </FlyoutItem>
 
