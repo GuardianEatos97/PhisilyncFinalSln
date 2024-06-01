@@ -16,7 +16,7 @@
                    Margin="10, 0">
             <TableRoot>
                 <TableSection>
-                    <TextCell Text="TOTAL"/>
+                    <TextCell Text="{Binding CoursePrice, StringFormat='TOTAL COST: {0:C}'}"/>
                 </TableSection>
             </TableRoot>
         </TableView>
@@ -26,7 +26,7 @@
            Margin="10, 0">
             <TableRoot>
                 <TableSection>
-                    <TextCell Text="SAVINGS"/>
+                    <TextCell Text="{Binding Savings, StringFormat='TOTAL SAVINGS: {0:C}'}"/>
                 </TableSection>
             </TableRoot>
         </TableView>
@@ -36,7 +36,7 @@
                    Margin="10, 0">
             <TableRoot>
                 <TableSection>
-                    <TextCell Text="PAYMENT PLAN"/>
+                    <TextCell Text="{Binding PaymentFrequency, StringFormat='PAYMENT PLAN: {0}'}"/>
                 </TableSection>
             </TableRoot>
         </TableView>

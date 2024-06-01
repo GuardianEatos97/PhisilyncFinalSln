@@ -1,4 +1,5 @@
 using PhisilyncFinal.Models;
+using PhisilyncFinal.ViewModels;
 
 namespace PhisilyncFinal.Views;
 
@@ -7,6 +8,7 @@ public partial class PaymentPage : ContentPage
     public PaymentPage()
     {
         InitializeComponent();
+        BindingContext = new PaymentViewModel();
     }
 
     private void ListView_ItemTapped2(object sender, ItemTappedEventArgs e)
@@ -16,11 +18,11 @@ public partial class PaymentPage : ContentPage
 
     private async void ListView_ItemSelected2(object sender, SelectedItemChangedEventArgs e)
     {
-        var payme = ((ListView)sender).SelectedItem as Payments;
-        if (payme != null)
+        var payment = ((ListView)sender).SelectedItem as Payments;
+        if (payment != null)
         {
             var page = new PaymentDetailsPage();
-            page.BindingContext = payme;
+            page.BindingContext = payment;
             await Navigation.PushAsync(page);
         }
     }

@@ -18,7 +18,7 @@ namespace PhisilyncFinal.ViewModels
         public PaymentViewModel()
         {
             Payment =
-                [
+            [
                 new Payments
                 {
                     CourseDescription = "Access Our Premium features for 30 days",
@@ -49,7 +49,7 @@ namespace PhisilyncFinal.ViewModels
                     Savings = 100,
                     PremiumImage = "premium.webp",
                 },
-                ];
+            ];
                 
         }
     }

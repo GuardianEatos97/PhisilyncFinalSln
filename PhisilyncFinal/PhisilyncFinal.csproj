@@ -73,6 +73,7 @@
 	  <None Remove="Resources\Images\confident.jpg" />
 	  <None Remove="Resources\Images\cricketcoach.webp" />
 	  <None Remove="Resources\Images\cricketcoachb.jpg" />
+	  <None Remove="Resources\Images\crown.png" />
 	  <None Remove="Resources\Images\dashboard.png" />
 	  <None Remove="Resources\Images\davids.jpg" />
 	  <None Remove="Resources\Images\determination.avif" />
