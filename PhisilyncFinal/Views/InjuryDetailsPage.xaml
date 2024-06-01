@@ -14,13 +14,13 @@
     <ScrollView>
         <StackLayout Margin="20">
             <Label 
-               Text="{Binding providerInjuryName}"
+               Text="{Binding InjuryName}"
                HorizontalOptions="Center"
                FontAttributes="Bold"
                FontSize="Large"
                Style="{DynamicResource TitleStyle}" />
             <Image 
-               Source="{Binding providerInjuryImage}"
+               Source="{Binding InjuryImage}"
                HeightRequest="200"
                WidthRequest="200"
                Margin="20"
@@ -32,18 +32,18 @@
                 Style="{DynamicResource TitleStyle}"
                 HorizontalTextAlignment="Center"/>
             <Label 
-                Text="{Binding providerInjuryAnatomy}"
+                Text="{Binding InjuryAnatomy}"
                 FontSize="Medium"
                 HorizontalTextAlignment="Start"
                 Style="{DynamicResource BodyStyle}" />
-            <!--<Label
+            <Label
                 Text="Test"
                 FontAttributes="Bold"
                 FontSize="Medium"
                 Style="{DynamicResource TitleStyle}"
                 HorizontalTextAlignment="Center"/>
             <Label 
-                Text="{Binding providerInjuryDescription}"
+                Text="{Binding InjuryTest}"
                 FontSize="Medium"
                 HorizontalTextAlignment="Start"
                 Style="{DynamicResource BodyStyle}" />
@@ -57,7 +57,7 @@
                 Text="{Binding InjuryRelease}"
                 FontSize="Medium"
                 HorizontalTextAlignment="Start"
-                Style="{DynamicResource BodyStyle}" />-->
+                Style="{DynamicResource BodyStyle}"/>
             <Button
                  Text="Take Me To My Treatment Plan"
                  FontAttributes="Bold"
@@ -70,7 +70,7 @@
                  WidthRequest="350"
                  HeightRequest="70"
                  Margin="0,0,0,0"/>
-            <!--<Label
+            <Label
                 Text="{Binding GlossaryPrompt}"
                 FontSize="Small"
                 Margin="0,20,0,20"
@@ -84,7 +84,7 @@
                 WidthRequest="50"
                     Margin="0,20,0,20"
                 HorizontalOptions="Center"
-                Source="{Binding GlossBtnImage}"/>-->
+                Source="{Binding GlossBtnImage}"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

@@ -43,7 +43,7 @@
             Margin="10"
             HorizontalOptions="Center"/>
 
-        <ListView ItemsSource="{Binding Injuries}" 
+        <ListView ItemsSource="{Binding Injury}" 
             HasUnevenRows="true"
                   Margin="10"
                   ItemTapped="ListView_ItemTapped"
@@ -61,13 +61,13 @@
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
                             <Image Grid.RowSpan="2" 
-                                Source="{Binding providerInjuryImage}" 
+                                Source="{Binding InjuryImage}" 
                                 Aspect="AspectFill" 
                                 HeightRequest="100" 
                                 WidthRequest="100" />
                             
                             <Label Grid.Column="1" 
-                                Text="{Binding providerInjuryName}" 
+                                Text="{Binding InjuryName}" 
                                    Margin="20,30"
                                 Style="{DynamicResource TitleStyle}" />
                             
