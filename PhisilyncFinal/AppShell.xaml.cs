@@ -26,7 +26,7 @@ namespace PhisilyncFinal
             Routing.RegisterRoute("LogInPage", typeof(LogInPage));
             Routing.RegisterRoute("LynoPage", typeof(LynoTherapyPage));
             Routing.RegisterRoute("MassagePage", typeof(MassageTherapyPage));
-            Routing.RegisterRoute("Payment", typeof(Payment));
+            Routing.RegisterRoute("Payment", typeof(PaymentPage));
             Routing.RegisterRoute("PrivacyPolicy", typeof(PrivacyPolicy));
             Routing.RegisterRoute("ProfileDetails", typeof(ProfileDetails));
             Routing.RegisterRoute("ROMPage", typeof(RangeOfMovementPage));

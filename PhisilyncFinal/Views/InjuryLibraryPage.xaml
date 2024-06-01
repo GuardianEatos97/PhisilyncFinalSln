@@ -15,7 +15,6 @@
 
     <StackLayout>
         <toolkit:AvatarView
-            Text="Noah"
             BorderColor="SeaGreen"
             TextColor="Black"
             ImageSource="gelant.jpg"
@@ -27,7 +26,7 @@
             BorderWidth="5"
             />
         <Label
-            Text="Noah Khan"
+            Text="{Binding CurrentUser.userName}"
             HorizontalOptions="End"
             TextColor="Black"
             Margin="10,0"
@@ -63,6 +62,7 @@
                             <Image Grid.RowSpan="2" 
                                 Source="{Binding InjuryImage}" 
                                 Aspect="AspectFill" 
+                                BackgroundColor="MintCream"
                                 HeightRequest="100" 
                                 WidthRequest="100" />
                             
@@ -73,7 +73,7 @@
                             
                             <Label Grid.Row="1" 
                                 Grid.Column="1" 
-                                Text="{Binding providerPromtTwo}"
+                                Text="{Binding Prompt}"
                                 Margin="20,-20,0,0"
                                 VerticalOptions="End" 
                                 Style="{DynamicResource SubtitleTextStyle}" />

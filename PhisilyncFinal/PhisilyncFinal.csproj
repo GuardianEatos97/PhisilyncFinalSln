@@ -142,6 +142,7 @@
 	  <None Remove="Resources\Images\phisilyncgreen.png" />
 	  <None Remove="Resources\Images\phisilyncgreenback.png" />
 	  <None Remove="Resources\Images\phisilync_nobg.png" />
+	  <None Remove="Resources\Images\premium.webp" />
 	  <None Remove="Resources\Images\profileimage.webp" />
 	  <None Remove="Resources\Images\proud.jpg" />
 	  <None Remove="Resources\Images\qa.png" />
@@ -204,6 +205,9 @@
 	  <Compile Update="Views\InjuryLibraryPage.xaml.cs">
 	    <DependentUpon>InjuryLibraryPage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\PaymentPage.xaml.cs">
+	    <DependentUpon>PaymentPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -252,7 +256,10 @@
 	  <MauiXaml Update="Views\MassageTherapyPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Payment.xaml">
+	  <MauiXaml Update="Views\PaymentPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\PaymentDetailsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\PrivacyPolicy.xaml">

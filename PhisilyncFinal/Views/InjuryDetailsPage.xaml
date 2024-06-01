@@ -24,6 +24,7 @@
                HeightRequest="200"
                WidthRequest="200"
                Margin="20"
+               Background="MintCream"
                HorizontalOptions="Center" />
             <Label
                 Text="Anatomy"
@@ -58,7 +59,7 @@
                 FontSize="Medium"
                 HorizontalTextAlignment="Start"
                 Style="{DynamicResource BodyStyle}"/>
-            <Button
+            <!--<Button
                  Text="Take Me To My Treatment Plan"
                  FontAttributes="Bold"
                  TextColor="White"
@@ -69,7 +70,7 @@
                  Clicked="TestAndReleaseBtn_Clicked"
                  WidthRequest="350"
                  HeightRequest="70"
-                 Margin="0,0,0,0"/>
+                 Margin="0,0,0,0"/>-->
             <Label
                 Text="{Binding GlossaryPrompt}"
                 FontSize="Small"
