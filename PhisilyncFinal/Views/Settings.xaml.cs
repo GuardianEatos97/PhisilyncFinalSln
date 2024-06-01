@@ -1,4 +1,5 @@
 using System.Reflection;
+using PhisilyncFinal.ViewModels;
 
 namespace PhisilyncFinal.Views;
 
@@ -7,6 +8,7 @@ public partial class Settings : ContentPage
 	public Settings()
 	{
 		InitializeComponent();
+        BindingContext = new SettingsVM();
 	}
 
     void OnSearchBarButtonPressed(object sender, EventArgs args)

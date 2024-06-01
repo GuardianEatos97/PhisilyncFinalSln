@@ -696,7 +696,6 @@ namespace PhisilyncFinal.Services
         {
             return _dbConnection.Table<User>().Where(x => x.userID == id).FirstOrDefault();
         }
-
         public User GetUserByEmail(string email)
         {
             return _dbConnection.Table<User>().Where(x => x.userEmail == email).FirstOrDefault();

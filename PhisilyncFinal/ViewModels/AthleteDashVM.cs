@@ -14,15 +14,32 @@ using System.Windows.Input;
 
 namespace PhisilyncFinal.ViewModels
 {
-    
-    public partial class AthleteDashVM : BaseViewModel 
+
+    public partial class AthleteDashVM : BaseViewModel
     {
+
+        private LocalDb _localDb;
+
+        private User _currentUser;
+
+        public User CurrentUser
+        {
+            get { return _currentUser; }
+            set
+            {
+                _currentUser = value;
+
+                OnPropertyChanged();
+            }
+        }
         private InjuryViewModel _injuryViewModel;
 
         public InjuryViewModel InjuryVM
         {
             get { return _injuryViewModel; }
-            set { _injuryViewModel = value;
+            set
+            {
+                _injuryViewModel = value;
 
                 OnPropertyChanged();
             }
@@ -33,7 +50,9 @@ namespace PhisilyncFinal.ViewModels
         public ObservableCollection<Event> Events
         {
             get { return _events; }
-            set { _events = value;
+            set
+            {
+                _events = value;
 
                 OnPropertyChanged();
             }
@@ -57,8 +76,10 @@ namespace PhisilyncFinal.ViewModels
 
         public AthleteDashVM(InjuryViewModel injuryViewModel)
         {
-            // _database = database;
             InjuryVM = injuryViewModel;
+
+            _localDb = new LocalDb();
+            CurrentUser = _localDb.GetUserByID(1);
 
             Events = new ObservableCollection<Event>()
         {
@@ -88,7 +109,7 @@ namespace PhisilyncFinal.ViewModels
         }
 
         [RelayCommand]
-        private async Task AthleteInjury() 
+        private async Task AthleteInjury()
         {
             await Shell.Current.GoToAsync("treatmentPage");
         }
@@ -99,10 +120,9 @@ namespace PhisilyncFinal.ViewModels
             await Shell.Current.GoToAsync("EditProfile");
         }
 
-        
+
+
+
+
     }
-
-
-
-
 }

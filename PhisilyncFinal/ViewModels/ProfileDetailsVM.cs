@@ -27,13 +27,25 @@ namespace PhisilyncFinal.ViewModels
             }
         }
 
+            private ImageSource _avatar;
+
+    public ImageSource Avatar
+    {
+        get { return _avatar; }
+        set 
+        { 
+            _avatar = value;
+            OnPropertyChanged();
+        }
+    }
+
         public override void OnAppearing()
         {
             base.OnAppearing();
             LoadUser();
         }
 
-        private void LoadUser()
+        public void LoadUser()
         {
             CurrentUser = _localDb.GetUserByID(1);
 

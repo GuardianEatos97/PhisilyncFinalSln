@@ -5,10 +5,15 @@
              x:Class="PhisilyncFinal.App">
     <Application.Resources>
         <ResourceDictionary>
+            <Color x:Key="LightBackgroundColor">MintCream</Color>
+            <Color x:Key="DarkBackgroundColor">Seagreen</Color>
+
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
+
