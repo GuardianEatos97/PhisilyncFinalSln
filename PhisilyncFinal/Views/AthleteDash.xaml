@@ -87,12 +87,12 @@
                                            Margin="0,10,0,0"
                                            HorizontalOptions="Center" />
 
-                                    <Label Text="{Binding providerInjuryDescription}"
-                                           FontAttributes="Italic"
+                                    <Label Text="{Binding providerPrompt}"
+                                           FontAttributes="Italic" 
                                            HorizontalOptions="Center"
                                            MaxLines="5"
-                                           Margin="0,10,0,0"
-                                           LineBreakMode="TailTruncation" />
+                                           TextColor="Black"
+                                           Margin="0,10,0,0" />
                                 </StackLayout>
                             </Frame>
                         </StackLayout>
@@ -130,13 +130,13 @@
                           ArrowsBorderColor="White"
                           ArrowsColor="White"
                           DaysTitleColor="White"
-                          DaysTitleWeekendColor="Beige" 
+                          DaysTitleWeekendColor="MintCream" 
                           DisabledDayColor="White"
                           EventIndicatorColor="SeaGreen"
                           EventIndicatorSelectedColor="White"
                           EventIndicatorSelectedTextColor="White"
                           MonthLabelColor="White"
-                          OtherMonthDayColor="DarkSeaGreen"
+                          OtherMonthDayColor="RosyBrown"
                           SelectedDayTextColor="White"
                           SelectedTodayTextColor="White"
                           TodayFillColor="#89a18b"

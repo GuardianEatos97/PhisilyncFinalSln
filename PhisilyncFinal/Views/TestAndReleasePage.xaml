@@ -16,33 +16,13 @@
 
     <ScrollView>
         <StackLayout Margin="20">
-            <Label 
-                Text="clone"
-                HorizontalOptions="Center"
-                FontAttributes="Bold"
-                FontSize="Large"
-                Style="{DynamicResource TitleStyle}" />
+            
 
-            <Image 
-                Source="null"
-                HeightRequest="200"
-                WidthRequest="200"
-                Margin="20"
-                HorizontalOptions="Center" />
-
-                            <Grid Padding="10">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="auto"/>
-                                    <RowDefinition Height="*"/>
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="auto"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-                                
+            
 
 
-                                <Label
+
+                <Label
                             Text="Test"
                             FontAttributes="Bold"
                             TextColor="White"
@@ -51,13 +31,13 @@
                             HorizontalTextAlignment="Center" />
 
                                 <Label 
-                            Text="{Binding injurieTest.treatmentActionStepAction}"
-                            FontSize="Medium"
+                                    Text="{Binding injurieTest.treatmentActionStepAction}"
+                                    FontSize="Medium"
                                     TextColor="White"
-                            HorizontalTextAlignment="Start"
-                            Style="{DynamicResource BodyStyle}"/>
+                                    HorizontalTextAlignment="Start"
+                                    Style="{DynamicResource BodyStyle}"/>
 
-                            </Grid>
+                            
                      
 
             <Label
