@@ -77,7 +77,8 @@ namespace PhisilyncFinal
             mauiAppBuilder.Services.AddTransient<InjuryDetailsPage>();
             mauiAppBuilder.Services.AddTransient<GlossaryViewPage>();
             mauiAppBuilder.Services.AddTransient<GlossaryDetailsPage>();
-
+            mauiAppBuilder.Services.AddTransient<SelectedInjuryDetailsPage>();
+            mauiAppBuilder.Services.AddTransient<SelectInjuryPage>();
 
             return mauiAppBuilder;
         }
@@ -101,8 +102,9 @@ namespace PhisilyncFinal
                 mauiAppBuilder.Services.AddSingleton<GlossaryViewModel>();
             mauiAppBuilder.Services.AddSingleton<LennyAnswerPageVM>();
             mauiAppBuilder.Services.AddSingleton<LennyQuestionPageVM>();
+            mauiAppBuilder.Services.AddSingleton<InjuryViewModel>();
 
-           
+
 
             return mauiAppBuilder;
             }  

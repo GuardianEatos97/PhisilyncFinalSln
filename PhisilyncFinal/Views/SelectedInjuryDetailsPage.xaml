@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhisilyncFinal.Views.SelectedInjuryDetailsPage"
+             Title="SelectedInjuryDetailsPage">
+    <Shell.TitleView Margin="0">
+        <Image 
+Source="phisilyncgreen.png"
+Aspect="Center"/>
+    </Shell.TitleView>
+
+    <ScrollView>
+        <StackLayout Margin="20">
+            <Label 
+           Text="{Binding providerInjuryName}"
+           HorizontalOptions="Center"
+           FontAttributes="Bold"
+           FontSize="Large"
+           Style="{DynamicResource TitleStyle}" />
+            <Image 
+           Source="{Binding providerInjuryImage}"
+           HeightRequest="200"
+           WidthRequest="200"
+           Margin="20"
+           HorizontalOptions="Center" />
+            <Label
+            Text="Anatomy"
+            FontAttributes="Bold"
+            FontSize="Medium"
+            Style="{DynamicResource TitleStyle}"
+            HorizontalTextAlignment="Center"/>
+            <Label 
+            Text="{Binding providerInjuryAnatomy}"
+            FontSize="Medium"
+            HorizontalTextAlignment="Start"
+            Style="{DynamicResource BodyStyle}" />
+            <Label
+            Text="Description About Your Injury"
+            FontAttributes="Bold"
+            FontSize="Medium"
+            Style="{DynamicResource TitleStyle}"
+            HorizontalTextAlignment="Center"/>
+            <Label 
+            Text="{Binding providerInjuryDescription}"
+            FontSize="Medium"
+            HorizontalTextAlignment="Start"
+            Style="{DynamicResource BodyStyle}" />
+           
+            <Button
+             Text="Take Me To My Treatment Plan"
+             FontAttributes="Bold"
+             TextColor="White"
+             BorderColor="Beige"
+             BorderWidth="2"
+              Clicked="Button_Clicked"
+             BackgroundColor="SeaGreen"
+             CornerRadius="100"
+             WidthRequest="350"
+             HeightRequest="70"
+             Margin="0,0,0,0"/>
+            <Label
+            Text="{Binding GlossaryPrompt}"
+            FontSize="Small"
+            Margin="0,20,0,20"
+            HorizontalOptions="Center"/>
+            <ImageButton
+            x:Name="GlossaryBtn"
+            
+            CornerRadius="0"
+            Aspect="Center"
+            HeightRequest="50"
+            WidthRequest="50"
+                Margin="0,20,0,20"
+            HorizontalOptions="Center"
+            Source="{Binding GlossBtnImage}"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

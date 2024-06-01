@@ -17,12 +17,12 @@ namespace PhisilyncFinal.ViewModels
     
     public partial class AthleteDashVM : BaseViewModel 
     {
-        private InjuryLibraryViewModel _injuryLibraryViewModel;
+        private InjuryViewModel _injuryViewModel;
 
-        public InjuryLibraryViewModel InjuryLibraryVM
+        public InjuryViewModel InjuryVM
         {
-            get { return _injuryLibraryViewModel; }
-            set { _injuryLibraryViewModel = value;
+            get { return _injuryViewModel; }
+            set { _injuryViewModel = value;
 
                 OnPropertyChanged();
             }
@@ -55,10 +55,10 @@ namespace PhisilyncFinal.ViewModels
         //    }
         //}
 
-        public AthleteDashVM(InjuryLibraryViewModel injuryLibraryViewModel)
+        public AthleteDashVM(InjuryViewModel injuryViewModel)
         {
             // _database = database;
-            InjuryLibraryVM = injuryLibraryViewModel;
+            InjuryVM = injuryViewModel;
 
             Events = new ObservableCollection<Event>()
         {
@@ -84,11 +84,11 @@ namespace PhisilyncFinal.ViewModels
         [RelayCommand]
         private async Task Injury()
         {
-            await Shell.Current.GoToAsync("Library");
+            await Shell.Current.GoToAsync("SelectInjury");
         }
 
         [RelayCommand]
-        private async Task AthleteInjury()
+        private async Task AthleteInjury() 
         {
             await Shell.Current.GoToAsync("treatmentPage");
         }

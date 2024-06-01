@@ -29,7 +29,7 @@
         <Label
             Text="Noah Khan"
             HorizontalOptions="End"
-            TextColor="White"
+            TextColor="Black"
             Margin="10,0"
             />
 
@@ -37,13 +37,13 @@
             Text="Injury Library"
             VerticalOptions="Center"
             FontSize="Large"
-            TextColor="White"
+            TextColor="Black"
             TextDecorations="Underline"
             FontAttributes="Bold"
             Margin="10"
             HorizontalOptions="Center"/>
 
-        <ListView ItemsSource="{Binding Injury}" 
+        <ListView ItemsSource="{Binding Injuries}" 
             HasUnevenRows="true"
                   Margin="10"
                   ItemTapped="ListView_ItemTapped"
@@ -61,17 +61,17 @@
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
                             <Image Grid.RowSpan="2" 
-                                Source="{Binding InjuryImage}" 
+                                Source="{Binding providerInjuryImage}" 
                                 Aspect="AspectFill" 
                                 HeightRequest="100" 
                                 WidthRequest="100" />
                             <Label Grid.Column="1" 
-                                Text="{Binding InjuryName}" 
+                                Text="{Binding providerInjuryName}" 
                                    Margin="20,30"
                                 Style="{DynamicResource TitleStyle}" />
                             <Label Grid.Row="1" 
                                 Grid.Column="1" 
-                                Text="{Binding Prompt}"
+                                Text="Tap to See More"
                                    Margin="20,-20,0,0"
                                 VerticalOptions="End" 
                                 Style="{DynamicResource SubtitleTextStyle}" />
