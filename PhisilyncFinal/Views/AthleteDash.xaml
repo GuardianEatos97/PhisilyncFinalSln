@@ -20,42 +20,52 @@
     <ScrollView Orientation="Vertical">
         <VerticalStackLayout>
             <toolkit:AvatarView
-                Text="Noah"
                 BorderColor="SeaGreen"
                 TextColor="White"
-                ImageSource="profileimage"
+                ImageSource="{Binding CurrentUser.Avatar}"
                 HorizontalOptions="End"
                 CornerRadius="360"
-                Margin="10"
+                Margin="0,10,5,0"
                 WidthRequest="70"
                 HeightRequest="70"
-                BorderWidth="5">
-                
+                BorderWidth="5"
+                BackgroundColor="MintCream">
+
                 <toolkit:AvatarView.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding AvatarTappedCommand}"/>
-                 </toolkit:AvatarView.GestureRecognizers>
-                </toolkit:AvatarView>
-                
-                <Label
-                Text="Noah Khan"
+                </toolkit:AvatarView.GestureRecognizers>
+            </toolkit:AvatarView>
+
+            <Label
+                Text="{Binding CurrentUser.userName}"
                 HorizontalOptions="End"
-                Margin="10,0"
+                Margin="0,0,20,0"
                 TextColor="White"
                 />
 
-            <Label
-                Text="Welcome (Your Name)"
+            <HorizontalStackLayout>
+                <Label
+                Text="Welcome "
                 TextColor="White"
                 FontAttributes="Bold"
                 FontSize="Medium"
                 Margin="20,10,0,0"/>
-
-            <Label
-                Text="Dashboard"
+                
+                <Label
+                Text="{Binding CurrentUser.userName}"
                 TextColor="White"
                 FontAttributes="Bold"
-                FontSize="Large"
-                Margin="20,0,0,0"/>
+                FontSize="Medium"
+                Margin="0,10,0,0"/>
+
+                <Label
+                Text="!"
+                TextColor="White"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                Margin="0,10,0,0"/>
+            </HorizontalStackLayout>
+
 
             <CarouselView ItemsSource="{Binding InjuryVM.Injuries}"
                           IndicatorView="indicatorView"
