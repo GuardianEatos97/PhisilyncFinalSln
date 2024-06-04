@@ -40,10 +40,10 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="MintCream" BaseSize="420,520" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -73,6 +73,7 @@
 	  <None Remove="Resources\Images\confident.jpg" />
 	  <None Remove="Resources\Images\cricketcoach.webp" />
 	  <None Remove="Resources\Images\cricketcoachb.jpg" />
+	  <None Remove="Resources\Images\crown.png" />
 	  <None Remove="Resources\Images\dashboard.png" />
 	  <None Remove="Resources\Images\davids.jpg" />
 	  <None Remove="Resources\Images\determination.avif" />
@@ -136,12 +137,14 @@
 	  <None Remove="Resources\Images\netballcoach.jpg" />
 	  <None Remove="Resources\Images\notificationstwo.png" />
 	  <None Remove="Resources\Images\patient.png" />
+	  <None Remove="Resources\Images\paymentsremovebg.png" />
 	  <None Remove="Resources\Images\phisigreen_nobg.png" />
 	  <None Remove="Resources\Images\phisilyncappshell.png" />
 	  <None Remove="Resources\Images\phisilyncfinal.png" />
 	  <None Remove="Resources\Images\phisilyncgreen.png" />
 	  <None Remove="Resources\Images\phisilyncgreenback.png" />
 	  <None Remove="Resources\Images\phisilync_nobg.png" />
+	  <None Remove="Resources\Images\premium.webp" />
 	  <None Remove="Resources\Images\profileimage.webp" />
 	  <None Remove="Resources\Images\proud.jpg" />
 	  <None Remove="Resources\Images\qa.png" />
@@ -173,6 +176,7 @@
 	  <None Remove="Resources\Images\toeextension.png" />
 	  <None Remove="Resources\Images\toktik.png" />
 	  <None Remove="Resources\Images\treatment.jpg" />
+	  <None Remove="Resources\Images\treatmentthree.jpg" />
 	  <None Remove="Resources\Images\trunkrot.jfif" />
 	  <None Remove="Resources\Images\trunkrotation.png" />
 	  <None Remove="Resources\Images\trunkrotremovebg.png" />
@@ -191,6 +195,7 @@
 		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.20" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.20" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="Plugin.Maui.Calendar" Version="1.1.6" />
 		<PackageReference Include="SkiaSharp.Views.Maui.Controls" Version="2.88.8" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
@@ -202,6 +207,9 @@
 	<ItemGroup>
 	  <Compile Update="Views\InjuryLibraryPage.xaml.cs">
 	    <DependentUpon>InjuryLibraryPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\PaymentPage.xaml.cs">
+	    <DependentUpon>PaymentPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
@@ -254,7 +262,13 @@
 	  <MauiXaml Update="Views\MassageTherapyPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Payment.xaml">
+	  <MauiXaml Update="Views\PaymentPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\PaymentDetailsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\PaymentDetailsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\PrivacyPolicy.xaml">
@@ -267,6 +281,12 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\RangeOfMovementPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\SelectedInjuryDetailsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\SelectInjuryPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\ServiceProviderDashboard.xaml">
@@ -282,6 +302,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\SignUpPageSP.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\SkeletonViewPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\StretchesAndExercisePage.xaml">

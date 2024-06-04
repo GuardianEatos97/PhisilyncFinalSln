@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhisilyncFinal.Views.TestAndReleasePage"
              xmlns:local="clr-namespace:PhisilyncFinal.ViewModels"
-             BackgroundImageSource="greenback">
+             xmlns:models="clr-namespace:PhisilyncFinal.Models"
+             xmlns:views="clr-namespace:PhisilyncFinal.Views"
+             BackgroundImageSource="greenback" x:DataType="views:TestAndReleasePage">
 
     <Shell.TitleView Margin="0">
         <Image 
@@ -11,36 +13,27 @@
              Aspect="Center"/>
     </Shell.TitleView>
 
+
     <ScrollView>
         <StackLayout Margin="20">
-            <Label 
-                Text="{Binding InjuryName}"
-                HorizontalOptions="Center"
-                FontAttributes="Bold"
-                FontSize="Large"
-                Style="{DynamicResource TitleStyle}" />
-            
-            <Image 
-                Source="{Binding InjuryImage}"
-                HeightRequest="200"
-                WidthRequest="200"
-                Margin="20"
-                HorizontalOptions="Center" />
-
             <Label
-                Text="Test"
-                FontAttributes="Bold"
-                TextColor="White"
-                FontSize="Medium"
-                Style="{DynamicResource TitleStyle}"
-                HorizontalTextAlignment="Center" />
+                            Text="Test"
+                            FontAttributes="Bold"
+                            TextColor="White"
+                            FontSize="Medium"
+                            Style="{DynamicResource TitleStyle}"
+                            HorizontalTextAlignment="Center" />
 
-            <Label 
-                Text="{Binding InjuryTest}"
-                FontSize="Medium"
-                HorizontalTextAlignment="Start"
-                Style="{DynamicResource BodyStyle}" />
-                
+                                <Label 
+                                    Text="{Binding injurieTest.treatmentActionStepAction}"
+                                    FontSize="Medium"
+                                    TextColor="White"
+                                    HorizontalTextAlignment="Start"
+                                    Style="{DynamicResource BodyStyle}"/>
+
+                            
+                     
+
             <Label
                 Text="Release"
                 FontAttributes="Bold"
@@ -49,11 +42,16 @@
                 Style="{DynamicResource TitleStyle}"
                 HorizontalTextAlignment="Center"/>
 
-                <Label 
-                Text="{Binding InjuryRelease}"
+            <Label 
+                Text="{Binding injurieRelease.treatmentActionStepAction}"
                 FontSize="Medium"
+                TextColor="White"
                 HorizontalTextAlignment="Start"
                 Style="{DynamicResource BodyStyle}" />
+                                    
+             
+                                  
         </StackLayout>
     </ScrollView>
+
 </ContentPage>

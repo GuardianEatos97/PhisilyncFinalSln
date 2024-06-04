@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PhisilyncFinal.Views.InjuryLibraryPage"
+             x:Class="PhisilyncFinal.Views.PaymentPage"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:local="clr-namespace:PhisilyncFinal.ViewModels"
              xmlns:models="clr-namespace:PhisilyncFinal.Models"
              BackgroundColor="MintCream">
-
     <Shell.TitleView Margin="0">
         <Image 
         Source="phisilyncgreen"
@@ -26,14 +25,32 @@
             BorderWidth="5"
             />
         <Label
-            Text="{Binding CurrentUser.userName}"
+            Text="Hello"
             HorizontalOptions="End"
             TextColor="Black"
             Margin="10,0"
             />
 
         <Label
-            Text="Injury Library"
+            Text="Push Past Your Limits!"
+            VerticalOptions="Center"
+            FontSize="Large"
+            TextColor="Black"
+            TextDecorations="Underline"
+            FontAttributes="Bold"
+            Margin="10"
+            HorizontalOptions="Center"/>
+        <Label
+            Text="Try Premium Today!"
+            VerticalOptions="Center"
+            FontSize="Large"
+            TextColor="Black"
+            TextDecorations="Underline"
+            FontAttributes="Bold"
+            Margin="10"
+            HorizontalOptions="Center"/>
+        <Label
+            Text="Available Plans"
             VerticalOptions="Center"
             FontSize="Large"
             TextColor="Black"
@@ -42,11 +59,11 @@
             Margin="10"
             HorizontalOptions="Center"/>
 
-        <ListView ItemsSource="{Binding Injury}" 
+        <ListView ItemsSource="{Binding Payment}" 
             HasUnevenRows="true"
                   Margin="10"
-                  ItemTapped="ListView_ItemTapped"
-                  ItemSelected="ListView_ItemSelected">
+                  ItemTapped="ListView_ItemTapped2"
+                  ItemSelected="ListView_ItemSelected2">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -60,20 +77,20 @@
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
                             <Image Grid.RowSpan="2" 
-                                Source="{Binding InjuryImage}" 
+                                Source="{Binding PremiumImage}" 
                                 Aspect="AspectFill" 
                                 BackgroundColor="MintCream"
                                 HeightRequest="100" 
                                 WidthRequest="100" />
-                            
+
                             <Label Grid.Column="1" 
-                                Text="{Binding InjuryName}" 
+                                Text="{Binding CourseName}" 
                                    Margin="20,30"
                                 Style="{DynamicResource TitleStyle}" />
-                            
+
                             <Label Grid.Row="1" 
                                 Grid.Column="1" 
-                                Text="{Binding Prompt}"
+                                Text="{Binding CourseDescription}"
                                 Margin="20,-20,0,0"
                                 VerticalOptions="End" 
                                 Style="{DynamicResource SubtitleTextStyle}" />

@@ -19,6 +19,8 @@ namespace PhisilyncFinal.Models
         [ForeignKey(typeof(ProviderInjury))]
         public int treatmentInjury { get; set; }
 
+        
+        
         [ForeignKey(typeof(TreatmentFrequency))]
         public int treatmentTreatmentFrequency { get; set; }
 

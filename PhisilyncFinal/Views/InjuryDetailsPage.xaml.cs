@@ -1,3 +1,5 @@
+using PhisilyncFinal.Models;
+
 namespace PhisilyncFinal.Views;
 
 public partial class InjuryDetailsPage : ContentPage
@@ -12,10 +14,10 @@ public partial class InjuryDetailsPage : ContentPage
 		await Shell.Current.GoToAsync("GlossaryView");
     }
 
-    private async void TestAndReleaseBtn_Clicked(object sender, EventArgs e)
-    {
-        await Shell.Current.GoToAsync("TestAndReleasePage");
-    }
+    //private async void TestAndReleaseBtn_Clicked(object sender, EventArgs e)
+    //{
+    //    await Shell.Current.GoToAsync("TestAndReleasePage");
+    //}
 
     private async void Button_Clicked(object sender, EventArgs e)
     {

@@ -16,8 +16,8 @@ namespace PhisilyncFinal.ViewModels
         private ObservableCollection<ProviderInjury> _injuries;
 
         public ObservableCollection<ProviderInjury> Injuries { get; set; }
+       
 
-        
         //public ObservableCollection<ProviderInjury> Injuries
         //{
         //    get => _injuries;
@@ -32,6 +32,7 @@ namespace PhisilyncFinal.ViewModels
             
             _database = new();
             Injuries = new ObservableCollection<ProviderInjury>(_database.GetInjuriesList());
+            
         }
 
         public override void Initialize()

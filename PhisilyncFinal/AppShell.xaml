@@ -108,6 +108,14 @@ ContentTemplate="{DataTemplate local:AboutUsPage}"
             
 Route="FAQs" />
 
+        <ShellContent
+Title="Skeleton"
+            Icon="qa.png"
+        Style="{StaticResource BaseStyle}"
+ContentTemplate="{DataTemplate local:SkeletonViewPage}"
+            
+Route="Skeleton" />
+
 
 
     </FlyoutItem>
@@ -152,8 +160,10 @@ Route="FAQs" />
         Title="Lenny"
         ContentTemplate="{DataTemplate local:LennyAiQuestionPage}"
         Route="LennyQuestionPage"/>
-    
-   
+    <ShellContent
+    Title="SelectPayment"
+    ContentTemplate="{DataTemplate local:PaymentDetailsPage}"
+    Route="SelectPayment"/>
 
 </Shell>
 

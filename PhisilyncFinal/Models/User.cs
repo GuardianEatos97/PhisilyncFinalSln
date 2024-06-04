@@ -22,6 +22,7 @@ namespace PhisilyncFinal.Models
         public string? userGender { get; set; }
         public string userPassword { get; set; }
         public string? userPhoneNumber { get; set; }
+        public byte[] Avatar { get; set; }
 
         [ForeignKey(typeof(TreatmentDashboard))]
         public int? userTreatment { get; set; }

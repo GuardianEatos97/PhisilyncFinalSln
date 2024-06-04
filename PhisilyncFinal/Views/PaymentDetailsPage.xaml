@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhisilyncFinal.Views.PaymentDetailsPage">
+    <VerticalStackLayout>
+        <Label
+            Text="Select your method of payment"
+            TextColor="Black"
+            FontSize="Medium"
+            FontAttributes="Bold"
+            HorizontalTextAlignment="Center"
+            Margin="0,20,0,10"/>
+        
+        <TableView Intent="Form"
+                   WidthRequest="350"
+                   Margin="10, 0">
+            <TableRoot>
+                <TableSection>
+                    <TextCell Text="{Binding CoursePrice, StringFormat='TOTAL COST: {0:C}'}"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+        <TableView Intent="Form"
+           WidthRequest="350"
+           Margin="10, 0">
+            <TableRoot>
+                <TableSection>
+                    <TextCell Text="{Binding Savings, StringFormat='TOTAL SAVINGS: {0:C}'}"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+        <TableView Intent="Form"
+                   WidthRequest="350"
+                   Margin="10, 0">
+            <TableRoot>
+                <TableSection>
+                    <TextCell Text="{Binding PaymentFrequency, StringFormat='PAYMENT PLAN: {0}'}"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+        <HorizontalStackLayout HorizontalOptions="Center" Margin="0,20,0,0">
+            <TableView Intent="Form"
+                       WidthRequest="175"
+                       Margin="10, 0">
+                <TableRoot>
+                    <TableSection>
+                        <EntryCell Placeholder="First name" />
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+
+            <TableView Intent="Form"
+                       WidthRequest="175"
+           Margin="10, 0">
+                <TableRoot>
+                    <TableSection>
+                        <EntryCell Placeholder="Last name" />
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </HorizontalStackLayout>
+
+        <TableView Intent="Form"
+           WidthRequest="350"
+           Margin="0,20,0,0">
+            <TableRoot>
+                <TableSection>
+                    <EntryCell Placeholder="Card number" />
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+        <HorizontalStackLayout HorizontalOptions="Center" Margin="0,20,0,0">
+            <TableView Intent="Form"
+               WidthRequest="175"
+               Margin="10, 0">
+                <TableRoot>
+                    <TableSection>
+                        <EntryCell Placeholder="CVV" />
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+
+            <TableView Intent="Form"
+                       WidthRequest="175"
+                       Margin="10, 0">
+                <TableRoot>
+                    <TableSection>
+                        <EntryCell Placeholder="MM/YY" />
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </HorizontalStackLayout>
+
+        <Image
+            Source="paymentsremovebg"
+            WidthRequest="350"
+            Margin="0,20,0,0"/>
+
+        <Button
+            Text="SUBMIT PAYMENT"
+            TextColor="White"
+            BackgroundColor="SeaGreen"
+            WidthRequest="350"
+            Margin="0,10,0,0"/>
+    </VerticalStackLayout>
+</ContentPage>
