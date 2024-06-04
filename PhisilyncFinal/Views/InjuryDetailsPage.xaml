@@ -65,7 +65,7 @@
                  BorderColor="Beige"
                  BorderWidth="2"
                  BackgroundColor="SeaGreen"
-                 CornerRadius="100"
+                 CornerRadius="30"
                  Clicked="TestAndReleaseBtn_Clicked"
                  WidthRequest="350"
                  HeightRequest="70"
@@ -75,16 +75,20 @@
                 FontSize="Small"
                 Margin="0,20,0,20"
                 HorizontalOptions="Center"/>
-            <ImageButton
-                x:Name="GlossaryBtn"
-                Clicked="GlossaryBtn_Clicked"
-                CornerRadius="0"
-                Aspect="Center"
-                HeightRequest="50"
-                WidthRequest="50"
-                    Margin="0,20,0,20"
-                HorizontalOptions="Center"
-                Source="{Binding GlossBtnImage}"/>
+
+            <Button
+                Text="View Anatomy Glossary"
+                FontAttributes="Bold"
+                TextColor="White"
+                BorderColor="Beige"
+                BackgroundColor="SeaGreen"
+                Clicked="Button_Clicked"
+                BorderWidth="1"
+                CornerRadius="30"
+                WidthRequest="350"
+                VerticalOptions="CenterAndExpand"
+                HeightRequest="70"
+                Margin="10"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

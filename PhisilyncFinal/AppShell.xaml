@@ -99,31 +99,16 @@ Route="Library" />
             Style="{StaticResource BaseStyle}"
     ContentTemplate="{DataTemplate local:EditProfile}"
     Route="EditProfile"/>
-
+    
         <ShellContent
-Title="Privacy Policy"
-            Icon="compliant.png"
-        Style="{StaticResource BaseStyle}"
-ContentTemplate="{DataTemplate local:PrivacyPolicy}"
-Route="PrivacyPolicy" />
-
-        <ShellContent
-Title="Terms And Conditions"
-            Icon="tac.png"
-        Style="{StaticResource BaseStyle}"
-ContentTemplate="{DataTemplate local:TACPage}"
-  
-Route="TACPage" />
-
-        <ShellContent
-Title="FAQs"
+Title="About Us"
             Icon="qa.png"
         Style="{StaticResource BaseStyle}"
-ContentTemplate="{DataTemplate local:FAQs}"
+ContentTemplate="{DataTemplate local:AboutUsPage}"
             
 Route="FAQs" />
 
-        
+
 
     </FlyoutItem>
 
@@ -167,6 +152,7 @@ Route="FAQs" />
         Title="Lenny"
         ContentTemplate="{DataTemplate local:LennyAiQuestionPage}"
         Route="LennyQuestionPage"/>
+    
    
 
 </Shell>

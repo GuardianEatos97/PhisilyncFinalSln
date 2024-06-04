@@ -20,7 +20,7 @@ namespace PhisilyncFinal
             Routing.RegisterRoute("athleteDash", typeof(AthleteDash));
             Routing.RegisterRoute("coachDash", typeof(CoachDashboard));
             Routing.RegisterRoute("EditProfile", typeof(EditProfile));
-            Routing.RegisterRoute("FAQs", typeof(FAQs));
+            Routing.RegisterRoute("Faqs", typeof(FAQs));
             Routing.RegisterRoute("InjuryDetailsPage", typeof(InjuryDetailsPage));
             Routing.RegisterRoute("Library", typeof(InjuryLibraryPage));
             Routing.RegisterRoute("LogInPage", typeof(LogInPage));
@@ -47,7 +47,7 @@ namespace PhisilyncFinal
             Routing.RegisterRoute("AnswerPage", typeof(LennyAiAnswerPage));
             Routing.RegisterRoute("QuestionPage", typeof(LennyAiQuestionPage));
             Routing.RegisterRoute("TestAndReleasePage", typeof(TestAndReleasePage));
-
+            Routing.RegisterRoute("AboutUsPage", typeof(AboutUsPage));
         }
     }
 }

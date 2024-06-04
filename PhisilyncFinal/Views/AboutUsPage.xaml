@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhisilyncFinal.Views.AboutUsPage"
+             BackgroundImageSource="greenback">
+
+    <Shell.TitleView Margin="0,0,0,0">
+        <Image 
+        Source="phisilyncgreen"
+         Aspect="Center"/>
+    </Shell.TitleView>
+    
+    <VerticalStackLayout>
+        <Label
+            Text="About Us:"
+            TextColor="White"
+            FontAttributes="Bold"
+            FontSize="Large"
+            HorizontalOptions="Center"
+            Margin="0,30,0,0"/>
+
+        <Button
+             Text="Privacy Policy"
+             FontAttributes="Bold"
+             CornerRadius="20"
+             WidthRequest="350"
+             TextColor="White"
+             BorderColor="SeaGreen"
+             BorderWidth="1"
+             VerticalOptions="CenterAndExpand"
+             BackgroundColor="SeaGreen"
+             HeightRequest="70"
+             Clicked="Button_Clicked"
+             Margin="10"/>
+
+        <Button
+             Text="Terms and Conditions"
+             FontAttributes="Bold"
+             CornerRadius="20"
+             WidthRequest="350"
+             TextColor="White"
+             BorderColor="SeaGreen"
+             BorderWidth="1"
+             VerticalOptions="CenterAndExpand"
+             BackgroundColor="SeaGreen"
+             Clicked="Button_Clicked_1"
+             HeightRequest="70"
+             Margin="10"/>
+
+        <Button
+             Text="FAQ's"
+             FontAttributes="Bold"
+             CornerRadius="20"
+             WidthRequest="350"
+             TextColor="White"
+             BorderColor="SeaGreen"
+             BorderWidth="1"
+             VerticalOptions="CenterAndExpand"
+             BackgroundColor="SeaGreen"
+             Clicked="Button_Clicked_2"
+             HeightRequest="70"
+             Margin="10"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -212,6 +212,9 @@
 	  <MauiXaml Update="FlyOutControls\FlyoutHeader.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\AboutUsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\AthleteDash.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
