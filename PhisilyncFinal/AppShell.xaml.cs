@@ -50,6 +50,7 @@ namespace PhisilyncFinal
             Routing.RegisterRoute("SelectedInjuryDetails", typeof(SelectedInjuryDetailsPage));
             Routing.RegisterRoute("SelectInjury", typeof(SelectInjuryPage));
             Routing.RegisterRoute("SelectPayment", typeof(PaymentDetailsPage));
+            Routing.RegisterRoute("AboutUsPage", typeof(AboutUsPage));
 
         }
     }

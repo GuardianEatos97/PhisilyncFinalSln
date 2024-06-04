@@ -106,7 +106,7 @@ Title="About Us"
         Style="{StaticResource BaseStyle}"
 ContentTemplate="{DataTemplate local:AboutUsPage}"
             
-Route="FAQs" />
+Route="About Us" />
 
         <ShellContent
 Title="Skeleton"
