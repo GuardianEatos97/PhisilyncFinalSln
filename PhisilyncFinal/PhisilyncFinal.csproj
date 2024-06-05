@@ -141,6 +141,8 @@
 	  <None Remove="Resources\Images\phisigreen_nobg.png" />
 	  <None Remove="Resources\Images\phisilyncappshell.png" />
 	  <None Remove="Resources\Images\phisilyncfinal.png" />
+	  <None Remove="Resources\Images\phisilyncfo.png" />
+	  <None Remove="Resources\Images\phisilyncfogreen.png" />
 	  <None Remove="Resources\Images\phisilyncgreen.png" />
 	  <None Remove="Resources\Images\phisilyncgreenback.png" />
 	  <None Remove="Resources\Images\phisilync_nobg.png" />

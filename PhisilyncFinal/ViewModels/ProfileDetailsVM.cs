@@ -36,11 +36,11 @@ namespace PhisilyncFinal.ViewModels
         }
     }
 
-        public override void OnAppearing()
-        {
-            base.OnAppearing();
-            LoadUser();
-        }
+       // public override void OnAppearing()
+       // {
+        //    base.OnAppearing();
+        //    LoadUser();
+        //}
 
         public void LoadUser()
         {

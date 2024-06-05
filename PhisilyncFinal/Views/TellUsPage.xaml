@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             BackgroundColor="#23583a" 
+             BackgroundColor="#f0f8e3" 
              x:Class="PhisilyncFinal.Views.TellUsPage">
     <ScrollView Orientation="Vertical">
         <VerticalStackLayout>
             <Image
-                Source="phisilyncgreenback.png"
+                Source="phisilyncfogreen"
                 HeightRequest="100"
                 WidthRequest="400"
                 Aspect="AspectFill"
@@ -15,7 +15,7 @@
             
             <Label
                 Text="Let's Get Started"
-                TextColor="White"
+                TextColor="SeaGreen"
                 FontAttributes="Bold"
                 FontSize="Large"
                 HorizontalOptions="Center" 
@@ -23,7 +23,7 @@
 
             <Label
                 Text="Fully Personalize Your Phisilync Experience"
-                TextColor="White"
+                TextColor="SeaGreen"
                 FontAttributes="Bold"
                 FontSize="Small"
                 HorizontalOptions="Center"
@@ -31,7 +31,7 @@
 
             <Label
                 Text="Tell Us About You :"
-                TextColor="White"
+                TextColor="SeaGreen"
                 FontSize="Small"
                 FontAttributes="Bold"
                 HorizontalTextAlignment="Center"
@@ -85,24 +85,24 @@
                 Grid.ColumnSpan="0"
                 HeightRequest="180"
                 WidthRequest="350"
-                CornerRadius="50"
+                CornerRadius="40"
                 HorizontalOptions="CenterAndExpand"
                 IsClippedToBounds="True"
                 Padding="0"
                 BackgroundColor="White"
-                BorderColor="White" 
+                BorderColor="SeaGreen" 
                 Margin="10">
 
-                <ImageButton Source="workout" Aspect="Fill"/>
+                <ImageButton Source="workout" Aspect="Fill" BorderWidth="2" BorderColor="SeaGreen"/>
             </Frame>
 
             <Button
                 Text="Already Have An Account?"
                 TextColor="White"
                 WidthRequest="300"
-                BackgroundColor="Black"
+                BackgroundColor="SeaGreen"
                 Clicked="Button_Clicked_2"
-                BorderColor="Black"
+                BorderColor="SeaGreen"
                 FontSize="Body" 
                 BorderWidth="1"
                 CornerRadius="50"
