@@ -4,6 +4,7 @@
              x:Class="PhisilyncFinal.Views.SelectInjuryPage"
              xmlns:local="clr-namespace:PhisilyncFinal.ViewModels"
              xmlns:models="clr-namespace:PhisilyncFinal.Models"
+             BackgroundColor="#f0f8e3"
              Title="SelectInjuryPage" x:DataType="local:InjuryViewModel">
     <Shell.TitleView Margin="0">
         <Image 
@@ -24,7 +25,7 @@
          Text="Injury Library"
          VerticalOptions="Center"
          FontSize="Large"
-         TextColor="White"
+         TextColor="SeaGreen"
          TextDecorations="Underline"
          FontAttributes="Bold"
          Margin="10"
@@ -55,9 +56,11 @@
                             <Label Grid.Column="1" 
                              Text="{Binding providerInjuryName}" 
                                 Margin="20,30"
+                                   TextColor="SeaGreen"
                              Style="{DynamicResource TitleStyle}" />
                             <Label Grid.Row="1" 
                              Grid.Column="1" 
+                                   TextColor="SeaGreen"
                              Text="Click To Find Out More About Injury"
                                 Margin="20,-20,0,0"
                              VerticalOptions="End" 

@@ -5,7 +5,7 @@
              xmlns:local="clr-namespace:PhisilyncFinal.ViewModels"
              xmlns:models="clr-namespace:PhisilyncFinal.Models"
              xmlns:views="clr-namespace:PhisilyncFinal.Views"
-             BackgroundImageSource="greenback" x:DataType="views:TestAndReleasePage">
+             BackgroundColor="#f0f8e3" x:DataType="views:TestAndReleasePage">
 
     <Shell.TitleView Margin="0">
         <Image 
@@ -19,7 +19,7 @@
             <Label
                             Text="Test"
                             FontAttributes="Bold"
-                            TextColor="White"
+                            TextColor="SeaGreen"
                             FontSize="Medium"
                             Style="{DynamicResource TitleStyle}"
                             HorizontalTextAlignment="Center" />
@@ -27,7 +27,7 @@
                                 <Label 
                                     Text="{Binding injurieTest.treatmentActionStepAction}"
                                     FontSize="Medium"
-                                    TextColor="White"
+                                    TextColor="SeaGreen"
                                     HorizontalTextAlignment="Start"
                                     Style="{DynamicResource BodyStyle}"/>
 
@@ -38,14 +38,14 @@
                 Text="Release"
                 FontAttributes="Bold"
                 FontSize="Medium"
-                TextColor="White"
+                TextColor="SeaGreen"
                 Style="{DynamicResource TitleStyle}"
                 HorizontalTextAlignment="Center"/>
 
             <Label 
                 Text="{Binding injurieRelease.treatmentActionStepAction}"
                 FontSize="Medium"
-                TextColor="White"
+                TextColor="SeaGreen" 
                 HorizontalTextAlignment="Start"
                 Style="{DynamicResource BodyStyle}" />
                                     

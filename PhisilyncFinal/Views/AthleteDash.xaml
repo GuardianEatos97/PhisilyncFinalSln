@@ -6,7 +6,7 @@
              x:Class="PhisilyncFinal.Views.AthleteDash"
              xmlns:viewmodel="clr-namespace:PhisilyncFinal.ViewModels"
              xmlns:models="clr-namespace:PhisilyncFinal.Models"
-             BackgroundImageSource="greenback"
+             BackgroundColor="#f0f8e3"
              x:DataType="viewmodel:AthleteDashVM">
 
 
@@ -29,7 +29,7 @@
                 WidthRequest="70"
                 HeightRequest="70"
                 BorderWidth="5"
-                BackgroundColor="MintCream">
+                BackgroundColor="#7ed957">
 
                 <toolkit:AvatarView.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding AvatarTappedCommand}"/>
@@ -40,27 +40,27 @@
                 Text="{Binding CurrentUser.userName}"
                 HorizontalOptions="End"
                 Margin="0,0,20,0"
-                TextColor="White"
+                TextColor="SeaGreen"
                 />
 
             <HorizontalStackLayout>
                 <Label
                 Text="Welcome "
-                TextColor="White"
+                TextColor="SeaGreen"
                 FontAttributes="Bold"
                 FontSize="Medium"
                 Margin="20,10,0,0"/>
                 
                 <Label
                 Text="{Binding CurrentUser.userName}"
-                TextColor="White"
+                TextColor="SeaGreen"
                 FontAttributes="Bold"
                 FontSize="Medium"
                 Margin="0,10,0,0"/>
 
                 <Label
                 Text="!"
-                TextColor="White"
+                TextColor="SeaGreen"
                 FontAttributes="Bold"
                 FontSize="Medium"
                 Margin="0,10,0,0"/>
@@ -85,6 +85,7 @@
                                 <StackLayout>
                                     <Label Text="{Binding providerInjuryName}" 
                                            FontAttributes="Bold"
+                                           TextColor="SeaGreen"
                                            FontSize="20"
                                            Margin="0,10,0,0"
                                            HorizontalOptions="Center"
@@ -101,7 +102,7 @@
                                            FontAttributes="Italic" 
                                            HorizontalOptions="Center"
                                            MaxLines="5"
-                                           TextColor="Black"
+                                           TextColor="SeaGreen"
                                            Margin="0,10,0,0" />
                                 </StackLayout>
                             </Frame>
@@ -111,16 +112,16 @@
             </CarouselView>
             <IndicatorView x:Name="indicatorView"
                            Margin="0,0,0,20"
-                           IndicatorColor="White"
-                           SelectedIndicatorColor="Black"
+                           IndicatorColor="#7ed957"
+                           SelectedIndicatorColor="SeaGreen"
                            HorizontalOptions="Center" />
 
             <Button
                 Text="Take Me To My Injury"
                 FontAttributes="Bold"
                 TextColor="White"
-                BorderColor="Beige"
-                BorderWidth="2"
+                BorderColor="Black"
+                BorderWidth="1"
                 BackgroundColor="SeaGreen"
                 Command="{Binding InjuryCommand}"
                 CornerRadius="100"
@@ -134,27 +135,27 @@
                           CalendarLayout="Month"
                           BackgroundColor="Transparent"
                           DayViewCornerRadius="5"
-                          DeselectedDayTextColor="White"
-                          SelectedDateColor="White"
+                          DeselectedDayTextColor="SeaGreen"
+                          SelectedDateColor="SeaGreen"
                           ArrowsBackgroundColor="SeaGreen"
-                          ArrowsBorderColor="White"
+                          ArrowsBorderColor="Black"
                           ArrowsColor="White"
-                          DaysTitleColor="White"
-                          DaysTitleWeekendColor="MintCream" 
-                          DisabledDayColor="White"
+                          DaysTitleColor="SeaGreen"
+                          DaysTitleWeekendColor="SeaGreen" 
+                          DisabledDayColor="SeaGreen"
                           EventIndicatorColor="SeaGreen"
-                          EventIndicatorSelectedColor="White"
+                          EventIndicatorSelectedColor="SeaGreen"
                           EventIndicatorSelectedTextColor="White"
-                          MonthLabelColor="White"
+                          MonthLabelColor="SeaGreen"
                           OtherMonthDayColor="RosyBrown"
                           SelectedDayTextColor="White"
                           SelectedTodayTextColor="White"
                           TodayFillColor="#89a18b"
-                          TodayOutlineColor="White"
+                          TodayOutlineColor="SeaGreen"
                           TodayTextColor="White" 
-                          WeekendDayColor="White"
-                          YearLabelColor="White"
-                          EventIndicatorTextColor="White"
+                          WeekendDayColor="SeaGreen"
+                          YearLabelColor="SeaGreen"
+                          EventIndicatorTextColor="SeaGreen"
                           Margin="0,30,0,0"
                           WidthRequest="350 "
                           HeightRequest="500">
@@ -164,11 +165,11 @@
                             <Label 
                             Text="{Binding Name}" 
                             FontSize="25" 
-                            TextColor="White"
+                            TextColor="SeaGreen"
                             FontAttributes="Bold"/>
                             <Label 
                             Text="{Binding Description}"
-                            TextColor="White"/>
+                            TextColor="SeaGreen"/>
                         </VerticalStackLayout>
                     </DataTemplate>
                 </cal:Calendar.EventTemplate>
@@ -178,8 +179,8 @@
                 Text="Learn About Our Service Providers"
                 FontAttributes="Bold"
                 TextColor="White"
-                BorderColor="Beige"
-                BorderWidth="2"
+                BorderColor="Black"
+                BorderWidth="1"
                 BackgroundColor="SeaGreen"
                 CornerRadius="100"
                  WidthRequest="350"

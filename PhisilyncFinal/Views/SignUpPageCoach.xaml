@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             BackgroundColor="#23583a"
+             BackgroundColor="#f0f8e3"
              x:Class="PhisilyncFinal.Views.SignUpPageCoach">
     
     <ContentPage.Resources>
@@ -21,7 +21,7 @@
             Padding="30,0"
             Spacing="0">
             <Image
-                Source="phisilyncgreenback.png"
+                Source="phisilyncgreentwo"
                 HeightRequest="100"
                 WidthRequest="400"
                 Aspect="AspectFill"
@@ -32,7 +32,7 @@
                 FontSize="Large"
                 FontAttributes="Bold"
                 FontFamily="bubble"
-                TextColor="White" 
+                TextColor="SeaGreen" 
                 HorizontalOptions="CenterAndExpand" />
 
             <Entry
@@ -41,6 +41,7 @@
                 HorizontalOptions="Center"
                 TextColor="White"
                 Placeholder="Name"
+                PlaceholderColor="Grey"
                 WidthRequest="350"
                 Margin="0,5,0,5"
                 FontSize="20"
@@ -66,6 +67,7 @@
                 TextColor="White"
                 Placeholder="Surname"
                 WidthRequest="350"
+                PlaceholderColor="Grey"
                 Margin="0,5,0,5"
                 FontSize="20"
                 Text="{Binding Surname}">
@@ -90,6 +92,7 @@
                 TextColor="White"
                 Placeholder="Email Address"
                 WidthRequest="350"
+                PlaceholderColor="Grey"
                 Margin="0,5,0,5"
                 FontSize="20" 
                 Text="{Binding Email}">
@@ -112,6 +115,7 @@
                 IsPassword="True"
                 Placeholder="Password "
                 WidthRequest="350"
+                PlaceholderColor="Grey"
                 Margin="0,5,0,5"
                 MaxLength="14"
                 Text="{Binding Password}" 
@@ -164,6 +168,7 @@
                 IsPassword="True"
                 Placeholder="Confirm Password"
                 WidthRequest="350"
+                PlaceholderColor="Grey"
                 Margin="0,5,0,5"
                 MaxLength="14"
                 FontSize="20" >
@@ -182,6 +187,8 @@
             <Button
                 Text="Create Account"
                 TextColor="White"
+                BorderWidth="1"
+                BorderColor="Black"
                 BackgroundColor="SeaGreen"
                 Command="{Binding SaveCoachCommand}"
                 StyleId="TellUsPage"
@@ -189,14 +196,14 @@
 
             <Label
                 Text="Sign Up Using :"
-                TextColor="White" 
+                TextColor="SeaGreen" 
                 HorizontalOptions="CenterAndExpand"
                 FontSize="Body"
                 Margin="0,10,0,0"/>
 
             <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                 <Image
-                    Source="googleremove"
+                    Source="googlefo"
                     Aspect="AspectFit"
                     HeightRequest="70"
                     HorizontalOptions="Center" 
@@ -214,7 +221,9 @@
                 Text="Already Have An Account?"
                 TextColor="White"
                 WidthRequest="300"
-                BackgroundColor="Black"
+                BackgroundColor="SeaGreen"
+                BorderWidth="1"
+                BorderColor="Black"
                 CornerRadius="100"
                 FontSize="Body" 
                 HorizontalOptions="Center"

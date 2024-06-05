@@ -5,7 +5,7 @@
              xmlns:chart="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
              x:Class="PhisilyncFinal.Views.ServiceProviderDashboard"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             BackgroundImageSource="greenback"
+             BackgroundColor="#f0f8e3"
              Title="ServiceProviderDashboard">
     <Shell.TitleView Margin="0,0,0,0">
         <Image 
@@ -35,21 +35,21 @@
                 TextColor="Beige"/>
 
             <Label Text="Welcome (Service Provider Name)"
-                   TextColor="White"
+                   TextColor="SeaGreen"
                    FontAttributes="Bold"
                    FontSize="Medium"
                    Margin="20,10,0,0"/>
 
             <Label
                 Text="Dashboard"
-                TextColor="White"
+                TextColor="SeaGreen"
                 FontAttributes="Bold"
                 FontSize="Large"
      
                 Margin="20,0,0,0"/>
 
             <Label Text="Client Tracker"
-                   TextColor="White"
+                   TextColor="SeaGreen"
                    FontAttributes="Bold"
                    FontSize="20"                   
                    Margin="0,20,0,0"
@@ -69,9 +69,9 @@
             <Button Text="Types Of Injuries"
                      FontAttributes="Bold"
                      TextColor="White"
-                     BorderColor="White"
+                     BorderColor="Black"
                      Command="{Binding InjuryCommand}"
-                     BorderWidth="2"
+                     BorderWidth="1"
                      BackgroundColor="SeaGreen"
                      CornerRadius="100"
                      WidthRequest="350"
@@ -79,35 +79,35 @@
                      Margin="0,20,0,0"/>
 
             <cal:Calendar Events="{Binding Events}" 
-          EventsScrollViewVisible="True" 
-          SelectedDayBackgroundColor="SeaGreen"
-          CalendarLayout="Month"
-          BackgroundColor="Transparent"
-          DayViewCornerRadius="5"
-          DeselectedDayTextColor="White"
-          SelectedDateColor="White"
-          ArrowsBackgroundColor="SeaGreen"
-          ArrowsBorderColor="White"
-          ArrowsColor="White"
-          DaysTitleColor="White"
-          DaysTitleWeekendColor="Beige" 
-          DisabledDayColor="White"
-          EventIndicatorColor="SeaGreen"
-          EventIndicatorSelectedColor="White"
-          EventIndicatorSelectedTextColor="White"
-          MonthLabelColor="White"
-          OtherMonthDayColor="DarkSeaGreen"
-          SelectedDayTextColor="White"
-          SelectedTodayTextColor="White"
-          TodayFillColor="#89a18b"
-          TodayOutlineColor="White"
-          TodayTextColor="White" 
-          WeekendDayColor="White"
-          YearLabelColor="White"
-          EventIndicatorTextColor="White"
-          Margin="0,30,0,0"
-                          WidthRequest="350"
-          HeightRequest="500">
+                 EventsScrollViewVisible="True" 
+ SelectedDayBackgroundColor="SeaGreen"
+ CalendarLayout="Month"
+ BackgroundColor="Transparent"
+ DayViewCornerRadius="5"
+ DeselectedDayTextColor="SeaGreen"
+ SelectedDateColor="SeaGreen"
+ ArrowsBackgroundColor="SeaGreen"
+ ArrowsBorderColor="Black"
+ ArrowsColor="White"
+ DaysTitleColor="SeaGreen"
+ DaysTitleWeekendColor="SeaGreen" 
+ DisabledDayColor="SeaGreen"
+ EventIndicatorColor="SeaGreen"
+ EventIndicatorSelectedColor="SeaGreen"
+ EventIndicatorSelectedTextColor="White"
+ MonthLabelColor="SeaGreen"
+ OtherMonthDayColor="RosyBrown"
+ SelectedDayTextColor="White"
+ SelectedTodayTextColor="White"
+ TodayFillColor="#89a18b"
+ TodayOutlineColor="SeaGreen"
+ TodayTextColor="White" 
+ WeekendDayColor="SeaGreen"
+ YearLabelColor="SeaGreen"
+ EventIndicatorTextColor="SeaGreen"
+ Margin="0,30,0,0"
+ WidthRequest="350"
+ HeightRequest="500">
                 <cal:Calendar.EventTemplate>
                     <DataTemplate>
                         <VerticalStackLayout>

@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="PhisilyncFinal.Views.SignUpPageSP"
-    BackgroundColor="#23583a">
+    BackgroundColor="#f0f8e3">
     
     <ContentPage.Resources>
         <Style x:Key="InvalidEntryStyle" TargetType="Entry">
@@ -20,7 +20,7 @@
             Padding="30,0"
             Spacing="25">
             <Image
-                Source="phisilyncgreenback.png"
+                Source="phisilyncgreentwo"
                 HeightRequest="100"
                 WidthRequest="400"
                 Aspect="AspectFill"
@@ -31,13 +31,14 @@
                 FontSize="Large"
                 FontAttributes="Bold"
                 FontFamily="bubble"
-                TextColor="White" 
+                TextColor="SeaGreen" 
                 HorizontalOptions="CenterAndExpand" />
 
             <Entry
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
                 TextColor="White"
+                PlaceholderColor="Grey"
                 Placeholder="Company Name"
                 WidthRequest="350"
                 FontSize="20" />
@@ -51,6 +52,7 @@
                 ValidStyle="{StaticResource ValidEntryStyle}"
                 Flags="ValidateOnValueChanged"
                 MinimumLength="1"
+                    
                 MaximumLength="20"
                 IsValid="{Binding IsCompanyNameValid}"
                         />
@@ -62,6 +64,7 @@
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
                 TextColor="White"
+                PlaceholderColor="Grey"
                 Placeholder="Company Email Address"
                  WidthRequest="350"
                 FontSize="20" />
@@ -84,6 +87,7 @@
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
                 TextColor="White"
+                PlaceholderColor="Grey"
                 IsPassword="True"
                 Placeholder="Password "
                 WidthRequest="350"
@@ -141,6 +145,7 @@
                 FontAttributes="Bold"
                 HorizontalOptions="Center"
                 TextColor="White"
+                PlaceholderColor="Grey"
                 IsPassword="True"
                 Placeholder="Confirm Password"
                 WidthRequest="350"
@@ -163,6 +168,8 @@
             <Button
                 Text="Create Account"
                 TextColor="White"
+                BorderWidth="1"
+                BorderColor="Black"
                 BackgroundColor="SeaGreen"
                 Command="{Binding ServiceDashCommand}"
                 StyleId="TellUsPage"
@@ -176,7 +183,7 @@
 
             <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                 <Image
-                    Source="googleremove"
+                    Source="googlefo"
                     Aspect="AspectFit"
                     HeightRequest="70"
                     HorizontalOptions="Center" 
@@ -193,7 +200,9 @@
                 Text="Already Have An Account?"
                 TextColor="White"
                 WidthRequest="300"
-                BackgroundColor="Black"
+                BackgroundColor="SeaGreen"
+                BorderWidth="1"
+                BorderColor="black"
                 CornerRadius="100"
                 FontSize="Body" 
                 HorizontalOptions="Center"

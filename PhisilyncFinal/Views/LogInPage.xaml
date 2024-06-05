@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhisilyncFinal.Views.LogInPage"
-             BackgroundColor="#23583a">
+             BackgroundColor="#f0f8e3">
     <ScrollView Orientation="Vertical">
         <VerticalStackLayout>
             <Image
-            Source="phisilyncgreenback.png"
+            Source="phisilyncgreentwo"
             HeightRequest="100"
             WidthRequest="400"
             Aspect="AspectFill"
@@ -15,19 +15,21 @@
             <Entry
             FontAttributes="Bold"
             HorizontalOptions="Center"
-            TextColor="White"
+            TextColor="SeaGreen"
             Placeholder="Username/Email"
-             WidthRequest="350"
+            WidthRequest="350"
+            PlaceholderColor="Grey"
             FontSize="20" 
             Text="{Binding Details.EmailAddress}"/>
 
             <Entry
             FontAttributes="Bold"
             HorizontalOptions="Center"
-            TextColor="White"
+            TextColor="SeaGreen"
             Placeholder="Password "
             WidthRequest="350"
             MaxLength="14"
+            PlaceholderColor="Grey"    
             FontSize="20" 
             Text="{Binding Details.Password}"/>
 
@@ -35,26 +37,28 @@
              Text="Log In"
              TextColor="White"
              BackgroundColor="SeaGreen"
+             BorderColor="Black"
+             BorderWidth="1"   
              WidthRequest="350"
              Margin="15"/>
 
             <Label
             Text="Forgot Password ?"
-            TextColor="White"
+            TextColor="SeaGreen"
              FontSize="Medium" 
             HorizontalOptions="Center"
             Margin="20,20,0,10"/>
 
             <Label
             Text="Log In With :"
-            TextColor="White"
+            TextColor="SeaGreen"
              FontSize="Medium" 
             HorizontalTextAlignment="Center"
             Margin="0,0,0,20"/>
 
             <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                 <Image
-                Source="googleremove"
+                Source="googlefo"
                 Aspect="AspectFit"
                 HeightRequest="70"
                 HorizontalOptions="Center" 

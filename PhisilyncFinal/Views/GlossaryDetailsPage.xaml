@@ -16,6 +16,7 @@
             Text="{Binding GlossaryWord}"
             HorizontalOptions="Center"
             FontAttributes="Bold"
+                TextColor="SeaGreen"
             FontSize="Large"
             Style="{DynamicResource TitleStyle}" />
             <Image Source="{Binding WordImage}"
@@ -26,6 +27,7 @@
             <Label
              Text="Description"
              FontAttributes="Bold"
+                TextColor="SeaGreen"
              FontSize="Large"
              Style="{DynamicResource TitleStyle}"
              HorizontalTextAlignment="Center"/>
@@ -33,6 +35,7 @@
              Text="{Binding WordDescription}"
              FontSize="Medium"
              Margin="0,20"
+                TextColor="SeaGreen"
              HorizontalTextAlignment="Center"
              Style="{DynamicResource BodyStyle}" />
 

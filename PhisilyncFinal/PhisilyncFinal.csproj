@@ -90,6 +90,7 @@
 	  <None Remove="Resources\Images\glossary.png" />
 	  <None Remove="Resources\Images\goniometer.jpg" />
 	  <None Remove="Resources\Images\googleb.jpg" />
+	  <None Remove="Resources\Images\googlefo.png" />
 	  <None Remove="Resources\Images\googleremove.png" />
 	  <None Remove="Resources\Images\greenback.jpg" />
 	  <None Remove="Resources\Images\greyg.jpg" />
@@ -145,6 +146,7 @@
 	  <None Remove="Resources\Images\phisilyncfogreen.png" />
 	  <None Remove="Resources\Images\phisilyncgreen.png" />
 	  <None Remove="Resources\Images\phisilyncgreenback.png" />
+	  <None Remove="Resources\Images\phisilyncgreentwo.png" />
 	  <None Remove="Resources\Images\phisilync_nobg.png" />
 	  <None Remove="Resources\Images\premium.webp" />
 	  <None Remove="Resources\Images\profileimage.webp" />

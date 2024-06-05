@@ -6,7 +6,7 @@
     <ScrollView Orientation="Vertical">
         <VerticalStackLayout>
             <Image
-                Source="phisilyncfogreen"
+                Source="phisilyncgreentwo"
                 HeightRequest="100"
                 WidthRequest="400"
                 Aspect="AspectFill"
@@ -41,7 +41,7 @@
                 Text="I Am An Athlete"
                 FontAttributes="Bold"
                 TextColor="White"
-                BorderColor="SeaGreen"
+                BorderColor="Black"
                 BackgroundColor="SeaGreen"
                 Clicked="Button_Clicked"
                 BorderWidth="1"
@@ -57,7 +57,7 @@
                 CornerRadius="30"
                 WidthRequest="300"
                 TextColor="White"
-                BorderColor="SeaGreen"
+                BorderColor="Black"
                 BorderWidth="1"
                 Clicked="Button_Clicked_3"
                 VerticalOptions="CenterAndExpand"
@@ -70,9 +70,8 @@
                 FontAttributes="Bold"
                 TextColor="White"
                 Clicked="Button_Clicked_1"
-
                 BackgroundColor="SeaGreen"
-                BorderColor="SeaGreen" 
+                BorderColor="Black" 
                 VerticalOptions="CenterAndExpand"
                 BorderWidth="1"
                 CornerRadius="30"
@@ -90,10 +89,9 @@
                 IsClippedToBounds="True"
                 Padding="0"
                 BackgroundColor="White"
-                BorderColor="SeaGreen" 
                 Margin="10">
 
-                <ImageButton Source="workout" Aspect="Fill" BorderWidth="2" BorderColor="SeaGreen"/>
+                <ImageButton Source="workout" Aspect="Fill"/>
             </Frame>
 
             <Button
@@ -102,7 +100,7 @@
                 WidthRequest="300"
                 BackgroundColor="SeaGreen"
                 Clicked="Button_Clicked_2"
-                BorderColor="SeaGreen"
+                BorderColor="Black"
                 FontSize="Body" 
                 BorderWidth="1"
                 CornerRadius="50"

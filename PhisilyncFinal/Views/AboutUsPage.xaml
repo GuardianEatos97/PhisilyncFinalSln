@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhisilyncFinal.Views.AboutUsPage"
-             BackgroundImageSource="greenback">
+             BackgroundColor="#f0f8e3">
 
     <Shell.TitleView Margin="0,0,0,0">
         <Image 
@@ -13,7 +13,7 @@
     <VerticalStackLayout>
         <Label
             Text="About Us:"
-            TextColor="White"
+            TextColor="SeaGreen"
             FontAttributes="Bold"
             FontSize="Large"
             HorizontalOptions="Center"
@@ -25,7 +25,7 @@
              CornerRadius="20"
              WidthRequest="350"
              TextColor="White"
-             BorderColor="SeaGreen"
+             BorderColor="Black"
              BorderWidth="1"
              VerticalOptions="CenterAndExpand"
              BackgroundColor="SeaGreen"
@@ -39,7 +39,7 @@
              CornerRadius="20"
              WidthRequest="350"
              TextColor="White"
-             BorderColor="SeaGreen"
+             BorderColor="Black"
              BorderWidth="1"
              VerticalOptions="CenterAndExpand"
              BackgroundColor="SeaGreen"
@@ -53,7 +53,7 @@
              CornerRadius="20"
              WidthRequest="350"
              TextColor="White"
-             BorderColor="SeaGreen"
+             BorderColor="Black"
              BorderWidth="1"
              VerticalOptions="CenterAndExpand"
              BackgroundColor="SeaGreen"

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhisilyncFinal.Views.PrivacyPolicy"
-             BackgroundImageSource="greenback.jpg">
+             BackgroundColor="#f0f8e3">
 
     <Shell.TitleView Margin="0">
         <Image 
@@ -16,7 +16,7 @@
             Text="Privacy Policy"
             FontSize="Medium"
                  
-            TextColor="White"
+            TextColor="SeaGreen"
             FontAttributes="Bold"
             TextDecorations="Underline"
             Margin="0,10"
@@ -25,7 +25,7 @@
             <Label
             Text="Last Revised, May 2024"
              FontSize="Medium"
-                TextColor="White"
+                TextColor="SeaGreen"
                  
             Margin="0,10"
             VerticalOptions="StartAndExpand"
@@ -34,7 +34,7 @@
             <Label
             Text="1. Introduction"
              FontSize="Medium"
-                TextColor="White"
+                TextColor="SeaGreen"
             FontAttributes="Bold"
             TextDecorations="Underline"
                  
@@ -51,7 +51,7 @@ This policy is applicable to the following types of information we may collect: 
 
 It is not applicable to data gathered by:"
             VerticalOptions="StartAndExpand" 
-                TextColor="White"
+                TextColor="SeaGreen"
                  
             HorizontalOptions="StartAndExpand" 
             FontSize="Small"
@@ -59,21 +59,21 @@ It is not applicable to data gathered by:"
                 <Label
                    Text="• Any third party, including through any application or content (including advertising) that may link to or be available from or on the App; us offline or by any other means, including on any other website run by Phisilync or any other third party."
                    VerticalOptions="StartAndExpand"
-                    TextColor="White"
+                    TextColor="SeaGreen"
                    HorizontalOptions="StartAndExpand"
                    FontSize="Small"
                      
                    Margin="0,5,0,0"/>
                 <Label
                     Text="• To understand our rules and procedures surrounding your information and how we will treat it, please carefully read this policy. You can choose not to use our website and apps if you disagree with our policies and practices. You accept this privacy statement by using our mobile application. There may be periodic changes to our privacy statement. Your continued use of our App after we make changes is deemed to be acceptance of those changes, so please check this Privacy Policy periodically for updates."
-                    TextColor="White"
+                    TextColor="SeaGreen"
                      
                     VerticalOptions="StartAndExpand"
                     HorizontalOptions="StartAndExpand"
                     FontSize="Small"/>
                 <Label
                     Text="• Physical therapists can use Phisilync in conjunction with providing services to patients. Phisilync does not offer any services or advice related to medicine or health. As an associate of physical therapists, we obtain health information for or on their behalf in connection with offering or potentially offering treatment to patients. The information we obtain may contain protected health information ('PHI') as defined by the Health Professions Act ('HPA') Act No.56 of 1974. In order to control the usage, privacy, and security of PHI, we enter into business associate agreements with physical therapists. Only in compliance with business associate agreements and HPA will we use and share PHI."
-                    TextColor="White"
+                    TextColor="SeaGreen"
                     VerticalOptions="StartAndExpand"
                      
                     HorizontalOptions="StartAndExpand"
@@ -81,7 +81,7 @@ It is not applicable to data gathered by:"
                     />
                 <Label
                     Text="Your Personal Information may be de-identified by us so that it can no longer be used to reasonably identify you. In this instance, we are free to use the de-identified data for anything we choose, including enhancing our application, website, and goods and services."
-                    TextColor="White"
+                    TextColor="SeaGreen"
                      
                     VerticalOptions="StartAndExpand"
                     HorizontalOptions="StartAndExpand"
@@ -92,14 +92,14 @@ It is not applicable to data gathered by:"
             Text="2. Information We Collect"
                  
              FontSize="Medium"
-            TextColor="White"
+            TextColor="SeaGreen"
                 FontAttributes="Bold"
             TextDecorations="Underline"
             Margin="0,20"
             HorizontalOptions="Start"/>
             <Label
             FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
                  
             VerticalOptions="StartAndExpand"
             HorizontalOptions="StartAndExpand"
@@ -107,7 +107,7 @@ It is not applicable to data gathered by:"
             />
             <Label
             FontSize="Small"
-            TextColor="White"
+            TextColor="SeaGreen"
             VerticalOptions="StartAndExpand"
                  
             HorizontalOptions="StartAndExpand"

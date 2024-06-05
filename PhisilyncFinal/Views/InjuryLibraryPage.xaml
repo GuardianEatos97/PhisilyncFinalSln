@@ -5,7 +5,7 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:local="clr-namespace:PhisilyncFinal.ViewModels"
              xmlns:models="clr-namespace:PhisilyncFinal.Models"
-             BackgroundColor="MintCream">
+             BackgroundColor="#f0f8e3">
 
     <Shell.TitleView Margin="0">
         <Image 
@@ -36,7 +36,7 @@
             Text="Injury Library"
             VerticalOptions="Center"
             FontSize="Large"
-            TextColor="Black"
+            TextColor="SeaGreen"
             TextDecorations="Underline"
             FontAttributes="Bold"
             Margin="10"
@@ -62,19 +62,21 @@
                             <Image Grid.RowSpan="2" 
                                 Source="{Binding InjuryImage}" 
                                 Aspect="AspectFill" 
-                                BackgroundColor="MintCream"
+                                BackgroundColor="SeaGreen"
                                 HeightRequest="100" 
                                 WidthRequest="100" />
                             
                             <Label Grid.Column="1" 
                                 Text="{Binding InjuryName}" 
                                    Margin="20,30"
+                                   TextColor="SeaGreen"
                                 Style="{DynamicResource TitleStyle}" />
                             
                             <Label Grid.Row="1" 
                                 Grid.Column="1" 
                                 Text="{Binding Prompt}"
                                 Margin="20,-20,0,0"
+                                   TextColor="SeaGreen"
                                 VerticalOptions="End" 
                                 Style="{DynamicResource SubtitleTextStyle}" />
                         </Grid>

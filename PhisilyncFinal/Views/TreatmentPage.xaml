@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             BackgroundImageSource="greenback"
+             BackgroundColor="#f0f8e3"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:models="clr-namespace:PhisilyncFinal.Models"
              x:Class="PhisilyncFinal.Views.TreatmentPage">
@@ -33,12 +33,12 @@
             <Label 
                 Text="Current Treatment Plan"
                 VerticalOptions="Center" 
-                TextColor="White"
+                TextColor="SeaGreen"
                 HorizontalOptions="Center"
-                 
                 FontAttributes="Bold"
-                Margin="0,20,0,20"     
+                Margin="0,20,0,10"     
                 FontSize="Large"/>
+            
             <Button
                 x:Name="LynoBtn"
                 Text="   Lyno Therapy   "
@@ -46,10 +46,13 @@
                 VerticalOptions="CenterAndExpand"
                 FontSize="Medium"
                 CornerRadius="15"
+                BorderWidth="1"
+                BorderColor="Black"
                  WidthRequest="350"
                 BackgroundColor="SeaGreen"
-                Margin="0,20,0,20"
+                Margin="0,20,0,10"
                 Clicked="LynoBtn_Clicked"/>
+            
             <Button
             x:Name="MassageBtn"
             Text="Massage Therapy"
@@ -58,17 +61,20 @@
             FontSize="Medium"
                 CornerRadius="15"
             BackgroundColor="SeaGreen"
+                BorderWidth="1"
+                BorderColor="Black"
             Clicked="MassageBtn_Clicked"/>
 
             <Label
                 Text="Post-Treatment Plan"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center"
-                TextColor="White"
+                TextColor="SeaGreen"
                 
                 FontAttributes="Bold"
-                Margin="0,20,0,20"     
+                Margin="0,20,0,10"     
                 FontSize="Large"/>
+            
             <Button
                 x:Name="TapingBtn"
                 Text="                  Taping                  "
@@ -77,6 +83,8 @@
                  WidthRequest="350"
                 Margin="0,10,0,10"
                 CornerRadius="15"
+                BorderWidth="1"
+                BorderColor="Black"
                 BackgroundColor="SeaGreen"
                 Clicked="TapingBtn_Clicked"/>
             <Button
@@ -85,6 +93,8 @@
                 HorizontalOptions="CenterAndExpand"
                 FontSize="Medium"
                WidthRequest="350" 
+                BorderWidth="1"
+                BorderColor="Black"
                 CornerRadius="15"
                 Margin="0,10,0,10"
                 BackgroundColor="SeaGreen"
@@ -95,6 +105,8 @@
                 HorizontalOptions="CenterAndExpand"
                 FontSize="Medium"
                 CornerRadius="15"
+                BorderWidth="1"
+                BorderColor="Black"
                  WidthRequest="350"
                 Margin="0,10,0,10"
                 BackgroundColor="SeaGreen"

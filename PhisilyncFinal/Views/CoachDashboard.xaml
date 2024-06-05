@@ -6,7 +6,7 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:viewmodel="clr-namespace:PhisilyncFinal.ViewModels"
              xmlns:models="clr-namespace:PhisilyncFinal.Models"
-             BackgroundImageSource="greenback"
+             BackgroundColor="#f0f8e3"
              x:DataType="viewmodel:CoachDashVM">
 
     <Shell.TitleView Margin="0,0,0,0">
@@ -21,7 +21,7 @@
             <toolkit:AvatarView
                 Text="Noah"
                 BorderColor="SeaGreen"
-                TextColor="White"
+                TextColor="SeaGreen"
                 ImageSource="profileimage"
                 HorizontalOptions="End"
                 CornerRadius="360"
@@ -39,16 +39,16 @@
                 Text="Noah Khan"
                 HorizontalOptions="End"
                 Margin="10,0"
-                TextColor="White"/>
+                TextColor="SeaGreen"/>
 
             <Label Text="Welcome (Your Name)"
-                   TextColor="White"
+                   TextColor="SeaGreen"
                    FontAttributes="Bold"
                    FontSize="Medium"
                    Margin="20,10,0,0"/>
 
             <Label Text="Dashboard"
-                   TextColor="White"
+                   TextColor="SeaGreen"
                    FontAttributes="Bold"
                    FontSize="Large"
                    Margin="20,10,0,0"/>
@@ -73,6 +73,7 @@
                                     <Label Text="{Binding providerInjuryName}" 
                                            FontAttributes="Bold"
                                            FontSize="20"
+                                           TextColor="SeaGreen"
                                            Margin="0,10,0,0"
                                            HorizontalOptions="Center"
                                            VerticalOptions="Center" />
@@ -88,6 +89,7 @@
                                            FontAttributes="Italic"
                                            HorizontalOptions="Center"
                                            Margin="0,10,0,0"
+                                           TextColor="SeaGreen"
                                            MaxLines="5"
                                            LineBreakMode="TailTruncation" />
                                 </StackLayout>
@@ -98,15 +100,15 @@
             </CarouselView>
             <IndicatorView x:Name="indicatorView"
                Margin="0,20,0,20"
-               IndicatorColor="White"
-               SelectedIndicatorColor="Black"
+               IndicatorColor="#7ed957"
+               SelectedIndicatorColor="SeaGreen"
                HorizontalOptions="Center" />
 
             <Button Text="Types Of Injuries Your Athletes May Have"
                      FontAttributes="Bold"
                      TextColor="White"
-                     BorderColor="White"
-                     BorderWidth="2"
+                     BorderColor="Black"
+                     BorderWidth="1"
                      BackgroundColor="SeaGreen"
                      CornerRadius="100"
                     Command="{Binding InjuryCommand}"
@@ -118,8 +120,8 @@
                     FontAttributes="Bold"
                     Clicked="PopUpClicked" 
                     TextColor="White"
-                    BorderColor="White"
-                    BorderWidth="2"
+                    BorderColor="Black"
+                    BorderWidth="1"
                     BackgroundColor="SeaGreen"
                     CornerRadius="100"
                     WidthRequest="350"
@@ -133,27 +135,27 @@
                 CalendarLayout="Month"
                 BackgroundColor="Transparent"
                 DayViewCornerRadius="5"
-                DeselectedDayTextColor="White"
-                SelectedDateColor="White"
+                DeselectedDayTextColor="SeaGreen"
+                SelectedDateColor="SeaGreen"
                 ArrowsBackgroundColor="SeaGreen"
-                ArrowsBorderColor="White"
+                ArrowsBorderColor="Black"
                 ArrowsColor="White"
-                DaysTitleColor="White"
-                DaysTitleWeekendColor="Beige" 
-                DisabledDayColor="White"
+                DaysTitleColor="SeaGreen"
+                DaysTitleWeekendColor="SeaGreen" 
+                DisabledDayColor="SeaGreen"
                 EventIndicatorColor="SeaGreen"
-                EventIndicatorSelectedColor="White"
+                EventIndicatorSelectedColor="SeaGreen"
                 EventIndicatorSelectedTextColor="White"
-                MonthLabelColor="White"
-                OtherMonthDayColor="DarkSeaGreen"
+                MonthLabelColor="SeaGreen"
+                OtherMonthDayColor="RosyBrown"
                 SelectedDayTextColor="White"
                 SelectedTodayTextColor="White"
                 TodayFillColor="#89a18b"
-                TodayOutlineColor="White"
+                TodayOutlineColor="SeaGreen"
                 TodayTextColor="White" 
-                WeekendDayColor="White"
-                YearLabelColor="White"
-                EventIndicatorTextColor="White"
+                WeekendDayColor="SeaGreen"
+                YearLabelColor="SeaGreen"
+                EventIndicatorTextColor="SeaGreen"
                 Margin="0,30,0,0"
                 WidthRequest="350"
                 HeightRequest="500">
@@ -164,11 +166,11 @@
                             <Label 
                                 Text="{Binding Name}" 
                                 FontSize="25" 
-                                TextColor="White"
+                                TextColor="SeaGreen"
                                 FontAttributes="Bold"/>
                             <Label 
                                 Text="{Binding Description}"
-                                TextColor="White"/>
+                                TextColor="SeaGreen"/>
                         </VerticalStackLayout>
                     </DataTemplate>
                 </cal:Calendar.EventTemplate>
@@ -177,8 +179,8 @@
             <Button Text="Learn About Our Service Providers"
                      FontAttributes="Bold" 
                      TextColor="White"
-                     BorderColor="White"
-                     BorderWidth="2"
+                     BorderColor="Black"
+                     BorderWidth="1"
                     Clicked="TreatmentProviderBtn_Clicked"
                      BackgroundColor="SeaGreen"
                      CornerRadius="100"
