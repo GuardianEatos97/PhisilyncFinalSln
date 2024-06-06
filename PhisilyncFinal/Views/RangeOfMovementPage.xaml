@@ -31,7 +31,7 @@
             <Label
                 Text="What is range of motion testing?"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Large"
                 HorizontalOptions="Center"
                 TextDecorations="Underline"
@@ -64,7 +64,7 @@
             <Label
                 Text="Types of ROM:"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Large"
                 HorizontalOptions="Center"
                 TextDecorations="Underline"
@@ -113,7 +113,7 @@
             <Label
                 Text="Measuring range of motion:"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Large"
                 HorizontalOptions="Center"
                 TextDecorations="Underline"

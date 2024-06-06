@@ -40,27 +40,27 @@
                 Text="{Binding CurrentUser.userName}"
                 HorizontalOptions="End"
                 Margin="0,0,20,0"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 />
 
             <HorizontalStackLayout>
                 <Label
                 Text="Welcome "
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontAttributes="Bold"
                 FontSize="Medium"
                 Margin="20,10,0,0"/>
                 
                 <Label
                 Text="{Binding CurrentUser.userName}"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontAttributes="Bold"
                 FontSize="Medium"
                 Margin="0,10,0,0"/>
 
                 <Label
                 Text="!"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontAttributes="Bold"
                 FontSize="Medium"
                 Margin="0,10,0,0"/>
@@ -85,7 +85,7 @@
                                 <StackLayout>
                                     <Label Text="{Binding providerInjuryName}" 
                                            FontAttributes="Bold"
-                                           TextColor="SeaGreen"
+                                           TextColor="Black"
                                            FontSize="20"
                                            Margin="0,10,0,0"
                                            HorizontalOptions="Center"
@@ -102,7 +102,7 @@
                                            FontAttributes="Italic" 
                                            HorizontalOptions="Center"
                                            MaxLines="5"
-                                           TextColor="SeaGreen"
+                                           TextColor="Black"
                                            Margin="0,10,0,0" />
                                 </StackLayout>
                             </Frame>
@@ -140,8 +140,8 @@
                           ArrowsBackgroundColor="SeaGreen"
                           ArrowsBorderColor="Black"
                           ArrowsColor="White"
-                          DaysTitleColor="SeaGreen"
-                          DaysTitleWeekendColor="SeaGreen" 
+                          DaysTitleColor="Black"
+                          DaysTitleWeekendColor="Black" 
                           DisabledDayColor="SeaGreen"
                           EventIndicatorColor="SeaGreen"
                           EventIndicatorSelectedColor="SeaGreen"
@@ -165,11 +165,11 @@
                             <Label 
                             Text="{Binding Name}" 
                             FontSize="25" 
-                            TextColor="SeaGreen"
+                            TextColor="Black"
                             FontAttributes="Bold"/>
                             <Label 
                             Text="{Binding Description}"
-                            TextColor="SeaGreen"/>
+                            TextColor="Black"/>
                         </VerticalStackLayout>
                     </DataTemplate>
                 </cal:Calendar.EventTemplate>

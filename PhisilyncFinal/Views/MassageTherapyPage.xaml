@@ -31,7 +31,7 @@
             <Label
                 Text="What is Massage Therapy?"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Large"
                 HorizontalOptions="Center"
                 TextDecorations="Underline"
@@ -56,7 +56,7 @@
             <Label
                 Text="Studies of massage benefits have found massage can:"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Large"
                 HorizontalOptions="Center"
                 TextDecorations="Underline"

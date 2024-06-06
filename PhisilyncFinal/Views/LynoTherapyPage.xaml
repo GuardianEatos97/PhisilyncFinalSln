@@ -31,7 +31,7 @@
             <Label
                 Text="What is Lyno Therapy?"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Large"
                 HorizontalOptions="Center"
                 TextDecorations="Underline"
@@ -40,7 +40,7 @@
             <Label
                 Text="We start with the anatomy of the fascia"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Large"
                 HorizontalOptions="Center"
                 Margin="0,30,0,0"/>
@@ -48,7 +48,7 @@
             <Label
                 Text="There are 2 layers of fascia that is of particular interest for the Lyno Method;"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Small"
                 HorizontalOptions="Center"
                 Margin="0,20,0,0"/>
@@ -56,7 +56,7 @@
             <Label
                 Text="the superficial fascia and the deep fascia"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Small"
                 HorizontalOptions="Center"
                 Margin="0,20,0,0"/>
@@ -79,7 +79,7 @@
 
             <Label
                 Text="THE SUPERFICIAL FASCIA"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Large"
                 HorizontalTextAlignment="Center"
                 FontAttributes="Bold"
@@ -96,7 +96,7 @@
 
             <Label
                 Text="THE DEEP FASCIA"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Large"
                 HorizontalTextAlignment="Center"
                 FontAttributes="Bold"
@@ -113,7 +113,7 @@
 
             <Label
                 Text="THE MYOFASCIAL LINES"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Large"
                 HorizontalTextAlignment="Center"
                 FontAttributes="Bold"
@@ -130,7 +130,7 @@
 
             <Label
                 Text="The 12 functional lines are:"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Medium"
                 HorizontalTextAlignment="Center"
                 FontAttributes="Bold"

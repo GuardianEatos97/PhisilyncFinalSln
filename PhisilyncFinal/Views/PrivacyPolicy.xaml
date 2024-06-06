@@ -16,7 +16,7 @@
             Text="Privacy Policy"
             FontSize="Medium"
                  
-            TextColor="SeaGreen"
+            TextColor="Black"
             FontAttributes="Bold"
             TextDecorations="Underline"
             Margin="0,10"
@@ -25,7 +25,7 @@
             <Label
             Text="Last Revised, May 2024"
              FontSize="Medium"
-                TextColor="SeaGreen"
+                TextColor="Black"
                  
             Margin="0,10"
             VerticalOptions="StartAndExpand"
@@ -34,7 +34,7 @@
             <Label
             Text="1. Introduction"
              FontSize="Medium"
-                TextColor="SeaGreen"
+                TextColor="Black"
             FontAttributes="Bold"
             TextDecorations="Underline"
                  
@@ -92,7 +92,7 @@ It is not applicable to data gathered by:"
             Text="2. Information We Collect"
                  
              FontSize="Medium"
-            TextColor="SeaGreen"
+            TextColor="Black"
                 FontAttributes="Bold"
             TextDecorations="Underline"
             Margin="0,20"
@@ -116,7 +116,7 @@ It is not applicable to data gathered by:"
             />
                 <Label
             FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
             VerticalOptions="StartAndExpand"
                      
             HorizontalOptions="StartAndExpand"
@@ -124,7 +124,7 @@ It is not applicable to data gathered by:"
             />
                 <Label 
             FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
             VerticalOptions="StartAndExpand"
                      
             HorizontalOptions="StartAndExpand"
@@ -132,7 +132,7 @@ It is not applicable to data gathered by:"
             />
             <Label
             FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
                  
 HorizontalOptions="StartAndExpand"
@@ -140,7 +140,7 @@ HorizontalOptions="StartAndExpand"
             />
             <Label
               FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
                  
@@ -148,7 +148,7 @@ HorizontalOptions="StartAndExpand"
             />
             <Label
              FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
                  
 HorizontalOptions="StartAndExpand"
@@ -156,7 +156,7 @@ HorizontalOptions="StartAndExpand"
             />
             <Label
             FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
                  
 HorizontalOptions="StartAndExpand"
@@ -164,7 +164,7 @@ HorizontalOptions="StartAndExpand"
             />
             <Label
                         FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
                  
@@ -172,7 +172,7 @@ HorizontalOptions="StartAndExpand"
             />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
                  
 HorizontalOptions="StartAndExpand"
@@ -180,7 +180,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
                  
 HorizontalOptions="StartAndExpand"
@@ -188,7 +188,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
                  
 HorizontalOptions="StartAndExpand"
@@ -196,7 +196,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
                  
@@ -205,7 +205,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
                  
@@ -214,7 +214,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
                  
 HorizontalOptions="StartAndExpand"
@@ -222,7 +222,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
                  
 HorizontalOptions="StartAndExpand"
@@ -230,7 +230,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
                  
@@ -238,7 +238,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
                  
 HorizontalOptions="StartAndExpand"
@@ -246,7 +246,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
                  
 HorizontalOptions="StartAndExpand"
@@ -254,7 +254,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
                  
 HorizontalOptions="StartAndExpand"
@@ -262,7 +262,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                 Text="3. How We Use Your Information"
-                TextColor="White"
+                TextColor="Black"
                  FontSize="Medium"
                 FontAttributes="Bold"
                  
@@ -271,7 +271,7 @@ HorizontalOptions="StartAndExpand"
                 HorizontalOptions="Start"/>
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
                  
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
@@ -280,7 +280,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
                  
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
@@ -289,7 +289,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
                  
@@ -297,7 +297,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
                  
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
@@ -305,7 +305,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
                  
 HorizontalOptions="StartAndExpand"
@@ -313,7 +313,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
                  
@@ -322,7 +322,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
                  
 HorizontalOptions="StartAndExpand"
@@ -331,14 +331,14 @@ HorizontalOptions="StartAndExpand"
             <Label
                FontSize="Small"
                  
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
                 Text="2.To make our App, its features, contents, and services available;"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
                  
@@ -346,7 +346,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
                  
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
@@ -354,7 +354,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
                  
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
@@ -362,7 +362,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
                  
@@ -370,7 +370,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
                  
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
@@ -378,7 +378,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
                  
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
@@ -386,7 +386,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-               TextColor="White"
+               TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
                  
 HorizontalOptions="StartAndExpand"
@@ -394,7 +394,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
                  
 HorizontalOptions="StartAndExpand"
@@ -403,7 +403,7 @@ and for any other purpose with your consent."
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
                  
 HorizontalOptions="StartAndExpand"
@@ -412,7 +412,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
                FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
                  
@@ -421,7 +421,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
     Text="4. Disclosure Of Your Information"
-                TextColor="White"
+                TextColor="Black"
      FontSize="Medium"
                  
     FontAttributes="Bold"
@@ -430,7 +430,7 @@ HorizontalOptions="StartAndExpand"
     HorizontalOptions="Start"/>
             <Label
                 FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
                  
                 VerticalOptions="StartAndExpand"
                 HorizontalOptions="StartAndExpand"
@@ -439,7 +439,7 @@ HorizontalOptions="StartAndExpand"
                 />
             <Label
     FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
     VerticalOptions="StartAndExpand"
                  
     HorizontalOptions="StartAndExpand"
@@ -447,7 +447,7 @@ HorizontalOptions="StartAndExpand"
     />
             <Label
     FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
                  
     VerticalOptions="StartAndExpand"
     HorizontalOptions="StartAndExpand"
@@ -455,7 +455,7 @@ HorizontalOptions="StartAndExpand"
     />
             <Label
     FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
     VerticalOptions="StartAndExpand"
                  
     HorizontalOptions="StartAndExpand"
@@ -463,7 +463,7 @@ HorizontalOptions="StartAndExpand"
     />
             <Label
     FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
     VerticalOptions="StartAndExpand"
                  
     HorizontalOptions="StartAndExpand"
@@ -471,7 +471,7 @@ HorizontalOptions="StartAndExpand"
     />
             <Label
     FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
     VerticalOptions="StartAndExpand"
                  
     HorizontalOptions="StartAndExpand"
@@ -479,7 +479,7 @@ HorizontalOptions="StartAndExpand"
     />
             <Label
     FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
     VerticalOptions="StartAndExpand"
     HorizontalOptions="StartAndExpand"
                  
@@ -488,7 +488,7 @@ HorizontalOptions="StartAndExpand"
     />
             <Label
     FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
     VerticalOptions="StartAndExpand"
     HorizontalOptions="StartAndExpand"
                  
@@ -497,7 +497,7 @@ HorizontalOptions="StartAndExpand"
     />
             <Label
     FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
     VerticalOptions="StartAndExpand"
                  
     HorizontalOptions="StartAndExpand"
@@ -505,7 +505,7 @@ HorizontalOptions="StartAndExpand"
     />
             <Label
     FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
     VerticalOptions="StartAndExpand"
                  
     HorizontalOptions="StartAndExpand"
@@ -514,14 +514,14 @@ HorizontalOptions="StartAndExpand"
             <Label
     FontSize="Small"
     VerticalOptions="StartAndExpand"
-                TextColor="White"
+                TextColor="SeaGreen"
                  
     HorizontalOptions="StartAndExpand"
     Text="3.To carry out the reason you give it;"
     />
             <Label
     FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
     VerticalOptions="StartAndExpand"
                  
     HorizontalOptions="StartAndExpand"
@@ -529,7 +529,7 @@ HorizontalOptions="StartAndExpand"
     />
             <Label
     FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
     VerticalOptions="StartAndExpand"
                  
     HorizontalOptions="StartAndExpand"
@@ -538,7 +538,7 @@ HorizontalOptions="StartAndExpand"
     />
             <Label
     FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
                  
     VerticalOptions="StartAndExpand"
     HorizontalOptions="StartAndExpand"
@@ -546,7 +546,7 @@ HorizontalOptions="StartAndExpand"
     />
             <Label
     FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
     VerticalOptions="StartAndExpand"
     HorizontalOptions="StartAndExpand"
                  
@@ -554,7 +554,7 @@ HorizontalOptions="StartAndExpand"
     />
             <Label
     FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
     VerticalOptions="StartAndExpand"
                  
     HorizontalOptions="StartAndExpand"
@@ -562,7 +562,7 @@ HorizontalOptions="StartAndExpand"
     />
             <Label
     Text="5. Your Rights Regarding Your Information and Accessing or Correcting Your Information"
-    TextColor="White"
+    TextColor="Black"
                  FontSize="Medium"
                  
     FontAttributes="Bold"
@@ -571,7 +571,7 @@ HorizontalOptions="StartAndExpand"
     HorizontalOptions="Start"/>
             <Label
     FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
     VerticalOptions="StartAndExpand"
                  
     HorizontalOptions="StartAndExpand"
@@ -579,7 +579,7 @@ HorizontalOptions="StartAndExpand"
     />
             <Label
     FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
     VerticalOptions="StartAndExpand"
                  
     HorizontalOptions="StartAndExpand"
@@ -588,7 +588,7 @@ HorizontalOptions="StartAndExpand"
             
             <Label
     Text="6.Data Security"
-                TextColor="White"
+                TextColor="Black"
      FontSize="Medium"
                  
     FontAttributes="Bold"
@@ -597,7 +597,7 @@ HorizontalOptions="StartAndExpand"
     HorizontalOptions="Start"/>
             <Label
     FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
                  
     VerticalOptions="StartAndExpand"
     HorizontalOptions="StartAndExpand"
@@ -605,7 +605,7 @@ HorizontalOptions="StartAndExpand"
     />
             <Label
     FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
     VerticalOptions="StartAndExpand"
                  
     HorizontalOptions="StartAndExpand"
@@ -613,7 +613,7 @@ HorizontalOptions="StartAndExpand"
     />
             <Label
     FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
     VerticalOptions="StartAndExpand"
                  
     HorizontalOptions="StartAndExpand"
@@ -621,7 +621,7 @@ HorizontalOptions="StartAndExpand"
     />
             <Label
  FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
                  
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
@@ -629,7 +629,7 @@ Text="Data collected through the website or App are governed and regulated by th
 />
             <Label
  FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
 VerticalOptions="StartAndExpand"
 HorizontalOptions="StartAndExpand"
                  
@@ -637,7 +637,7 @@ Text="All confidential information i.e location, password etc. is stored in a se
 />
             <Label
     Text="7.Changes To Our Privacy Policy"
-                TextColor="White"
+                TextColor="Black"
      FontSize="Medium"
     FontAttributes="Bold"
                  
@@ -646,7 +646,7 @@ Text="All confidential information i.e location, password etc. is stored in a se
     HorizontalOptions="Start"/>
             <Label
     FontSize="Small"
-                TextColor="White"
+                TextColor="SeaGreen"
                  
     VerticalOptions="StartAndExpand"
     HorizontalOptions="StartAndExpand"
@@ -676,10 +676,10 @@ Text="All confidential information i.e location, password etc. is stored in a se
                             Margin="0,10"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
-                    TextColor="White"/>
+                    TextColor="Black"/>
                         <Label
 Text="11 Adderley Street, Foreshore"
-TextColor="White"
+TextColor="Black"
 Margin="0"
                              
 HorizontalOptions="Center"
@@ -687,14 +687,14 @@ VerticalOptions="Center"
  FontSize="Small"/>
                         <Label
                             Text="Cape Town, 8000"
-                            TextColor="White"
+                            TextColor="Black"
                              
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
                              FontSize="Small"/>
                         <Label
                         Text="info@phisilync.co.za"
-                        TextColor="White"
+                        TextColor="Black"
                              
                         Margin="0,20"
                         HorizontalOptions="Center"
@@ -702,7 +702,7 @@ VerticalOptions="Center"
                          FontSize="Small"/>
                         <Label
                         Text="+27 (0) 215891201"
-                        TextColor="White"
+                        TextColor="Black"
                              
                         Margin="0,0"
                          FontSize="Small"
@@ -710,7 +710,7 @@ VerticalOptions="Center"
                         VerticalOptions="Center"/>
                         <Label
 Text="Or link with us via social media"
-TextColor="White"
+TextColor="Black"
                              
                             FontAttributes="Italic"
 Margin="0,20,0,0"
@@ -720,7 +720,7 @@ VerticalOptions="Center"/>
                     </StackLayout>
                 </Frame>
                 
-                    <Frame BackgroundColor="Transparent" BorderColor="Transparent" Grid.Row="1" HasShadow="True" VerticalOptions="Center" MaximumWidthRequest="350">
+                    <Frame BackgroundColor="SeaGreen" BorderColor="SeaGreen" Grid.Row="1" HasShadow="True" VerticalOptions="Center" MaximumWidthRequest="350">
                     <ScrollView Orientation="Horizontal">
                         <Grid
                         Margin="15,0,0,0"
@@ -796,7 +796,7 @@ HorizontalOptions="Center"
                          
 Text="© Copyright Phisilync (Pty) Ltd 2024 │ All Rights Reserved"
                 Margin="0,20"
-TextColor="White"/>
+TextColor="Black"/>
                     </StackLayout>
             </Grid>
         </VerticalStackLayout>

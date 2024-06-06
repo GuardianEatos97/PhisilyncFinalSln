@@ -31,7 +31,7 @@
             <Label
                 Text="What are stretches and exercise?"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Large"
                 HorizontalOptions="Center"
                 TextDecorations="Underline"
@@ -48,7 +48,7 @@
             <Label
                 Text="Effects of stretching"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Large"
                 HorizontalOptions="Center"
                 TextDecorations="Underline"
@@ -97,7 +97,7 @@
             <Label
                 Text="Stretching Indications"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Large"
                 HorizontalOptions="Center"
                 TextDecorations="Underline"
@@ -162,7 +162,7 @@
             <Label
                 Text="Types of stretches:"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Large"
                 HorizontalOptions="Center"
                 TextDecorations="Underline"
@@ -179,7 +179,7 @@
             <Label
                 Text="The three types of stretches are:"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Medium"
                 HorizontalOptions="Center"
                 Margin="0,20,0,0"/>
@@ -211,7 +211,7 @@
             <Label
                 Text="Static Streches (SS)"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 TextDecorations="Underline"
                 FontSize="Large"
                 HorizontalOptions="Center"
@@ -228,7 +228,7 @@
             <Label
                 Text="There are two types of static stretches:"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Medium"
                 HorizontalOptions="Center"
                 Margin="0,20,0,0"/>
@@ -252,7 +252,7 @@
             <Label
                 Text="Dynamic Streches (DS)"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Large"
                 TextDecorations="Underline"
                 HorizontalOptions="Center"
@@ -277,7 +277,7 @@
             <Label
                 Text="Pre-Contraction Stretching: Proprioceptive Neuromuscular"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Large"
                 TextDecorations="Underline"
                 HorizontalOptions="Center"

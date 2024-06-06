@@ -16,7 +16,7 @@
             <Label 
                Text="{Binding InjuryName}"
                HorizontalOptions="Center"
-                TextColor="SeaGreen"
+                TextColor="Black"
                FontAttributes="Bold"
                FontSize="Large"
                Style="{DynamicResource TitleStyle}" />
@@ -31,7 +31,7 @@
                 Text="Anatomy"
                 FontAttributes="Bold"
                 FontSize="Medium"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 Style="{DynamicResource TitleStyle}"
                 HorizontalTextAlignment="Center"/>
             <Label 
@@ -44,7 +44,7 @@
                 Text="Test"
                 FontAttributes="Bold"
                 FontSize="Medium"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 Style="{DynamicResource TitleStyle}"
                 HorizontalTextAlignment="Center"/>
             <Label 
@@ -57,7 +57,7 @@
                 Text="Release"
                 FontAttributes="Bold"
                 FontSize="Medium"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 Style="{DynamicResource TitleStyle}"
                 HorizontalTextAlignment="Center"/>
             <Label 

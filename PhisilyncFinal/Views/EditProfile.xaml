@@ -29,7 +29,7 @@
                     </toolkit:AvatarView.GestureRecognizers>
                 </toolkit:AvatarView>
             </HorizontalStackLayout>
-            <StackLayout Margin="0,80,0,0">
+            <StackLayout Margin="0,80,0,0" BackgroundColor="#f0f8e3">
                 
                 <Frame Padding="0" HasShadow="False" BorderColor="Transparent" HeightRequest="60">
                     <Grid GestureRecognizers="{TapGestureRecognizer Command={Binding NavigateToProfileDetailsCommand}}">

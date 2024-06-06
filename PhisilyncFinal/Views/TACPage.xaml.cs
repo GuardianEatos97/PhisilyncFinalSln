@@ -10,8 +10,8 @@ public partial class TACPage : ContentPage
     {
         await DisplayAlert("Notice", "Thank you for agreeing to our Terms of Use Policy", "Proceed");
         AgreeBtn.IsVisible = false;
-		AgreeBtn.IsEnabled = false;
-		
+        AgreeBtn.IsEnabled = false;
+
     }
 
     private async void FbBtn_Clicked(object sender, EventArgs e)

@@ -16,7 +16,7 @@ Aspect="Center"/>
            Text="{Binding providerInjuryName}"
            HorizontalOptions="Center"
            FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
            FontSize="Large"
            Style="{DynamicResource TitleStyle}" />
             <Image 
@@ -28,7 +28,7 @@ Aspect="Center"/>
             <Label
             Text="Anatomy"
             FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
             FontSize="Medium"
             Style="{DynamicResource TitleStyle}"
             HorizontalTextAlignment="Center"/>
@@ -39,9 +39,9 @@ Aspect="Center"/>
             HorizontalTextAlignment="Start"
             Style="{DynamicResource BodyStyle}" />
             <Label
-            Text="Description About Your Injury"
+            Text="Injury Description"
             FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
             FontSize="Medium"
             Style="{DynamicResource TitleStyle}"
             HorizontalTextAlignment="Center"/>

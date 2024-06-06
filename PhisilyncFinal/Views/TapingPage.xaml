@@ -31,7 +31,7 @@
             <Label
                 Text="What is kinesiology taping?"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Large"
                 HorizontalOptions="Center"
                 TextDecorations="Underline"
@@ -56,7 +56,7 @@
             <Label
                 Text="Who benefits from using kinesiology tape?"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Large"
                 HorizontalOptions="Center"
                 TextDecorations="Underline"
@@ -97,7 +97,7 @@
             <Label
                 Text="Are there misconceptions people should be aware of?"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Large"
                 HorizontalOptions="Center"
                 TextDecorations="Underline"
@@ -130,7 +130,7 @@
             <Label
                 Text="What does kinesiology tape do?"
                 FontAttributes="Bold"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 FontSize="Large"
                 HorizontalOptions="Center"
                 TextDecorations="Underline"

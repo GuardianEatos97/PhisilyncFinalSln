@@ -19,7 +19,7 @@
             <Label
                             Text="Test"
                             FontAttributes="Bold"
-                            TextColor="SeaGreen"
+                            TextColor="Black"
                             FontSize="Medium"
                             Style="{DynamicResource TitleStyle}"
                             HorizontalTextAlignment="Center" />
@@ -38,7 +38,7 @@
                 Text="Release"
                 FontAttributes="Bold"
                 FontSize="Medium"
-                TextColor="SeaGreen"
+                TextColor="Black"
                 Style="{DynamicResource TitleStyle}"
                 HorizontalTextAlignment="Center"/>
 

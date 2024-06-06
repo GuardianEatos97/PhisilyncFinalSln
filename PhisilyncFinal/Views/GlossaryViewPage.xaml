@@ -34,7 +34,7 @@
                 Text="Anatomy Glossary"
                 VerticalOptions="Center"
                 FontSize="Large"
-            TextColor="SeaGreen"
+            TextColor="Black"
                 TextDecorations="Underline"
                 FontAttributes="Bold"
                 Margin="10"
@@ -73,7 +73,7 @@
                             <Label Grid.Column="1" 
                             Text="{Binding GlossaryWord}" 
                             VerticalOptions="Center"
-                                   TextColor="SeaGreen"
+                                   TextColor="Black"
                             Margin="20,30"
                             Style="{DynamicResource TitleStyle}" />
                             <Label Grid.Row="1" 

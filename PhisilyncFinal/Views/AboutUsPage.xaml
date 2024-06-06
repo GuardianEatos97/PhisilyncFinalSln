@@ -13,7 +13,7 @@
     <VerticalStackLayout>
         <Label
             Text="About Us:"
-            TextColor="SeaGreen"
+            TextColor="Black"
             FontAttributes="Bold"
             FontSize="Large"
             HorizontalOptions="Center"
