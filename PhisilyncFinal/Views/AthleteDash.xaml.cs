@@ -15,11 +15,23 @@ public partial class AthleteDash : ContentPage
     {
         InitializeComponent();
         BindingContext = athleteDashVM;
+        OnAppearing();
     }
 
     private async void TreatmentProviderBtn_Clicked(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("///TreatmentPage");
+    }
+
+    protected void OnAppearing()
+    {
+        base.OnAppearing();
+
+        var vm = (AthleteDashVM)BindingContext;
+
+        vm.OnAppearing();
+
+        //await athleteDashVM.GetEvents();
     }
 
 }

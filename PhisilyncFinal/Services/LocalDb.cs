@@ -60,6 +60,25 @@ namespace PhisilyncFinal.Services
                 _dbConnection.Insert(userType);
             }
 
+            if (_dbConnection.Table<TreatmentFrequency>().Count() == 0)
+            {
+                TreatmentFrequency treatmentFrequency = new TreatmentFrequency()
+                {
+                    treatmentFreqDescription = "Daily",
+
+                };
+                _dbConnection.Insert(treatmentFrequency);
+                treatmentFrequency = new TreatmentFrequency()
+                {
+                    treatmentFreqDescription = "Weekly",
+                };
+                _dbConnection.Insert(treatmentFrequency);
+                treatmentFrequency = new TreatmentFrequency()
+                {
+                    treatmentFreqDescription = "Monthly",
+                };
+                _dbConnection.Insert(treatmentFrequency);
+            }
             if (_dbConnection.Table<ServiceType>().Count() == 0)
             {
                 ServiceType serviceType = new ServiceType()
@@ -327,7 +346,7 @@ namespace PhisilyncFinal.Services
                     treatmentName = "Neck Side Flexion (Neck Side Strain)",
                     treatmentDescription = "A neck strain occurs when one or more fibers in a neck muscle or tendon stretch too far and tear.",
                     treatmentInjury = 1,
-
+                    treatmentTreatmentFrequency = 1,
                 };
                 _dbConnection.Insert(treatment);
 
@@ -336,7 +355,7 @@ namespace PhisilyncFinal.Services
                     treatmentName = "Neck Flexion (Frontal Neck Strain)",
                     treatmentDescription = "A neck strain occurs when one or more fibers in a neck muscle or tendon stretch too far and tear.",
                     treatmentInjury = 2,
-
+                    treatmentTreatmentFrequency = 2,
                 };
                 _dbConnection.Insert(treatment);
 
@@ -345,7 +364,7 @@ namespace PhisilyncFinal.Services
                     treatmentName = "Neck Rotation (Full Neck Strain)",
                     treatmentDescription = "A neck strain occurs when one or more fibers in a neck muscle or tendon stretch too far and tear.",
                     treatmentInjury = 3,
-
+                    treatmentTreatmentFrequency = 3,
                 };
                 _dbConnection.Insert(treatment);
 
@@ -354,7 +373,7 @@ namespace PhisilyncFinal.Services
                     treatmentName = "Trunk Rotation (Abdomen Strain)",
                     treatmentDescription = "An abdominal muscle strain, or pulled stomach muscle, is an injury that occurs when muscles in the stomach stretch or tear",
                     treatmentInjury = 4,
-
+                    treatmentTreatmentFrequency = 1,
                 };
                 _dbConnection.Insert(treatment);
 
@@ -363,7 +382,7 @@ namespace PhisilyncFinal.Services
                     treatmentName = "Hip Abduction",
                     treatmentDescription = "Hip abduction refers to the movement of the leg away from the midline of the body. We use this action daily when stepping to the side, getting out of bed, or exiting a car.",
                     treatmentInjury = 5,
-
+                    treatmentTreatmentFrequency = 2,
                 };
                 _dbConnection.Insert(treatment);
 
@@ -372,7 +391,7 @@ namespace PhisilyncFinal.Services
                     treatmentName = "Hip Adduction",
                     treatmentDescription = "Hip adduction refers to the movement of the leg toward the midline of the body. We use this action daily when crossing one leg over the other or bringing the legs together.",
                     treatmentInjury = 6,
-
+                    treatmentTreatmentFrequency = 3,
                 };
                 _dbConnection.Insert(treatment);
 
@@ -381,7 +400,7 @@ namespace PhisilyncFinal.Services
                     treatmentName = "Knee Extension (Pulled Hamstring)",
                     treatmentDescription = "A pulled hamstring is a common muscle injury that occurs when one or more of the hamstring muscles are stretched or contracted beyond their limit, resulting in tearing of the muscle fibers.",
                     treatmentInjury = 7,
-
+                    treatmentTreatmentFrequency = 1,
                 };
                 _dbConnection.Insert(treatment);
 
@@ -390,7 +409,7 @@ namespace PhisilyncFinal.Services
                     treatmentName = "Ankle Dorsiflexion (Pulled Calves)",
                     treatmentDescription = "A calf strain is a common injury that occurs when the calf muscle is stretched beyond its limits, resulting in tearing of the muscle fibers.",
                     treatmentInjury = 8,
-
+                    treatmentTreatmentFrequency = 2,
                 };
                 _dbConnection.Insert(treatment);
 
@@ -399,7 +418,7 @@ namespace PhisilyncFinal.Services
                     treatmentName = "Ankle Eversion",
                     treatmentDescription = "An eversion ankle sprain is an injury to the ligaments on the inside of the ankle. It’s a common injury that can happen when the foot twists inward.",
                     treatmentInjury = 9,
-
+                    treatmentTreatmentFrequency = 3,
                 };
 
                 _dbConnection.Insert(treatment);
@@ -409,6 +428,7 @@ namespace PhisilyncFinal.Services
                     treatmentName = "Ankle Inversion",
                     treatmentDescription = "An inversion ankle sprain is an injury to the ligaments on the outside of the ankle. It’s a common injury that can happen when the foot twists outward.",
                     treatmentInjury = 10,
+                    treatmentTreatmentFrequency = 1,
 
                 };
                 _dbConnection.Insert(treatment);
@@ -418,7 +438,7 @@ namespace PhisilyncFinal.Services
                     treatmentName = "Toe Extension",
                     treatmentDescription = "A toe sprain is an injury to the ligaments around the toe joint. It’s a common injury that can happen when the toe is bent or jammed.",
                     treatmentInjury = 11,
-                          
+                    treatmentTreatmentFrequency = 2,
                 };
                 _dbConnection.Insert(treatment);
             }
@@ -649,6 +669,9 @@ namespace PhisilyncFinal.Services
             }
         }
 
+        
+        
+        
         public void SaveDash(TreatmentDashboard dash, User user)
         {
             try
@@ -664,9 +687,27 @@ namespace PhisilyncFinal.Services
             }
         }
 
+        public void SaveEvent(Event evnt)
+        {
+            try
+            {
+                _dbConnection.Insert(evnt);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
         public List<ProviderInjury> GetInjuriesList()
         {
             return _dbConnection.Table<ProviderInjury>().ToList();
+        }
+
+        public Treatment GetTreatment(int id)
+        {
+            return _dbConnection.Table<Treatment>().Where(x => x.treatmentID == id).FirstOrDefault();
         }
 
         public TreatmentAction GetTestTreatmentAction(int id) 
@@ -680,6 +721,11 @@ namespace PhisilyncFinal.Services
         {
             return _dbConnection.Table<TreatmentAction>().Where(x => x.treatmentActionTreatment == id && x.treatmentActionCategory == "Release").FirstOrDefault();
 
+        }
+
+        public List<Event> GetCurrentTreatment()
+        {
+            return _dbConnection.Table<Event>().ToList();
         }
 
         public List<Treatment> GetTreatmentsList()
@@ -705,5 +751,12 @@ namespace PhisilyncFinal.Services
         {
             return _dbConnection.Table<User>().FirstOrDefault();
         }
+
+        public User UpdateUser(User user)
+        {
+            _dbConnection.Update(user);
+            return user;
+        }
+
     }
 } 

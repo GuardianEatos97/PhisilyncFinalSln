@@ -11,17 +11,26 @@ using PhisilyncFinal.Models;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Windows.Input;
+using Plugin.Maui.Calendar.Models;
+using System.ComponentModel;
 
 namespace PhisilyncFinal.ViewModels
 {
 
-    public partial class AthleteDashVM : BaseViewModel
+    public partial class AthleteDashVM : BaseViewModel,INotifyPropertyChanged
     {
 
-        private LocalDb _localDb;
+        private LocalDb db;
 
-        private User _currentUser;
+        private TreatmentAction? _injuryTestDetails;
 
+        public TreatmentAction? InjuryTestDetails
+        {
+            get { return _injuryTestDetails; }
+            set { _injuryTestDetails = value; }
+        }
+
+        public User _currentUser;
         public User CurrentUser
         {
             get { return _currentUser; }
@@ -32,8 +41,8 @@ namespace PhisilyncFinal.ViewModels
                 OnPropertyChanged();
             }
         }
-        private InjuryViewModel _injuryViewModel;
 
+        private InjuryViewModel _injuryViewModel;
         public InjuryViewModel InjuryVM
         {
             get { return _injuryViewModel; }
@@ -45,58 +54,46 @@ namespace PhisilyncFinal.ViewModels
             }
         }
 
-        private ObservableCollection<Event> _events;
-
-        public ObservableCollection<Event> Events
+        private EventCollection events;
+        public EventCollection Events
         {
-            get { return _events; }
+            get { return events; }
             set
             {
-                _events = value;
+                events = value;
 
                 OnPropertyChanged();
             }
         }
 
+        public ObservableCollection<Event> TreatmentEvents { get; set; }
 
 
 
-        //private LocalDb _database;
-        //private ObservableCollection<TreatmentAction> _treatmentaction;
 
-        //public ObservableCollection<TreatmentAction> Dashboard
-        //{
-        //    get => _treatmentaction;
-        //    set
-        //    {
-        //        _treatmentaction = value;
-        //        OnPropertyChanged();
-        //    }
-        //}
 
         public AthleteDashVM(InjuryViewModel injuryViewModel)
         {
+
             InjuryVM = injuryViewModel;
 
-            _localDb = new LocalDb();
-            CurrentUser = _localDb.GetUserByID(1);
+            db = new();
 
-            Events = new ObservableCollection<Event>()
+            OnAppearing();
+            OnPropertyChanged();
+        }
+
+        public override void OnAppearing()
         {
-            new Event { Name = "Cool event1", Description = "This is Cool event1's description!", EventDate = DateTime.Now},
-            new Event { Name = "Cool event2", Description = "This is Cool event2's description!", EventDate = DateTime.Now.AddDays(5) },
-            new Event { Name = "Cool event3", Description = "This is Cool event3's description!", EventDate = DateTime.Now.AddDays(-3) },
-            new Event { Name = "Cool event4", Description = "This is Cool event4's description!", EventDate = new DateTime(2020, 3, 16)}
-        };
-
+            base.OnAppearing();
+            TreatmentEvents = new ObservableCollection<Event>(db.GetCurrentTreatment());
+            Events = new EventCollection();
+            AddEvents();
+            
 
         }
 
-        //public override void Initialize()
-        //{
-        //    base.Initialize();
-        //    Dashboard = new ObservableCollection<TreatmentAction>(_database.GetTreatmentActions());
-        //}
+
 
 
 
@@ -121,7 +118,32 @@ namespace PhisilyncFinal.ViewModels
         }
 
 
+        public void AddEvents()
+        {
 
+
+
+
+
+
+            foreach (var treatment in db.GetCurrentTreatment())
+            {
+                if (!Events.ContainsKey(treatment.EventDate))
+                {
+                    Events.Add(treatment.EventDate, new List<Event> { treatment });
+                }
+                else
+                {
+                    List<Event> name = (List<Event>)Events[treatment.EventDate];
+                    name.Add(treatment);
+                    Events[treatment.EventDate] = name;
+                }
+
+            }
+
+
+
+        }
 
 
     }

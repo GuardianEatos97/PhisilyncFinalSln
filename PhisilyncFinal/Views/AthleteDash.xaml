@@ -22,7 +22,7 @@
             <toolkit:AvatarView
                 BorderColor="SeaGreen"
                 TextColor="White"
-                ImageSource="{Binding CurrentUser.Avatar}"
+                
                 HorizontalOptions="End"
                 CornerRadius="360"
                 Margin="0,10,5,0"

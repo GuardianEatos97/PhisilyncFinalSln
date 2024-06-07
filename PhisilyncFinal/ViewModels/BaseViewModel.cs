@@ -17,6 +17,12 @@ namespace PhisilyncFinal.ViewModels
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        public event EventHandler? Appearing;
+        public virtual void OnAppearing()
+        {
+            Appearing?.Invoke(this, EventArgs.Empty);
+        }
+
         public virtual void Initialize()
         {
         }

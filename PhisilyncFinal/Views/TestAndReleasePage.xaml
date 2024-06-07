@@ -16,41 +16,50 @@
 
     <ScrollView>
         <StackLayout Margin="20">
-            <Label
-                            Text="Test"
-                            FontAttributes="Bold"
-                            TextColor="Black"
-                            FontSize="Medium"
-                            Style="{DynamicResource TitleStyle}"
-                            HorizontalTextAlignment="Center" />
-
-                                <Label 
-                                    Text="{Binding injurieTest.treatmentActionStepAction}"
-                                    FontSize="Medium"
-                                    TextColor="SeaGreen"
-                                    HorizontalTextAlignment="Start"
-                                    Style="{DynamicResource BodyStyle}"/>
-
-                            
-                     
 
             <Label
-                Text="Release"
-                FontAttributes="Bold"
-                FontSize="Medium"
-                TextColor="Black"
-                Style="{DynamicResource TitleStyle}"
-                HorizontalTextAlignment="Center"/>
+                        Text="Test"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        FontSize="Medium"
+                        Style="{DynamicResource TitleStyle}"
+                        HorizontalTextAlignment="Center" />
 
             <Label 
-                Text="{Binding injurieRelease.treatmentActionStepAction}"
-                FontSize="Medium"
-                TextColor="SeaGreen" 
-                HorizontalTextAlignment="Start"
-                Style="{DynamicResource BodyStyle}" />
-                                    
-             
-                                  
+                                Text="{Binding injurieTest.treatmentActionStepAction}"
+                                FontSize="Medium"
+                                TextColor="White"
+                                HorizontalTextAlignment="Start"
+                                Style="{DynamicResource BodyStyle}"/>
+
+            <Label
+            Text="Release"
+            FontAttributes="Bold"
+            FontSize="Medium"
+            TextColor="White"
+            Style="{DynamicResource TitleStyle}"
+            HorizontalTextAlignment="Center"/>
+
+            <Label 
+            Text="{Binding injurieRelease.treatmentActionStepAction}"
+            FontSize="Medium"
+            TextColor="White"
+            HorizontalTextAlignment="Start"
+            Style="{DynamicResource BodyStyle}" />
+
+            <Button
+      Text="Add Treatment to Dashboard"
+      FontAttributes="Bold"
+      TextColor="White"
+      BorderColor="Beige"
+      BorderWidth="2"
+       Clicked="Button_Clicked"
+      BackgroundColor="SeaGreen"
+      CornerRadius="100"
+      WidthRequest="350"
+      HeightRequest="70"
+      Margin="0,0,0,0"/>
+
         </StackLayout>
     </ScrollView>
 
