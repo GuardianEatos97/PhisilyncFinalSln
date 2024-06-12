@@ -16,6 +16,7 @@ namespace PhisilyncFinal.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public int TreatmentID { get; set; }
+        public string Category { get; set; }
         public DateTime EventDate { get; set; }
 
         [ForeignKey(nameof(User))]

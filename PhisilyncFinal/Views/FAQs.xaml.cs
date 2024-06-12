@@ -1,11 +1,18 @@
+using CommunityToolkit.Maui.Core;
+using MauiPopup;
+
 namespace PhisilyncFinal.Views;
 
-public partial class FAQs : ContentPage
+public partial class FAQs 
 {
+  
 	public FAQs()
 	{
 		InitializeComponent();
-	}
+         
+       
+       
+    }
 
     private async void FbBtn_Clicked(object sender, EventArgs e)
     {
@@ -30,5 +37,10 @@ public partial class FAQs : ContentPage
     private async void LinkedinBtn_Clicked(object sender, EventArgs e)
     {
         await Launcher.OpenAsync("https://www.linkedin.com/in/phisilync-pty-ltd-704795309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app");
+    }
+
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+        PopupAction.ClosePopup();
     }
 }

@@ -6,6 +6,7 @@
              x:Class="PhisilyncFinal.Views.AthleteDash"
              xmlns:viewmodel="clr-namespace:PhisilyncFinal.ViewModels"
              xmlns:models="clr-namespace:PhisilyncFinal.Models"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
              BackgroundColor="#f0f8e3"
              x:DataType="viewmodel:AthleteDashVM">
 
@@ -16,10 +17,10 @@
             Source="phisilyncgreen"
              Aspect="Center"/>
     </Shell.TitleView>
-    
-    <ScrollView Orientation="Vertical">
-        <VerticalStackLayout>
-            <toolkit:AvatarView
+    <Grid Padding="10">
+        <ScrollView Orientation="Vertical">
+            <VerticalStackLayout>
+                <toolkit:AvatarView
                 BorderColor="SeaGreen"
                 TextColor="White"
                 
@@ -31,49 +32,49 @@
                 BorderWidth="5"
                 BackgroundColor="#7ed957">
 
-                <toolkit:AvatarView.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding AvatarTappedCommand}"/>
-                </toolkit:AvatarView.GestureRecognizers>
-            </toolkit:AvatarView>
+                    <toolkit:AvatarView.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding AvatarTappedCommand}"/>
+                    </toolkit:AvatarView.GestureRecognizers>
+                </toolkit:AvatarView>
 
-            <Label
+                <Label
                 Text="{Binding CurrentUser.userName}"
                 HorizontalOptions="End"
                 Margin="0,0,20,0"
                 TextColor="Black"
                 />
 
-            <HorizontalStackLayout>
-                <Label
+                <HorizontalStackLayout>
+                    <Label
                 Text="Welcome "
                 TextColor="Black"
                 FontAttributes="Bold"
                 FontSize="Medium"
                 Margin="20,10,0,0"/>
-                
-                <Label
+
+                    <Label
                 Text="{Binding CurrentUser.userName}"
                 TextColor="Black"
                 FontAttributes="Bold"
                 FontSize="Medium"
                 Margin="0,10,0,0"/>
 
-                <Label
+                    <Label
                 Text="!"
                 TextColor="Black"
                 FontAttributes="Bold"
                 FontSize="Medium"
                 Margin="0,10,0,0"/>
-            </HorizontalStackLayout>
+                </HorizontalStackLayout>
 
 
-            <CarouselView ItemsSource="{Binding InjuryVM.Injuries}"
+                <CarouselView ItemsSource="{Binding InjuryVM.Injuries}"
                           IndicatorView="indicatorView"
                           BackgroundColor="Transparent"  >
-                <CarouselView.ItemTemplate>
-                    <DataTemplate x:DataType="models:ProviderInjury">
-                        <StackLayout>
-                            <Frame HasShadow="True"
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate x:DataType="models:ProviderInjury">
+                            <StackLayout>
+                                <Frame HasShadow="True"
                                    BorderColor="DarkGray"
                                    CornerRadius="5"
                                    BackgroundColor="White"
@@ -82,8 +83,8 @@
                                    WidthRequest="350"
                                    HorizontalOptions="Center"
                                    VerticalOptions="CenterAndExpand">
-                                <StackLayout>
-                                    <Label Text="{Binding providerInjuryName}" 
+                                    <StackLayout>
+                                        <Label Text="{Binding providerInjuryName}" 
                                            FontAttributes="Bold"
                                            TextColor="Black"
                                            FontSize="20"
@@ -91,32 +92,32 @@
                                            HorizontalOptions="Center"
                                            VerticalOptions="Center" />
 
-                                    <Image Source="{Binding providerInjuryImage}" 
+                                        <Image Source="{Binding providerInjuryImage}" 
                                            Aspect="AspectFill"
                                            HeightRequest="150"
                                            WidthRequest="150"
                                            Margin="0,10,0,0"
                                            HorizontalOptions="Center" />
 
-                                    <Label Text="{Binding providerPrompt}"
+                                        <Label Text="{Binding providerPrompt}"
                                            FontAttributes="Italic" 
                                            HorizontalOptions="Center"
                                            MaxLines="5"
                                            TextColor="Black"
                                            Margin="0,10,0,0" />
-                                </StackLayout>
-                            </Frame>
-                        </StackLayout>
-                    </DataTemplate>
-                </CarouselView.ItemTemplate>
-            </CarouselView>
-            <IndicatorView x:Name="indicatorView"
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                <IndicatorView x:Name="indicatorView"
                            Margin="0,0,0,20"
                            IndicatorColor="#7ed957"
                            SelectedIndicatorColor="SeaGreen"
                            HorizontalOptions="Center" />
 
-            <Button
+                <Button
                 Text="Take Me To My Injury"
                 FontAttributes="Bold"
                 TextColor="White"
@@ -129,7 +130,11 @@
                 HeightRequest="70"
                 Margin="0,0,0,0"/>
 
-            <cal:Calendar Events="{Binding Events}" 
+                <cal:Calendar 
+                    Events="{Binding Events}" 
+                    FooterArrowVisible="False"
+                    FooterSectionVisible="False"
+                    
                           EventsScrollViewVisible="True" 
                           SelectedDayBackgroundColor="SeaGreen"
                           CalendarLayout="Month"
@@ -158,35 +163,143 @@
                           EventIndicatorTextColor="SeaGreen"
                           Margin="0,30,0,0"
                           WidthRequest="350 "
-                          HeightRequest="500">
-                <cal:Calendar.EventTemplate>
-                    <DataTemplate x:DataType="models:Event">
-                        <VerticalStackLayout>
-                            <Label 
+                          HeightRequest="500"
+                    
+                    >
+                    <cal:Calendar.EventTemplate>
+                        <DataTemplate x:DataType="models:Event">
+                            <VerticalStackLayout>
+                                <Label 
                             Text="{Binding Name}" 
                             FontSize="25" 
                             TextColor="Black"
                             FontAttributes="Bold"/>
-                            <Label 
+                                <Label 
                             Text="{Binding Description}"
                             TextColor="Black"/>
-                        </VerticalStackLayout>
-                    </DataTemplate>
-                </cal:Calendar.EventTemplate>
-            </cal:Calendar>
+                            </VerticalStackLayout>
+                        </DataTemplate>
+                    </cal:Calendar.EventTemplate>
+                </cal:Calendar>
 
-            <Button
-                Text="Learn About Our Service Providers"
-                FontAttributes="Bold"
-                TextColor="White"
-                BorderColor="Black"
-                BorderWidth="1"
-                BackgroundColor="SeaGreen"
-                CornerRadius="100"
-                 WidthRequest="350"
-                Clicked="TreatmentProviderBtn_Clicked"
-                HeightRequest="70"
-                Margin="0,0,0,20"/>
-        </VerticalStackLayout>
-    </ScrollView>
+                <Frame
+            
+                    VerticalOptions="EndAndExpand"
+         Margin="0,-85,0,0"
+         Padding="10"
+         BackgroundColor="Beige"
+         CornerRadius="10"
+         HasShadow="True"
+         HeightRequest="450"
+         BorderColor="LightSeaGreen">
+
+                    <ScrollView>
+                        <ListView ItemsSource="{Binding TodayEvents}" HasUnevenRows="True" Margin="0,5,0,0" >
+                            <ListView.ItemTemplate>
+                                <DataTemplate x:DataType="models:Event">
+                                    <ViewCell>
+                                        <Grid Padding="10">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="*" />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label Text="{Binding Name}"  Grid.Row="0"  Margin="90,0,0,0"/>
+                                            <Label Text="{Binding Description}" Grid.Row="1"  Margin="0,10,0,0"/>
+                                        </Grid>
+                                    </ViewCell>
+
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </ScrollView>
+                </Frame>
+
+                <Button
+                  Text="Learn About Our Service Providers"
+                  FontAttributes="Bold"
+                  TextColor="White"
+                  BorderColor="Black"
+                  BorderWidth="1"
+                  BackgroundColor="SeaGreen"
+                  CornerRadius="100"
+                   WidthRequest="350"
+                  Clicked="TreatmentProviderBtn_Clicked"
+                  HeightRequest="70"
+                  Margin="0,15,0,20"/>   
+
+                
+            </VerticalStackLayout>
+        </ScrollView>
+       
+        
+        <VerticalStackLayout HorizontalOptions="End"
+                                 VerticalOptions="End"
+                                 Padding="10"
+                                 Margin="0,0,0,60"
+                                 Spacing="7"
+                                 x:Name="floatButtonContainer">
+            <Frame 
+       CornerRadius="50"  Scale="1.13" BackgroundColor="White" HeightRequest="50" WidthRequest="50" BorderColor="Black" HasShadow="True">
+                <Image Source="injury.gif" IsAnimationPlaying="True" Scale="3.79" Aspect="AspectFill" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding InjuryCommand}"/>
+
+                    </Image.GestureRecognizers>
+                </Image>
+            </Frame>
+            
+            <Frame 
+                 CornerRadius="50"  Scale="1.13" BackgroundColor="White" HeightRequest="50" WidthRequest="50" BorderColor="Black" HasShadow="True">
+                <Image Source="faqgif.gif" IsAnimationPlaying="True" Scale="3.79" Aspect="AspectFill" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding PopupCommand}"/>
+
+                    </Image.GestureRecognizers>
+                </Image>
+            </Frame>
+            <Frame CornerRadius="50" Scale="1" BackgroundColor="White" HeightRequest="50" WidthRequest="50" BorderColor="Black" HasShadow="True">
+                <Image Source="lennygif.gif" IsAnimationPlaying="True" Scale="3.7" Aspect="AspectFill" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding LennyCommand}"/>
+
+                    </Image.GestureRecognizers>
+                </Image>
+            </Frame>
+            
+
+
+            </VerticalStackLayout>
+
+        <Frame BorderColor="Black" HasShadow="True" 
+            HorizontalOptions="End"
+        VerticalOptions="End"
+        HeightRequest="50"
+                Margin="9"
+                WidthRequest="50"
+                            >
+            <ImageButton Source="appmenu.png"
+                 Scale="3.5"
+                    x:Name="MenuButton"
+                    Clicked="MenuButton_Clicked"/>
+        </Frame>
+
+
+
+           
+           
+                
+                               
+
+
+
+
+
+        
+    
+    
+    </Grid>
 </ContentPage>

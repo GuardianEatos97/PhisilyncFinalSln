@@ -87,7 +87,7 @@ namespace PhisilyncFinal.ViewModels
             {
                 var user = new User
                 {
-                    userName = this.Name,
+                    userName = this.Name, 
                     userSurname = this.Surname,
                     userEmail = this.Email,
                     userPassword = this.Password,

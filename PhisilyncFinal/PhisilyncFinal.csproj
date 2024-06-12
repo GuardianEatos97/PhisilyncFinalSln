@@ -65,6 +65,7 @@
 	  <None Remove="Resources\Images\ankleinverremovebg.png" />
 	  <None Remove="Resources\Images\ankleinversion.png" />
 	  <None Remove="Resources\Images\ankleinversioncapture.PNG" />
+	  <None Remove="Resources\Images\appmenu.png" />
 	  <None Remove="Resources\Images\athleticscoach.jpg" />
 	  <None Remove="Resources\Images\backarrow.png" />
 	  <None Remove="Resources\Images\calf.jpg" />
@@ -83,6 +84,7 @@
 	  <None Remove="Resources\Images\exercise.webp" />
 	  <None Remove="Resources\Images\facebook.png" />
 	  <None Remove="Resources\Images\facebook_sq.png" />
+	  <None Remove="Resources\Images\faqgif.gif" />
 	  <None Remove="Resources\Images\fbook.png" />
 	  <None Remove="Resources\Images\flexi.avif" />
 	  <None Remove="Resources\Images\freedom.jpg" />
@@ -110,6 +112,7 @@
 	  <None Remove="Resources\Images\info.png" />
 	  <None Remove="Resources\Images\information.png" />
 	  <None Remove="Resources\Images\informationdesk.jpg" />
+	  <None Remove="Resources\Images\injury.gif" />
 	  <None Remove="Resources\Images\insta.png" />
 	  <None Remove="Resources\Images\instagram.png" />
 	  <None Remove="Resources\Images\keysremovebg.png" />
@@ -118,6 +121,7 @@
 	  <None Remove="Resources\Images\kneetaping.jpg" />
 	  <None Remove="Resources\Images\lat.PNG" />
 	  <None Remove="Resources\Images\latremovebg.png" />
+	  <None Remove="Resources\Images\lennygif.gif" />
 	  <None Remove="Resources\Images\libok.jpg" />
 	  <None Remove="Resources\Images\lin.png" />
 	  <None Remove="Resources\Images\linkedin.png" />
@@ -125,6 +129,7 @@
 	  <None Remove="Resources\Images\lynoheader.jpg" />
 	  <None Remove="Resources\Images\manuscript.png" />
 	  <None Remove="Resources\Images\massage.jpg" />
+	  <None Remove="Resources\Images\menu.gif" />
 	  <None Remove="Resources\Images\moerat.jpg" />
 	  <None Remove="Resources\Images\moos.jpg" />
 	  <None Remove="Resources\Images\musclestructure.jpg" />
@@ -201,6 +206,8 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="Plugin.Maui.Calendar" Version="1.1.6" />
+		<PackageReference Include="Plugin.Maui.Popup" Version="1.0.5" />
+		<PackageReference Include="SkiaSharp.Extended.UI.Maui" Version="2.0.0" />
 		<PackageReference Include="SkiaSharp.Views.Maui.Controls" Version="2.88.8" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
 		<PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />

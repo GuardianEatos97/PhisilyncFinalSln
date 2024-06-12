@@ -1,18 +1,16 @@
 ﻿ using CommunityToolkit.Mvvm.Input;
-using CommunityToolkit.Mvvm.ComponentModel;
+
 using PhisilyncFinal.Services;
-using PhisilyncFinal.Views;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using PhisilyncFinal.Models;
 using System.Collections.ObjectModel;
-using System.Diagnostics;
-using System.Windows.Input;
+
 using Plugin.Maui.Calendar.Models;
 using System.ComponentModel;
+using CommunityToolkit.Maui.Core;
+using CommunityToolkit.Maui;
+using PhisilyncFinal.Views;
+using MauiPopup;
 
 namespace PhisilyncFinal.ViewModels
 {
@@ -21,6 +19,8 @@ namespace PhisilyncFinal.ViewModels
     {
 
         private LocalDb db;
+        
+      
 
         private TreatmentAction? _injuryTestDetails;
 
@@ -66,30 +66,40 @@ namespace PhisilyncFinal.ViewModels
             }
         }
 
+        private ObservableCollection<Event> _todayevents;
+        public ObservableCollection<Event> TodayEvents { get { return _todayevents; } set {_todayevents=value; OnPropertyChanged(); } }
+
+        public bool animation = false;
+
+        public List<Event> TodayTest { get; set; }
+        public List<Event> TodayRelease { get; set; }
+       
         public ObservableCollection<Event> TreatmentEvents { get; set; }
 
+        private IPopupService _popupservice;
 
 
 
-
-        public AthleteDashVM(InjuryViewModel injuryViewModel)
+        public AthleteDashVM(InjuryViewModel injuryViewModel,IPopupService popupService)
         {
 
             InjuryVM = injuryViewModel;
-
+            _popupservice=popupService;
             db = new();
-
             OnAppearing();
-            OnPropertyChanged();
+           
         }
 
         public override void OnAppearing()
-        {
+        { 
             base.OnAppearing();
             TreatmentEvents = new ObservableCollection<Event>(db.GetCurrentTreatment());
+            TodayEvents = new ObservableCollection<Event>(db.GetCurrentTreatmentByID());
+            AddTodayEvents();
             Events = new EventCollection();
             AddEvents();
-            
+           
+          
 
         }
 
@@ -99,6 +109,20 @@ namespace PhisilyncFinal.ViewModels
 
 
         //Commands
+      
+        
+        
+        [RelayCommand]
+        public async Task Lenny()
+        {
+            await Shell.Current.GoToAsync("QuestionPage");
+        }
+
+        [RelayCommand]
+        public async Task Popup() 
+        {
+        await PopupAction.DisplayPopup(new FAQs());
+        }
         [RelayCommand]
         private async Task Injury()
         {
@@ -117,14 +141,17 @@ namespace PhisilyncFinal.ViewModels
             await Shell.Current.GoToAsync("EditProfile");
         }
 
+        public void AddTodayEvents() 
+        {
+            foreach (var treatment in db.GetCurrentTreatment().Where(x => x.EventDate == DateTime.Now.AddDays(0)))
+            { 
+            TodayEvents.Add(treatment);
+            };
+        }
+
 
         public void AddEvents()
         {
-
-
-
-
-
 
             foreach (var treatment in db.GetCurrentTreatment())
             {
@@ -141,7 +168,7 @@ namespace PhisilyncFinal.ViewModels
 
             }
 
-
+            
 
         }
 

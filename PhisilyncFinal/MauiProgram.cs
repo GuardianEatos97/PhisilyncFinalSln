@@ -29,7 +29,8 @@ namespace PhisilyncFinal
 
             builder.RegisterServices()
                 .RegisterViewModels()
-                .RegisterViews();
+                .RegisterViews()
+                .RegisterPopups();
 
 #if DEBUG
             builder.Logging.AddDebug();
@@ -108,5 +109,11 @@ namespace PhisilyncFinal
 
             return mauiAppBuilder;
             }  
+
+        public static MauiAppBuilder RegisterPopups(this MauiAppBuilder mauiAppBuilder)
+        {
+            mauiAppBuilder.Services.AddTransient<FAQs,AthleteDashVM>();
+            return mauiAppBuilder;
+        }
     }
 }

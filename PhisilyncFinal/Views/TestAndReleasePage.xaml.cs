@@ -14,7 +14,7 @@ public partial class TestAndReleasePage : ContentPage
     //public ProviderInjury _injury;
     private LocalDb db;
     public TreatmentAction TreatmentAction;
-
+    public ProviderInjury _injury { get; set; }
     public TreatmentAction injurieTest { get; set; }
     public TreatmentAction injurieRelease { get; set; }
     public Treatment treatment { get; set; }
@@ -79,6 +79,7 @@ public partial class TestAndReleasePage : ContentPage
                 Description = injurieTest.treatmentActionStepAction,
                 TreatmentID = injurieTest.treatmentActionTreatment,
                 EventDate = DateTime.Now.AddDays(i),
+                Category = "Test",
                 Frequency = 1,
                 UserID = 1
             });
@@ -88,6 +89,7 @@ public partial class TestAndReleasePage : ContentPage
                 Description = injurieRelease.treatmentActionStepAction,
                 TreatmentID = injurieRelease.treatmentActionTreatment,
                 EventDate = DateTime.Now.AddDays(i),
+                Category = "Release",
                 UserID = 1,
                 Frequency = 1
             });
@@ -107,6 +109,7 @@ public partial class TestAndReleasePage : ContentPage
                 TreatmentID = injurieTest.treatmentActionTreatment,
                 EventDate = DateTime.Now.AddDays(i),
                 UserID = 1,
+                Category = "Test",
                 Frequency = 2
             });
             db.SaveEvent(new Event
@@ -115,6 +118,7 @@ public partial class TestAndReleasePage : ContentPage
                 Description = injurieRelease.treatmentActionStepAction,
                 TreatmentID = injurieRelease.treatmentActionTreatment,
                 EventDate = DateTime.Now.AddDays(i),
+                Category = "Release",
                 UserID = 1,
                 Frequency = 2
             });
@@ -136,6 +140,7 @@ public partial class TestAndReleasePage : ContentPage
                 Description = injurieTest.treatmentActionStepAction,
                 TreatmentID = injurieTest.treatmentActionTreatment,
                 EventDate = DateTime.Now.AddDays(i),
+                Category = "Test",
                 UserID = 1,
                 Frequency = 3
             });
@@ -145,6 +150,7 @@ public partial class TestAndReleasePage : ContentPage
                 Description = injurieRelease.treatmentActionStepAction,
                 TreatmentID = injurieRelease.treatmentActionTreatment,
                 EventDate = DateTime.Now.AddDays(i),
+                Category = "Release",
                 UserID = 1,
                 Frequency = 3
             });

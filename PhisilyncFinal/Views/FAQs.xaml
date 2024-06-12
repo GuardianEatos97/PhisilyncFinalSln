@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<popup:BasePopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:popup="clr-namespace:MauiPopup.Views;assembly=MauiPopup"
              x:Class="PhisilyncFinal.Views.FAQs"
-             BackgroundColor="#f0f8e3">
-    
-    <Shell.TitleView Margin="0">
+             ForegroundColor="Transparent" Margin="10"
+                    IsCloseOnBackgroundClick="True" >
+
+    <!--<Shell.TitleView Margin="0">
         <Image 
             Source="phisilyncgreen.png"
              Aspect="Center"/>
-    </Shell.TitleView>
-    
-    <ScrollView>
-    <VerticalStackLayout Margin="20,20,20,20">
-        <Label
+    </Shell.TitleView>-->
+
+
+    <Frame   CornerRadius="40" IsClippedToBounds="True" Padding="5" Margin="5">
+
+        <VerticalStackLayout  BackgroundColor="#f0f8e3" IsClippedToBounds="True">
+
+            <Label
             Text="FAQs"
             FontSize="Large"
             TextColor="Black"
@@ -21,7 +27,9 @@
             TextDecorations="Underline"
             Margin="0,10"
             HorizontalOptions="Center"/>
-
+            <Frame Margin="0,-50,0,0" WidthRequest="40" HeightRequest="40" VerticalOptions="Start" HorizontalOptions="End" BackgroundColor="Transparent">
+                <Button Text="X"  TextColor="Black" BackgroundColor="Transparent" HeightRequest="40" WidthRequest="40" Clicked="Button_Clicked"/>
+            </Frame>
             <Label
 Text="What is Physiotherapy?"
 FontSize="Medium"
@@ -119,7 +127,7 @@ FontSize="Medium"
 FontAttributes="Bold"
 TextDecorations="Underline"
      
-Margin="0,10"
+Margin="15,10"
 HorizontalOptions="Center"/>
 
             <Label
@@ -295,5 +303,6 @@ TextColor="Black"  />
                 </StackLayout>
             </Grid>
         </VerticalStackLayout>
-    </ScrollView>
-</ContentPage>
+
+    </Frame>
+</popup:BasePopupPage>

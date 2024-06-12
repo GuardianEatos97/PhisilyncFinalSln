@@ -119,7 +119,7 @@ Route="Skeleton" />
 
 
     </FlyoutItem>
-
+   
     <ShellContent
         Title="AthleteDash"
         ContentTemplate="{DataTemplate local:AthleteDash}"
@@ -151,11 +151,21 @@ Route="Skeleton" />
     <ShellContent
         Title="TreatmentPage"
         ContentTemplate="{DataTemplate local:TreatmentPage}"
-        Route="TreatmentPage"/>
+        Route="TreatmentPage"/> 
+
+
+
     <ShellContent
         Title="TellUsPage"
         ContentTemplate="{DataTemplate local:TellUsPage}"
-        Route="TellUsPage"/>
+       FlyoutItemIsVisible="False"
+        
+        Route="TellUsPage">
+
+       
+
+    </ShellContent>
+
     <ShellContent
         Title="Lenny"
         ContentTemplate="{DataTemplate local:LennyAiQuestionPage}"
@@ -164,7 +174,7 @@ Route="Skeleton" />
     Title="SelectPayment"
     ContentTemplate="{DataTemplate local:PaymentDetailsPage}"
     Route="SelectPayment"/>
-
+    
 </Shell>
 
 
