@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhisilyncFinal.Views.FasciaSkeleton"
+             Title="FasciaSkeleton">
+   
+        <VerticalStackLayout>
+            <ImageButton Source="neck.png" Clicked="Neck_Clicked" Scale="0.7" Margin="0,-90,0,0"/>
+            <ImageButton Source="upperbody.png" Clicked="UpperBody_Clicked" Scale="0.7" Margin="0,-120,0,0" />
+            <ImageButton Source="lowerbody.png" Clicked="LowerBody_Clicked" Scale=" 0.7" Margin="0,-120,0,0"/>
+        
+       
+    </VerticalStackLayout>
+    
+</ContentPage>

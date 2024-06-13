@@ -51,6 +51,10 @@ namespace PhisilyncFinal
             Routing.RegisterRoute("SelectInjury", typeof(SelectInjuryPage));
             Routing.RegisterRoute("SelectPayment", typeof(PaymentDetailsPage));
             Routing.RegisterRoute("AboutUsPage", typeof(AboutUsPage));
+            Routing.RegisterRoute("NeckWebView", typeof(NeckWebView));
+            Routing.RegisterRoute("UpperBodyWeb", typeof(UpperBodyWebView));
+            Routing.RegisterRoute("LowerBodyWeb", typeof(LowerBodyWebView));
+            Routing.RegisterRoute("FasciaSkeleton", typeof(FasciaSkeleton));
 
         }
     }

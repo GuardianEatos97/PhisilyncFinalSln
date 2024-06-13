@@ -4,37 +4,77 @@
              x:Class="PhisilyncFinal.Views.SelectInjuryPage"
              xmlns:local="clr-namespace:PhisilyncFinal.ViewModels"
              xmlns:models="clr-namespace:PhisilyncFinal.Models"
-             BackgroundColor="#f0f8e3"
+             
              Title="SelectInjuryPage" x:DataType="local:InjuryViewModel">
     <Shell.TitleView Margin="0">
         <Image 
-     Source="phisilyncgreen"
+     Source="phisilyncgreentwo"
      Aspect="Center"/>
     </Shell.TitleView>
 
-    <StackLayout>
-       
-        
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0"
+            EndPoint="0,01">
+            <GradientStop Color="PaleGreen"
+                          Offset="0.1" />
+            <GradientStop Color="#f0f8e3"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
 
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         <Label
          Text="Injury Library"
          VerticalOptions="Center"
          FontSize="Large"
-         TextColor="Black"
+         TextColor="White"
          TextDecorations="Underline"
          FontAttributes="Bold"
          Margin="10"
-         HorizontalOptions="Center"/>
+         HorizontalOptions="Center"
+            Grid.Row="0 "/>
 
-        <ListView ItemsSource="{Binding Injuries}" 
-         HasUnevenRows="true"
+        <Frame  CornerRadius="30" Grid.Row="1" BorderColor="Black">
+            
+            <Frame.Background>
+
+                <LinearGradientBrush StartPoint="0,0"
+            EndPoint="0,01">
+                    <GradientStop Color="LightSeaGreen"
+                          Offset="0.1" />
+                    <GradientStop Color="#f0f8e3"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+           
+
+
+
+            <ListView ItemsSource="{Binding Injuries}" 
+             HasUnevenRows="true"
                Margin="10"
+               
                ItemTapped="ListView_ItemTapped"
                ItemSelected="ListView_ItemSelected">
-            <ListView.ItemTemplate>
+
+                
+
+                
+                <ListView.ItemTemplate>
                 <DataTemplate x:DataType="models:ProviderInjury">
                     <ViewCell>
+
+
+                           
+                               
                         <Grid Padding="10">
+                            
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="*" />
@@ -43,12 +83,17 @@
                                 <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
-                            <Image Grid.RowSpan="2" 
+                                    
+                                       
+                                        
+                                            <Image Grid.RowSpan="2" 
                              Source="{Binding providerInjuryImage}" 
                              Aspect="AspectFill" 
                              HeightRequest="100" 
                              WidthRequest="100" />
-                            <Label Grid.Column="1" 
+                                      
+                                  
+                                    <Label Grid.Column="1" 
                              Text="{Binding providerInjuryName}" 
                                 Margin="20,30"
                                    TextColor="Black"
@@ -60,10 +105,16 @@
                                 Margin="20,-20,0,0"
                              VerticalOptions="End" 
                              Style="{DynamicResource SubtitleTextStyle}" />
-                        </Grid>
-                    </ViewCell>
+
+            
+                            </Grid>
+                              
+                            
+                        </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-    </StackLayout>
+            
+        </Frame>
+    </Grid>
 </ContentPage>

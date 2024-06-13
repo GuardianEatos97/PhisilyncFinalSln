@@ -14,7 +14,7 @@
 
  
     <Shell.FlyoutHeader>
-        <flyout:FlyoutHeader />
+        <flyout:FlyoutHeader  />
     </Shell.FlyoutHeader>
 
     <Shell.FlyoutFooter>
@@ -27,13 +27,16 @@
             <Setter Property="Shell.BackgroundColor"
         Value="Black" />
             <Setter Property="Shell.ForegroundColor"
-        Value="White" />
+            
+        Value= "White"/>
             <Setter Property="Shell.TitleColor"
-        Value="White" />
+        Value="Black" />
             <Setter Property="Shell.DisabledColor"
-        Value="#B4FFFFFF" />
+        Value="Black" />
             <Setter Property="Shell.UnselectedColor"
-        Value="#95FFFFFF" />
+        Value="Black" />
+            <Setter Property="Shell.FlyoutIcon"
+                    Value="list.png" />
         </Style>
         <Style TargetType="ShellItem"
    BasedOn="{StaticResource BaseStyle}" />
@@ -109,8 +112,8 @@ ContentTemplate="{DataTemplate local:AboutUsPage}"
 Route="About Us" />
 
         <ShellContent
-Title="Skeleton"
-            Icon="qa.png"
+Title="Website"
+            Icon="website.png"
         Style="{StaticResource BaseStyle}"
 ContentTemplate="{DataTemplate local:SkeletonViewPage}"
             

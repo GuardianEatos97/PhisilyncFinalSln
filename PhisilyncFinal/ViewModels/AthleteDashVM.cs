@@ -109,8 +109,11 @@ namespace PhisilyncFinal.ViewModels
 
 
         //Commands
-      
-        
+        [RelayCommand]
+        public async Task skeleton()
+        {
+            await Shell.Current.GoToAsync("FasciaSkeleton");
+        }
         
         [RelayCommand]
         public async Task Lenny()

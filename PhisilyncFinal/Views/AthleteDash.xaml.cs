@@ -63,8 +63,5 @@ public partial class AthleteDash : ContentPage
             , finished: (_, __) => _rotated = !_rotated);
     }
 
-    private async void Button_Clicked(object sender, EventArgs e)
-    {
-        
-    }
+    
 }

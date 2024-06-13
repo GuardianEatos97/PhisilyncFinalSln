@@ -13,18 +13,18 @@ namespace PhisilyncFinal.Models
 
         [PrimaryKey,AutoIncrement]
         public int providerInjuryID { get; set; }
-        public string providerInjuryName { get; set; }
-        public string providerInjuryDescription { get; set; }
-        public string providerInjuryImage { get; set; }
-        public string providerInjuryAnatomy { get; set; }
-        public string providerPrompt { get; set; }
-        public string providerPromptTwo { get; set; }
+        public string? providerInjuryName { get; set; }
+        public string? providerInjuryDescription { get; set; }
+        public string? providerInjuryImage { get; set; }
+        public string? providerInjuryAnatomy { get; set; }
+        public string? providerPrompt { get; set; }
+        public string? providerPromptTwo { get; set; }
 
         [ForeignKey(typeof(BodyPart))]
-        public int providerInjuryBodyPart { get; set; }
+        public int? providerInjuryBodyPart { get; set; }
 
         [ForeignKey(typeof(Provider))]
-        public int providerInjuryServiceProvider { get; set; }
+        public int? providerInjuryServiceProvider { get; set; }
 
     }
 }

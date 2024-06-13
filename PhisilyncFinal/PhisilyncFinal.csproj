@@ -125,7 +125,9 @@
 	  <None Remove="Resources\Images\libok.jpg" />
 	  <None Remove="Resources\Images\lin.png" />
 	  <None Remove="Resources\Images\linkedin.png" />
+	  <None Remove="Resources\Images\list.png" />
 	  <None Remove="Resources\Images\locks.jpg" />
+	  <None Remove="Resources\Images\lowerbody.png" />
 	  <None Remove="Resources\Images\lynoheader.jpg" />
 	  <None Remove="Resources\Images\manuscript.png" />
 	  <None Remove="Resources\Images\massage.jpg" />
@@ -133,6 +135,7 @@
 	  <None Remove="Resources\Images\moerat.jpg" />
 	  <None Remove="Resources\Images\moos.jpg" />
 	  <None Remove="Resources\Images\musclestructure.jpg" />
+	  <None Remove="Resources\Images\neck.png" />
 	  <None Remove="Resources\Images\neckflex.jpg" />
 	  <None Remove="Resources\Images\neckflexion.png" />
 	  <None Remove="Resources\Images\neckflexioncapture.PNG" />
@@ -164,6 +167,7 @@
 	  <None Remove="Resources\Images\sacha.jpg" />
 	  <None Remove="Resources\Images\sendicon.png" />
 	  <None Remove="Resources\Images\sideflexremovebg.png" />
+	  <None Remove="Resources\Images\skeletonbutton.gif" />
 	  <None Remove="Resources\Images\soccercoach.jpeg" />
 	  <None Remove="Resources\Images\storage.png" />
 	  <None Remove="Resources\Images\storagetwo.png" />
@@ -192,6 +196,8 @@
 	  <None Remove="Resources\Images\tt.png" />
 	  <None Remove="Resources\Images\twitter.png" />
 	  <None Remove="Resources\Images\twitter_bird.png" />
+	  <None Remove="Resources\Images\upperbody.png" />
+	  <None Remove="Resources\Images\website.png" />
 	  <None Remove="Resources\Images\willemse.png" />
 	  <None Remove="Resources\Images\workout.jpg" />
 	</ItemGroup>
@@ -246,6 +252,9 @@
 	  <MauiXaml Update="Views\FAQs.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\FasciaSkeleton.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\GlossaryViewPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -267,10 +276,16 @@
 	  <MauiXaml Update="Views\LogInPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\LowerBodyWebView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\LynoTherapyPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\MassageTherapyPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\NeckWebView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\PaymentPage.xaml">
@@ -340,6 +355,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\TreatmentPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\UpperBodyWebView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

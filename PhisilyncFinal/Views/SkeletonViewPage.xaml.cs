@@ -6,7 +6,7 @@ public partial class SkeletonViewPage : ContentPage
     {
         InitializeComponent();
 
-        WebviewSkeleton.Source = @"https://viewer.jig.space/?jig=wGbN1X5G&shad=1&step=1&sbox=1&autoload=1&autoplay=0";
+        WebviewSkeleton.Source = @"https://phyisilync.wixsite.com/phisilync";
         //string source = "https://viewer.jig.space/?jig=wGbN1X5G&shad=1&step=1&sbox=1&autoload=1&autoplay=0";
         //var wv = new WebView();
         //content.Content = wv;

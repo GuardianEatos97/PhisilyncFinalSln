@@ -12,10 +12,14 @@
 
 
 
-    <Shell.TitleView Margin="0,0,0,0">
+    <Shell.TitleView Margin="20,0,0,0" >
         <Image 
-            Source="phisilyncgreen"
-             Aspect="Center"/>
+            Source="phisigreen_nobg.png"
+            Background="Black"
+             Aspect="Center"
+            Margin="10,10,0,0"
+           Scale="0.8"
+            />
     </Shell.TitleView>
     <Grid Padding="10">
         <ScrollView Orientation="Vertical">
@@ -269,10 +273,19 @@
                     </Image.GestureRecognizers>
                 </Image>
             </Frame>
-            
+
+            <Frame CornerRadius="50" Scale="1" BackgroundColor="White" HeightRequest="50" WidthRequest="50" BorderColor="Black" HasShadow="True">
+                <Image Source="skeletonbutton.gif" IsAnimationPlaying="True" Scale="3.7" Aspect="AspectFill" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding skeletonCommand}"/>
+
+                    </Image.GestureRecognizers>
+                </Image>
+            </Frame>
 
 
-            </VerticalStackLayout>
+
+        </VerticalStackLayout>
 
         <Frame BorderColor="Black" HasShadow="True" 
             HorizontalOptions="End"
