@@ -4,23 +4,17 @@
              x:Class="PhisilyncFinal.Views.SelectInjuryPage"
              xmlns:local="clr-namespace:PhisilyncFinal.ViewModels"
              xmlns:models="clr-namespace:PhisilyncFinal.Models"
-             
+             Background="#f0f8e3"
              Title="SelectInjuryPage" x:DataType="local:InjuryViewModel">
     <Shell.TitleView Margin="0">
         <Image 
-     Source="phisilyncgreentwo"
-     Aspect="Center"/>
+     Source="phisilynclogo.png"
+     Aspect="Center"
+            Scale=" 0.85"/>
+       
     </Shell.TitleView>
 
-    <ContentPage.Background>
-        <LinearGradientBrush StartPoint="0,0"
-            EndPoint="0,01">
-            <GradientStop Color="PaleGreen"
-                          Offset="0.1" />
-            <GradientStop Color="#f0f8e3"
-                          Offset="1.0" />
-        </LinearGradientBrush>
-    </ContentPage.Background>
+    
 
 
 
@@ -33,14 +27,14 @@
          Text="Injury Library"
          VerticalOptions="Center"
          FontSize="Large"
-         TextColor="White"
+         TextColor="Black"
          TextDecorations="Underline"
          FontAttributes="Bold"
          Margin="10"
          HorizontalOptions="Center"
             Grid.Row="0 "/>
 
-        <Frame  CornerRadius="30" Grid.Row="1" BorderColor="Black">
+        <Frame  CornerRadius="50" Grid.Row="1" HasShadow="True" BorderColor="Black" Margin="20,0,20,20">
             
             <Frame.Background>
 
@@ -100,7 +94,7 @@
                              Style="{DynamicResource TitleStyle}" />
                             <Label Grid.Row="1" 
                              Grid.Column="1" 
-                                   TextColor="SeaGreen"
+                                   TextColor="Black"
                              Text="Click To Find Out More About Injury"
                                 Margin="20,-20,0,0"
                              VerticalOptions="End" 

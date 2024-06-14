@@ -12,12 +12,12 @@
 
 
 
-    <Shell.TitleView Margin="20,0,0,0" >
+    <Shell.TitleView Margin="25,0,0,0" >
         <Image 
-            Source="phisigreen_nobg.png"
-            Background="Black"
+            Source="phisilynclogo.png"
+            Background="White"
              Aspect="Center"
-            Margin="10,10,0,0"
+         
            Scale="0.8"
             />
     </Shell.TitleView>

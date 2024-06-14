@@ -155,6 +155,7 @@
 	  <None Remove="Resources\Images\phisilyncgreen.png" />
 	  <None Remove="Resources\Images\phisilyncgreenback.png" />
 	  <None Remove="Resources\Images\phisilyncgreentwo.png" />
+	  <None Remove="Resources\Images\phisilynclogo.png" />
 	  <None Remove="Resources\Images\phisilync_nobg.png" />
 	  <None Remove="Resources\Images\premium.webp" />
 	  <None Remove="Resources\Images\profileimage.webp" />

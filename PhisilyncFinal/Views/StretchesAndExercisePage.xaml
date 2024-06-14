@@ -4,10 +4,14 @@
              x:Class="PhisilyncFinal.Views.StretchesAndExercisePage"
              BackgroundColor="#f0f8e3"
              Title="StretchesAndExercisePage">
-    <Shell.TitleView Margin="0,0,0,0">
+    <Shell.TitleView Margin="25,0,0,0" >
         <Image 
-            Source="phisilyncgreen"
-            Aspect="Center"/>
+         Source="phisilynclogo.png"
+         Background="White"
+          Aspect="Center"
+      
+        Scale="0.8"
+         />
     </Shell.TitleView>
 
     <ScrollView Orientation="Vertical">

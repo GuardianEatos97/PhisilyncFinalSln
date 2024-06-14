@@ -25,10 +25,10 @@
         <Style x:Key="BaseStyle"
    TargetType="Element">
             <Setter Property="Shell.BackgroundColor"
-        Value="Black" />
+        Value="White"> </Setter>
             <Setter Property="Shell.ForegroundColor"
             
-        Value= "White"/>
+        Value= "Black"/>
             <Setter Property="Shell.TitleColor"
         Value="Black" />
             <Setter Property="Shell.DisabledColor"

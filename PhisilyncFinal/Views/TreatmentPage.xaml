@@ -6,12 +6,15 @@
              xmlns:models="clr-namespace:PhisilyncFinal.Models"
              x:Class="PhisilyncFinal.Views.TreatmentPage">
 
-    <Shell.TitleView Margin="0,0,0,0">
+    <Shell.TitleView Margin="25,0,0,0" >
         <Image 
-         Source="phisilyncgreen"
-         Aspect="Center"/>
+         Source="phisilynclogo.png"
+         Background="White"
+          Aspect="Center"
+      
+        Scale="0.8"
+         />
     </Shell.TitleView>
-
     <ScrollView>
         <VerticalStackLayout>
             <Frame 
