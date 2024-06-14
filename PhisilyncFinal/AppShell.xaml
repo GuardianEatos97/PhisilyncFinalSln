@@ -90,7 +90,7 @@ Route="Library" />
             Route="GlossaryView"/>
 
         <ShellContent
-    Title="Lenny (ChatBot)"
+    Title="Ask Lenny"
             Icon="robot.png"
             Style="{StaticResource BaseStyle}"
     ContentTemplate="{DataTemplate local:LennyAiQuestionPage}"

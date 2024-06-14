@@ -24,12 +24,7 @@
             HeightRequest="70"
             BorderWidth="5"
             />
-        <Label
-            Text="Hello"
-            HorizontalOptions="End"
-            TextColor="Black"
-            Margin="10,0"
-            />
+      
 
         <Label
             Text="Push Past Your Limits!"
@@ -85,7 +80,7 @@
 
                             <Label Grid.Column="1" 
                                 Text="{Binding CourseName}" 
-                                   Margin="20,30"
+                                Margin="20,30"
                                 Style="{DynamicResource TitleStyle}" />
 
                             <Label Grid.Row="1" 

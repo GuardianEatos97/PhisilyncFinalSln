@@ -460,7 +460,7 @@ namespace PhisilyncFinal.Services
                 treatmentAction = new TreatmentAction()
                 {
                     treatmentActionName = "Neck Side Flexion Release",
-                    treatmentActionStepAction = "Step 1:The client sits over the side of the bed. The client will actively move her head from neutral position towards the fully lengthened position, while you move your fingers from below her ear towards the clavicle (Sternocleidomastoid and Scaleni) and towards the clavicle, acromion and spine of the scapula (Trapezius). \n\r\nStep 2: Move your fingers from the top of the scalp, down towards the ear and then down the neck to top the shoulder, while the client laterally flexes her head in the opposite direction. Make sure you cover the area of the upper Traps and the SCM. \r\n",
+                    treatmentActionStepAction = "Step 1:\r\nThe client sits over the side of the bed. The client will actively move her head from neutral position towards the fully lengthened position, while you move your fingers from below her ear towards the clavicle (Sternocleidomastoid and Scaleni) and towards the clavicle, acromion and spine of the scapula (Trapezius). \n\r\nStep 2:\n\rMove your fingers from the top of the scalp, down towards the ear and then down the neck to top the shoulder, while the client laterally flexes her head in the opposite direction. Make sure you cover the area of the upper Traps and the SCM. \r\n",
                     treatmentActionStepOrder = 1,
                     treatmentActionTreatment = 1,
                     treatmentActionCategory = "Release"

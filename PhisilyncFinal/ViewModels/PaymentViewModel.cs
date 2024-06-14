@@ -23,7 +23,7 @@ namespace PhisilyncFinal.ViewModels
                 {
                     CourseDescription = "Access Our Premium features for 30 days",
                     CourseDuration = "1 Month",
-                    CourseName = "Premium",
+                    CourseName = "Premium 30 Days",
                     CoursePrice = 50,
                     PaymentFrequency = "Monthly",
                     Savings = 0,
@@ -33,7 +33,7 @@ namespace PhisilyncFinal.ViewModels
                 {
                     CourseDescription = "Access Our Premium features for 6 months",
                     CourseDuration = "6 Months",
-                    CourseName = "Premium",
+                    CourseName = "Premium 6 Months",
                     CoursePrice = 280,
                     PaymentFrequency = "Semi-Annually",
                     Savings = 20,
@@ -43,7 +43,7 @@ namespace PhisilyncFinal.ViewModels
                 {
                     CourseDescription = "Access Our Premium features for 1 year",
                     CourseDuration = "1 Year",
-                    CourseName = "Premium",
+                    CourseName = "Premium 1 Year",
                     CoursePrice = 500,
                     PaymentFrequency = "Annually",
                     Savings = 100,

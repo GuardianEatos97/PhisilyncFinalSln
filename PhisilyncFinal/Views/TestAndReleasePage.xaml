@@ -21,8 +21,8 @@
             Text="Treatment Preview"
             FontAttributes="Bold"
                
-            TextColor="SeaGreen"
-            FontSize="0"
+            TextColor="Black"
+            FontSize="Large"
             Style="{DynamicResource TitleStyle}"
             HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Start"/>
@@ -35,13 +35,14 @@
                         FontAttributes="Bold"
                         TextColor="Black"
                         FontSize="Medium"
+                Margin="0,30,0,0"
                         Style="{DynamicResource TitleStyle}"
                         HorizontalTextAlignment="Center" />
 
             <Label 
                                 Text="{Binding injurieTest.treatmentActionStepAction}"
                                 FontSize="Medium"
-                                TextColor="SeaGreen"
+                                TextColor="Black"
                                 HorizontalTextAlignment="Start"
                                 Style="{DynamicResource BodyStyle}"/>
 
@@ -49,6 +50,7 @@
             Text="Release"
             FontAttributes="Bold"
             FontSize="Medium"
+                Margin="0,30,0,0"
             TextColor="Black"
             Style="{DynamicResource TitleStyle}"
             HorizontalTextAlignment="Center"/>
@@ -56,7 +58,7 @@
             <Label 
             Text="{Binding injurieRelease.treatmentActionStepAction}"
             FontSize="Medium"
-            TextColor="SeaGreen"
+            TextColor="Black"
             HorizontalTextAlignment="Start"
             Style="{DynamicResource BodyStyle}" />
 
