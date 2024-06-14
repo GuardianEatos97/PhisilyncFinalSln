@@ -6,8 +6,19 @@
              xmlns:models="clr-namespace:PhisilyncFinal.Models"
              xmlns:viewmodels="clr-namespace:PhisilyncFinal.ViewModels"
              xmlns:services="clr-namespace:PhisilyncFinal.Services"
-             BackgroundImageSource="lennybg.png"
-             BackgroundColor="MintCream">
+             
+            >
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0"
+            EndPoint="0,01">
+            <GradientStop Color="LightGrey"
+                          Offset="0.1" />
+            <GradientStop Color="#f0f8e3"
+                          Offset="9.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
     <ContentPage.Resources>
         <Style TargetType="Grid">
             <Setter Property="VisualStateManager.VisualStateGroups">
@@ -35,7 +46,7 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Frame Margin="10" BackgroundColor="LightGreen" Grid.Row="1"  Padding="10" HorizontalOptions="StartAndExpand" WidthRequest="250">
+                    <Frame Margin="10" BackgroundColor="#f0f8e3" Grid.Row="1" BorderColor="Black" Padding="10" HorizontalOptions="StartAndExpand" WidthRequest="250">
                         <Label TextColor="Black" Text="{Binding MessageBody}" />
                     </Frame>
                 </Grid>
@@ -50,7 +61,7 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Frame Margin="10" BackgroundColor="LightGray" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Padding="10"  HorizontalOptions="EndAndExpand">
+                    <Frame Margin="10" BackgroundColor="LightBlue" BorderColor="Black" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Padding="10"  HorizontalOptions="EndAndExpand">
                         <Label TextColor="Black" Text="{Binding MessageBody}" HorizontalTextAlignment="End" />
                     </Frame>
                 </Grid>

@@ -4,15 +4,15 @@
              x:Class="PhisilyncFinal.Views.SelectedInjuryDetailsPage"
              BackgroundColor="#f0f8e3"
              Title="SelectedInjuryDetailsPage">
-    <Shell.TitleView Margin="25,0,0,0" >
+    <Shell.TitleView Margin="0">
         <Image 
-         Source="phisilynclogo.png"
-         Background="White"
-          Aspect="Center"
-      
-        Scale="0.8"
-         />
+ Source="phisilynclogo.png"
+ Aspect="Center"
+        Scale=" 0.85"/>
+
     </Shell.TitleView>
+
+  
     <ScrollView>
         <StackLayout Margin="20">
             <Label 
@@ -22,39 +22,49 @@
                 TextColor="Black"
            FontSize="Large"
            Style="{DynamicResource TitleStyle}" />
+            <Frame CornerRadius="45" WidthRequest="210" HeightRequest="240" BorderColor="Black" Margin="0,20,0,0" HasShadow="True">
             <Image 
            Source="{Binding providerInjuryImage}"
            HeightRequest="200"
            WidthRequest="200"
            Margin="20"
-           HorizontalOptions="Center" />
+           HorizontalOptions="Center" 
+              />
+            </Frame>
             <Label
             Text="Anatomy"
             FontAttributes="Bold"
                 TextColor="Black"
             FontSize="Medium"
             Style="{DynamicResource TitleStyle}"
-            HorizontalTextAlignment="Center"/>
-            <Label 
+            HorizontalTextAlignment="Center"
+                Margin="0,30,0,0"/>
+            <Frame CornerRadius="20" BackgroundColor="White" BorderColor="Black" HasShadow="True" Margin="0,10,0,0">
+                <Label 
             Text="{Binding providerInjuryAnatomy}"
             FontSize="Medium"
                 TextColor="SeaGreen"
             HorizontalTextAlignment="Start"
             Style="{DynamicResource BodyStyle}" />
+            </Frame>
             <Label
             Text="Injury Description"
             FontAttributes="Bold"
                 TextColor="Black"
             FontSize="Medium"
             Style="{DynamicResource TitleStyle}"
-            HorizontalTextAlignment="Center"/>
-            <Label 
+            HorizontalTextAlignment="Center"
+                Margin="0,30,0,0"/>
+
+            <Frame CornerRadius="20" BackgroundColor="White" BorderColor="Black" HasShadow="True" Margin="0,10,0,0">
+                <Label 
             Text="{Binding providerInjuryDescription}"
             FontSize="Medium"
                 TextColor="SeaGreen"
             HorizontalTextAlignment="Start"
-            Style="{DynamicResource BodyStyle}" />
-           
+            Style="{DynamicResource BodyStyle}"
+                    />
+            </Frame>
             <Button
              Text="Take Me To My Treatment Plan"
              FontAttributes="Bold"
