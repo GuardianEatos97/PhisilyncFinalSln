@@ -6,13 +6,15 @@
              xmlns:local="clr-namespace:PhisilyncFinal.ViewModels"
              xmlns:models="clr-namespace:PhisilyncFinal.Models"
              BackgroundColor="#f0f8e3">
-
-    <Shell.TitleView Margin="0">
+    <Shell.TitleView Margin="25,0,0,0" >
         <Image 
-        Source="phisilyncgreen"
-        Aspect="Center"/>
+         Source="phisilynclogo.png"
+         Background="White"
+          Aspect="Center"
+      
+        Scale="0.8"
+         />
     </Shell.TitleView>
-
     <StackLayout>
         <toolkit:AvatarView
             BorderColor="SeaGreen"

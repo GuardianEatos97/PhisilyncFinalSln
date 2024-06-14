@@ -9,10 +9,11 @@
 
     <Shell.TitleView Margin="0">
         <Image 
-             Source="phisilyncgreen.png"
-             Aspect="Center"/>
-    </Shell.TitleView>
+Source="phisilynclogo.png"
+Aspect="Center"
+       Scale=" 0.85"/>
 
+    </Shell.TitleView>
 
     <ScrollView>
         <StackLayout Margin="20">
@@ -37,14 +38,16 @@
                         FontSize="Medium"
                 Margin="0,30,0,0"
                         Style="{DynamicResource TitleStyle}"
-                        HorizontalTextAlignment="Center" />
-
-            <Label 
+                        HorizontalTextAlignment="Center"
+                            Margin="0,30,0,0"/>
+            <Frame CornerRadius="20" BackgroundColor="White" BorderColor="Black" HasShadow="True" Margin="0,10,0,0">
+                <Label 
                                 Text="{Binding injurieTest.treatmentActionStepAction}"
                                 FontSize="Medium"
                                 TextColor="Black"
                                 HorizontalTextAlignment="Start"
                                 Style="{DynamicResource BodyStyle}"/>
+            </Frame>
 
             <Label
             Text="Release"
@@ -53,14 +56,16 @@
                 Margin="0,30,0,0"
             TextColor="Black"
             Style="{DynamicResource TitleStyle}"
-            HorizontalTextAlignment="Center"/>
-
-            <Label 
+            HorizontalTextAlignment="Center"
+                Margin="0,30,0,0"/>
+            <Frame CornerRadius="20" BackgroundColor="White" BorderColor="Black" HasShadow="True" Margin="0,10,0,0">
+                <Label 
             Text="{Binding injurieRelease.treatmentActionStepAction}"
             FontSize="Medium"
             TextColor="Black"
             HorizontalTextAlignment="Start"
             Style="{DynamicResource BodyStyle}" />
+            </Frame>
 
             <Button
       Text="Add Treatment to Dashboard"
@@ -73,7 +78,7 @@
       CornerRadius="100"
       WidthRequest="350"
       HeightRequest="70"
-      Margin="0,0,0,0"/>
+      Margin="0,30,0,0"/>
 
         </StackLayout>
     </ScrollView>

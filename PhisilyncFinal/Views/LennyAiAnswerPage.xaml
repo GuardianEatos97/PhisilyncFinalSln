@@ -10,7 +10,7 @@
             FontSize="Large"
             HorizontalOptions="Center"/>
         
-        <Frame BackgroundColor="Black"  Margin="10"  VerticalOptions="FillAndExpand" 
+        <Frame BackgroundColor="LightSkyBlue"  Margin="10"  VerticalOptions="FillAndExpand" 
 HorizontalOptions="FillAndExpand">
             <Label
            Text="{Binding Response.MessageBody}"

@@ -14,7 +14,7 @@ namespace PhisilyncFinal.Services.LennyAI
     public class LennyAiAssistant:IAiAssistant
     {
         private ISettings _settings;
-        private const string AssistantBehaviorDescription = "I am a friendly AI assistant bot that give you therapy advice.";
+        private const string AssistantBehaviorDescription = "Your name is Lenny! Your main goal is to give good medical advice to the patience to be a good friendly bot that will help them with everything else.You will give information not only based on the information your are trained on, but also information from the internet";
 
         public LennyAiAssistant(ISettings settings)
         {

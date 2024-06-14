@@ -83,7 +83,7 @@ namespace PhisilyncFinal.ViewModels
         [RelayCommand]
         private async void SaveAthlete()
         {
-            if (IsEmailValid && IsNameValid && IsPasswordValid && IsSurnameValid && IsConfirmedPasswordValid)
+            if (IsEmailValid==true && IsNameValid==true && IsPasswordValid==true && IsSurnameValid==true && IsConfirmedPasswordValid == true)
             {
                 var user = new User
                 {
