@@ -12,7 +12,16 @@
 
     </Shell.TitleView>
 
-  
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0"
+         EndPoint="0,01">
+            <GradientStop Color="White"
+                       Offset="0.1" />
+            <GradientStop Color="#f0f8e3"
+                       Offset="9.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
     <ScrollView>
         <StackLayout Margin="20">
             <Label 

@@ -79,7 +79,12 @@ namespace PhisilyncFinal.ViewModels
         private IPopupService _popupservice;
 
 
-
+        private bool iscount;
+        public bool IsCount
+        {
+            get { return iscount; }
+            set { iscount = value; OnPropertyChanged(); }
+        }
         public AthleteDashVM(InjuryViewModel injuryViewModel,IPopupService popupService)
         {
 
@@ -98,15 +103,25 @@ namespace PhisilyncFinal.ViewModels
             AddTodayEvents();
             Events = new EventCollection();
             AddEvents();
-           
+           IsEmpty();
           
 
         }
 
 
+        public void IsEmpty()
+                    {
+            if (TodayEvents.Count > 0)
+            {
+                IsCount = true;
+            }
+            else
+            {
+                IsCount = false;
+            }
+        }
 
-
-
+       
 
         //Commands
         [RelayCommand]

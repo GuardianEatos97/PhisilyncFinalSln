@@ -61,7 +61,7 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Frame Margin="10" BackgroundColor="LightBlue" BorderColor="Black" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Padding="10"  HorizontalOptions="EndAndExpand">
+                    <Frame Margin="10" BackgroundColor="LightBlue" BorderColor="black" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Padding="10"  HorizontalOptions="EndAndExpand">
                         <Label TextColor="Black" Text="{Binding MessageBody}" HorizontalTextAlignment="End" />
                     </Frame>
                 </Grid>

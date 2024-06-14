@@ -24,7 +24,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Label
-         Text="Injury Library"
+         Text="Select Your Injury"
          VerticalOptions="Center"
          FontSize="Large"
          TextColor="Black"
