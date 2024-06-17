@@ -6,15 +6,15 @@
              xmlns:models="clr-namespace:PhisilyncFinal.Models"
              Background="#f0f8e3"
              Title="SelectInjuryPage" x:DataType="local:InjuryViewModel">
-    <Shell.TitleView Margin="0">
+    <Shell.TitleView>
         <Image 
-     Source="phisilynclogo.png"
-     Aspect="Center"
-            Scale=" 0.85"/>
-       
+Source="phisilynclogo.png"
+Aspect="AspectFit"
+        Margin="0,0,60,0"
+   Scale="4.3"/>
+
     </Shell.TitleView>
 
-    
 
 
 
@@ -67,7 +67,7 @@
 
                            
                                
-                        <Grid Padding="10">
+                        <Grid Padding="5">
                             
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
@@ -89,14 +89,14 @@
                                   
                                     <Label Grid.Column="1" 
                              Text="{Binding providerInjuryName}" 
-                                Margin="20,30"
+                                Margin="10,20"
                                    TextColor="Black"
                              Style="{DynamicResource TitleStyle}" />
                             <Label Grid.Row="1" 
                              Grid.Column="1" 
                                    TextColor="Black"
                              Text="Click To Find Out More About Injury"
-                                Margin="20,-20,0,0"
+                                Margin="10,-20,0,0"
                              VerticalOptions="End" 
                              Style="{DynamicResource SubtitleTextStyle}" />
 

@@ -96,7 +96,7 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Entry x:Name="QuestionEntry" Placeholder="Ask a question" Text="{Binding CurrentQuestion}" Grid.ColumnSpan="3"/>
+            <Entry x:Name="QuestionEntry" TextColor="Black" Placeholder="Ask a question" Text="{Binding CurrentQuestion}" Grid.ColumnSpan="3"/>
 
             <Image Source="sendicon.png" WidthRequest="60" HorizontalOptions="End" Grid.Column="3" Margin="10">
                 <Image.GestureRecognizers>

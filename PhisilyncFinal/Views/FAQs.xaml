@@ -16,8 +16,10 @@
 
     <Frame   CornerRadius="40" IsClippedToBounds="True" Padding="5" Margin="5">
 
+        <ScrollView>
+        
         <VerticalStackLayout  BackgroundColor="#f0f8e3" IsClippedToBounds="True">
-
+            
             <Label
             Text="FAQs"
             FontSize="Large"
@@ -303,6 +305,6 @@ TextColor="Black"  />
                 </StackLayout>
             </Grid>
         </VerticalStackLayout>
-
+        </ScrollView>
     </Frame>
 </popup:BasePopupPage>

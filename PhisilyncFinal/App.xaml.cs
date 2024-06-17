@@ -36,15 +36,15 @@ namespace PhisilyncFinal
 
             if (_database._dbConnection.Table<User>().Count() != 0 && _database.GetUserByID(1).userType == 1)
             {
-                await Shell.Current.GoToAsync("athleteDash");
+                await Shell.Current.GoToAsync("/athleteDash");
             }
             else if (_database._dbConnection.Table<User>().Count() != 0 && _database.GetUserByID(1).userType == 2)
             {
-                await Shell.Current.GoToAsync("coachDash");
+                await Shell.Current.GoToAsync("/coachDash");
             }
             else
             {
-                await Shell.Current.GoToAsync("TellUs");
+                await Shell.Current.GoToAsync("///TellUs");
             }
             base.OnStart();
         }

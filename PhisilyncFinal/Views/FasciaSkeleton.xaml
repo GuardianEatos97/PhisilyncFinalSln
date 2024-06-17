@@ -3,7 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhisilyncFinal.Views.FasciaSkeleton"
              Title="FasciaSkeleton">
-   
+
+    <Shell.TitleView>
+        <Image 
+ Source="phisilynclogo.png"
+ Aspect="AspectFit"
+         Margin="0,0,60,0"
+    Scale="4.3"/>
+
+    </Shell.TitleView>
+
+
+    <ScrollView>
+        
+    
         <VerticalStackLayout>
             <ImageButton Source="neck.png" Clicked="Neck_Clicked" Scale="0.7" Margin="0,-90,0,0"/>
             <ImageButton Source="upperbody.png" Clicked="UpperBody_Clicked" Scale="0.7" Margin="0,-120,0,0" />
@@ -11,5 +24,5 @@
         
        
     </VerticalStackLayout>
-    
+    </ScrollView>
 </ContentPage>

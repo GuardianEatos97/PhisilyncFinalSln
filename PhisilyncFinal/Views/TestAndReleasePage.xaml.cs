@@ -48,23 +48,23 @@ public partial class TestAndReleasePage : ContentPage
         if (treatment.treatmentTreatmentFrequency == 1)
         {
             DailyTreatment();
-            await DisplayAlert("Success", "Treatment Has Been Added To Yout Dashboard", "OK");
+            await DisplayAlert("Success", "Treatment Has Been Added To Your Dashboard", "OK");
 
 
         }
         else if (treatment.treatmentTreatmentFrequency == 2)
         {
             WeeklyTreatment();
-            await DisplayAlert("Success", "Treatment Has Been Added To Yout Dashboard", "OK");
+            await DisplayAlert("Success", "Treatment Has Been Added To Your Dashboard", "OK");
 
         }
         else
         {
             MonthlyTreatment();
-            await DisplayAlert("Success", "Treatment Has Been Added To Yout Dashboard", "OK");
+            await DisplayAlert("Success", "Treatment Has Been Added To Your Dashboard", "OK");
 
         }
-        await Shell.Current.GoToAsync("athleteDash");
+        await Shell.Current.GoToAsync("//athleteDash");
 
     }
 

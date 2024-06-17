@@ -30,11 +30,11 @@
             
         Value= "Black"/>
             <Setter Property="Shell.TitleColor"
-        Value="Black" />
+        Value="White" />
             <Setter Property="Shell.DisabledColor"
-        Value="Black" />
+        Value="White" />
             <Setter Property="Shell.UnselectedColor"
-        Value="Black" />
+        Value="White" />
             <Setter Property="Shell.FlyoutIcon"
                     Value="list.png" />
         </Style>
@@ -65,6 +65,7 @@
             Title="Dashboard"
             Icon="dashboard.png"
         Style="{StaticResource BaseStyle}"
+            FlyoutItem.IsVisible="True"
 ContentTemplate="{DataTemplate local:AthleteDash}"
 Route="AthleteDash" />
 
@@ -123,7 +124,8 @@ Route="Skeleton" />
 
     </FlyoutItem>
    
-    <ShellContent
+    
+    <!--<ShellContent
         Title="AthleteDash"
         ContentTemplate="{DataTemplate local:AthleteDash}"
         Route="AthleteDash"/>
@@ -176,7 +178,7 @@ Route="Skeleton" />
     <ShellContent
     Title="SelectPayment"
     ContentTemplate="{DataTemplate local:PaymentDetailsPage}"
-    Route="SelectPayment"/>
+    Route="SelectPayment"/>-->
     
 </Shell>
 

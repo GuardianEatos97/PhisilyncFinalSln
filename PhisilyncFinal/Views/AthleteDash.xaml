@@ -12,11 +12,12 @@
 
 
 
-    <Shell.TitleView Margin="0">
+    <Shell.TitleView>
         <Image 
-Source="phisilynclogo.png"
-Aspect="Center"
-       Scale=" 0.85"/>
+    Source="phisilynclogo.png"
+    Aspect="AspectFit"
+            Margin="0,0,60,0"
+       Scale="4.3"/>
 
     </Shell.TitleView>
 
@@ -26,8 +27,8 @@ Aspect="Center"
                 <toolkit:AvatarView
                 BorderColor="SeaGreen"
                 TextColor="White"
-                
-                HorizontalOptions="End"
+                ImageSource="profilepic.png"
+                HorizontalOptions="Center"
                 CornerRadius="360"
                 Margin="0,10,5,0"
                 WidthRequest="70"
@@ -42,9 +43,10 @@ Aspect="Center"
 
                 <Label
                 Text="{Binding CurrentUser.userName}"
-                HorizontalOptions="End"
-                Margin="0,0,20,0"
-                TextColor="Black"
+                HorizontalOptions="Center"
+                Margin="0,0,05,0"
+               
+                TextColor="SeaGreen"
                 />
 
                 <HorizontalStackLayout>
@@ -57,8 +59,9 @@ Aspect="Center"
 
                     <Label
                 Text="{Binding CurrentUser.userName}"
-                TextColor="Black"
                 FontAttributes="Bold"
+    TextDecorations="Underline"
+TextColor="SeaGreen"
                 FontSize="Medium"
                 Margin="0,10,0,0"/>
 
@@ -82,8 +85,8 @@ Aspect="Center"
                                    CornerRadius="5"
                                    BackgroundColor="White"
                                    Margin="20"
-                                   HeightRequest="300"
-                                   WidthRequest="350"
+                                   HeightRequest="290"
+                                   WidthRequest="300"
                                    HorizontalOptions="Center"
                                    VerticalOptions="CenterAndExpand">
                                     <StackLayout>
@@ -149,7 +152,7 @@ Aspect="Center"
                           ArrowsBackgroundColor="SeaGreen"
                           ArrowsBorderColor="Black"
                    
-                          ArrowsColor="LightSeaGreen"
+                          ArrowsColor="Black"
                           DaysTitleColor="Black"
                           DaysTitleWeekendColor="Black" 
                           DisabledDayColor="SeaGreen"
@@ -190,7 +193,7 @@ Aspect="Center"
                 <Frame
             
                     VerticalOptions="EndAndExpand"
-         Margin="10,-65,10,0"
+         Margin="10,-45,10,0"
          Padding="10"
          BackgroundColor="Beige"
          CornerRadius="10"
@@ -200,21 +203,22 @@ Aspect="Center"
                     IsVisible="{Binding IsCount}">
 
                     <ScrollView>
-                        <ListView ItemsSource="{Binding TodayEvents}" HasUnevenRows="True" Margin="0,5,0,0" >
+                        <ListView ItemsSource="{Binding TodayEvents}" HasUnevenRows="True" Margin="0,5,0,0" SelectionMode="None" >
                             <ListView.ItemTemplate>
                                 <DataTemplate x:DataType="models:Event">
                                     <ViewCell>
-                                        <Grid Padding="10">
+                                        <Grid Padding="5">
                                             <Grid.RowDefinitions>
                                                 <RowDefinition Height="Auto" />
-                                                <RowDefinition Height="*" />
+                                                <RowDefinition Height="Auto" />
                                             </Grid.RowDefinitions>
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="Auto" />
-                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
                                             </Grid.ColumnDefinitions>
-                                            <Label Text="{Binding Name}"  Grid.Row="0"  Margin="90,0,0,0"/>
-                                            <Label Text="{Binding Description}" Grid.Row="1"  Margin="0,10,0,0"/>
+                                            
+                                            <Label Text="{Binding Name}" TextColor="Black" Grid.Row="0"  Margin="85,0,0,0" LineBreakMode="HeadTruncation"/>
+                                            <Label Text="{Binding Description}" Grid.Row="1" TextColor="Black"  Margin="0,5,0,0" LineBreakMode="CharacterWrap"/>
                                         </Grid>
                                     </ViewCell>
 

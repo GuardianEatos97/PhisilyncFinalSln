@@ -4,11 +4,12 @@
              x:Class="PhisilyncFinal.Views.SelectedInjuryDetailsPage"
              BackgroundColor="#f0f8e3"
              Title="SelectedInjuryDetailsPage">
-    <Shell.TitleView Margin="0">
+    <Shell.TitleView>
         <Image 
- Source="phisilynclogo.png"
- Aspect="Center"
-        Scale=" 0.85"/>
+Source="phisilynclogo.png"
+Aspect="AspectFit"
+        Margin="0,0,60,0"
+   Scale="4.3"/>
 
     </Shell.TitleView>
 
@@ -24,6 +25,7 @@
 
     <ScrollView>
         <StackLayout Margin="20">
+            
             <Label 
            Text="{Binding providerInjuryName}"
            HorizontalOptions="Center"
@@ -83,7 +85,7 @@
               Clicked="Button_Clicked"
              BackgroundColor="SeaGreen"
              CornerRadius="100"
-             WidthRequest="350"
+             WidthRequest="320"
              HeightRequest="70"
              Margin="0,20,0,0"/>
             <Label

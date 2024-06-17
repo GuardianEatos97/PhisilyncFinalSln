@@ -87,7 +87,8 @@ namespace PhisilyncFinal.ViewModels
         }
         public AthleteDashVM(InjuryViewModel injuryViewModel,IPopupService popupService)
         {
-
+          CurrentUser = new();
+            
             InjuryVM = injuryViewModel;
             _popupservice=popupService;
             db = new();
@@ -104,7 +105,8 @@ namespace PhisilyncFinal.ViewModels
             Events = new EventCollection();
             AddEvents();
            IsEmpty();
-          
+            CurrentUser = db.GetFirstUser();
+
 
         }
 

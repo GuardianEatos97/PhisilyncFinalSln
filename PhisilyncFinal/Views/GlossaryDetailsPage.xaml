@@ -4,14 +4,13 @@
              x:Class="PhisilyncFinal.Views.GlossaryDetailsPage"
              Title="GlossaryDetailsPage"
              BackgroundColor="MintCream">
-    <Shell.TitleView Margin="25,0,0,0" >
+    <Shell.TitleView>
         <Image 
-         Source="phisilynclogo.png"
-         Background="White"
-          Aspect="Center"
-      
-        Scale="0.8"
-         />
+ Source="phisilynclogo.png"
+ Aspect="AspectFit"
+         Margin="0,0,60,0"
+    Scale="4.3"/>
+
     </Shell.TitleView>
     <ScrollView>
         <StackLayout Margin="20">
